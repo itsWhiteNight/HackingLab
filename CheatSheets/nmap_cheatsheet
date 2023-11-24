@@ -29,11 +29,7 @@
 | `-g` | Specifies the source port for the scan. |
 | `--dns-server <ns>` | DNS resolution is performed by using a specified name server. |
 
-
-
-
 ## Output Options
-
 
 | **Nmap Option** | **Description** |
 |---|----|
@@ -41,8 +37,6 @@
 | `-oN filename` | Stores the results in normal format with the name "filename". |
 | `-oG filename` | Stores the results in "grepable" format with the name of "filename". |
 | `-oX filename` | Stores the results in XML format with the name of "filename". |
-
-
 
 ## Performance Options
 
