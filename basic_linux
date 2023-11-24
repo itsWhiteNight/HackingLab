@@ -1,47 +1,74 @@
-## Scanning Options
-
-| **Nmap Option** | **Description** |
-|---|----|
-| `10.10.10.0/24` | Target network range. |
-| `-sn` | Disables port scanning. |
-| `-Pn` | Disables ICMP Echo Requests |
-| `-n` | Disables DNS Resolution. |
-| `-PE` | Performs the ping scan by using ICMP Echo Requests against the target. |
-| `--packet-trace` | Shows all packets sent and received. |
-| `--reason` | Displays the reason for a specific result. |
-| `--disable-arp-ping` | Disables ARP Ping Requests. |
-| `--top-ports=<num>` | Scans the specified top ports that have been defined as most frequent.  |
-| `-p-` | Scan all ports. |
-| `-p22-110` | Scan all ports between 22 and 110. |
-| `-p22,25` | Scans only the specified ports 22 and 25. |
-| `-F` | Scans top 100 ports. |
-| `-sS` | Performs an TCP SYN-Scan. |
-| `-sA` | Performs an TCP ACK-Scan. |
-| `-sU` | Performs an UDP Scan. |
-| `-sV` | Scans the discovered services for their versions. |
-| `-sC` | Perform a Script Scan with scripts that are categorized as "default". |
-| `--script <script>` | Performs a Script Scan by using the specified scripts. |
-| `-O` | Performs an OS Detection Scan to determine the OS of the target. |
-| `-A` | Performs OS Detection, Service Detection, and traceroute scans. |
-| `-D RND:5` | Sets the number of random Decoys that will be used to scan the target. |
-| `-e` | Specifies the network interface that is used for the scan. |
-| `-S 10.10.10.200` | Specifies the source IP address for the scan. |
-| `-g` | Specifies the source port for the scan. |
-| `--dns-server <ns>` | DNS resolution is performed by using a specified name server. |
-## Output Options
-| **Nmap Option** | **Description** |
-|---|----|
-| `-oA filename` | Stores the results in all available formats starting with the name of "filename". |
-| `-oN filename` | Stores the results in normal format with the name "filename". |
-| `-oG filename` | Stores the results in "grepable" format with the name of "filename". |
-| `-oX filename` | Stores the results in XML format with the name of "filename". |
-## Performance Options
-| **Nmap Option** | **Description** |
-|---|----|
-| `--max-retries <num>` | Sets the number of retries for scans of specific ports. |
-| `--stats-every=5s` | Displays scan's status every 5 seconds. |
-| `-v/-vv` | Displays verbose output during the scan. |
-| `--initial-rtt-timeout 50ms` | Sets the specified time value as initial RTT timeout. |
-| `--max-rtt-timeout 100ms` | Sets the specified time value as maximum RTT timeout. |
-| `--min-rate 300` | Sets the number of packets that will be sent simultaneously. |
-| `-T <0-5>` | Specifies the specific timing template. |
+| **Command** | **Description** |
+| --------------|-------------------|
+|Â `man <tool>` | Opens man pages for the specified tool. | 
+| `<tool> -h` | Prints the help page of the tool. | 
+| `apropos <keyword>` | Searches through man pages' descriptions for instances of a given keyword. | 
+| `cat` | Concatenate and print files. |
+| `whoami` | Displays current username. | 
+| `id` | Returns users identity. | 
+| `hostname` | Sets or prints the name of the current host system. | 
+| `uname` | Prints operating system name. | 
+| `pwd` | Returns working directory name. | 
+| `ifconfig` | The `ifconfig` utility is used to assign or view an address to a network interface and/or configure network interface parameters. | 
+| `ip` | Ip is a utility to show or manipulate routing, network devices, interfaces, and tunnels. | 
+| `netstat` | Shows network status. | 
+| `ss` | Another utility to investigate sockets. | 
+| `ps` | Shows process status. | 
+| `who` | Displays who is logged in. | 
+| `env` | Prints environment or sets and executes a command. | 
+| `lsblk` | Lists block devices. | 
+| `lsusb` | Lists USB devices. | 
+| `lsof` | Lists opened files. | 
+| `lspci` | Lists PCI devices. | 
+| `sudo` | Execute command as a different user. | 
+| `su` | The `su` utility requests appropriate user credentials via PAM and switches to that user ID (the default user is the superuser).  A shell is then executed. | 
+| `useradd` | Creates a new user or update default new user information. | 
+| `userdel` | Deletes a user account and related files. |
+| `usermod` | Modifies a user account. | 
+| `addgroup` | Adds a group to the system. | 
+| `delgroup` | Removes a group from the system. | 
+| `passwd` | Changes user password. |
+| `dpkg` | Install, remove and configure Debian-based packages. | 
+| `apt` | High-level package management command-line utility. | 
+| `aptitude` | Alternative to `apt`. | 
+| `snap` | Install, remove and configure snap packages. |
+| `gem` | Standard package manager for Ruby. | 
+| `pip` | Standard package manager for Python. | 
+| `git` | Revision control system command-line utility. | 
+| `systemctl` | Command-line based service and systemd control manager. |
+| `ps` | Prints a snapshot of the current processes. | 
+| `journalctl` | Query the systemd journal. | 
+| `kill` | Sends a signal to a process. | 
+| `bg` | Puts a process into background. |
+| `jobs` | Lists all processes that are running in the background. | 
+| `fg` | Puts a process into the foreground. | 
+| `curl` | Command-line utility to transfer data from or to a server. | 
+| `wget` | An alternative to `curl` that downloads files from FTP or HTTP(s) server. |
+| `python3 -m http.server` | Starts a Python3 web server on TCP port 8000. | 
+| `ls` | Lists directory contents. | 
+| `cd` | Changes the directory. |
+| `clear` | Clears the terminal. | 
+| `touch` | Creates an empty file. |
+| `mkdir` | Creates a directory. | 
+| `tree` | Lists the contents of a directory recursively. |
+| `mv` | Move or rename files or directories. | 
+| `cp` | Copy files or directories. |
+| `nano` | Terminal based text editor. | 
+| `which` | Returns the path to a file or link. |
+| `find` | Searches for files in a directory hierarchy. | 
+| `updatedb` | Updates the locale database for existing contents on the system. |
+| `locate` | Uses the locale database to find contents on the system. | 
+| `more` | Pager that is used to read STDOUT or files. |
+| `less` | An alternative to `more` with more features. | 
+| `head` | Prints the first ten lines of STDOUT or a file. |
+| `tail` | Prints the last ten lines of STDOUT or a file. | 
+| `sort` | Sorts the contents of STDOUT or a file. |
+| `grep` | Searches for specific results that contain given patterns. | 
+| `cut` | Removes sections from each line of files. |
+| `tr` | Replaces certain characters. | 
+| `column` | Command-line based utility that formats its input into multiple columns. |
+| `awk` | Pattern scanning and processing language. |
+| `sed` | A stream editor for filtering and transforming text. | 
+| `wc` | Prints newline, word, and byte counts for a given input. |
+| `chmod` | Changes permission of a file or directory. |
+| `chown` | Changes the owner and group of a file or directory. |
