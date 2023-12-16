@@ -28,6 +28,7 @@
 | `-S 10.10.10.200` | Specifies the source IP address for the scan. |
 | `-g` | Specifies the source port for the scan. |
 | `--dns-server <ns>` | DNS resolution is performed by using a specified name server. |
+| `-source-port 53` specifiy source port
 
 ## Output Options
 
