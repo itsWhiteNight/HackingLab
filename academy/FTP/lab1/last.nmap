@@ -1,0 +1,184 @@
+# Nmap 7.94SVN scan initiated Fri Nov 24 09:54:54 2023 as: nmap -sS -script=banner -sV -p22,80,10001 -n --packet-trace -PE --disable-arp-ping -Pn -O -oA last 10.129.141.253
+SENT (0.2883s) TCP 10.10.14.156:36520 > 10.129.141.253:80 S ttl=41 id=13964 iplen=44  seq=1235209351 win=1024 <mss 1460>
+SENT (0.2883s) TCP 10.10.14.156:36520 > 10.129.141.253:22 S ttl=58 id=23592 iplen=44  seq=1235209351 win=1024 <mss 1460>
+SENT (0.2883s) TCP 10.10.14.156:36520 > 10.129.141.253:10001 S ttl=38 id=46759 iplen=44  seq=1235209351 win=1024 <mss 1460>
+RCVD (0.3497s) TCP 10.129.141.253:80 > 10.10.14.156:36520 SA ttl=63 id=0 iplen=44  seq=1713383100 win=29200 <mss 1340>
+RCVD (0.3524s) TCP 10.129.141.253:22 > 10.10.14.156:36520 SA ttl=63 id=0 iplen=44  seq=2484670300 win=29200 <mss 1340>
+RCVD (0.3524s) TCP 10.129.141.253:10001 > 10.10.14.156:36520 SA ttl=63 id=0 iplen=44  seq=2600417096 win=29200 <mss 1340>
+Service scan sending probe NULL to 10.129.141.253:22 (tcp)
+Service scan sending probe NULL to 10.129.141.253:10001 (tcp)
+Service scan sending probe NULL to 10.129.141.253:80 (tcp)
+Service scan hard match (Probe NULL matched with NULL line 3524): 10.129.141.253:22 is ssh.  Version: |OpenSSH|7.2p2 Ubuntu 4ubuntu2.10|Ubuntu Linux; protocol 2.0|
+Service scan sending probe GetRequest to 10.129.141.253:10001 (tcp)
+Service scan sending probe GetRequest to 10.129.141.253:80 (tcp)
+Service scan hard match (Probe GetRequest matched with GetRequest line 10510): 10.129.141.253:80 is http.  Version: |Apache httpd|2.4.18|(Ubuntu)|
+Service scan sending probe JavaRMI to 10.129.141.253:10001 (tcp)
+Service scan sending probe ZendJavaBridge to 10.129.141.253:10001 (tcp)
+Service scan sending probe GenericLines to 10.129.141.253:10001 (tcp)
+Service scan sending probe HTTPOptions to 10.129.141.253:10001 (tcp)
+Service scan sending probe RTSPRequest to 10.129.141.253:10001 (tcp)
+Service scan sending probe RPCCheck to 10.129.141.253:10001 (tcp)
+Service scan sending probe DNSVersionBindReqTCP to 10.129.141.253:10001 (tcp)
+Service scan sending probe DNSStatusRequestTCP to 10.129.141.253:10001 (tcp)
+SENT (58.2324s) TCP 10.10.14.156:44311 > 10.129.141.253:22 S ttl=56 id=25331 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (58.3351s) TCP 10.10.14.156:44312 > 10.129.141.253:22 S ttl=54 id=30558 iplen=60  seq=2728353931 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (58.4380s) TCP 10.10.14.156:44313 > 10.129.141.253:22 S ttl=40 id=33601 iplen=60  seq=2728353932 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (58.5386s) TCP 10.10.14.156:44314 > 10.129.141.253:22 S ttl=51 id=35189 iplen=56  seq=2728353933 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (58.6400s) TCP 10.10.14.156:44315 > 10.129.141.253:22 S ttl=54 id=20078 iplen=60  seq=2728353934 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (58.7404s) TCP 10.10.14.156:44316 > 10.129.141.253:22 S ttl=43 id=50540 iplen=56  seq=2728353935 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (58.9472s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=46001 seq=295] IP [ttl=41 id=65052 iplen=148 ]
+SENT (58.9723s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=46002 seq=296] IP [ttl=53 id=8063 iplen=178 ]
+SENT (58.9983s) UDP 10.10.14.156:44275 > 10.129.141.253:36934 ttl=63 id=4162 iplen=328 
+SENT (59.0253s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=55 id=17406 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (59.0511s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=58 id=9013 iplen=60  seq=2728353930 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (59.0766s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=44 id=11548 iplen=60  seq=2728353930 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (59.1031s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=41 id=22073 iplen=56  seq=2728353930 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (59.1293s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=41 id=13510 iplen=60  seq=2728353930 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (59.1545s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=48 id=30847 iplen=56  seq=2728353930 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (59.1805s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=54 id=30059 iplen=52  seq=2728353930 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (59.2056s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=40 id=57424 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (59.2321s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=47 id=43172 iplen=60  seq=2728353930 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.2582s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=51 id=21097 iplen=60  seq=2728353930 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.2837s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=42 id=52505 iplen=60  seq=2728353930 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.3094s) TCP 10.10.14.156:44328 > 10.129.141.253:31495 S ttl=56 id=43268 iplen=60  seq=2728353930 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.3346s) TCP 10.10.14.156:44329 > 10.129.141.253:31495 A ttl=54 id=24838 iplen=60  seq=2728353930 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.3608s) TCP 10.10.14.156:44330 > 10.129.141.253:31495 FPU ttl=43 id=59428 iplen=60  seq=2728353930 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.3861s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=46001 seq=295] IP [ttl=50 id=12558 iplen=148 ]
+SENT (59.4114s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=46002 seq=296] IP [ttl=46 id=42547 iplen=178 ]
+SENT (59.4366s) UDP 10.10.14.156:44275 > 10.129.141.253:36934 ttl=63 id=4162 iplen=328 
+SENT (59.4621s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=41 id=27929 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (59.4875s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=51 id=11450 iplen=60  seq=2728353930 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (59.5128s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=39 id=51895 iplen=60  seq=2728353930 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (59.5382s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=39 id=31913 iplen=56  seq=2728353930 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (59.5637s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=45 id=34495 iplen=60  seq=2728353930 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (59.5889s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=52 id=15335 iplen=56  seq=2728353930 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (59.6145s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=47 id=28250 iplen=52  seq=2728353930 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (59.6397s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=47 id=62969 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (59.6651s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=37 id=1765 iplen=60  seq=2728353930 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.6906s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=41 id=6298 iplen=60  seq=2728353930 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.7157s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=48 id=60343 iplen=60  seq=2728353930 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.7411s) TCP 10.10.14.156:44328 > 10.129.141.253:31495 S ttl=40 id=58187 iplen=60  seq=2728353930 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.7670s) TCP 10.10.14.156:44329 > 10.129.141.253:31495 A ttl=49 id=3158 iplen=60  seq=2728353930 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.7924s) TCP 10.10.14.156:44330 > 10.129.141.253:31495 FPU ttl=45 id=13349 iplen=60  seq=2728353930 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (59.8177s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=46001 seq=295] IP [ttl=46 id=2013 iplen=148 ]
+SENT (59.8434s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=46002 seq=296] IP [ttl=56 id=9371 iplen=178 ]
+SENT (59.8686s) UDP 10.10.14.156:44275 > 10.129.141.253:36934 ttl=63 id=4162 iplen=328 
+SENT (59.8938s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=51 id=44934 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (59.9193s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=47 id=18682 iplen=60  seq=2728353930 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (59.9449s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=54 id=60928 iplen=60  seq=2728353930 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (59.9701s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=42 id=18157 iplen=56  seq=2728353930 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (59.9957s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=57 id=27531 iplen=60  seq=2728353930 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (60.0216s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=48 id=5011 iplen=56  seq=2728353930 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (60.0471s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=58 id=3100 iplen=52  seq=2728353930 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (60.0729s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=59 id=4126 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (60.0981s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=51 id=6882 iplen=60  seq=2728353930 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.1233s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=50 id=37040 iplen=60  seq=2728353930 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.1486s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=41 id=57127 iplen=60  seq=2728353930 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.1740s) TCP 10.10.14.156:44328 > 10.129.141.253:31495 S ttl=49 id=15169 iplen=60  seq=2728353930 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.1993s) TCP 10.10.14.156:44329 > 10.129.141.253:31495 A ttl=39 id=2026 iplen=60  seq=2728353930 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.2246s) TCP 10.10.14.156:44330 > 10.129.141.253:31495 FPU ttl=53 id=50156 iplen=60  seq=2728353930 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.2545s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=46001 seq=295] IP [ttl=45 id=24841 iplen=148 ]
+SENT (60.2796s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=46002 seq=296] IP [ttl=57 id=43432 iplen=178 ]
+SENT (60.3052s) UDP 10.10.14.156:44275 > 10.129.141.253:36934 ttl=63 id=4162 iplen=328 
+SENT (60.3309s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=39 id=13436 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (60.3567s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=47 id=18554 iplen=60  seq=2728353930 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (60.3820s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=48 id=10513 iplen=60  seq=2728353930 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (60.4081s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=43 id=51359 iplen=56  seq=2728353930 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (60.4334s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=57 id=44993 iplen=60  seq=2728353930 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (60.4586s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=52 id=43690 iplen=56  seq=2728353930 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (60.4842s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=50 id=15943 iplen=52  seq=2728353930 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (60.5096s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=43 id=44827 iplen=60  seq=2728353930 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (60.5347s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=40 id=20898 iplen=60  seq=2728353930 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.5599s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=47 id=2582 iplen=60  seq=2728353930 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.5862s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=42 id=54765 iplen=60  seq=2728353930 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.6114s) TCP 10.10.14.156:44328 > 10.129.141.253:31495 S ttl=47 id=4094 iplen=60  seq=2728353930 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.6366s) TCP 10.10.14.156:44329 > 10.129.141.253:31495 A ttl=58 id=12824 iplen=60  seq=2728353930 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (60.6619s) TCP 10.10.14.156:44330 > 10.129.141.253:31495 FPU ttl=45 id=58046 iplen=60  seq=2728353930 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (61.8742s) TCP 10.10.14.156:44311 > 10.129.141.253:22 S ttl=38 id=17022 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (61.9768s) TCP 10.10.14.156:44312 > 10.129.141.253:22 S ttl=59 id=1466 iplen=60  seq=1159937121 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (62.0771s) TCP 10.10.14.156:44313 > 10.129.141.253:22 S ttl=39 id=37087 iplen=60  seq=1159937122 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (62.1775s) TCP 10.10.14.156:44314 > 10.129.141.253:22 S ttl=43 id=20292 iplen=56  seq=1159937123 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (62.2779s) TCP 10.10.14.156:44315 > 10.129.141.253:22 S ttl=45 id=23078 iplen=60  seq=1159937124 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (62.3779s) TCP 10.10.14.156:44316 > 10.129.141.253:22 S ttl=55 id=32001 iplen=56  seq=1159937125 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (62.5837s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=33161 seq=295] IP [ttl=38 id=51140 iplen=148 ]
+SENT (62.6088s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=33162 seq=296] IP [ttl=50 id=13372 iplen=178 ]
+SENT (62.6341s) UDP 10.10.14.156:44275 > 10.129.141.253:38896 ttl=53 id=4162 iplen=328 
+SENT (62.6603s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=41 id=30411 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (62.6861s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=54 id=53993 iplen=60  seq=1159937120 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (62.7134s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=55 id=33182 iplen=60  seq=1159937120 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (62.7397s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=58 id=39578 iplen=56  seq=1159937120 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (62.7651s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=39 id=9507 iplen=60  seq=1159937120 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (62.7903s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=56 id=7273 iplen=56  seq=1159937120 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (62.8157s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=41 id=9069 iplen=52  seq=1159937120 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (62.8408s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=45 id=11178 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (62.8661s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=47 id=59437 iplen=60  seq=1159937120 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (62.8913s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=41 id=65505 iplen=60  seq=1159937120 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (62.9167s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=43 id=30643 iplen=60  seq=1159937120 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (62.9424s) TCP 10.10.14.156:44328 > 10.129.141.253:38079 S ttl=58 id=14974 iplen=60  seq=1159937120 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (62.9676s) TCP 10.10.14.156:44329 > 10.129.141.253:38079 A ttl=59 id=14017 iplen=60  seq=1159937120 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (62.9930s) TCP 10.10.14.156:44330 > 10.129.141.253:38079 FPU ttl=59 id=50626 iplen=60  seq=1159937120 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.0308s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=33161 seq=295] IP [ttl=42 id=64468 iplen=148 ]
+SENT (63.0557s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=33162 seq=296] IP [ttl=37 id=44954 iplen=178 ]
+SENT (63.0817s) UDP 10.10.14.156:44275 > 10.129.141.253:38896 ttl=53 id=4162 iplen=328 
+SENT (63.1074s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=40 id=19689 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (63.1327s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=39 id=30488 iplen=60  seq=1159937120 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (63.1579s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=38 id=17040 iplen=60  seq=1159937120 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (63.1831s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=43 id=13565 iplen=56  seq=1159937120 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (63.2084s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=44 id=35870 iplen=60  seq=1159937120 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (63.2376s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=50 id=27805 iplen=56  seq=1159937120 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (63.2628s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=58 id=13021 iplen=52  seq=1159937120 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (63.2885s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=50 id=3293 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (63.3140s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=59 id=45398 iplen=60  seq=1159937120 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.3396s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=38 id=31380 iplen=60  seq=1159937120 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.3647s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=39 id=14728 iplen=60  seq=1159937120 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.3898s) TCP 10.10.14.156:44328 > 10.129.141.253:38079 S ttl=48 id=50790 iplen=60  seq=1159937120 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.4151s) TCP 10.10.14.156:44329 > 10.129.141.253:38079 A ttl=39 id=37259 iplen=60  seq=1159937120 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.4412s) TCP 10.10.14.156:44330 > 10.129.141.253:38079 FPU ttl=46 id=1256 iplen=60  seq=1159937120 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.4664s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=33161 seq=295] IP [ttl=38 id=50629 iplen=148 ]
+SENT (63.4923s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=33162 seq=296] IP [ttl=54 id=6781 iplen=178 ]
+SENT (63.5175s) UDP 10.10.14.156:44275 > 10.129.141.253:38896 ttl=53 id=4162 iplen=328 
+SENT (63.5433s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=41 id=52228 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (63.5687s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=58 id=50964 iplen=60  seq=1159937120 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (63.5941s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=53 id=43763 iplen=60  seq=1159937120 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (63.6198s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=54 id=10810 iplen=56  seq=1159937120 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (63.6453s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=47 id=26815 iplen=60  seq=1159937120 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (63.6708s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=37 id=56814 iplen=56  seq=1159937120 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (63.6999s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=59 id=46706 iplen=52  seq=1159937120 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (63.7252s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=42 id=48033 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (63.7504s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=58 id=8396 iplen=60  seq=1159937120 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.7758s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=53 id=330 iplen=60  seq=1159937120 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.8010s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=45 id=32537 iplen=60  seq=1159937120 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.8264s) TCP 10.10.14.156:44328 > 10.129.141.253:38079 S ttl=50 id=53520 iplen=60  seq=1159937120 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.8524s) TCP 10.10.14.156:44329 > 10.129.141.253:38079 A ttl=39 id=26684 iplen=60  seq=1159937120 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.8777s) TCP 10.10.14.156:44330 > 10.129.141.253:38079 FPU ttl=38 id=32810 iplen=60  seq=1159937120 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (63.9048s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=9) id=33161 seq=295] IP [ttl=51 id=50853 iplen=148 ]
+SENT (63.9303s) ICMP [10.10.14.156 > 10.129.141.253 Echo request (type=8/code=0) id=33162 seq=296] IP [ttl=45 id=32876 iplen=178 ]
+SENT (63.9564s) UDP 10.10.14.156:44275 > 10.129.141.253:38896 ttl=53 id=4162 iplen=328 
+SENT (63.9815s) TCP 10.10.14.156:44317 > 10.129.141.253:22 S ttl=58 id=1143 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (64.0166s) TCP 10.10.14.156:44318 > 10.129.141.253:22 S ttl=53 id=8387 iplen=60  seq=1159937120 win=63 <mss 1400,wscale 0,sackOK,timestamp 4294967295 0,eol>
+SENT (64.0418s) TCP 10.10.14.156:44319 > 10.129.141.253:22 S ttl=50 id=34363 iplen=60  seq=1159937120 win=4 <timestamp 4294967295 0,nop,nop,wscale 5,nop,mss 640>
+SENT (64.0676s) TCP 10.10.14.156:44320 > 10.129.141.253:22 S ttl=42 id=56637 iplen=56  seq=1159937120 win=4 <sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (64.0929s) TCP 10.10.14.156:44321 > 10.129.141.253:22 S ttl=38 id=9198 iplen=60  seq=1159937120 win=16 <mss 536,sackOK,timestamp 4294967295 0,wscale 10,eol>
+SENT (64.1183s) TCP 10.10.14.156:44322 > 10.129.141.253:22 S ttl=53 id=46466 iplen=56  seq=1159937120 win=512 <mss 265,sackOK,timestamp 4294967295 0>
+SENT (64.1440s) TCP 10.10.14.156:44323 > 10.129.141.253:22 SEC ttl=56 id=14137 iplen=52  seq=1159937120 win=3 <wscale 10,nop,mss 1460,sackOK,nop,nop>
+SENT (64.1692s) TCP 10.10.14.156:44324 > 10.129.141.253:22 S ttl=51 id=38783 iplen=60  seq=1159937120 win=1 <wscale 10,nop,mss 1460,timestamp 4294967295 0,sackOK>
+SENT (64.1943s) TCP 10.10.14.156:44325 > 10.129.141.253:22  ttl=42 id=29053 iplen=60  seq=1159937120 win=128 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (64.2200s) TCP 10.10.14.156:44326 > 10.129.141.253:22 SFPU ttl=41 id=54146 iplen=60  seq=1159937120 win=256 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (64.2455s) TCP 10.10.14.156:44327 > 10.129.141.253:22 A ttl=52 id=7204 iplen=60  seq=1159937120 win=1024 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (64.2709s) TCP 10.10.14.156:44328 > 10.129.141.253:38079 S ttl=59 id=19457 iplen=60  seq=1159937120 win=31337 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (64.2961s) TCP 10.10.14.156:44329 > 10.129.141.253:38079 A ttl=41 id=47809 iplen=60  seq=1159937120 win=32768 <wscale 10,nop,mss 265,timestamp 4294967295 0,sackOK>
+SENT (64.3213s) TCP 10.10.14.156:44330 > 10.129.141.253:38079 FPU ttl=38 id=9679 iplen=60  seq=1159937120 win=65535 <wscale 15,nop,mss 265,timestamp 4294967295 0,sackOK>
+Nmap scan report for 10.129.141.253
+Host is up (0.062s latency).
+
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp    open  http        Apache httpd 2.4.18 ((Ubuntu))
+10001/tcp open  scp-config?
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov 24 09:56:11 2023 -- 1 IP address (1 host up) scanned in 76.69 seconds

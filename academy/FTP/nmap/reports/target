@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Nov 20 08:50:07 2023 as: nmap -sC -sV -p22,80,110,139,143,445 -v -oX target 10.129.110.43 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p22,80,110,139,143,445 -v -oX target 10.129.110.43" start="1700488207" startstr="Mon Nov 20 08:50:07 2023" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="22,80,110,139,143,445"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1700488207"/>
+<taskend task="NSE" time="1700488207"/>
+<taskbegin task="NSE" time="1700488207"/>
+<taskend task="NSE" time="1700488207"/>
+<taskbegin task="NSE" time="1700488207"/>
+<taskend task="NSE" time="1700488207"/>
+<taskbegin task="Ping Scan" time="1700488207"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.110.43" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1700488207" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1700488207"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1700488207"/>
+<taskbegin task="Connect Scan" time="1700488207"/>
+<taskend task="Connect Scan" time="1700488207" extrainfo="6 total ports"/>
+<taskbegin task="Service scan" time="1700488207"/>
+<taskend task="Service scan" time="1700488219" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1700488219"/>
+<taskend task="NSE" time="1700488223"/>
+<taskbegin task="NSE" time="1700488223"/>
+<taskend task="NSE" time="1700488225"/>
+<taskbegin task="NSE" time="1700488225"/>
+<taskend task="NSE" time="1700488225"/>
+<host starttime="1700488207" endtime="1700488225"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.129.110.43" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.129.110.43" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 71:c1:89:90:7f:fd:4f:60:e0:54:f3:85:e6:35:6c:2b (RSA)&#xa;  256 e1:8e:53:18:42:af:2a:de:c0:12:1e:2e:54:06:4f:70 (ECDSA)&#xa;  256 1a:cc:ac:d4:94:5c:d6:1d:71:e7:39:de:14:27:3c:3c (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">71c189907ffd4f60e054f385e6356c2b</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDr2YB2/40YrrErlHXzWfgYCUcZCTpFeBnqVXue5uYqKAV961pye8zskJ4Sr9Mn9PYG6XPyb/nBWctn0cU0VSmN1QxVckCKGqyzoe205K4wtZl5Ce8E14HnxWBpPqvFJ/cAikVOfrxqKN/+t16izgC9KlwfGCxUvLIBHQ4WbvILh8P8SLH1yfFNwysixxs/uEhPazQk2jJSM8bVGjwpBQFmu4MknTEp8FopLc85YcE1+bUzfRWiCwGGkduqsXWA83d85xpEFGdyKLA7opNACF+Bu0JxMNCrzN7zjmBNA/AbR3qYxDFgoTIpXjiyKBaI+SAXmEc0qd4Y33KKiV1qCSuj</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">e18e531842af2adec0121e2e54064f70</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGv0sbrw1LxweleKPu4qQiS6C5snxYJx2or+LW1TTZ0Kua5+k/8gHggHB+THj1nWC24orC3Ho907AMxr5CAevAk=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">1accacd4945cd61d71e739de14273c3c</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIMYSP2Z8qyfE4cFAGOW1XDnPnCPbw2MGkB25pCXsE3L/</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="RESP-CODES PIPELINING CAPA SASL TOP AUTH-RESP-CODE UIDL"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="NIX-NMAP-DEFAULT" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="SASL-IR more IDLE LITERAL+ have Pre-login ID LOGIN-REFERRALS post-login ENABLE listed IMAP4rev1 LOGINDISABLEDA0001 OK capabilities"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.3.11-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="NIX-NMAP-DEFAULT" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<hostscript><script id="nbstat" output="NetBIOS name: NIX-NMAP-DEFAUL, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  NIX-NMAP-DEFAUL&lt;00&gt;  Flags: &lt;unique&gt;&lt;active&gt;&#xa;  NIX-NMAP-DEFAUL&lt;03&gt;  Flags: &lt;unique&gt;&lt;active&gt;&#xa;  NIX-NMAP-DEFAUL&lt;20&gt;  Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.11-Ubuntu)&#xa;  Computer name: nix-nmap-default&#xa;  NetBIOS computer name: NIX-NMAP-DEFAULT\x00&#xa;  Domain name: \x00&#xa;  FQDN: nix-nmap-default&#xa;  System time: 2023-11-20T14:52:18+01:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.11-Ubuntu</elem>
+<elem key="server">NIX-NMAP-DEFAULT\x00</elem>
+<elem key="date">2023-11-20T14:52:18+01:00</elem>
+<elem key="fqdn">nix-nmap-default</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2023-11-20T13:52:18&#xa;  start_date: N/A"><elem key="date">2023-11-20T13:52:18</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: -18m01s, deviation: 34m38s, median: 1m58s"><elem key="mean">-1081</elem>
+<elem key="median">118</elem>
+<elem key="count">3</elem>
+<elem key="stddev">2078</elem>
+</script></hostscript><times srtt="100206" rttvar="43720" to="275086"/>
+</host>
+<taskbegin task="NSE" time="1700488225"/>
+<taskend task="NSE" time="1700488225"/>
+<taskbegin task="NSE" time="1700488225"/>
+<taskend task="NSE" time="1700488225"/>
+<taskbegin task="NSE" time="1700488225"/>
+<taskend task="NSE" time="1700488225"/>
+<runstats><finished time="1700488225" timestr="Mon Nov 20 08:50:25 2023" summary="Nmap done at Mon Nov 20 08:50:25 2023; 1 IP address (1 host up) scanned in 18.35 seconds" elapsed="18.35" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

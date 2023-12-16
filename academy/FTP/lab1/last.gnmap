@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Fri Nov 24 09:54:54 2023 as: nmap -sS -script=banner -sV -p22,80,10001 -n --packet-trace -PE --disable-arp-ping -Pn -O -oA last 10.129.141.253
+Host: 10.129.141.253 ()	Status: Up
+Host: 10.129.141.253 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/, 10001/open/tcp//scp-config?///
+# Nmap done at Fri Nov 24 09:56:11 2023 -- 1 IP address (1 host up) scanned in 76.69 seconds

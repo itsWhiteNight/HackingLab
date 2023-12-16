@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--generated with nmap.xsl - version 0.9c by Benjamin Erb - http://www.benjamin-erb.de/nmap_xsl.php --><style type="text/css">
+/* stylesheet print */
+@media print
+{
+  #menu {
+    display:none;
+  }
+
+  body {
+    font-family: Verdana, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    font-size: 13pt;
+    font-weight:bold;
+    margin:4pt 0pt 0pt 0pt;
+    padding:0;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight:bold;
+    margin:3pt 0pt 0pt 0pt;
+    padding:0;
+  }
+
+  h3, a:link, a:visited {
+    font-size: 9pt;
+    font-weight:bold;
+    margin:1pt 0pt 0pt 20pt;
+    padding:0;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  p,ul {
+    font-size: 9pt;
+    margin:1pt 0pt 8pt 40pt;
+    padding:0;
+    text-align:left;
+  }
+
+  li {
+    font-size: 9pt;
+    margin:0;
+    padding:0;
+    text-align:left;
+  }
+
+  table {
+    margin:1pt 0pt 8pt 40pt;
+    border:0px;
+    width:90%
+  }
+
+  td {
+    border:0px;
+    border-top:1px solid black;
+    font-size: 9pt;
+  }
+
+  .head td {
+    border:0px;
+    font-weight:bold;
+    font-size: 9pt;
+  }
+  .noprint { display: none; }
+}
+
+/* stylesheet screen */
+@media screen
+{
+  body {
+    font-family: Verdana, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+  }
+
+  #container {
+    text-align:left;
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  h1 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 14pt;
+    color: #FFFFFF;
+    background-color:#2A0D45;
+    margin:10px 0px 0px 0px;
+    padding:5px 4px 5px 4px;
+    width: 100%;
+    border:1px solid black;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 11pt;
+    color: #000000;
+    margin:30px 0px 0px 0px;
+    padding:4px;
+    width: 100%;
+    background-color:#F0F8FF;
+    text-align: left;
+  }
+
+  h2.green {
+    color: #000000;
+    background-color:#CCFFCC;
+    border-color:#006400;
+  }
+
+  h2.red {
+    color: #000000;
+    background-color:#FFCCCC;
+    border-color:#8B0000;
+  }
+   
+  h3 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 10pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  p {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  p i {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #CCCCCC;
+  }
+
+  ul {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  a {
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 8pt;
+    color:#000000;
+    font-weight:bold;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  li a {
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 10pt;
+    color:#000000;
+    font-weight:bold;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a.up {
+      color:#006400;
+  }
+
+  table {
+    width: 80%;
+    border:0px;
+    color: #000000;
+    background-color: #000000;
+    margin:10px;
+  }
+
+  tr {
+    vertical-align:top;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+  }
+
+  tr.head {
+    background-color: #E1E1E1;
+    color: #000000;
+    font-weight:bold;
+  }
+
+  tr.open {
+    background-color: #CCFFCC;
+    color: #000000;
+  }
+	
+  tr.script {
+    background-color: #EFFFF7;
+    color: #000000;
+  }
+
+  tr.filtered {
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+
+  tr.closed {
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+    
+  td {
+    padding:2px;
+  }
+        
+  #menu li {
+    display         : inline;
+    margin          : 0;
+    /*margin-right    : 10px;*/
+    padding         : 0;
+    list-style-type : none;
+  }    
+ 
+  #menubox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 120px;
+  }
+  
+  
+  
+  /* This section handle's IE's refusal to honor the fixed CSS attribute */
+  
+  * html div#menubox {
+    position: absolute;
+    top:expression(eval(
+      document.compatMode && document.compatMode=='CSS1Compat') ?
+      documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) 
+      : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
+  }
+  /* This fixes the jerky effect when scrolling in IE*/
+  * html,* html body {
+    background: #fff url(nosuchfile) fixed;
+  }
+
+  
+ 
+  .up {
+    color: #000000;
+    background-color:#CCFFCC;
+  }
+  
+  .down {
+    color:#626262;
+    background-color: #F2F2F2;
+  }
+
+  .print_only { display: none; }
+  .hidden { display: none; }
+  .unhidden { display: block; }
+  
+}
+</style>
+<title>Nmap Scan Report - Scanned at Mon Nov 20 08:50:07 2023</title>
+<script type="text/javascript">
+     
+      
+                
+      function toggle(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+          item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+      }
+           
+      function togglePorts(tableID,portState) {
+        var table = document.getElementById(tableID);    
+        var tbody = table.getElementsByTagName("tbody")[0];
+        var rows = tbody.getElementsByTagName("tr");
+        for (var i=0; i < rows.length; i++) {
+          var value = rows[i].getElementsByTagName("td")[2].firstChild.nodeValue;
+          if (value == portState) {
+            rows[i].style.display = (rows[i].style.display == 'none')?'':'none';
+          }
+        }
+      }
+      
+      function toggleAll(portState) {
+        var allTables = document.getElementsByTagName("table");
+        for (var c=0; c < allTables.length; c++) {
+          if (allTables[c].id != "") {
+            togglePorts(allTables[c].id, portState)
+          }
+        }
+      }
+      
+      function init (){
+        toggleAll('closed');
+        toggleAll('filtered');     
+      }     
+            
+      window.onload = init; 
+      
+      
+    
+    </script>
+</head>
+<body>
+<a name="top"></a><div id="container">
+<h1>Nmap Scan Report - Scanned at Mon Nov 20 08:50:07 2023</h1>
+<ul id="menu">
+<li><a href="#scansummary">Scan Summary</a></li>
+<li> | <a href="#host_10_129_110_43" class="up">10.129.110.43 (10.129.110.43)
+                  </a>
+</li>
+</ul>
+<a name="scansummary"></a><hr class="print_only">
+<h2>Scan Summary</h2>
+<p>
+      Nmap 7.94SVN was initiated at Mon Nov 20 08:50:07 2023 with these arguments:<br><i>nmap -sC -sV -p22,80,110,139,143,445 -v -oX target 10.129.110.43</i><br></p>
+<p>
+    Verbosity: 1; Debug level 0</p>
+<p>Nmap done at Mon Nov 20 08:50:25 2023; 1 IP address (1 host up) scanned in 18.35 seconds</p>
+<hr class="print_only">
+<a name="host_10_129_110_43"></a><h2 class="up">10.129.110.43 / 10.129.110.43<span class="print_only">(online)</span>
+</h2>
+<div id="hostblock_10.129.110.43" class="unhidden">
+<h3>Address</h3>
+<ul><li>10.129.110.43
+            (ipv4)
+          </li></ul>
+
+<h3>Hostnames</h3>
+<ul>
+<li>10.129.110.43 (PTR)</li>
+</ul>
+<h3>Ports</h3>
+<table id="porttable_10.129.110.43" cellspacing="1">
+<tr class="head">
+<td colspan="2">Port</td>
+<td>State 
+          <a href="javascript:togglePorts('porttable_10.129.110.43','closed');"><span class="noprint"><small> (toggle closed [0] </small></span></a><a href="javascript:togglePorts('porttable_10.129.110.43','filtered');"><span class="noprint"><small> | filtered [0])</small></span></a>
+</td>
+<td>Service</td>
+<td>Reason</td>
+<td>Product</td>
+<td>Version</td>
+<td>Extra info</td>
+</tr>
+<tr class="open">
+<td>22</td>
+<td>tcp</td>
+<td>open</td>
+<td>ssh </td>
+<td>syn-ack</td>
+<td>OpenSSH </td>
+<td>7.2p2 Ubuntu 4ubuntu2.10 </td>
+<td>Ubuntu Linux; protocol 2.0 </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>ssh-hostkey </td>
+<td colspan="6"><pre>
+  2048 71:c1:89:90:7f:fd:4f:60:e0:54:f3:85:e6:35:6c:2b (RSA)
+  256 e1:8e:53:18:42:af:2a:de:c0:12:1e:2e:54:06:4f:70 (ECDSA)
+  256 1a:cc:ac:d4:94:5c:d6:1d:71:e7:39:de:14:27:3c:3c (ED25519) </pre></td>
+</tr>
+<tr class="open">
+<td>80</td>
+<td>tcp</td>
+<td>open</td>
+<td>http </td>
+<td>syn-ack</td>
+<td>Apache httpd </td>
+<td>2.4.18 </td>
+<td>(Ubuntu) </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-server-header </td>
+<td colspan="6"><pre>Apache/2.4.18 (Ubuntu) </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-title </td>
+<td colspan="6"><pre>Apache2 Ubuntu Default Page: It works </pre></td>
+</tr>
+<tr class="script">
+<td></td>
+<td>http-methods </td>
+<td colspan="6"><pre>
+  Supported Methods: OPTIONS GET HEAD POST </pre></td>
+</tr>
+<tr class="open">
+<td>110</td>
+<td>tcp</td>
+<td>open</td>
+<td>pop3 </td>
+<td>syn-ack</td>
+<td>Dovecot pop3d </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>pop3-capabilities </td>
+<td colspan="6"><pre>RESP-CODES PIPELINING CAPA SASL TOP AUTH-RESP-CODE UIDL </pre></td>
+</tr>
+<tr class="open">
+<td>139</td>
+<td>tcp</td>
+<td>open</td>
+<td>netbios-ssn </td>
+<td>syn-ack</td>
+<td>Samba smbd </td>
+<td>3.X - 4.X </td>
+<td>workgroup: WORKGROUP </td>
+</tr>
+<tr class="open">
+<td>143</td>
+<td>tcp</td>
+<td>open</td>
+<td>imap </td>
+<td>syn-ack</td>
+<td>Dovecot imapd </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="script">
+<td></td>
+<td>imap-capabilities </td>
+<td colspan="6"><pre>SASL-IR more IDLE LITERAL+ have Pre-login ID LOGIN-REFERRALS post-login ENABLE listed IMAP4rev1 LOGINDISABLEDA0001 OK capabilities </pre></td>
+</tr>
+<tr class="open">
+<td>445</td>
+<td>tcp</td>
+<td>open</td>
+<td>netbios-ssn </td>
+<td>syn-ack</td>
+<td>Samba smbd </td>
+<td>4.3.11-Ubuntu </td>
+<td>workgroup: WORKGROUP </td>
+</tr>
+</table>
+<h3>Host Script Output</h3>
+<table>
+<tr class="head">
+<td>Script Name</td>
+<td>Output</td>
+</tr>
+<tr class="script">
+<td>nbstat </td>
+<td><pre>NetBIOS name: NIX-NMAP-DEFAUL, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)
+Names:
+  NIX-NMAP-DEFAUL&lt;00&gt;  Flags: &lt;unique&gt;&lt;active&gt;
+  NIX-NMAP-DEFAUL&lt;03&gt;  Flags: &lt;unique&gt;&lt;active&gt;
+  NIX-NMAP-DEFAUL&lt;20&gt;  Flags: &lt;unique&gt;&lt;active&gt;
+  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;
+  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt; </pre></td>
+</tr>
+<tr class="script">
+<td>smb-os-discovery </td>
+<td><pre>
+  OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+  Computer name: nix-nmap-default
+  NetBIOS computer name: NIX-NMAP-DEFAULT\x00
+  Domain name: \x00
+  FQDN: nix-nmap-default
+  System time: 2023-11-20T14:52:18+01:00
+ </pre></td>
+</tr>
+<tr class="script">
+<td>smb-security-mode </td>
+<td><pre>
+  account_used: guest
+  authentication_level: user
+  challenge_response: supported
+  message_signing: disabled (dangerous, but default) </pre></td>
+</tr>
+<tr class="script">
+<td>smb2-security-mode </td>
+<td><pre>
+  3:1:1: 
+    Message signing enabled but not required </pre></td>
+</tr>
+<tr class="script">
+<td>smb2-time </td>
+<td><pre>
+  date: 2023-11-20T13:52:18
+  start_date: N/A </pre></td>
+</tr>
+<tr class="script">
+<td>clock-skew </td>
+<td><pre>mean: -18m01s, deviation: 34m38s, median: 1m58s </pre></td>
+</tr>
+</table>
+<br><a href="javascript:toggle('metrics_10.129.110.43');">
+    Misc Metrics <span class="noprint"><small> (click to expand)</small></span></a><div id="metrics_10.129.110.43" class="hidden"><table cellspacing="1">
+<tr class="head">
+<td>Metric</td>
+<td>Value</td>
+</tr>
+<tr>
+<td>Ping Results</td>
+<td>conn-refused</td>
+</tr>
+</table></div>
+</div>
+</div>
+<div id="menubox" class="noprint">
+<a href="#top"><small>Go to top</small></a><br><a href="javascript:toggleAll('closed');"><small>Toggle Closed Ports</small></a><br><a href="javascript:toggleAll('filtered');"><small>Toggle Filtered Ports</small></a>
+</div>
+</body>
+</html>

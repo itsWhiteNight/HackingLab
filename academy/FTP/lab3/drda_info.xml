@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Nov 24 17:29:08 2023 as: nmap -sS -sV -&#45;script=db2-das-info -p50000 -&#45;disable-arp-ping -&#45;packet-trace -Pn -&#45;source-port 53 -oX drda_info.xml 10.129.197.9 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -&#45;script=db2-das-info -p50000 -&#45;disable-arp-ping -&#45;packet-trace -Pn -&#45;source-port 53 -oX drda_info.xml 10.129.197.9" start="1700864948" startstr="Fri Nov 24 17:29:08 2023" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="50000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1700864948" endtime="1700864950"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.197.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.129.197.9" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="50000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ibm-db2" method="table" conf="3"/></port>
+</ports>
+</host>
+<runstats><finished time="1700864950" timestr="Fri Nov 24 17:29:10 2023" summary="Nmap done at Fri Nov 24 17:29:10 2023; 1 IP address (1 host up) scanned in 2.36 seconds" elapsed="2.36" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Nov 24 09:54:54 2023 as: nmap -sS -script=banner -sV -p22,80,10001 -n -&#45;packet-trace -PE -&#45;disable-arp-ping -Pn -O -oA last 10.129.141.253 -->
+<nmaprun scanner="nmap" args="nmap -sS -script=banner -sV -p22,80,10001 -n -&#45;packet-trace -PE -&#45;disable-arp-ping -Pn -O -oA last 10.129.141.253" start="1700837694" startstr="Fri Nov 24 09:54:54 2023" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,80,10001"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1700837694" endtime="1700837771"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.141.253" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service></port>
+<port protocol="tcp" portid="10001"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="scp-config" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+</os>
+<times srtt="62069" rttvar="35637" to="204617"/>
+</host>
+<runstats><finished time="1700837771" timestr="Fri Nov 24 09:56:11 2023" summary="Nmap done at Fri Nov 24 09:56:11 2023; 1 IP address (1 host up) scanned in 76.69 seconds" elapsed="76.69" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,338 @@
+kali㉿kali)-[~/…/hackthebox/academy/SMB/enum4linux-ng]
+└─$ python3 enum4linux-ng.py 10.129.5.226                                    
+ENUM4LINUX - next generation (v1.3.2)
+
+ ==========================
+|    Target Information    |
+ ==========================
+[*] Target ........... 10.129.5.226
+[*] Username ......... ''
+[*] Random Username .. 'nifxfkwy'
+[*] Password ......... ''
+[*] Timeout .......... 5 second(s)
+
+ =====================================
+|    Listener Scan on 10.129.5.226    |
+ =====================================
+[*] Checking LDAP
+[-] Could not connect to LDAP on 389/tcp: connection refused
+[*] Checking LDAPS
+[-] Could not connect to LDAPS on 636/tcp: connection refused
+[*] Checking SMB
+[+] SMB is accessible on 445/tcp
+[*] Checking SMB over NetBIOS
+[+] SMB over NetBIOS is accessible on 139/tcp
+
+ ===========================================================
+|    NetBIOS Names and Workgroup/Domain for 10.129.5.226    |
+ ===========================================================
+[+] Got domain/workgroup name: DEVOPS
+[+] Full NetBIOS names information:
+- DEVSMB          <00> -         H <ACTIVE>  Workstation Service                                                                                                                                                                            
+- DEVSMB          <03> -         H <ACTIVE>  Messenger Service                                                                                                                                                                              
+- DEVSMB          <20> -         H <ACTIVE>  File Server Service                                                                                                                                                                            
+- ..__MSBROWSE__. <01> - <GROUP> H <ACTIVE>  Master Browser                                                                                                                                                                                 
+- DEVOPS          <00> - <GROUP> H <ACTIVE>  Domain/Workgroup Name                                                                                                                                                                          
+- DEVOPS          <1d> -         H <ACTIVE>  Master Browser                                                                                                                                                                                 
+- DEVOPS          <1e> - <GROUP> H <ACTIVE>  Browser Service Elections                                                                                                                                                                      
+- MAC Address = 00-00-00-00-00-00                                                                                                                                                                                                           
+
+ =========================================
+|    SMB Dialect Check on 10.129.5.226    |
+ =========================================
+[*] Trying on 445/tcp
+[+] Supported dialects and settings:
+Supported dialects:                                                                                                                                                                                                                         
+  SMB 1.0: false                                                                                                                                                                                                                            
+  SMB 2.02: true                                                                                                                                                                                                                            
+  SMB 2.1: true                                                                                                                                                                                                                             
+  SMB 3.0: true                                                                                                                                                                                                                             
+  SMB 3.1.1: true                                                                                                                                                                                                                           
+Preferred dialect: SMB 3.0                                                                                                                                                                                                                  
+SMB1 only: false                                                                                                                                                                                                                            
+SMB signing required: false                                                                                                                                                                                                                 
+
+ ===========================================================
+|    Domain Information via SMB session for 10.129.5.226    |
+ ===========================================================
+[*] Enumerating via unauthenticated SMB session on 445/tcp
+[+] Found domain information via SMB
+NetBIOS computer name: DEVSMB                                                                                                                                                                                                               
+NetBIOS domain name: ''                                                                                                                                                                                                                     
+DNS domain: ''                                                                                                                                                                                                                              
+FQDN: nix01                                                                                                                                                                                                                                 
+Derived membership: workgroup member                                                                                                                                                                                                        
+Derived domain: unknown                                                                                                                                                                                                                     
+
+ =========================================
+|    RPC Session Check on 10.129.5.226    |
+ =========================================
+[*] Check for null session
+[+] Server allows session using username '', password ''
+[*] Check for random user
+[+] Server allows session using username 'nifxfkwy', password ''
+[H] Rerunning enumeration with user 'nifxfkwy' might give more results
+
+ ===================================================
+|    Domain Information via RPC for 10.129.5.226    |
+ ===================================================
+[+] Domain: DEVOPS
+[+] Domain SID: NULL SID
+[+] Membership: workgroup member
+
+ ===============================================
+|    OS Information via RPC for 10.129.5.226    |
+ ===============================================
+[*] Enumerating via unauthenticated SMB session on 445/tcp
+[+] Found OS information via SMB
+[*] Enumerating via 'srvinfo'                                                                                                                                                                                                               
+[+] Found OS information via 'srvinfo'                                                                                                                                                                                                      
+[+] After merging OS information we have the following result:                                                                                                                                                                              
+OS: Linux/Unix                                                                                                                                                                                                                              
+OS version: '6.1'                                                                                                                                                                                                                           
+OS release: ''                                                                                                                                                                                                                              
+OS build: '0'                                                                                                                                                                                                                               
+Native OS: not supported                                                                                                                                                                                                                    
+Native LAN manager: not supported                                                                                                                                                                                                           
+Platform id: '500'                                                                                                                                                                                                                          
+Server type: '0x809a03'                                                                                                                                                                                                                     
+Server type string: Wk Sv PrQ Unx NT SNT InlaneFreight SMB server (Samba, Ubuntu)                                                                                                                                                           
+
+ =====================================
+|    Users via RPC on 10.129.5.226    |
+ =====================================
+[*] Enumerating users via 'querydispinfo'
+[+] Found 0 user(s) via 'querydispinfo'
+[*] Enumerating users via 'enumdomusers'
+[+] Found 0 user(s) via 'enumdomusers'
+
+ ======================================
+|    Groups via RPC on 10.129.5.226    |
+ ======================================
+[*] Enumerating local groups
+[+] Found 0 group(s) via 'enumalsgroups domain'
+[*] Enumerating builtin groups
+[+] Found 0 group(s) via 'enumalsgroups builtin'
+[*] Enumerating domain groups
+[+] Found 0 group(s) via 'enumdomgroups'
+
+ ======================================
+|    Shares via RPC on 10.129.5.226    |
+ ======================================
+[*] Enumerating shares
+[+] Found 3 share(s):
+IPC$:                                                                                                                                                                                                                                       
+  comment: IPC Service (InlaneFreight SMB server (Samba, Ubuntu))                                                                                                                                                                           
+  type: IPC                                                                                                                                                                                                                                 
+print$:                                                                                                                                                                                                                                     
+  comment: Printer Drivers                                                                                                                                                                                                                  
+  type: Disk                                                                                                                                                                                                                                
+sambashare:                                                                                                                                                                                                                                 
+  comment: InFreight SMB v3.1                                                                                                                                                                                                               
+  type: Disk                                                                                                                                                                                                                                
+[*] Testing share IPC$
+[-] Could not check share: STATUS_OBJECT_NAME_NOT_FOUND
+[*] Testing share print$
+[+] Mapping: DENIED, Listing: N/A
+[*] Testing share sambashare
+[+] Mapping: OK, Listing: OK
+
+ =========================================
+|    Policies via RPC for 10.129.5.226    |
+ =========================================
+[*] Trying port 445/tcp
+[+] Found policy:
+Domain password information:                                                                                                                                                                                                                
+  Password history length: None                                                                                                                                                                                                             
+  Minimum password length: 5                                                                                                                                                                                                                
+  Maximum password age: 49710 days 6 hours 21 minutes                                                                                                                                                                                       
+  Password properties:                                                                                                                                                                                                                      
+  - DOMAIN_PASSWORD_COMPLEX: false                                                                                                                                                                                                          
+  - DOMAIN_PASSWORD_NO_ANON_CHANGE: false                                                                                                                                                                                                   
+  - DOMAIN_PASSWORD_NO_CLEAR_CHANGE: false                                                                                                                                                                                                  
+  - DOMAIN_PASSWORD_LOCKOUT_ADMINS: false                                                                                                                                                                                                   
+  - DOMAIN_PASSWORD_PASSWORD_STORE_CLEARTEXT: false                                                                                                                                                                                         
+  - DOMAIN_PASSWORD_REFUSE_PASSWORD_CHANGE: false                                                                                                                                                                                           
+Domain lockout information:                                                                                                                                                                                                                 
+  Lockout observation window: 30 minutes                                                                                                                                                                                                    
+  Lockout duration: 30 minutes                                                                                                                                                                                                              
+  Lockout threshold: None                                                                                                                                                                                                                   
+Domain logoff information:                                                                                                                                                                                                                  
+  Force logoff time: 49710 days 6 hours 21 minutes                                                                                                                                                                                          
+
+ =========================================
+|    Printers via RPC for 10.129.5.226    |
+ =========================================
+[+] No printers returned (this is not an error)
+
+Completed after 22.77 seconds
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/…/hackthebox/academy/SMB/enum4linux-ng]
+└─$ python3 enum4linux-ng.py 10.129.5.226 -A
+ENUM4LINUX - next generation (v1.3.2)
+
+ ==========================
+|    Target Information    |
+ ==========================
+[*] Target ........... 10.129.5.226
+[*] Username ......... ''
+[*] Random Username .. 'jcwvjctu'
+[*] Password ......... ''
+[*] Timeout .......... 5 second(s)
+
+ =====================================
+|    Listener Scan on 10.129.5.226    |
+ =====================================
+[*] Checking LDAP
+[-] Could not connect to LDAP on 389/tcp: connection refused
+[*] Checking LDAPS
+[-] Could not connect to LDAPS on 636/tcp: connection refused
+[*] Checking SMB
+[+] SMB is accessible on 445/tcp
+[*] Checking SMB over NetBIOS
+[+] SMB over NetBIOS is accessible on 139/tcp
+
+ ===========================================================
+|    NetBIOS Names and Workgroup/Domain for 10.129.5.226    |
+ ===========================================================
+[+] Got domain/workgroup name: DEVOPS
+[+] Full NetBIOS names information:
+- DEVSMB          <00> -         H <ACTIVE>  Workstation Service                                                                                                                                                                            
+- DEVSMB          <03> -         H <ACTIVE>  Messenger Service                                                                                                                                                                              
+- DEVSMB          <20> -         H <ACTIVE>  File Server Service                                                                                                                                                                            
+- ..__MSBROWSE__. <01> - <GROUP> H <ACTIVE>  Master Browser                                                                                                                                                                                 
+- DEVOPS          <00> - <GROUP> H <ACTIVE>  Domain/Workgroup Name                                                                                                                                                                          
+- DEVOPS          <1d> -         H <ACTIVE>  Master Browser                                                                                                                                                                                 
+- DEVOPS          <1e> - <GROUP> H <ACTIVE>  Browser Service Elections                                                                                                                                                                      
+- MAC Address = 00-00-00-00-00-00                                                                                                                                                                                                           
+
+ =========================================
+|    SMB Dialect Check on 10.129.5.226    |
+ =========================================
+[*] Trying on 445/tcp
+[+] Supported dialects and settings:
+Supported dialects:                                                                                                                                                                                                                         
+  SMB 1.0: false                                                                                                                                                                                                                            
+  SMB 2.02: true                                                                                                                                                                                                                            
+  SMB 2.1: true                                                                                                                                                                                                                             
+  SMB 3.0: true                                                                                                                                                                                                                             
+  SMB 3.1.1: true                                                                                                                                                                                                                           
+Preferred dialect: SMB 3.0                                                                                                                                                                                                                  
+SMB1 only: false                                                                                                                                                                                                                            
+SMB signing required: false                                                                                                                                                                                                                 
+
+ ===========================================================
+|    Domain Information via SMB session for 10.129.5.226    |
+ ===========================================================
+[*] Enumerating via unauthenticated SMB session on 445/tcp
+[+] Found domain information via SMB
+NetBIOS computer name: DEVSMB                                                                                                                                                                                                               
+NetBIOS domain name: ''                                                                                                                                                                                                                     
+DNS domain: ''                                                                                                                                                                                                                              
+FQDN: nix01                                                                                                                                                                                                                                 
+Derived membership: workgroup member                                                                                                                                                                                                        
+Derived domain: unknown                                                                                                                                                                                                                     
+
+ =========================================
+|    RPC Session Check on 10.129.5.226    |
+ =========================================
+[*] Check for null session
+[+] Server allows session using username '', password ''
+[*] Check for random user
+[+] Server allows session using username 'jcwvjctu', password ''
+[H] Rerunning enumeration with user 'jcwvjctu' might give more results
+
+ ===================================================
+|    Domain Information via RPC for 10.129.5.226    |
+ ===================================================
+[+] Domain: DEVOPS
+[+] Domain SID: NULL SID
+[+] Membership: workgroup member
+
+ ===============================================
+|    OS Information via RPC for 10.129.5.226    |
+ ===============================================
+[*] Enumerating via unauthenticated SMB session on 445/tcp
+[+] Found OS information via SMB
+[*] Enumerating via 'srvinfo'
+[+] Found OS information via 'srvinfo'
+[+] After merging OS information we have the following result:
+OS: Linux/Unix                                                                                                                                                                                                                              
+OS version: '6.1'                                                                                                                                                                                                                           
+OS release: ''                                                                                                                                                                                                                              
+OS build: '0'                                                                                                                                                                                                                               
+Native OS: not supported                                                                                                                                                                                                                    
+Native LAN manager: not supported                                                                                                                                                                                                           
+Platform id: '500'                                                                                                                                                                                                                          
+Server type: '0x809a03'                                                                                                                                                                                                                     
+Server type string: Wk Sv PrQ Unx NT SNT InlaneFreight SMB server (Samba, Ubuntu)                                                                                                                                                           
+
+ =====================================
+|    Users via RPC on 10.129.5.226    |
+ =====================================
+[*] Enumerating users via 'querydispinfo'
+[+] Found 0 user(s) via 'querydispinfo'
+[*] Enumerating users via 'enumdomusers'
+[+] Found 0 user(s) via 'enumdomusers'
+
+ ======================================
+|    Groups via RPC on 10.129.5.226    |
+ ======================================
+[*] Enumerating local groups
+[+] Found 0 group(s) via 'enumalsgroups domain'
+[*] Enumerating builtin groups
+[+] Found 0 group(s) via 'enumalsgroups builtin'
+[*] Enumerating domain groups
+[+] Found 0 group(s) via 'enumdomgroups'
+
+ ======================================
+|    Shares via RPC on 10.129.5.226    |
+ ======================================
+[*] Enumerating shares
+[+] Found 3 share(s):
+IPC$:                                                                                                                                                                                                                                       
+  comment: IPC Service (InlaneFreight SMB server (Samba, Ubuntu))                                                                                                                                                                           
+  type: IPC                                                                                                                                                                                                                                 
+print$:                                                                                                                                                                                                                                     
+  comment: Printer Drivers                                                                                                                                                                                                                  
+  type: Disk                                                                                                                                                                                                                                
+sambashare:                                                                                                                                                                                                                                 
+  comment: InFreight SMB v3.1                                                                                                                                                                                                               
+  type: Disk                                                                                                                                                                                                                                
+[*] Testing share IPC$
+[-] Could not check share: STATUS_OBJECT_NAME_NOT_FOUND
+[*] Testing share print$
+[+] Mapping: DENIED, Listing: N/A
+[*] Testing share sambashare
+[+] Mapping: OK, Listing: OK
+
+ =========================================
+|    Policies via RPC for 10.129.5.226    |
+ =========================================
+[*] Trying port 445/tcp
+[+] Found policy:
+Domain password information:                                                                                                                                                                                                                
+  Password history length: None                                                                                                                                                                                                             
+  Minimum password length: 5                                                                                                                                                                                                                
+  Maximum password age: 49710 days 6 hours 21 minutes                                                                                                                                                                                       
+  Password properties:                                                                                                                                                                                                                      
+  - DOMAIN_PASSWORD_COMPLEX: false                                                                                                                                                                                                          
+  - DOMAIN_PASSWORD_NO_ANON_CHANGE: false                                                                                                                                                                                                   
+  - DOMAIN_PASSWORD_NO_CLEAR_CHANGE: false                                                                                                                                                                                                  
+  - DOMAIN_PASSWORD_LOCKOUT_ADMINS: false                                                                                                                                                                                                   
+  - DOMAIN_PASSWORD_PASSWORD_STORE_CLEARTEXT: false                                                                                                                                                                                         
+  - DOMAIN_PASSWORD_REFUSE_PASSWORD_CHANGE: false                                                                                                                                                                                           
+Domain lockout information:                                                                                                                                                                                                                 
+  Lockout observation window: 30 minutes                                                                                                                                                                                                    
+  Lockout duration: 30 minutes                                                                                                                                                                                                              
+  Lockout threshold: None                                                                                                                                                                                                                   
+Domain logoff information:                                                                                                                                                                                                                  
+  Force logoff time: 49710 days 6 hours 21 minutes                                                                                                                                                                                          
+
+ =========================================
+|    Printers via RPC for 10.129.5.226    |
+ =========================================
+[+] No printers returned (this is not an error)
+
+Completed after 22.90 seconds
+

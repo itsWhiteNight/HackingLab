@@ -1,0 +1,58 @@
+smbclient -N -L //<IP>
+
+smbclient //<IP>/<share>
+
+get flag.txt
+-----------------
+
+rpcclient -U "" <IP>          // rcpclient authentification:
+
+rpcclient $> enumdomusers
+rpcclient $> querydominfo
+
+rpcclient $> querygroup 0x201
+
+rpcclient $> netshareenumall
+rpcclient $> netsharegetinfo sambashare
+
+output: 
+rpcclient $> netshareenumall
+netname: print$
+        remark: Printer Drivers
+        path:   C:\var\lib\samba\printers
+        password:
+netname: sambashare
+        remark: InFreight SMB v3.1
+        path:   C:\home\sambauser\
+        password:
+netname: IPC$
+        remark: IPC Service (InlaneFreight SMB server (Samba, Ubuntu))
+        path:   C:\tmp
+        password:
+rpcclient $> netsharegetinfo sambashare
+netname: sambashare
+        remark: InFreight SMB v3.1
+        path:   C:\home\sambauser\
+        password:
+        type:   0x0
+        perms:  0
+        max_uses:       -1
+        num_uses:       1
+revision: 1
+type: 0x8004: SEC_DESC_DACL_PRESENT SEC_DESC_SELF_RELATIVE 
+DACL
+        ACL     Num ACEs:       1       revision:       2
+        ---
+        ACE
+                type: ACCESS ALLOWED (0) flags: 0x00 
+                Specific bits: 0x1ff
+                Permissions: 0x1f01ff: SYNCHRONIZE_ACCESS WRITE_OWNER_ACCESS WRITE_DAC_ACCESS READ_CONTROL_ACCESS DELETE_ACCESS 
+                SID: S-1-1-0
+--------------------------------------------------
+
+sardump and crackmapexec // find / -type f -name "samrdump.py" 2>/dev/null
+
+python3 /usr/share/doc/python3-impacket/examples/samrdump.py 10.129.5.226
+
+crackmapexec smb 10.129.5.226 --shares -u '' -p ''
+

@@ -1,0 +1,1 @@
+sudo nmap -sS -sV --script=db2-das-info 10.129.197.9 -p50000 --disable-arp-ping --packet-trace -Pn --source-port 53
