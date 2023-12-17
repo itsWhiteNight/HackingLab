@@ -5,7 +5,7 @@
 | `10.10.10.0/24` | Target network range. |
 | `-sn` | Disables port scanning. |
 | `-Pn` | Disables ICMP Echo Requests |
-| `-n` | Disables DNS Resolution. |
+| `-n` | Disables DNS Resolution. | 
 | `-PE` | Performs the ping scan by using ICMP Echo Requests against the target. |
 | `--packet-trace` | Shows all packets sent and received. |
 | `--reason` | Displays the reason for a specific result. |
