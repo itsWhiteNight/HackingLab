@@ -4,7 +4,7 @@
 | `<tool> -h` | Prints the help page of the tool. | 
 | `apropos <keyword>` | Searches through man pages' descriptions for instances of a given keyword. | 
 | `cat` | Concatenate and print files. |
-| `whoami` | Displays current username. | 
+| `whoami` | Displays current username. |  
 | `id` | Returns users identity. | 
 | `hostname` | Sets or prints the name of the current host system. | 
 | `uname` | Prints operating system name. | 
