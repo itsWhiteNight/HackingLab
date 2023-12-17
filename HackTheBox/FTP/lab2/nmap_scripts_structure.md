@@ -1,8 +1,9 @@
+NSE SCRIPTS
 
-Go to :	-->	/usr/share/nmap/scripts
+	Go to :	--------->	/usr/share/nmap/scripts
 
-	── acarsd-info.nse
-			── address-info.nse
+			├── acarsd-info.nse
+			├── address-info.nse
 			├── afp-brute.nse
 			├── afp-ls.nse
 			├── afp-path-vuln.nse
