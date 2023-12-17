@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.174.191 -o Dirsearch --format=xml" time="Sun Dec 17 09:54:37 2023">
+	<target url="http://10.10.174.191/js">
+		<status>301</status>
+		<contentLength>147</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://10.10.174.191/js/</redirect>
+	</target>
+	<target url="http://10.10.174.191/%2e%2e//google.com">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.174.191/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.174.191/\..\..\..\..\..\..\..\..\..\etc\passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.174.191/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.174.191/css">
+		<status>301</status>
+		<contentLength>148</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://10.10.174.191/css/</redirect>
+	</target>
+	<target url="http://10.10.174.191/favicon.ico">
+		<status>200</status>
+		<contentLength>127097</contentLength>
+		<contentType>image/x-icon</contentType>
+	</target>
+	<target url="http://10.10.174.191/fonts">
+		<status>301</status>
+		<contentLength>150</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://10.10.174.191/fonts/</redirect>
+	</target>
+	<target url="http://10.10.174.191/images/">
+		<status>403</status>
+		<contentLength>1233</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.174.191/images">
+		<status>301</status>
+		<contentLength>151</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://10.10.174.191/images/</redirect>
+	</target>
+	<target url="http://10.10.174.191/js/">
+		<status>403</status>
+		<contentLength>1233</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+</dirsearchscan>

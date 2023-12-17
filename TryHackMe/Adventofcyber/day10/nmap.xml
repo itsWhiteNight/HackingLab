@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Dec 17 09:45:18 2023 as: nmap -sV -sC -p80,3389 -oX nmap.xml 10.10.174.191 -->
+<nmaprun scanner="nmap" args="nmap -sV -sC -p80,3389 -oX nmap.xml 10.10.174.191" start="1702824318" startstr="Sun Dec 17 09:45:18 2023" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="80,3389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.174.191" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1702824318" endtime="1702824330"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.174.191" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Worst Grumpy Company"><elem key="title">Worst Grumpy Company</elem>
+</script><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: BFC-WEB-PROD-01&#xa;  NetBIOS_Domain_Name: BFC-WEB-PROD-01&#xa;  NetBIOS_Computer_Name: BFC-WEB-PROD-01&#xa;  DNS_Domain_Name: BFC-WEB-PROD-01&#xa;  DNS_Computer_Name: BFC-WEB-PROD-01&#xa;  Product_Version: 10.0.17763&#xa;  System_Time: 2023-12-17T14:45:30+00:00"><elem key="Target_Name">BFC-WEB-PROD-01</elem>
+<elem key="NetBIOS_Domain_Name">BFC-WEB-PROD-01</elem>
+<elem key="NetBIOS_Computer_Name">BFC-WEB-PROD-01</elem>
+<elem key="DNS_Domain_Name">BFC-WEB-PROD-01</elem>
+<elem key="DNS_Computer_Name">BFC-WEB-PROD-01</elem>
+<elem key="Product_Version">10.0.17763</elem>
+<elem key="System_Time">2023-12-17T14:45:30+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=BFC-WEB-PROD-01&#xa;Not valid before: 2023-10-02T16:38:30&#xa;Not valid after:  2024-04-02T16:38:30"><table key="subject">
+<elem key="commonName">BFC-WEB-PROD-01</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">BFC-WEB-PROD-01</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B74D9D101D6D43E9276A1B38F130B7DCEDEC17C1C1CF467CD3BE855868DE3CF09D34D89AB297DD39318D3F03A2F46A7FC10960F41F14D08210E62D3A2D7FB0A612B05CA57E5F5CB369E8C3D0939CB066C025C60EFED36019C2A24538513756C51B5E964FF99880AB52F4BC25A82329EAD05266454A42E4D8A7E49DDCDD3B36EC606D0FE3FFE3F9C6DAFA81A0EC521B30230CC581FE111E72B885EED5CE3E6B531F71D8B6EC7227D49A2175CE4E4A7B533672AD0FD5C07B14D7367EFC64ECECC69E340ED5DB33D0DF756AFFA1ECAED13A5E5957ADE19E6E7C0D1C7D2D12F958ECC65711EDA0BF88FE5764F13432132D4E63835078D05445A274129C464AE09D01</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-10-02T16:38:30</elem>
+<elem key="notAfter">2024-04-02T16:38:30</elem>
+</table>
+<elem key="md5">d019b819987ed5f19e05ee49a33d2bd6</elem>
+<elem key="sha1">e223e10be15aa8416b1bcc93bce8aa08d0eb1386</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQfgzCvypg6aNAmfDSFn2xzDANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9CRkMtV0VCLVBST0QtMDEwHhcNMjMxMDAyMTYzODMwWhcNMjQw&#xa;NDAyMTYzODMwWjAaMRgwFgYDVQQDEw9CRkMtV0VCLVBST0QtMDEwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3TZ0QHW1D6SdqGzjxMLfc7ewXwcHPRnzT&#xa;voVYaN488J002Jqyl905MY0/A6L0an/BCWD0HxTQghDmLTotf7CmErBcpX5fXLNp&#xa;6MPQk5ywZsAlxg7+02AZwqJFOFE3VsUbXpZP+ZiAq1L0vCWoIynq0FJmRUpC5Nin&#xa;5J3c3Ts27GBtD+P/4/nG2vqBoOxSGzAjDMWB/hEecriF7tXOPmtTH3HYtuxyJ9Sa&#xa;IXXOTkp7UzZyrQ/VwHsU1zZ+/GTs7MaeNA7V2zPQ33Vq/6HsrtE6XllXreGebnwN&#xa;HH0tEvlY7MZXEe2gv4j+V2TxNDITLU5jg1B40FRFonQSnEZK4J0BAgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAYBJ0xHB1crILqpnsUxRBGss2kysEVgek+l/7sxESLx/ZI4jBW0fQ+BpR&#xa;/7hrPMoE9ZEhlsqmILiMSG52WsRXuSxEQhszfBCu2qt8tFPNUDwfvXYP440V3jrm&#xa;azS80pmzRPwo/zPaJGFGHY6JqGqdy6ZHsnFi5ePOF2MGPhroIo9prGRNJftDOPW/&#xa;K3wBFBaCmeWNizBdVWpsBU7L5Cog29d0MVTigoQ5p3f8tgj4+Zq5ydhdNweM1UPn&#xa;8b7bDokphMjTi9mBOf+HVmfj3anDHxWLwK377M1PORuqiYcRK2D73S/gumj5cLFn&#xa;1f7OyCVZ8vMRz6pkOfeGdmZdCp/cSA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2023-12-17T14:45:35+00:00; +5s from scanner time."><elem key="date">2023-12-17T14:45:35+00:00</elem>
+<elem key="delta">5.0</elem>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 4s, deviation: 0s, median: 4s"><elem key="median">4</elem>
+<elem key="mean">4</elem>
+<elem key="stddev">0</elem>
+<elem key="count">2</elem>
+</script></hostscript><times srtt="64838" rttvar="40043" to="225010"/>
+</host>
+<runstats><finished time="1702824330" timestr="Sun Dec 17 09:45:30 2023" summary="Nmap done at Sun Dec 17 09:45:30 2023; 1 IP address (1 host up) scanned in 12.37 seconds" elapsed="12.37" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
