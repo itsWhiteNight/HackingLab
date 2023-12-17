@@ -1,53 +1,54 @@
-/usr/share/nmap/scripts
-├── acarsd-info.nse
-├── address-info.nse
-├── afp-brute.nse
-├── afp-ls.nse
-├── afp-path-vuln.nse
-├── afp-serverinfo.nse
-├── afp-showmount.nse
-├── ajp-auth.nse
-├── ajp-brute.nse
-├── ajp-headers.nse
-├── ajp-methods.nse
-├── ajp-request.nse
-├── allseeingeye-info.nse
-├── amqp-info.nse
-├── asn-query.nse
-├── auth-owners.nse
-├── auth-spoof.nse
-├── backorifice-brute.nse
-├── backorifice-info.nse
-├── bacnet-info.nse
-├── banner.nse
-├── bitcoin-getaddr.nse
-├── bitcoin-info.nse
-├── bitcoinrpc-info.nse
-├── bittorrent-discovery.nse
-├── bjnp-discover.nse
-├── broadcast-ataoe-discover.nse
-├── broadcast-avahi-dos.nse
-├── broadcast-bjnp-discover.nse
-├── broadcast-db2-discover.nse
-├── broadcast-dhcp6-discover.nse
-├── broadcast-dhcp-discover.nse
-├── broadcast-dns-service-discovery.nse
-├── broadcast-dropbox-listener.nse
-├── broadcast-eigrp-discovery.nse
-├── broadcast-hid-discoveryd.nse
-├── broadcast-igmp-discovery.nse
-├── broadcast-jenkins-discover.nse
-├── broadcast-listener.nse
-├── broadcast-ms-sql-discover.nse
-├── broadcast-netbios-master-browser.nse
-├── broadcast-networker-discover.nse
-├── broadcast-novell-locate.nse
-├── broadcast-ospf2-discover.nse
-├── broadcast-pc-anywhere.nse
-├── broadcast-pc-duo.nse
-├── broadcast-pim-discovery.nse
-├── broadcast-ping.nse
-├── broadcast-pppoe-discover.nse
+
+Go to :	-->	/usr/share/nmap/scripts
+			├── acarsd-info.nse
+			├── address-info.nse
+			├── afp-brute.nse
+			├── afp-ls.nse
+			├── afp-path-vuln.nse
+			├── afp-serverinfo.nse
+			├── afp-showmount.nse
+			├── ajp-auth.nse
+			├── ajp-brute.nse
+			├── ajp-headers.nse
+			├── ajp-methods.nse
+			├── ajp-request.nse
+			├── allseeingeye-info.nse
+			├── amqp-info.nse
+			├── asn-query.nse
+			├── auth-owners.nse
+			├── auth-spoof.nse
+			├── backorifice-brute.nse
+			├── backorifice-info.nse
+			├── bacnet-info.nse
+			├── banner.nse
+			├── bitcoin-getaddr.nse
+			├── bitcoin-info.nse
+			├── bitcoinrpc-info.nse
+			├── bittorrent-discovery.nse
+			├── bjnp-discover.nse
+			├── broadcast-ataoe-discover.nse
+			├── broadcast-avahi-dos.nse
+			├── broadcast-bjnp-discover.nse
+			├── broadcast-db2-discover.nse
+			├── broadcast-dhcp6-discover.nse
+			├── broadcast-dhcp-discover.nse
+			├── broadcast-dns-service-discovery.nse
+			├── broadcast-dropbox-listener.nse
+			├── broadcast-eigrp-discovery.nse
+			├── broadcast-hid-discoveryd.nse
+			├── broadcast-igmp-discovery.nse
+			├── broadcast-jenkins-discover.nse
+			├── broadcast-listener.nse
+			├── broadcast-ms-sql-discover.nse
+			├── broadcast-netbios-master-browser.nse
+			├── broadcast-networker-discover.nse
+			├── broadcast-novell-locate.nse
+			├── broadcast-ospf2-discover.nse
+			├── broadcast-pc-anywhere.nse
+			├── broadcast-pc-duo.nse
+			├── broadcast-pim-discovery.nse
+			├── broadcast-ping.nse
+			├── broadcast-pppoe-discover.nse
 ├── broadcast-rip-discover.nse
 ├── broadcast-ripng-discover.nse
 ├── broadcast-sonicwall-discover.nse
