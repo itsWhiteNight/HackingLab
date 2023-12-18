@@ -22,4 +22,5 @@ All content in this repository is intended for educational purposes and ethical 
 Ensure that you have the necessary permissions before applying any techniques or tools in a live environment.
 
 Happy hacking!
-itsWhiteNight
+
+itsWhiteNight.
