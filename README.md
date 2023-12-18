@@ -1,7 +1,7 @@
 ## *HACKING LAB*
       Welcome to HackingLab! This repository contains various resources and projects related to ethical hacking,
       penetration testing, and cybersecurity 
-      HackingLab aims to provide valuable content and tools in the field of cybersecurity.
+      I aim to provide and make at dispositionv aluable content and tools for people learning cybersecurity. 
       
 ## *Contents*
    CheatSheets
@@ -15,7 +15,7 @@
             Reports, figures , scans . Everything is here , exploits and payloads too !
   Template
       
-      Report Template: A template for organizing and structuring new projects or repositories.
+            Report Template: A template for organizing and structuring new projects or repositories.
   Disclaimer
   
         All content in this repository is intended for educational purposes and ethical hacking activities. 
