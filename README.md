@@ -16,9 +16,10 @@
   Template
       
             Report Template: A template for organizing and structuring new projects or repositories.
-  Disclaimer
+## *Disclaimer*
   
-        All content in this repository is intended for educational purposes and ethical hacking activities. 
-        Ensure that you have the necessary permissions before applying any techniques or tools in a live environment.
+All content in this repository is intended for educational purposes and ethical hacking activities.         
+Ensure that you have the necessary permissions before applying any techniques or tools in a live environment.
 
 Happy hacking!
+itsWhiteNight
