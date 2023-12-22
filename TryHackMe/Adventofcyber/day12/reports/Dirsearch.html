@@ -1,0 +1,721 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Whitenight Junior Pentester</title>
+<style>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #8447f0, #5e2ca5); /* Purple gradient background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          header {
+            background-color: #5e2ca5;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+          }
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+          }
+          th {
+            background-color: #5e2ca5;
+            color: #fff;
+          }
+          a {
+            color: #5e2ca5;
+            text-decoration: none;
+          }
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+          }
+        </style>
+</head>
+<body>
+<header><h1>🕷️ Whitenight - Phantom Troupe 🌙</h1></header><table>
+<tr>
+<th>URL</th>
+<th>Status</th>
+<th>Content Length</th>
+<th>Content Type</th>
+<th>Redirect</th>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/;/admin">http://10.10.45.195:8080/;/admin</a></td>
+<td>400</td>
+<td>556</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/;/json">http://10.10.45.195:8080/;/json</a></td>
+<td>400</td>
+<td>555</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/;admin/">http://10.10.45.195:8080/;admin/</a></td>
+<td>400</td>
+<td>556</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/;/login">http://10.10.45.195:8080/;/login</a></td>
+<td>400</td>
+<td>556</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/;login/">http://10.10.45.195:8080/;login/</a></td>
+<td>400</td>
+<td>556</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/;json/">http://10.10.45.195:8080/;json/</a></td>
+<td>400</td>
+<td>555</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/about">http://10.10.45.195:8080/about</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/about/">http://10.10.45.195:8080/about/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/auditevents">http://10.10.45.195:8080/actuator/;/auditevents</a></td>
+<td>400</td>
+<td>571</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/beans">http://10.10.45.195:8080/actuator/;/beans</a></td>
+<td>400</td>
+<td>565</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/auditLog">http://10.10.45.195:8080/actuator/;/auditLog</a></td>
+<td>400</td>
+<td>568</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/conditions">http://10.10.45.195:8080/actuator/;/conditions</a></td>
+<td>400</td>
+<td>570</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/dump">http://10.10.45.195:8080/actuator/;/dump</a></td>
+<td>400</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/configprops">http://10.10.45.195:8080/actuator/;/configprops</a></td>
+<td>400</td>
+<td>571</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/caches">http://10.10.45.195:8080/actuator/;/caches</a></td>
+<td>400</td>
+<td>566</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/env">http://10.10.45.195:8080/actuator/;/env</a></td>
+<td>400</td>
+<td>563</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/configurationMetadata">http://10.10.45.195:8080/actuator/;/configurationMetadata</a></td>
+<td>400</td>
+<td>581</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/events">http://10.10.45.195:8080/actuator/;/events</a></td>
+<td>400</td>
+<td>566</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/features">http://10.10.45.195:8080/actuator/;/features</a></td>
+<td>400</td>
+<td>568</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/flyway">http://10.10.45.195:8080/actuator/;/flyway</a></td>
+<td>400</td>
+<td>566</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/health">http://10.10.45.195:8080/actuator/;/health</a></td>
+<td>400</td>
+<td>566</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/heapdump">http://10.10.45.195:8080/actuator/;/heapdump</a></td>
+<td>400</td>
+<td>568</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/info">http://10.10.45.195:8080/actuator/;/info</a></td>
+<td>400</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/exportRegisteredServices">http://10.10.45.195:8080/actuator/;/exportRegisteredServices</a></td>
+<td>400</td>
+<td>584</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/healthcheck">http://10.10.45.195:8080/actuator/;/healthcheck</a></td>
+<td>400</td>
+<td>571</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/integrationgraph">http://10.10.45.195:8080/actuator/;/integrationgraph</a></td>
+<td>400</td>
+<td>576</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/logfile">http://10.10.45.195:8080/actuator/;/logfile</a></td>
+<td>400</td>
+<td>567</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/loggers">http://10.10.45.195:8080/actuator/;/loggers</a></td>
+<td>400</td>
+<td>567</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/httptrace">http://10.10.45.195:8080/actuator/;/httptrace</a></td>
+<td>400</td>
+<td>569</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/loggingConfig">http://10.10.45.195:8080/actuator/;/loggingConfig</a></td>
+<td>400</td>
+<td>573</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/liquibase">http://10.10.45.195:8080/actuator/;/liquibase</a></td>
+<td>400</td>
+<td>569</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/jolokia">http://10.10.45.195:8080/actuator/;/jolokia</a></td>
+<td>400</td>
+<td>567</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/metrics">http://10.10.45.195:8080/actuator/;/metrics</a></td>
+<td>400</td>
+<td>567</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/mappings">http://10.10.45.195:8080/actuator/;/mappings</a></td>
+<td>400</td>
+<td>568</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/refresh">http://10.10.45.195:8080/actuator/;/refresh</a></td>
+<td>400</td>
+<td>567</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/releaseAttributes">http://10.10.45.195:8080/actuator/;/releaseAttributes</a></td>
+<td>400</td>
+<td>577</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/registeredServices">http://10.10.45.195:8080/actuator/;/registeredServices</a></td>
+<td>400</td>
+<td>578</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/resolveAttributes">http://10.10.45.195:8080/actuator/;/resolveAttributes</a></td>
+<td>400</td>
+<td>577</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/scheduledtasks">http://10.10.45.195:8080/actuator/;/scheduledtasks</a></td>
+<td>400</td>
+<td>574</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/springWebflow">http://10.10.45.195:8080/actuator/;/springWebflow</a></td>
+<td>400</td>
+<td>573</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/prometheus">http://10.10.45.195:8080/actuator/;/prometheus</a></td>
+<td>400</td>
+<td>570</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/shutdown">http://10.10.45.195:8080/actuator/;/shutdown</a></td>
+<td>400</td>
+<td>568</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/sso">http://10.10.45.195:8080/actuator/;/sso</a></td>
+<td>400</td>
+<td>563</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/sessions">http://10.10.45.195:8080/actuator/;/sessions</a></td>
+<td>400</td>
+<td>568</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/statistics">http://10.10.45.195:8080/actuator/;/statistics</a></td>
+<td>400</td>
+<td>570</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/status">http://10.10.45.195:8080/actuator/;/status</a></td>
+<td>400</td>
+<td>566</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/threaddump">http://10.10.45.195:8080/actuator/;/threaddump</a></td>
+<td>400</td>
+<td>570</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/ssoSessions">http://10.10.45.195:8080/actuator/;/ssoSessions</a></td>
+<td>400</td>
+<td>571</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/actuator/;/trace">http://10.10.45.195:8080/actuator/;/trace</a></td>
+<td>400</td>
+<td>565</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/adjuncts/3a890183/">http://10.10.45.195:8080/adjuncts/3a890183/</a></td>
+<td>404</td>
+<td>26158</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/admin;/">http://10.10.45.195:8080/admin;/</a></td>
+<td>400</td>
+<td>556</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/Admin;/">http://10.10.45.195:8080/Admin;/</a></td>
+<td>400</td>
+<td>556</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/api">http://10.10.45.195:8080/api</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/api/">http://10.10.45.195:8080/api/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/assets">http://10.10.45.195:8080/assets</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/assets/">http://10.10.45.195:8080/assets/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/assets/file">http://10.10.45.195:8080/assets/file</a></td>
+<td>404</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/assets/js/fckeditor">http://10.10.45.195:8080/assets/js/fckeditor</a></td>
+<td>404</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/assets/npm-debug.log">http://10.10.45.195:8080/assets/npm-debug.log</a></td>
+<td>404</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/assets/pubspec.yaml">http://10.10.45.195:8080/assets/pubspec.yaml</a></td>
+<td>404</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/assets/fckeditor">http://10.10.45.195:8080/assets/fckeditor</a></td>
+<td>404</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/assets/">http://10.10.45.195:8080/assets/</a></td>
+<td>404</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/api/">http://10.10.45.195:8080/api/</a></td>
+<td>200</td>
+<td>29033</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/asynchPeople/">http://10.10.45.195:8080/asynchPeople/</a></td>
+<td>200</td>
+<td>29403</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/cloud">http://10.10.45.195:8080/cloud</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/cloud/">http://10.10.45.195:8080/cloud/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/config.xml">http://10.10.45.195:8080/config.xml</a></td>
+<td>200</td>
+<td>237</td>
+<td>application/xml</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/cli/">http://10.10.45.195:8080/cli/</a></td>
+<td>200</td>
+<td>30752</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/cloud/">http://10.10.45.195:8080/cloud/</a></td>
+<td>200</td>
+<td>26323</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/console/j_security_check">http://10.10.45.195:8080/console/j_security_check</a></td>
+<td>303</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/loginError">http://10.10.45.195:8080/loginError</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/credentials">http://10.10.45.195:8080/credentials</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/credentials/">http://10.10.45.195:8080/credentials/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/credentials/">http://10.10.45.195:8080/credentials/</a></td>
+<td>200</td>
+<td>133679</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/error">http://10.10.45.195:8080/error</a></td>
+<td>400</td>
+<td>26041</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/favicon.ico">http://10.10.45.195:8080/favicon.ico</a></td>
+<td>200</td>
+<td>17542</td>
+<td>image/x-icon</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/j_security_check">http://10.10.45.195:8080/j_security_check</a></td>
+<td>303</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/loginError">http://10.10.45.195:8080/loginError</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/jkstatus;">http://10.10.45.195:8080/jkstatus;</a></td>
+<td>400</td>
+<td>558</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/log">http://10.10.45.195:8080/log</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/log/">http://10.10.45.195:8080/log/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/login">http://10.10.45.195:8080/login</a></td>
+<td>200</td>
+<td>672</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/logout">http://10.10.45.195:8080/logout</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/">http://10.10.45.195:8080/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/logout/">http://10.10.45.195:8080/logout/</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/">http://10.10.45.195:8080/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/main">http://10.10.45.195:8080/main</a></td>
+<td>500</td>
+<td>26159</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/manage">http://10.10.45.195:8080/manage</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/manage/">http://10.10.45.195:8080/manage/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/log/">http://10.10.45.195:8080/log/</a></td>
+<td>200</td>
+<td>26304</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/people">http://10.10.45.195:8080/people</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/people/">http://10.10.45.195:8080/people/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/manage/">http://10.10.45.195:8080/manage/</a></td>
+<td>200</td>
+<td>163174</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/properties">http://10.10.45.195:8080/properties</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/properties/">http://10.10.45.195:8080/properties/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/robots.txt">http://10.10.45.195:8080/robots.txt</a></td>
+<td>200</td>
+<td>90</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/search">http://10.10.45.195:8080/search</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/search/">http://10.10.45.195:8080/search/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/secured">http://10.10.45.195:8080/secured</a></td>
+<td>401</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/restart">http://10.10.45.195:8080/restart</a></td>
+<td>200</td>
+<td>28778</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/script">http://10.10.45.195:8080/script</a></td>
+<td>200</td>
+<td>28810</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/script/jqueryplugins/dataTables/extras/TableTools/media/swf/ZeroClipboard.swf">http://10.10.45.195:8080/script/jqueryplugins/dataTables/extras/TableTools/media/swf/ZeroClipboard.swf</a></td>
+<td>200</td>
+<td>28810</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/script/">http://10.10.45.195:8080/script/</a></td>
+<td>200</td>
+<td>28810</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/signup">http://10.10.45.195:8080/signup</a></td>
+<td>404</td>
+<td>28687</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/user/admin">http://10.10.45.195:8080/user/admin</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="http://10.10.45.195:8080/user/admin/">http://10.10.45.195:8080/user/admin/</a></td>
+</tr>
+<tr>
+<td><a href="http://10.10.45.195:8080/configure">http://10.10.45.195:8080/configure</a></td>
+<td>200</td>
+<td>510879</td>
+<td>text/html</td>
+<td></td>
+</tr>
+</table>
+<footer><p>
+            On a mission to uncover the secrets of the digital realm. 
+            The quieter we are, the louder we hear. 
+          </p></footer>
+</body>
+</html>

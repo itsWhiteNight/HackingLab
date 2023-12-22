@@ -1,0 +1,94 @@
+# Dirsearch started Thu Dec 21 21:40:00 2023 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u 10.10.45.195:8080
+
+400   556B   http://10.10.45.195:8080/;login/
+400   556B   http://10.10.45.195:8080/;/admin
+400   555B   http://10.10.45.195:8080/;/json
+400   556B   http://10.10.45.195:8080/;/login
+400   555B   http://10.10.45.195:8080/;json/
+400   556B   http://10.10.45.195:8080/;admin/
+302     0B   http://10.10.45.195:8080/about    -> REDIRECTS TO: http://10.10.45.195:8080/about/
+400   571B   http://10.10.45.195:8080/actuator/;/auditevents
+400   565B   http://10.10.45.195:8080/actuator/;/beans
+400   568B   http://10.10.45.195:8080/actuator/;/auditLog
+400   566B   http://10.10.45.195:8080/actuator/;/caches
+400   570B   http://10.10.45.195:8080/actuator/;/conditions
+400   581B   http://10.10.45.195:8080/actuator/;/configurationMetadata
+400   571B   http://10.10.45.195:8080/actuator/;/configprops
+400   564B   http://10.10.45.195:8080/actuator/;/dump
+400   563B   http://10.10.45.195:8080/actuator/;/env
+400   571B   http://10.10.45.195:8080/actuator/;/healthcheck
+400   568B   http://10.10.45.195:8080/actuator/;/features
+400   569B   http://10.10.45.195:8080/actuator/;/httptrace
+400   584B   http://10.10.45.195:8080/actuator/;/exportRegisteredServices
+400   566B   http://10.10.45.195:8080/actuator/;/flyway
+400   566B   http://10.10.45.195:8080/actuator/;/events
+400   564B   http://10.10.45.195:8080/actuator/;/info
+400   566B   http://10.10.45.195:8080/actuator/;/health
+400   576B   http://10.10.45.195:8080/actuator/;/integrationgraph
+400   569B   http://10.10.45.195:8080/actuator/;/liquibase
+400   567B   http://10.10.45.195:8080/actuator/;/jolokia
+400   567B   http://10.10.45.195:8080/actuator/;/metrics
+400   570B   http://10.10.45.195:8080/actuator/;/prometheus
+400   567B   http://10.10.45.195:8080/actuator/;/loggers
+400   568B   http://10.10.45.195:8080/actuator/;/mappings
+400   577B   http://10.10.45.195:8080/actuator/;/releaseAttributes
+400   578B   http://10.10.45.195:8080/actuator/;/registeredServices
+400   567B   http://10.10.45.195:8080/actuator/;/refresh
+400   568B   http://10.10.45.195:8080/actuator/;/heapdump
+400   567B   http://10.10.45.195:8080/actuator/;/logfile
+400   577B   http://10.10.45.195:8080/actuator/;/resolveAttributes
+400   573B   http://10.10.45.195:8080/actuator/;/loggingConfig
+400   574B   http://10.10.45.195:8080/actuator/;/scheduledtasks
+400   573B   http://10.10.45.195:8080/actuator/;/springWebflow
+400   568B   http://10.10.45.195:8080/actuator/;/sessions
+400   568B   http://10.10.45.195:8080/actuator/;/shutdown
+400   563B   http://10.10.45.195:8080/actuator/;/sso
+400   571B   http://10.10.45.195:8080/actuator/;/ssoSessions
+400   566B   http://10.10.45.195:8080/actuator/;/status
+400   570B   http://10.10.45.195:8080/actuator/;/threaddump
+400   570B   http://10.10.45.195:8080/actuator/;/statistics
+400   565B   http://10.10.45.195:8080/actuator/;/trace
+404    26KB  http://10.10.45.195:8080/adjuncts/3a890183/
+400   556B   http://10.10.45.195:8080/Admin;/
+400   556B   http://10.10.45.195:8080/admin;/
+302     0B   http://10.10.45.195:8080/api    -> REDIRECTS TO: http://10.10.45.195:8080/api/
+404     0B   http://10.10.45.195:8080/assets/
+404     0B   http://10.10.45.195:8080/assets/fckeditor
+404     0B   http://10.10.45.195:8080/assets/npm-debug.log
+404     0B   http://10.10.45.195:8080/assets/pubspec.yaml
+404     0B   http://10.10.45.195:8080/assets/js/fckeditor
+302     0B   http://10.10.45.195:8080/assets    -> REDIRECTS TO: http://10.10.45.195:8080/assets/
+404     0B   http://10.10.45.195:8080/assets/file
+200    28KB  http://10.10.45.195:8080/api/
+200    29KB  http://10.10.45.195:8080/asynchPeople/
+302     0B   http://10.10.45.195:8080/cloud    -> REDIRECTS TO: http://10.10.45.195:8080/cloud/
+200    30KB  http://10.10.45.195:8080/cli/
+200   237B   http://10.10.45.195:8080/config.xml
+303     0B   http://10.10.45.195:8080/console/j_security_check    -> REDIRECTS TO: http://10.10.45.195:8080/loginError
+200    26KB  http://10.10.45.195:8080/cloud/
+302     0B   http://10.10.45.195:8080/credentials    -> REDIRECTS TO: http://10.10.45.195:8080/credentials/
+400    25KB  http://10.10.45.195:8080/error
+200   131KB  http://10.10.45.195:8080/credentials/
+200    17KB  http://10.10.45.195:8080/favicon.ico
+303     0B   http://10.10.45.195:8080/j_security_check    -> REDIRECTS TO: http://10.10.45.195:8080/loginError
+400   558B   http://10.10.45.195:8080/jkstatus;
+302     0B   http://10.10.45.195:8080/log    -> REDIRECTS TO: http://10.10.45.195:8080/log/
+200   672B   http://10.10.45.195:8080/login
+302     0B   http://10.10.45.195:8080/logout    -> REDIRECTS TO: http://10.10.45.195:8080/
+302     0B   http://10.10.45.195:8080/logout/    -> REDIRECTS TO: http://10.10.45.195:8080/
+500    26KB  http://10.10.45.195:8080/main
+302     0B   http://10.10.45.195:8080/manage    -> REDIRECTS TO: http://10.10.45.195:8080/manage/
+200    26KB  http://10.10.45.195:8080/log/
+302     0B   http://10.10.45.195:8080/people    -> REDIRECTS TO: http://10.10.45.195:8080/people/
+200   159KB  http://10.10.45.195:8080/manage/
+302     0B   http://10.10.45.195:8080/properties    -> REDIRECTS TO: http://10.10.45.195:8080/properties/
+200    90B   http://10.10.45.195:8080/robots.txt
+302     0B   http://10.10.45.195:8080/search    -> REDIRECTS TO: http://10.10.45.195:8080/search/
+401     0B   http://10.10.45.195:8080/secured
+200    28KB  http://10.10.45.195:8080/restart
+200    28KB  http://10.10.45.195:8080/script/
+200    28KB  http://10.10.45.195:8080/script
+200    28KB  http://10.10.45.195:8080/script/jqueryplugins/dataTables/extras/TableTools/media/swf/ZeroClipboard.swf
+404    28KB  http://10.10.45.195:8080/signup
+302     0B   http://10.10.45.195:8080/user/admin    -> REDIRECTS TO: http://10.10.45.195:8080/user/admin/
+200   499KB  http://10.10.45.195:8080/configure
