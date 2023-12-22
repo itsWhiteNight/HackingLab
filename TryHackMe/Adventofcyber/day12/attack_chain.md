@@ -95,6 +95,13 @@
 - Recap of defensive layers implemented
 - Importance of defensive layers in a real-world scenario
 
+### Logging Important Steps and Flags
+
+Throughout the attack chain, it's crucial to maintain a detailed log of significant steps taken, flags obtained, and any other pertinent information. This ensures a comprehensive understanding of the attack process and aids in post-analysis and documentation. 
+
+All flags, commands, and key steps have been stored in attack chain and in figures/reports directory for future reference:
+
+
 ## Questions and Answers
 
 1. **What is the default port for Jenkins?**
@@ -110,7 +117,7 @@
    - Sorry, user tracy may not run sudo on Jenkins.
 
 5. **What's the SSH flag?**
-   - **************************
+   - Ne3d2SecureTh1sSecureSh31l
 
 6. **What's the Jenkins flag?**
    - FullTrust_has_n0_Place1nS3cur1ty
