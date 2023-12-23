@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title></title>
+	<atom:link href="http://10.10.144.112/feed" rel="self" type="application/rss+xml" />
+	<link>http://10.10.144.112:8090</link>
+	<description></description>
+	<lastBuildDate>Tue, 14 Nov 2023 23:21:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.1</generator>
+
+<image>
+	<url>http://10.10.144.112:8090/wp-content/uploads/2023/11/White-text-logo.svg</url>
+	<title></title>
+	<link>http://10.10.144.112:8090</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Santa’s Enchanted Workshop</title>
+		<link>http://10.10.144.112:8090/2023/11/14/santas-enchanted-workshop/</link>
+		
+		<dc:creator><![CDATA[VanTwinkle]]></dc:creator>
+		<pubDate>Tue, 14 Nov 2023 22:31:08 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://10.10.109.112:8090/?p=17</guid>
+
+					<description><![CDATA[Santa’s enchanted workshop stood tall in the heart of the North Pole, where the snow sparkled like diamonds and the air was filled with the scent of peppermint. This workshop came alive every year with the joyful sounds of elves crafting toys, wrapping gifts, and singing carols. But this year was exceptional, for Santa had [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Santa’s enchanted workshop stood tall in the heart of the North Pole, where the snow sparkled like diamonds and the air was filled with the scent of peppermint. This workshop came alive every year with the joyful sounds of elves crafting toys, wrapping gifts, and singing carols.</p>
+
+
+
+<p>But this year was exceptional, for Santa had decided to open the doors of his workshop to children around the world like you! You received a magical golden ticket that granted you access to the secrets of Santa’s workshop.</p>
+
+
+
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img decoding="async" class="wp-block-cover__image-background wp-image-32" alt="" src="http://10.10.109.112:8090/wp-content/uploads/2023/11/Welcome-image.svg" data-object-fit="cover"/><div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<p class="has-text-align-center has-large-font-size"></p>
+</div></div>
+
+
+
+<p>Inside, you discovered the Toy Factory, where tiny elves with pointy hats and rosy cheeks worked diligently to craft wooden soldiers, dolls, and model trains. You saw the Gift-Wrapping Department, where colourful ribbons and sparkling paper transformed presents into works of art.</p>
+
+
+
+<p>You even joined the Reindeer Training Camp and learned how to feed and care for Santa’s reindeer, and finally, you decorated the enormous Christmas Tree with twinkling lights, ornaments, and shiny tinsel.</p>
+
+
+
+<p>By the end of your tour, you understood the hard work and love that went into making every gift and the true magic of Christmas. As you left Santa’s enchanted workshop, you knew you would forever carry the holiday spirit in your heart.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Santa’s Challenge</title>
+		<link>http://10.10.144.112:8090/2023/11/14/santas-challenge/</link>
+		
+		<dc:creator><![CDATA[VanTwinkle]]></dc:creator>
+		<pubDate>Tue, 14 Nov 2023 22:30:10 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://10.10.109.112:8090/?p=15</guid>
+
+					<description><![CDATA[As the North Pole glittered under a blanket of snow, Santa and his team of tech-savvy elves were in full swing, preparing for the grandest event of the year – Santa’s Cyber Defense Challenge Party! The North Pole was buzzing with excitement, and the elves were hard at work setting up a secure network to [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img fetchpriority="high" decoding="async" width="1921" height="1081" class="wp-block-cover__image-background wp-image-30" alt="" src="http://10.10.109.112:8090/wp-content/uploads/2023/11/AoC-2023-wallpaper.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<p class="has-text-align-left has-heading-font-family has-large-font-size">Defence Party</p>
+</div></div>
+
+
+
+<p>As the North Pole glittered under a blanket of snow, Santa and his team of tech-savvy elves were in full swing, preparing for the grandest event of the year – Santa’s Cyber Defense Challenge Party! The North Pole was buzzing with excitement, and the elves were hard at work setting up a secure network to host the event.</p>
+
+
+
+<p>But there was one problem – the North Pole’s web defences were under attack! The North Pole’s trusted cyber security gnome had accidentally triggered a vulnerability that put Santa’s digital assets at risk. It was up to you, the sharpest young mind in cyber security, to protect the party from a web attack.</p>
+
+
+
+<p>You joined Santa and the tech-savvy elves on an adventure to secure the North Pole’s digital infrastructure, one firewall at a time. From fine-tuning the intrusion detection system to setting up robust access controls, you worked diligently to fortify Santa’s defences.</p>
+
+
+
+<p>Together with the elves, you ensured that all digital presents were protected from malicious malware and crafted vital encryption keys, with an important one being THM{P0T$_W@11S_4_S@N7@} to safeguard Santa’s messages. As you danced through lines of code, the North Pole’s network was fortified against cyber threats.</p>
+
+
+
+<p>The North Pole was ready for the Cyber Defense Challenge Party, and Santa thanked you for making the event a secure success. You have not only protected the digital realm but also learned valuable lessons about the importance of cyber security in the modern age.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Elf Who Lost His Encryption</title>
+		<link>http://10.10.144.112:8090/2023/11/14/the-elf-who-lost-his-encryption/</link>
+		
+		<dc:creator><![CDATA[VanTwinkle]]></dc:creator>
+		<pubDate>Tue, 14 Nov 2023 12:54:29 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">http://10.10.109.112:8090/?p=1</guid>
+
+					<description><![CDATA[In a hidden corner of the North Pole, nestled amidst snowy mountains, lived a young elf named Jingle. Jingle was not like the other elves – he was known for his unique ability to encrypt and secure data. His talents were vital to Santa’s workshop, as he ensured that all the lists of gifts were [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img decoding="async" class="wp-block-cover__image-background wp-image-31" alt="" src="http://10.10.109.112:8090/wp-content/uploads/2023/11/Forensic-1.svg" data-object-fit="cover"/><div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<p class="has-text-align-center has-heading-font-family has-large-font-size">Lost Keys&#8230;</p>
+</div></div>
+
+
+
+<p>In a hidden corner of the North Pole, nestled amidst snowy mountains, lived a young elf named Jingle. Jingle was not like the other elves – he was known for his unique ability to encrypt and secure data. His talents were vital to Santa’s workshop, as he ensured that all the lists of gifts were safeguarded from prying eyes.</p>
+
+
+
+<p>One chilly morning, a web attack targeted Santa’s workshop, and the lists of gifts were compromised! Santa was distressed, and he called upon you, a young cyber security expert, to help Jingle recover and secure the encrypted lists.</p>
+
+
+
+<p>With your trusty laptop and cyber security toolkit, you and Jingle embarked on a digital quest. You deciphered complex codes, tracked down the malicious web attackers, and traced their steps back to their lair.</p>
+
+
+
+<p>As you journeyed through the digital realm, you met friendly antivirus programs and resilient firewalls that shared their knowledge with you. You retrieved the encrypted lists with their guidance and fortified Santa’s workshop against future cyber threats.</p>
+
+
+
+<p>Thanks to your expertise and Jingle’s encryption skills, Santa’s lists were safe, and the North Pole was secured. You not only protected the party but also learned valuable lessons about the importance of cyber security in today’s digital world.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
