@@ -1,18 +1,33 @@
 ### Advent of Cyber 2023 - Day 14
 
-### Task 1: Introduction
+## Overview
 
-Welcome to Day 14 of Advent of Cyber 2023! In this task, we delve into the world of Machine Learning (ML) and its application in solving a festive challenge. The CTO has introduced an interesting twist in the toy-making process, and we need to leverage ML to detect defective toys. Let's get started!
+The CTO has manipulated the toy pipeline, causing defects in the toys. McSkidy is countering this by using machine learning to identify and eliminate defective toys.
+
+## Day 14: Machine Learning for Toy Detection
+
+### Incident Overview
+
+The CTO interfered with the toy pipeline, leading to the production of defective toys. McSkidy is implementing machine learning to identify and rectify the issue. The objective is to create a neural network capable of detecting defective toys.
 
 ### Learning Objectives
 
-- Understand what machine learning is.
-- Learn basic machine learning structures and algorithms.
-- Use neural networks to predict defective toys.
+- Understand the basics of machine learning.
+- Learn about supervised learning and neural network structures.
+- Implement a neural network for detecting defective toys.
 
-### Accessing the Machine
+### Tasks
 
-Make sure to start the Target Machine as instructed. The split-screen view will be available for the target.
+1. Access the provided machine.
+2. Review the questions in the connection card for Day 14.
+3. Start the machine and open the split-screen view for the target.
+4. Explore the basics of machine learning and neural networks.
+5. Implement the neural network in the provided Python script (detector.py).
+6. Train the neural network using the given training dataset.
+7. Validate the network's accuracy using the validation dataset.
+8. Save the predictions for the testing dataset.
+
+If the neural network achieves more than 90% accuracy, you will receive the flag:
 
 ### Zero to Hero on Artificial Intelligence
 
@@ -53,10 +68,44 @@ Make sure to start the Target Machine as instructed. The split-screen view will 
 - Testing data (10-15%)
 
 ### Putting it All Together
+Now that we've covered the basics, we are ready to build our very own neural network. It will show in split screen.
+We are provided with the following files:
 
-## Creating the Datasets
+- `detector.py` - This is the script where we will build our neural network. Some of the sections have already been completed for you.
+- `dataset_train.csv` - This is your training dataset.
+- `dataest_test.csv` - This is your testing dataset.
+[Detector.py CSV Files](/Hackinglab/TryHackMe/adventofcyber/day14/Figures/detectory.py.png)
 
-```python
-# Insert Dataset Split Code Here
-train_X, validate_X, train_y, validate_y = train_test_split(X, y, test_size=0.2)
+##[1] Normalizing the Data
+		```python
+		# Insert Normalization Code Here
+		scaler = StandardScaler()
+		scaler.fit(train_X)
+		train_X = scaler.transform(train_X)
+		validate_X = scaler.transform(validate_X)
+		test_X = scaler.transform(test_X)
+		
+##[2] Training the Neural Network
+		```python
+		# Insert Classifier Code Here
+		clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(15, 2), max_iter=10000)
+		clf.fit(train_X, train_y)
+
+
+##[3] Validate the Neural Network
+		```python
+		# Insert Classifier Validation Prediction Code Here
+		y_predicted = clf.predict(validate_X)
+
+##[4] Saving the Poisoned Toy Pipeline
+		```python
+		# Insert Classifier Testing Prediction Code Here
+		y_test_predictions = clf.predict(test_X)
+
+
+
+
+
+
+
 
