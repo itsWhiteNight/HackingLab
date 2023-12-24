@@ -74,7 +74,7 @@ We are provided with the following files:
 - `detector.py` - This is the script where we will build our neural network. Some of the sections have already been completed for you.
 - `dataset_train.csv` - This is your training dataset.
 - `dataest_test.csv` - This is your testing dataset.
-[Detector.py CSV Files](/Hackinglab/TryHackMe/adventofcyber/day14/Figures/detectory.py.png)
+ [Detector.py & CSV Files](https://github.com/itsWhiteNight/HackingLab/blob/main/TryHackMe/Adventofcyber/day14/Figures/neural.png)
 
 ##[1] Normalizing the Data
 		```python
