@@ -1,0 +1,1330 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Whitenight Junior Pentester</title>
+<style>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #8447f0, #5e2ca5); /* Purple gradient background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          header {
+            background-color: #5e2ca5;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+          }
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+          }
+          th {
+            background-color: #5e2ca5;
+            color: #fff;
+          }
+          a {
+            color: #5e2ca5;
+            text-decoration: none;
+          }
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+          }
+        </style>
+</head>
+<body>
+<header><h1>🕷️ Whitenight - Phantom Troupe 🌙</h1></header><table>
+<tr>
+<th>URL</th>
+<th>Status</th>
+<th>Content Length</th>
+<th>Content Type</th>
+<th>Redirect</th>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/%2e%2e//google.com">https://10.10.64.136/%2e%2e//google.com</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/%2E%2E/google.com">https://10.10.64.136/%2E%2E/google.com</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/js">https://10.10.64.136/js</a></td>
+<td>301</td>
+<td>232</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/js/">https://10.10.64.136/js/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.ht_wsr.txt">https://10.10.64.136/.ht_wsr.txt</a></td>
+<td>403</td>
+<td>220</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccess.bak1">https://10.10.64.136/.htaccess.bak1</a></td>
+<td>403</td>
+<td>223</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccess.orig">https://10.10.64.136/.htaccess.orig</a></td>
+<td>403</td>
+<td>223</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccess.sample">https://10.10.64.136/.htaccess.sample</a></td>
+<td>403</td>
+<td>225</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccess.save">https://10.10.64.136/.htaccess.save</a></td>
+<td>403</td>
+<td>223</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccess_extra">https://10.10.64.136/.htaccess_extra</a></td>
+<td>403</td>
+<td>224</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccess_orig">https://10.10.64.136/.htaccess_orig</a></td>
+<td>403</td>
+<td>223</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccessOLD">https://10.10.64.136/.htaccessOLD</a></td>
+<td>403</td>
+<td>221</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccess_sc">https://10.10.64.136/.htaccess_sc</a></td>
+<td>403</td>
+<td>221</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccessBAK">https://10.10.64.136/.htaccessBAK</a></td>
+<td>403</td>
+<td>221</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htaccessOLD2">https://10.10.64.136/.htaccessOLD2</a></td>
+<td>403</td>
+<td>222</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htm">https://10.10.64.136/.htm</a></td>
+<td>403</td>
+<td>213</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.html">https://10.10.64.136/.html</a></td>
+<td>403</td>
+<td>214</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htpasswd_test">https://10.10.64.136/.htpasswd_test</a></td>
+<td>403</td>
+<td>223</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.htpasswds">https://10.10.64.136/.htpasswds</a></td>
+<td>403</td>
+<td>219</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.httr-oauth">https://10.10.64.136/.httr-oauth</a></td>
+<td>403</td>
+<td>220</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/.user.ini">https://10.10.64.136/.user.ini</a></td>
+<td>403</td>
+<td>218</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/0">https://10.10.64.136/0</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/0/">https://10.10.64.136/0/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin">https://10.10.64.136/admin</a></td>
+<td>301</td>
+<td>235</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/">https://10.10.64.136/admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/adm/index.php">https://10.10.64.136/adm/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/adm/">https://10.10.64.136/adm/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/index.php">https://10.10.64.136/admin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/">https://10.10.64.136/admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/mysql/index.php">https://10.10.64.136/admin/mysql/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/mysql/">https://10.10.64.136/admin/mysql/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/mysql2/index.php">https://10.10.64.136/admin/mysql2/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/mysql2/">https://10.10.64.136/admin/mysql2/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/phpMyAdmin/index.php">https://10.10.64.136/admin/phpMyAdmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/phpMyAdmin/">https://10.10.64.136/admin/phpMyAdmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/phpmyadmin/index.php">https://10.10.64.136/admin/phpmyadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/phpmyadmin/">https://10.10.64.136/admin/phpmyadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/phpmyadmin2/index.php">https://10.10.64.136/admin/phpmyadmin2/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/phpmyadmin2/">https://10.10.64.136/admin/phpmyadmin2/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/PMA/index.php">https://10.10.64.136/admin/PMA/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/PMA/">https://10.10.64.136/admin/PMA/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin/pma/index.php">https://10.10.64.136/admin/pma/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin/pma/">https://10.10.64.136/admin/pma/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin2/index.php">https://10.10.64.136/admin2/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin2/">https://10.10.64.136/admin2/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admin_area/index.php">https://10.10.64.136/admin_area/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admin_area/">https://10.10.64.136/admin_area/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/adminarea/index.php">https://10.10.64.136/adminarea/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/adminarea/">https://10.10.64.136/adminarea/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/admincp/index.php">https://10.10.64.136/admincp/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/admincp/">https://10.10.64.136/admincp/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/adminer/index.php">https://10.10.64.136/adminer/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/adminer/">https://10.10.64.136/adminer/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/administrator/index.php">https://10.10.64.136/administrator/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/administrator/">https://10.10.64.136/administrator/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/apc/index.php">https://10.10.64.136/apc/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/apc/">https://10.10.64.136/apc/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/audio">https://10.10.64.136/audio</a></td>
+<td>301</td>
+<td>235</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/audio/">https://10.10.64.136/audio/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/atom">https://10.10.64.136/atom</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/feed/atom/">https://10.10.64.136/feed/atom/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/axis//happyaxis.jsp">https://10.10.64.136/axis//happyaxis.jsp</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/axis/happyaxis.jsp">https://10.10.64.136/axis/happyaxis.jsp</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/axis2-web//HappyAxis.jsp">https://10.10.64.136/axis2-web//HappyAxis.jsp</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/axis2-web/HappyAxis.jsp">https://10.10.64.136/axis2-web/HappyAxis.jsp</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/axis2//axis2-web/HappyAxis.jsp">https://10.10.64.136/axis2//axis2-web/HappyAxis.jsp</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/axis2/axis2-web/HappyAxis.jsp">https://10.10.64.136/axis2/axis2-web/HappyAxis.jsp</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/bb-admin/index.php">https://10.10.64.136/bb-admin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/bb-admin/">https://10.10.64.136/bb-admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/bitrix/admin/index.php">https://10.10.64.136/bitrix/admin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/bitrix/admin/">https://10.10.64.136/bitrix/admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/blog">https://10.10.64.136/blog</a></td>
+<td>301</td>
+<td>234</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/blog/">https://10.10.64.136/blog/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/blog/">https://10.10.64.136/blog/</a></td>
+<td>403</td>
+<td>214</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/">https://10.10.64.136/cgi-bin/</a></td>
+<td>404</td>
+<td>206</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/a1stats/a1disp.cgi">https://10.10.64.136/cgi-bin/a1stats/a1disp.cgi</a></td>
+<td>404</td>
+<td>224</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/awstats/">https://10.10.64.136/cgi-bin/awstats/</a></td>
+<td>404</td>
+<td>214</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/awstats.pl">https://10.10.64.136/cgi-bin/awstats.pl</a></td>
+<td>404</td>
+<td>216</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/imagemap.exe?2,2">https://10.10.64.136/cgi-bin/imagemap.exe?2,2</a></td>
+<td>404</td>
+<td>218</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/htmlscript">https://10.10.64.136/cgi-bin/htmlscript</a></td>
+<td>404</td>
+<td>216</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/login">https://10.10.64.136/cgi-bin/login</a></td>
+<td>404</td>
+<td>211</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/index.html">https://10.10.64.136/cgi-bin/index.html</a></td>
+<td>404</td>
+<td>216</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/login.cgi">https://10.10.64.136/cgi-bin/login.cgi</a></td>
+<td>404</td>
+<td>215</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/htimage.exe?2,2">https://10.10.64.136/cgi-bin/htimage.exe?2,2</a></td>
+<td>404</td>
+<td>217</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/mt-xmlrpc.cgi">https://10.10.64.136/cgi-bin/mt-xmlrpc.cgi</a></td>
+<td>404</td>
+<td>219</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/mt/mt-xmlrpc.cgi">https://10.10.64.136/cgi-bin/mt/mt-xmlrpc.cgi</a></td>
+<td>404</td>
+<td>222</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/mt.cgi">https://10.10.64.136/cgi-bin/mt.cgi</a></td>
+<td>404</td>
+<td>212</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/mt/mt.cgi">https://10.10.64.136/cgi-bin/mt/mt.cgi</a></td>
+<td>404</td>
+<td>215</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/php.ini">https://10.10.64.136/cgi-bin/php.ini</a></td>
+<td>404</td>
+<td>213</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/mt7/mt.cgi">https://10.10.64.136/cgi-bin/mt7/mt.cgi</a></td>
+<td>404</td>
+<td>216</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/mt7/mt-xmlrpc.cgi">https://10.10.64.136/cgi-bin/mt7/mt-xmlrpc.cgi</a></td>
+<td>404</td>
+<td>223</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/login.php">https://10.10.64.136/cgi-bin/login.php</a></td>
+<td>404</td>
+<td>16</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/printenv">https://10.10.64.136/cgi-bin/printenv</a></td>
+<td>404</td>
+<td>214</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/test-cgi">https://10.10.64.136/cgi-bin/test-cgi</a></td>
+<td>404</td>
+<td>214</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/test.cgi">https://10.10.64.136/cgi-bin/test.cgi</a></td>
+<td>404</td>
+<td>214</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/printenv.pl">https://10.10.64.136/cgi-bin/printenv.pl</a></td>
+<td>404</td>
+<td>217</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/cgi-bin/ViewLog.asp">https://10.10.64.136/cgi-bin/ViewLog.asp</a></td>
+<td>404</td>
+<td>217</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/Citrix//AccessPlatform/auth/clientscripts/cookies.js">https://10.10.64.136/Citrix//AccessPlatform/auth/clientscripts/cookies.js</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/Citrix/AccessPlatform/auth/clientscripts/cookies.js">https://10.10.64.136/Citrix/AccessPlatform/auth/clientscripts/cookies.js</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/claroline/phpMyAdmin/index.php">https://10.10.64.136/claroline/phpMyAdmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/claroline/phpMyAdmin/">https://10.10.64.136/claroline/phpMyAdmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/css">https://10.10.64.136/css</a></td>
+<td>301</td>
+<td>233</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/css/">https://10.10.64.136/css/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/dashboard">https://10.10.64.136/dashboard</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-admin/">https://10.10.64.136/wp-admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/dashboard/">https://10.10.64.136/dashboard/</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-admin/">https://10.10.64.136/wp-admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/db/index.php">https://10.10.64.136/db/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/db/">https://10.10.64.136/db/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/dbadmin/index.php">https://10.10.64.136/dbadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/dbadmin/">https://10.10.64.136/dbadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/engine/classes/swfupload//swfupload.swf">https://10.10.64.136/engine/classes/swfupload//swfupload.swf</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/engine/classes/swfupload/swfupload.swf">https://10.10.64.136/engine/classes/swfupload/swfupload.swf</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/engine/classes/swfupload//swfupload_f9.swf">https://10.10.64.136/engine/classes/swfupload//swfupload_f9.swf</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/engine/classes/swfupload/swfupload_f9.swf">https://10.10.64.136/engine/classes/swfupload/swfupload_f9.swf</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/etc/lib/pChart2/examples/imageMap/index.php">https://10.10.64.136/etc/lib/pChart2/examples/imageMap/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/etc/lib/pChart2/examples/imageMap/">https://10.10.64.136/etc/lib/pChart2/examples/imageMap/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/extjs/resources//charts.swf">https://10.10.64.136/extjs/resources//charts.swf</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/extjs/resources/charts.swf">https://10.10.64.136/extjs/resources/charts.swf</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/favicon.ico">https://10.10.64.136/favicon.ico</a></td>
+<td>200</td>
+<td>0</td>
+<td>image/vnd.microsoft.icon</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/feed">https://10.10.64.136/feed</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/feed/">https://10.10.64.136/feed/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/html/js/misc/swfupload//swfupload.swf">https://10.10.64.136/html/js/misc/swfupload//swfupload.swf</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/html/js/misc/swfupload/swfupload.swf">https://10.10.64.136/html/js/misc/swfupload/swfupload.swf</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/images">https://10.10.64.136/images</a></td>
+<td>301</td>
+<td>236</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/images/">https://10.10.64.136/images/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/images/">https://10.10.64.136/images/</a></td>
+<td>403</td>
+<td>216</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/image">https://10.10.64.136/image</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/image/">https://10.10.64.136/image/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/index.php">https://10.10.64.136/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/">https://10.10.64.136/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/index.php/login/">https://10.10.64.136/index.php/login/</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/login/">https://10.10.64.136/login/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/install/index.php?upgrade/">https://10.10.64.136/install/index.php?upgrade/</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/install/?upgrade/">https://10.10.64.136/install/?upgrade/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/intro">https://10.10.64.136/intro</a></td>
+<td>200</td>
+<td>516314</td>
+<td>video/webm</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/js/">https://10.10.64.136/js/</a></td>
+<td>403</td>
+<td>212</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/license">https://10.10.64.136/license</a></td>
+<td>200</td>
+<td>158</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/license.txt">https://10.10.64.136/license.txt</a></td>
+<td>200</td>
+<td>158</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/login">https://10.10.64.136/login</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-login.php">https://10.10.64.136/wp-login.php</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/login/">https://10.10.64.136/login/</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-login.php">https://10.10.64.136/wp-login.php</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/login.wdm%20">https://10.10.64.136/login.wdm%20</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/login.wdm">https://10.10.64.136/login.wdm</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/modelsearch/index.php">https://10.10.64.136/modelsearch/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/modelsearch/">https://10.10.64.136/modelsearch/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/myadmin/index.php">https://10.10.64.136/myadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/myadmin/">https://10.10.64.136/myadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/myadmin2/index.php">https://10.10.64.136/myadmin2/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/myadmin2/">https://10.10.64.136/myadmin2/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/mysql-admin/index.php">https://10.10.64.136/mysql-admin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/mysql-admin/">https://10.10.64.136/mysql-admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/mysql/index.php">https://10.10.64.136/mysql/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/mysql/">https://10.10.64.136/mysql/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/mysqladmin/index.php">https://10.10.64.136/mysqladmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/mysqladmin/">https://10.10.64.136/mysqladmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/panel-administracion/index.php">https://10.10.64.136/panel-administracion/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/panel-administracion/">https://10.10.64.136/panel-administracion/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpadmin/index.php">https://10.10.64.136/phpadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpadmin/">https://10.10.64.136/phpadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin">https://10.10.64.136/phpmyadmin</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpma/index.php">https://10.10.64.136/phpma/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpma/">https://10.10.64.136/phpma/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/">https://10.10.64.136/phpmyadmin/</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/ChangeLog">https://10.10.64.136/phpmyadmin/ChangeLog</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/doc/html/index.html">https://10.10.64.136/phpmyadmin/doc/html/index.html</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/docs/html/index.html">https://10.10.64.136/phpmyadmin/docs/html/index.html</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/index.php">https://10.10.64.136/phpmyadmin/index.php</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/phpmyadmin/index.php">https://10.10.64.136/phpmyadmin/phpmyadmin/index.php</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/README">https://10.10.64.136/phpmyadmin/README</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin/scripts/setup.php">https://10.10.64.136/phpmyadmin/scripts/setup.php</a></td>
+<td>403</td>
+<td>94</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin-old/index.php">https://10.10.64.136/phpmyadmin-old/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpmyadmin-old/">https://10.10.64.136/phpmyadmin-old/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpMyAdmin/index.php">https://10.10.64.136/phpMyAdmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpMyAdmin/">https://10.10.64.136/phpMyAdmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpMyAdmin.old/index.php">https://10.10.64.136/phpMyAdmin.old/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpMyAdmin.old/">https://10.10.64.136/phpMyAdmin.old/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpMyAdmin/phpMyAdmin/index.php">https://10.10.64.136/phpMyAdmin/phpMyAdmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpMyAdmin/phpMyAdmin/">https://10.10.64.136/phpMyAdmin/phpMyAdmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin0/index.php">https://10.10.64.136/phpmyadmin0/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpmyadmin0/">https://10.10.64.136/phpmyadmin0/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin1/index.php">https://10.10.64.136/phpmyadmin1/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpmyadmin1/">https://10.10.64.136/phpmyadmin1/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpmyadmin2/index.php">https://10.10.64.136/phpmyadmin2/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpmyadmin2/">https://10.10.64.136/phpmyadmin2/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpMyadmin_bak/index.php">https://10.10.64.136/phpMyadmin_bak/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpMyadmin_bak/">https://10.10.64.136/phpMyadmin_bak/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/phpMyAdminold/index.php">https://10.10.64.136/phpMyAdminold/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/phpMyAdminold/">https://10.10.64.136/phpMyAdminold/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/pma-old/index.php">https://10.10.64.136/pma-old/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/pma-old/">https://10.10.64.136/pma-old/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/PMA/index.php">https://10.10.64.136/PMA/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/PMA/">https://10.10.64.136/PMA/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/PMA2/index.php">https://10.10.64.136/PMA2/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/PMA2/">https://10.10.64.136/PMA2/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/pma/index.php">https://10.10.64.136/pma/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/pma/">https://10.10.64.136/pma/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/pmd/index.php">https://10.10.64.136/pmd/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/pmd/">https://10.10.64.136/pmd/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/pmamy2/index.php">https://10.10.64.136/pmamy2/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/pmamy2/">https://10.10.64.136/pmamy2/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/pmamy/index.php">https://10.10.64.136/pmamy/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/pmamy/">https://10.10.64.136/pmamy/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/readme">https://10.10.64.136/readme</a></td>
+<td>200</td>
+<td>64</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/readme.html">https://10.10.64.136/readme.html</a></td>
+<td>200</td>
+<td>64</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/robots.txt">https://10.10.64.136/robots.txt</a></td>
+<td>200</td>
+<td>41</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/roundcube/index.php">https://10.10.64.136/roundcube/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/roundcube/">https://10.10.64.136/roundcube/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/rss">https://10.10.64.136/rss</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/feed/">https://10.10.64.136/feed/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/siteadmin/index.php">https://10.10.64.136/siteadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/siteadmin/">https://10.10.64.136/siteadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/sitemap">https://10.10.64.136/sitemap</a></td>
+<td>200</td>
+<td>0</td>
+<td>application/xml</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/sitemap.xml.gz">https://10.10.64.136/sitemap.xml.gz</a></td>
+<td>200</td>
+<td>0</td>
+<td>application/x-gzip</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/sitemap.xml">https://10.10.64.136/sitemap.xml</a></td>
+<td>200</td>
+<td>0</td>
+<td>application/xml</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/sql/index.php">https://10.10.64.136/sql/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/sql/">https://10.10.64.136/sql/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/sugarcrm/index.php?module=Accounts&amp;action=ShowDuplicates">https://10.10.64.136/sugarcrm/index.php?module=Accounts&amp;action=ShowDuplicates</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/sugarcrm/?module=Accounts&amp;action=ShowDuplicates">https://10.10.64.136/sugarcrm/?module=Accounts&amp;action=ShowDuplicates</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/sugarcrm/index.php?module=Contacts&amp;action=ShowDuplicates">https://10.10.64.136/sugarcrm/index.php?module=Contacts&amp;action=ShowDuplicates</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/sugarcrm/?module=Contacts&amp;action=ShowDuplicates">https://10.10.64.136/sugarcrm/?module=Contacts&amp;action=ShowDuplicates</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/templates/beez/index.php">https://10.10.64.136/templates/beez/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/templates/beez/">https://10.10.64.136/templates/beez/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/templates/ja-helio-farsi/index.php">https://10.10.64.136/templates/ja-helio-farsi/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/templates/ja-helio-farsi/">https://10.10.64.136/templates/ja-helio-farsi/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/templates/rhuk_milkyway/index.php">https://10.10.64.136/templates/rhuk_milkyway/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/templates/rhuk_milkyway/">https://10.10.64.136/templates/rhuk_milkyway/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/tmp/index.php">https://10.10.64.136/tmp/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/tmp/">https://10.10.64.136/tmp/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/tools/phpMyAdmin/index.php">https://10.10.64.136/tools/phpMyAdmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/tools/phpMyAdmin/">https://10.10.64.136/tools/phpMyAdmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/typo3/phpmyadmin/index.php">https://10.10.64.136/typo3/phpmyadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/typo3/phpmyadmin/">https://10.10.64.136/typo3/phpmyadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/video">https://10.10.64.136/video</a></td>
+<td>301</td>
+<td>235</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/video/">https://10.10.64.136/video/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/web/phpMyAdmin/index.php">https://10.10.64.136/web/phpMyAdmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/web/phpMyAdmin/">https://10.10.64.136/web/phpMyAdmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/webadmin/index.php">https://10.10.64.136/webadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/webadmin/">https://10.10.64.136/webadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-admin">https://10.10.64.136/wp-admin</a></td>
+<td>301</td>
+<td>238</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-admin/">https://10.10.64.136/wp-admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-admin/">https://10.10.64.136/wp-admin/</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-login.php?redirect_to=https%3A%2F%2F10.10.64.136%2Fwp-admin%2F&amp;reauth=1">https://10.10.64.136/wp-login.php?redirect_to=https%3A%2F%2F10.10.64.136%2Fwp-admin%2F&amp;reauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-admin/admin-ajax.php">https://10.10.64.136/wp-admin/admin-ajax.php</a></td>
+<td>200</td>
+<td>21</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-admin/setup-config.php">https://10.10.64.136/wp-admin/setup-config.php</a></td>
+<td>500</td>
+<td>3100</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-config.php">https://10.10.64.136/wp-config.php</a></td>
+<td>200</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content">https://10.10.64.136/wp-content</a></td>
+<td>301</td>
+<td>240</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-content/">https://10.10.64.136/wp-content/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/plugins/akismet/admin.php">https://10.10.64.136/wp-content/plugins/akismet/admin.php</a></td>
+<td>403</td>
+<td>245</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/plugins/akismet/akismet.php">https://10.10.64.136/wp-content/plugins/akismet/akismet.php</a></td>
+<td>403</td>
+<td>247</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/">https://10.10.64.136/wp-content/</a></td>
+<td>200</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/plugins/all-in-one-wp-migration/storage">https://10.10.64.136/wp-content/plugins/all-in-one-wp-migration/storage</a></td>
+<td>301</td>
+<td>280</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-content/plugins/all-in-one-wp-migration/storage/">https://10.10.64.136/wp-content/plugins/all-in-one-wp-migration/storage/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/upgrade/">https://10.10.64.136/wp-content/upgrade/</a></td>
+<td>403</td>
+<td>228</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/uploads/">https://10.10.64.136/wp-content/uploads/</a></td>
+<td>403</td>
+<td>228</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/plugins/adminer/inc/editor/index.php">https://10.10.64.136/wp-content/plugins/adminer/inc/editor/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-content/plugins/adminer/inc/editor/">https://10.10.64.136/wp-content/plugins/adminer/inc/editor/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/plugins/google-sitemap-generator/sitemap-core.php">https://10.10.64.136/wp-content/plugins/google-sitemap-generator/sitemap-core.php</a></td>
+<td>200</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-content/plugins/hello.php">https://10.10.64.136/wp-content/plugins/hello.php</a></td>
+<td>500</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-includes">https://10.10.64.136/wp-includes</a></td>
+<td>301</td>
+<td>241</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-includes/">https://10.10.64.136/wp-includes/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-includes/">https://10.10.64.136/wp-includes/</a></td>
+<td>403</td>
+<td>221</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-includes/rss-functions.php">https://10.10.64.136/wp-includes/rss-functions.php</a></td>
+<td>500</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-cron.php">https://10.10.64.136/wp-cron.php</a></td>
+<td>200</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-login.php">https://10.10.64.136/wp-login.php</a></td>
+<td>200</td>
+<td>1104</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-login">https://10.10.64.136/wp-login</a></td>
+<td>200</td>
+<td>1104</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-register.php">https://10.10.64.136/wp-register.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-login.php?action=register">https://10.10.64.136/wp-login.php?action=register</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-login/">https://10.10.64.136/wp-login/</a></td>
+<td>200</td>
+<td>1104</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/wp-signup.php">https://10.10.64.136/wp-signup.php</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/wp-login.php?action=register">https://10.10.64.136/wp-login.php?action=register</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/www/phpMyAdmin/index.php">https://10.10.64.136/www/phpMyAdmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/www/phpMyAdmin/">https://10.10.64.136/www/phpMyAdmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/xampp/phpmyadmin/index.php">https://10.10.64.136/xampp/phpmyadmin/index.php</a></td>
+<td>301</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.64.136/xampp/phpmyadmin/">https://10.10.64.136/xampp/phpmyadmin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/xmlrpc">https://10.10.64.136/xmlrpc</a></td>
+<td>405</td>
+<td>42</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.64.136/xmlrpc.php">https://10.10.64.136/xmlrpc.php</a></td>
+<td>405</td>
+<td>42</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+</table>
+<footer><p>
+            On a mission to uncover the secrets of the digital realm. 
+            The quieter we are, the louder we hear. 
+          </p></footer>
+</body>
+</html>
