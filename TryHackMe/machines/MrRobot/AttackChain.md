@@ -16,7 +16,7 @@ Start by scanning the target machine (e.g., 10.10.173.33) using nmap:
 		$ sudo nmap -sC -sV -O 10.10.173.33 -oN nmap-scan
 		```
 		
-##Explore directories with dirsearch or gobuster:
+## Explore directories with dirsearch or gobuster:
 
 Key directories: /wp-login and /robots.txt
 
@@ -28,11 +28,11 @@ Key directories: /wp-login and /robots.txt
 6. Set up a listener and visit 404.php or archive.php for shell access.
 7. Find user daemon and another flag in the robot directory.
 
-##PasswordCracking 
+## PasswordCracking 
 
 Crack md5 hash of the robot's password using tools like JohnTheRipper or Hashcat, I did it woith an online md5cracker 
 
-##PrivilegeEscalation
+## PrivilegeEscalation
 
 1. Switch to the robot user with the cracked password.
 2. Obtain the second flag.
