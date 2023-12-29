@@ -40,7 +40,7 @@ Crack md5 hash of the robot's password using tools like JohnTheRipper or Hashcat
 4. Exploit nmap with SUID bit for root access.
 5. Obtain the third flag.
 
-##Reports and Screenshots
+## Reports and Screenshots
 
 Nmap and dirsearch reports are available in the Reports directory.
 Screenshots for each step can be found in the Figures directory.
