@@ -1,0 +1,997 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u 10.10.64.136 --format=xml -o dirsearch.xml" time="Fri Dec 29 22:41:46 2023">
+	<target url="https://10.10.64.136/%2e%2e//google.com">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/%2E%2E/google.com</redirect>
+	</target>
+	<target url="https://10.10.64.136/js">
+		<status>301</status>
+		<contentLength>232</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/js/</redirect>
+	</target>
+	<target url="https://10.10.64.136/.ht_wsr.txt">
+		<status>403</status>
+		<contentLength>220</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccess.bak1">
+		<status>403</status>
+		<contentLength>223</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccess.orig">
+		<status>403</status>
+		<contentLength>223</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccess.sample">
+		<status>403</status>
+		<contentLength>225</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccess.save">
+		<status>403</status>
+		<contentLength>223</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccess_extra">
+		<status>403</status>
+		<contentLength>224</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccess_orig">
+		<status>403</status>
+		<contentLength>223</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccessOLD">
+		<status>403</status>
+		<contentLength>221</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccess_sc">
+		<status>403</status>
+		<contentLength>221</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccessBAK">
+		<status>403</status>
+		<contentLength>221</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htaccessOLD2">
+		<status>403</status>
+		<contentLength>222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htm">
+		<status>403</status>
+		<contentLength>213</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.html">
+		<status>403</status>
+		<contentLength>214</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htpasswd_test">
+		<status>403</status>
+		<contentLength>223</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.htpasswds">
+		<status>403</status>
+		<contentLength>219</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.httr-oauth">
+		<status>403</status>
+		<contentLength>220</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/.user.ini">
+		<status>403</status>
+		<contentLength>218</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/0">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/0/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin">
+		<status>301</status>
+		<contentLength>235</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/adm/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/adm/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/mysql/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/mysql/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/mysql2/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/mysql2/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/phpMyAdmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/phpMyAdmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/phpmyadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/phpmyadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/phpmyadmin2/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/phpmyadmin2/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/PMA/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/PMA/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin/pma/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin/pma/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin2/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin2/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admin_area/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admin_area/</redirect>
+	</target>
+	<target url="https://10.10.64.136/adminarea/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/adminarea/</redirect>
+	</target>
+	<target url="https://10.10.64.136/admincp/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/admincp/</redirect>
+	</target>
+	<target url="https://10.10.64.136/adminer/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/adminer/</redirect>
+	</target>
+	<target url="https://10.10.64.136/administrator/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/administrator/</redirect>
+	</target>
+	<target url="https://10.10.64.136/apc/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/apc/</redirect>
+	</target>
+	<target url="https://10.10.64.136/audio">
+		<status>301</status>
+		<contentLength>235</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/audio/</redirect>
+	</target>
+	<target url="https://10.10.64.136/atom">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/feed/atom/</redirect>
+	</target>
+	<target url="https://10.10.64.136/axis//happyaxis.jsp">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/axis/happyaxis.jsp</redirect>
+	</target>
+	<target url="https://10.10.64.136/axis2-web//HappyAxis.jsp">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/axis2-web/HappyAxis.jsp</redirect>
+	</target>
+	<target url="https://10.10.64.136/axis2//axis2-web/HappyAxis.jsp">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/axis2/axis2-web/HappyAxis.jsp</redirect>
+	</target>
+	<target url="https://10.10.64.136/bb-admin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/bb-admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/bitrix/admin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/bitrix/admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/blog">
+		<status>301</status>
+		<contentLength>234</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/blog/</redirect>
+	</target>
+	<target url="https://10.10.64.136/blog/">
+		<status>403</status>
+		<contentLength>214</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/">
+		<status>404</status>
+		<contentLength>206</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/a1stats/a1disp.cgi">
+		<status>404</status>
+		<contentLength>224</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/awstats/">
+		<status>404</status>
+		<contentLength>214</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/awstats.pl">
+		<status>404</status>
+		<contentLength>216</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/imagemap.exe?2,2">
+		<status>404</status>
+		<contentLength>218</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/htmlscript">
+		<status>404</status>
+		<contentLength>216</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/login">
+		<status>404</status>
+		<contentLength>211</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/index.html">
+		<status>404</status>
+		<contentLength>216</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/login.cgi">
+		<status>404</status>
+		<contentLength>215</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/htimage.exe?2,2">
+		<status>404</status>
+		<contentLength>217</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/mt-xmlrpc.cgi">
+		<status>404</status>
+		<contentLength>219</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/mt/mt-xmlrpc.cgi">
+		<status>404</status>
+		<contentLength>222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/mt.cgi">
+		<status>404</status>
+		<contentLength>212</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/mt/mt.cgi">
+		<status>404</status>
+		<contentLength>215</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/php.ini">
+		<status>404</status>
+		<contentLength>213</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/mt7/mt.cgi">
+		<status>404</status>
+		<contentLength>216</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/mt7/mt-xmlrpc.cgi">
+		<status>404</status>
+		<contentLength>223</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/login.php">
+		<status>404</status>
+		<contentLength>16</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/printenv">
+		<status>404</status>
+		<contentLength>214</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/test-cgi">
+		<status>404</status>
+		<contentLength>214</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/test.cgi">
+		<status>404</status>
+		<contentLength>214</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/printenv.pl">
+		<status>404</status>
+		<contentLength>217</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/cgi-bin/ViewLog.asp">
+		<status>404</status>
+		<contentLength>217</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/Citrix//AccessPlatform/auth/clientscripts/cookies.js">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/Citrix/AccessPlatform/auth/clientscripts/cookies.js</redirect>
+	</target>
+	<target url="https://10.10.64.136/claroline/phpMyAdmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/claroline/phpMyAdmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/css">
+		<status>301</status>
+		<contentLength>233</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/css/</redirect>
+	</target>
+	<target url="https://10.10.64.136/dashboard">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/dashboard/">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/db/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/db/</redirect>
+	</target>
+	<target url="https://10.10.64.136/dbadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/dbadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/engine/classes/swfupload//swfupload.swf">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/engine/classes/swfupload/swfupload.swf</redirect>
+	</target>
+	<target url="https://10.10.64.136/engine/classes/swfupload//swfupload_f9.swf">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/engine/classes/swfupload/swfupload_f9.swf</redirect>
+	</target>
+	<target url="https://10.10.64.136/etc/lib/pChart2/examples/imageMap/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/etc/lib/pChart2/examples/imageMap/</redirect>
+	</target>
+	<target url="https://10.10.64.136/extjs/resources//charts.swf">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/extjs/resources/charts.swf</redirect>
+	</target>
+	<target url="https://10.10.64.136/favicon.ico">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>image/vnd.microsoft.icon</contentType>
+	</target>
+	<target url="https://10.10.64.136/feed">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/feed/</redirect>
+	</target>
+	<target url="https://10.10.64.136/html/js/misc/swfupload//swfupload.swf">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/html/js/misc/swfupload/swfupload.swf</redirect>
+	</target>
+	<target url="https://10.10.64.136/images">
+		<status>301</status>
+		<contentLength>236</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/images/</redirect>
+	</target>
+	<target url="https://10.10.64.136/images/">
+		<status>403</status>
+		<contentLength>216</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/image">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/image/</redirect>
+	</target>
+	<target url="https://10.10.64.136/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/</redirect>
+	</target>
+	<target url="https://10.10.64.136/index.php/login/">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/login/</redirect>
+	</target>
+	<target url="https://10.10.64.136/install/index.php?upgrade/">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/install/?upgrade/</redirect>
+	</target>
+	<target url="https://10.10.64.136/intro">
+		<status>200</status>
+		<contentLength>516314</contentLength>
+		<contentType>video/webm</contentType>
+	</target>
+	<target url="https://10.10.64.136/js/">
+		<status>403</status>
+		<contentLength>212</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/license">
+		<status>200</status>
+		<contentLength>158</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+	<target url="https://10.10.64.136/license.txt">
+		<status>200</status>
+		<contentLength>158</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+	<target url="https://10.10.64.136/login">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-login.php</redirect>
+	</target>
+	<target url="https://10.10.64.136/login/">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-login.php</redirect>
+	</target>
+	<target url="https://10.10.64.136/login.wdm%20">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/login.wdm</redirect>
+	</target>
+	<target url="https://10.10.64.136/modelsearch/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/modelsearch/</redirect>
+	</target>
+	<target url="https://10.10.64.136/myadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/myadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/myadmin2/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/myadmin2/</redirect>
+	</target>
+	<target url="https://10.10.64.136/mysql-admin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/mysql-admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/mysql/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/mysql/</redirect>
+	</target>
+	<target url="https://10.10.64.136/mysqladmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/mysqladmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/panel-administracion/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/panel-administracion/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpma/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpma/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/ChangeLog">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/doc/html/index.html">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/docs/html/index.html">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/index.php">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/phpmyadmin/index.php">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/README">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin/scripts/setup.php">
+		<status>403</status>
+		<contentLength>94</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin-old/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpmyadmin-old/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpMyAdmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpMyAdmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpMyAdmin.old/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpMyAdmin.old/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpMyAdmin/phpMyAdmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpMyAdmin/phpMyAdmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin0/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpmyadmin0/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin1/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpmyadmin1/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpmyadmin2/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpmyadmin2/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpMyadmin_bak/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpMyadmin_bak/</redirect>
+	</target>
+	<target url="https://10.10.64.136/phpMyAdminold/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/phpMyAdminold/</redirect>
+	</target>
+	<target url="https://10.10.64.136/pma-old/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/pma-old/</redirect>
+	</target>
+	<target url="https://10.10.64.136/PMA/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/PMA/</redirect>
+	</target>
+	<target url="https://10.10.64.136/PMA2/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/PMA2/</redirect>
+	</target>
+	<target url="https://10.10.64.136/pma/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/pma/</redirect>
+	</target>
+	<target url="https://10.10.64.136/pmd/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/pmd/</redirect>
+	</target>
+	<target url="https://10.10.64.136/pmamy2/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/pmamy2/</redirect>
+	</target>
+	<target url="https://10.10.64.136/pmamy/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/pmamy/</redirect>
+	</target>
+	<target url="https://10.10.64.136/readme">
+		<status>200</status>
+		<contentLength>64</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/readme.html">
+		<status>200</status>
+		<contentLength>64</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/robots.txt">
+		<status>200</status>
+		<contentLength>41</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+	<target url="https://10.10.64.136/roundcube/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/roundcube/</redirect>
+	</target>
+	<target url="https://10.10.64.136/rss">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/feed/</redirect>
+	</target>
+	<target url="https://10.10.64.136/siteadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/siteadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/sitemap">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>application/xml</contentType>
+	</target>
+	<target url="https://10.10.64.136/sitemap.xml.gz">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>application/x-gzip</contentType>
+	</target>
+	<target url="https://10.10.64.136/sitemap.xml">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>application/xml</contentType>
+	</target>
+	<target url="https://10.10.64.136/sql/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/sql/</redirect>
+	</target>
+	<target url="https://10.10.64.136/sugarcrm/index.php?module=Accounts&amp;action=ShowDuplicates">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/sugarcrm/?module=Accounts&amp;action=ShowDuplicates</redirect>
+	</target>
+	<target url="https://10.10.64.136/sugarcrm/index.php?module=Contacts&amp;action=ShowDuplicates">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/sugarcrm/?module=Contacts&amp;action=ShowDuplicates</redirect>
+	</target>
+	<target url="https://10.10.64.136/templates/beez/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/templates/beez/</redirect>
+	</target>
+	<target url="https://10.10.64.136/templates/ja-helio-farsi/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/templates/ja-helio-farsi/</redirect>
+	</target>
+	<target url="https://10.10.64.136/templates/rhuk_milkyway/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/templates/rhuk_milkyway/</redirect>
+	</target>
+	<target url="https://10.10.64.136/tmp/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/tmp/</redirect>
+	</target>
+	<target url="https://10.10.64.136/tools/phpMyAdmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/tools/phpMyAdmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/typo3/phpmyadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/typo3/phpmyadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/video">
+		<status>301</status>
+		<contentLength>235</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/video/</redirect>
+	</target>
+	<target url="https://10.10.64.136/web/phpMyAdmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/web/phpMyAdmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/webadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/webadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-admin">
+		<status>301</status>
+		<contentLength>238</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-admin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-admin/">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-login.php?redirect_to=https%3A%2F%2F10.10.64.136%2Fwp-admin%2F&amp;reauth=1</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-admin/admin-ajax.php">
+		<status>200</status>
+		<contentLength>21</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-admin/setup-config.php">
+		<status>500</status>
+		<contentLength>3100</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-config.php">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-content">
+		<status>301</status>
+		<contentLength>240</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-content/</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-content/plugins/akismet/admin.php">
+		<status>403</status>
+		<contentLength>245</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-content/plugins/akismet/akismet.php">
+		<status>403</status>
+		<contentLength>247</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-content/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-content/plugins/all-in-one-wp-migration/storage">
+		<status>301</status>
+		<contentLength>280</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-content/plugins/all-in-one-wp-migration/storage/</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-content/upgrade/">
+		<status>403</status>
+		<contentLength>228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-content/uploads/">
+		<status>403</status>
+		<contentLength>228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-content/plugins/adminer/inc/editor/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-content/plugins/adminer/inc/editor/</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-content/plugins/google-sitemap-generator/sitemap-core.php">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-content/plugins/hello.php">
+		<status>500</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-includes">
+		<status>301</status>
+		<contentLength>241</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-includes/</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-includes/">
+		<status>403</status>
+		<contentLength>221</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-includes/rss-functions.php">
+		<status>500</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-cron.php">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-login.php">
+		<status>200</status>
+		<contentLength>1104</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-login">
+		<status>200</status>
+		<contentLength>1104</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-register.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-login.php?action=register</redirect>
+	</target>
+	<target url="https://10.10.64.136/wp-login/">
+		<status>200</status>
+		<contentLength>1104</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://10.10.64.136/wp-signup.php">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/wp-login.php?action=register</redirect>
+	</target>
+	<target url="https://10.10.64.136/www/phpMyAdmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/www/phpMyAdmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/xampp/phpmyadmin/index.php">
+		<status>301</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://10.10.64.136/xampp/phpmyadmin/</redirect>
+	</target>
+	<target url="https://10.10.64.136/xmlrpc">
+		<status>405</status>
+		<contentLength>42</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+	<target url="https://10.10.64.136/xmlrpc.php">
+		<status>405</status>
+		<contentLength>42</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+</dirsearchscan>

