@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Jan  3 22:46:09 2024 as: nmap -sC -sV -p22,80,9999 -oX Nmap.xml 10.10.32.88 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p22,80,9999 -oX Nmap.xml 10.10.32.88" start="1704318369" startstr="Wed Jan  3 22:46:09 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,9999"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.32.88" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1704318370" endtime="1704318381"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.32.88" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 ec:8b:7f:5a:cf:87:53:ca:bb:37:4d:83:6b:5b:c3:f7 (RSA)&#xa;  256 01:fa:e1:65:8c:eb:29:9a:50:58:bf:e1:8f:7e:2b:bf (ECDSA)&#xa;  256 d0:38:b1:ee:60:fd:c8:d0:d7:47:4a:1c:00:8e:77:d2 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">ec8b7f5acf8753cabb374d836b5bc3f7</elem>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQC9W3sv4jU9b/Psr/bWAz8TmQXKDTYgnsnU+OUtVjJ/iM06YiYTAaGjdKSFYX5nCnDB5INmXoMYmzx4izpwE9uC7SjmNAPB6yPFKFa5drrDXvQAF7/tQZCZjxgMuVP8iZO1x13nFcaXDG980xXIJpO7uTMOg738pY/8hZiRzadKHgw8Vo28RFYhH/gI5aMRiNCVsf6co1nnfUD1EwwOVgcbtkFqNDNn0M0MoTG36Xsnq23N6XGmT0f1TuRNHL0wj5eULmURxLvLCwGgaK9gYgGpCeMuS79b+42tYYW9xk/NQRiMPAaRd3YR4byzSi0YHxwok/nk977VHK1HRH86tTMdjkrQvzqiP1qlmE9g3xo5XmHEL5y/SDO6edtMw1B090TWwzOD52NXoLEgKrVBQ03iJyHiAGBhme6bu9pV8B45cwfNGXE94W5Wd4LGfRk3c1O6mzxthfEjc2cYCcLCe62bDnbgW/oNbUlT5qV8Am9swDlRRCyE9XKKaO+PK2bW5XM=</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">01fae1658ceb299a5058bfe18f7e2bbf</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFXsh8fBSWp0ulj0FfntlOHCWCyPq0qejQx84Ox+1Qni5Cn43GZwHb3WxVmShSqzEhvJFSNypzeSHAqRek73DEs=</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">d038b1ee60fdc8d0d7474a1c008e77d2</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIL964f/Pl1PG0ZEACezKe19Sc2K9F7lERJyxu0h60BpA</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/staff-portal"/><script id="http-title" output="Acme IT Support - Home"><elem key="title">Acme IT Support - Home</elem>
+</script></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script></port>
+</ports>
+<times srtt="95132" rttvar="74584" to="393468"/>
+</host>
+<runstats><finished time="1704318381" timestr="Wed Jan  3 22:46:21 2024" summary="Nmap done at Wed Jan  3 22:46:21 2024; 1 IP address (1 host up) scanned in 12.24 seconds" elapsed="12.24" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.32.88 --format=xml -o dirsearch.xml" time="Wed Jan  3 22:49:30 2024">
+	<target url="http://10.10.32.88/assets">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://10.10.32.88/assets/</redirect>
+	</target>
+	<target url="http://10.10.32.88/assets/file">
+		<status>404</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/assets/pubspec.yaml">
+		<status>404</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/assets/npm-debug.log">
+		<status>404</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/assets/">
+		<status>200</status>
+		<contentLength>1430</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/assets/fckeditor">
+		<status>404</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/assets/js/fckeditor">
+		<status>404</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/contact">
+		<status>200</status>
+		<contentLength>3108</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/customers">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>/customers/login</redirect>
+	</target>
+	<target url="http://10.10.32.88/development.log">
+		<status>200</status>
+		<contentLength>27</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/news">
+		<status>200</status>
+		<contentLength>2538</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.32.88/private">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://10.10.32.88/private/</redirect>
+	</target>
+	<target url="http://10.10.32.88/robots.txt">
+		<status>200</status>
+		<contentLength>46</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+	<target url="http://10.10.32.88/sitemap.xml">
+		<status>200</status>
+		<contentLength>1375</contentLength>
+		<contentType>application/xml</contentType>
+	</target>
+</dirsearchscan>
