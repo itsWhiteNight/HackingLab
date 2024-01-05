@@ -1,5 +1,15 @@
 # Blue Walkthrough
 
+## Background: EternalBlue Exploit
+
+EternalBlue is a computer exploit developed by the U.S. National Security Agency (NSA). It was leaked by the Shadow Brokers hacker group on April 14, 2017, just a month after Microsoft had released patches to address the vulnerability.
+
+On May 12, 2017, the worldwide WannaCry ransomware leveraged the EternalBlue exploit to attack unpatched computers: Subsequently, on June 27, 2017, the exploit was once again employed in the 2017 NotPetya cyberattack against additional unpatched computers.
+
+EternalBlue has been associated with various cyber incidents, including its use by the Chinese hacking group Buckeye (APT3) since March 2016. It was reported that they likely discovered and repurposed the tool: Additionally, the exploit was employed as part of the Retefe banking trojan's operations since at least September 5, 2017.
+
+One of the most notable deployments of EternalBlue was in collaboration with the DoublePulsar backdoor implant tool during the execution of the WannaCry attacks in 2017.
+
 ## Overview
 This walkthrough guides you through the process of gaining access to a vulnerable machine named "BLUE" and escalating privileges. The steps involve exploiting a vulnerability, discovering user credentials, and implementing server hardening measures.
 
