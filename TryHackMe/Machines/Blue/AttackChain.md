@@ -135,4 +135,3 @@ cat flag3.txt
 ---
 
 **Congratulations!** You have completed the Blue walkthrough. If you found this helpful, consider giving it a thumbs up!
-```
