@@ -1,0 +1,1071 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Whitenight Junior Pentester</title>
+<style>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #8447f0, #5e2ca5); /* Purple gradient background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          header {
+            background-color: #5e2ca5;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+          }
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+          }
+          th {
+            background-color: #5e2ca5;
+            color: #fff;
+          }
+          a {
+            color: #5e2ca5;
+            text-decoration: none;
+          }
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+          }
+        </style>
+</head>
+<body>
+<header><h1>🕷️ Whitenight - Phantom Troupe 🌙</h1></header><table>
+<tr>
+<th>URL</th>
+<th>Status</th>
+<th>Content Length</th>
+<th>Content Type</th>
+<th>Redirect</th>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/php">http://dev.devvortex.htb/php</a></td>
+<td>404</td>
+<td>16</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/%2e%2e;/test">http://dev.devvortex.htb/%2e%2e;/test</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/adminphp">http://dev.devvortex.htb/adminphp</a></td>
+<td>404</td>
+<td>16</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/admin/.config">http://dev.devvortex.htb/admin/.config</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/administrator">http://dev.devvortex.htb/administrator</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/administrator/">http://dev.devvortex.htb/administrator/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/administrator/cache/">http://dev.devvortex.htb/administrator/cache/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/administrator/includes/">http://dev.devvortex.htb/administrator/includes/</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/administrator/logs">http://dev.devvortex.htb/administrator/logs</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/administrator/logs/">http://dev.devvortex.htb/administrator/logs/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/administrator/logs/">http://dev.devvortex.htb/administrator/logs/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/administrator/">http://dev.devvortex.htb/administrator/</a></td>
+<td>200</td>
+<td>12211</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/administrator/index.php">http://dev.devvortex.htb/administrator/index.php</a></td>
+<td>200</td>
+<td>12211</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/admpar/.ftppass">http://dev.devvortex.htb/admpar/.ftppass</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/admrev/.ftppass">http://dev.devvortex.htb/admrev/.ftppass</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api">http://dev.devvortex.htb/api</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/api/">http://dev.devvortex.htb/api/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/">http://dev.devvortex.htb/api/</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/2/explore/">http://dev.devvortex.htb/api/2/explore/</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/__swagger__/">http://dev.devvortex.htb/api/__swagger__/</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/2/issue/createmeta">http://dev.devvortex.htb/api/2/issue/createmeta</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/_swagger_/">http://dev.devvortex.htb/api/_swagger_/</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/api">http://dev.devvortex.htb/api/api</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/apidocs">http://dev.devvortex.htb/api/apidocs</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/apidocs/swagger.json">http://dev.devvortex.htb/api/apidocs/swagger.json</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/api-docs">http://dev.devvortex.htb/api/api-docs</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/cask/graphql">http://dev.devvortex.htb/api/cask/graphql</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/batch">http://dev.devvortex.htb/api/batch</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/application.wadl">http://dev.devvortex.htb/api/application.wadl</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/config">http://dev.devvortex.htb/api/config</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/docs">http://dev.devvortex.htb/api/docs</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/docs/">http://dev.devvortex.htb/api/docs/</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/error_log">http://dev.devvortex.htb/api/error_log</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/index.html">http://dev.devvortex.htb/api/index.html</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/jsonws">http://dev.devvortex.htb/api/jsonws</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/profile">http://dev.devvortex.htb/api/profile</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/proxy">http://dev.devvortex.htb/api/proxy</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/package_search/v4/documentation">http://dev.devvortex.htb/api/package_search/v4/documentation</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/jsonws/invoke">http://dev.devvortex.htb/api/jsonws/invoke</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/login.json">http://dev.devvortex.htb/api/login.json</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/snapshots">http://dev.devvortex.htb/api/snapshots</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/spec/swagger.json">http://dev.devvortex.htb/api/spec/swagger.json</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger">http://dev.devvortex.htb/api/swagger</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger-ui.html">http://dev.devvortex.htb/api/swagger-ui.html</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger.json">http://dev.devvortex.htb/api/swagger.json</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger.yaml">http://dev.devvortex.htb/api/swagger.yaml</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger/index.html">http://dev.devvortex.htb/api/swagger/index.html</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger/static/index.html">http://dev.devvortex.htb/api/swagger/static/index.html</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger/swagger">http://dev.devvortex.htb/api/swagger/swagger</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger.yml">http://dev.devvortex.htb/api/swagger.yml</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/swagger/ui/index">http://dev.devvortex.htb/api/swagger/ui/index</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v1">http://dev.devvortex.htb/api/v1</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/timelion/run">http://dev.devvortex.htb/api/timelion/run</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v1/">http://dev.devvortex.htb/api/v1/</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v1/swagger.json">http://dev.devvortex.htb/api/v1/swagger.json</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v1/swagger.yaml">http://dev.devvortex.htb/api/v1/swagger.yaml</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v2/helpdesk/discover">http://dev.devvortex.htb/api/v2/helpdesk/discover</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v2/">http://dev.devvortex.htb/api/v2/</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v2">http://dev.devvortex.htb/api/v2</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v2/swagger.yaml">http://dev.devvortex.htb/api/v2/swagger.yaml</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v3">http://dev.devvortex.htb/api/v3</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v2/swagger.json">http://dev.devvortex.htb/api/v2/swagger.json</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/v4">http://dev.devvortex.htb/api/v4</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/vendor/phpunit/phpunit/phpunit">http://dev.devvortex.htb/api/vendor/phpunit/phpunit/phpunit</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/version">http://dev.devvortex.htb/api/version</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/api/whoami">http://dev.devvortex.htb/api/whoami</a></td>
+<td>404</td>
+<td>54</td>
+<td>application/vnd.api+json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/bitrix/.settings">http://dev.devvortex.htb/bitrix/.settings</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/bitrix/.settings.bak">http://dev.devvortex.htb/bitrix/.settings.bak</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/bitrix/.settings.php.bak">http://dev.devvortex.htb/bitrix/.settings.php.bak</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/cache">http://dev.devvortex.htb/cache</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/cache/">http://dev.devvortex.htb/cache/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/cache/">http://dev.devvortex.htb/cache/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/cache/sql_error_latest.cgi">http://dev.devvortex.htb/cache/sql_error_latest.cgi</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/cli/">http://dev.devvortex.htb/cli/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/components">http://dev.devvortex.htb/components</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/components/">http://dev.devvortex.htb/components/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/components/">http://dev.devvortex.htb/components/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/configuration.php">http://dev.devvortex.htb/configuration.php</a></td>
+<td>200</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/ext/.deps">http://dev.devvortex.htb/ext/.deps</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/htaccess.txt">http://dev.devvortex.htb/htaccess.txt</a></td>
+<td>200</td>
+<td>6858</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/images">http://dev.devvortex.htb/images</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/images/">http://dev.devvortex.htb/images/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/images/">http://dev.devvortex.htb/images/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/images/c99.php">http://dev.devvortex.htb/images/c99.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/images/Sym.php">http://dev.devvortex.htb/images/Sym.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/includes/">http://dev.devvortex.htb/includes/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/includes">http://dev.devvortex.htb/includes</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/includes/">http://dev.devvortex.htb/includes/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/language">http://dev.devvortex.htb/language</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/language/">http://dev.devvortex.htb/language/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/layouts/">http://dev.devvortex.htb/layouts/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/uploader/.actionScriptProperties">http://dev.devvortex.htb/lib/flex/uploader/.actionScriptProperties</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/uploader/.flexProperties">http://dev.devvortex.htb/lib/flex/uploader/.flexProperties</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/uploader/.project">http://dev.devvortex.htb/lib/flex/uploader/.project</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/varien/.flexLibProperties">http://dev.devvortex.htb/lib/flex/varien/.flexLibProperties</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/varien/.actionScriptProperties">http://dev.devvortex.htb/lib/flex/varien/.actionScriptProperties</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/uploader/.settings">http://dev.devvortex.htb/lib/flex/uploader/.settings</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/varien/.project">http://dev.devvortex.htb/lib/flex/varien/.project</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/lib/flex/varien/.settings">http://dev.devvortex.htb/lib/flex/varien/.settings</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/libraries">http://dev.devvortex.htb/libraries</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/libraries/">http://dev.devvortex.htb/libraries/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/libraries/">http://dev.devvortex.htb/libraries/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/LICENSE.txt">http://dev.devvortex.htb/LICENSE.txt</a></td>
+<td>200</td>
+<td>18092</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/mailer/.env">http://dev.devvortex.htb/mailer/.env</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/media">http://dev.devvortex.htb/media</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/media/">http://dev.devvortex.htb/media/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/media/">http://dev.devvortex.htb/media/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/modules">http://dev.devvortex.htb/modules</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/modules/">http://dev.devvortex.htb/modules/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/modules/">http://dev.devvortex.htb/modules/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/myadminphp">http://dev.devvortex.htb/myadminphp</a></td>
+<td>404</td>
+<td>16</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/plugins">http://dev.devvortex.htb/plugins</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/plugins/">http://dev.devvortex.htb/plugins/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/plugins/">http://dev.devvortex.htb/plugins/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/README.txt">http://dev.devvortex.htb/README.txt</a></td>
+<td>200</td>
+<td>4942</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/resources/.arch-internal-preview.css">http://dev.devvortex.htb/resources/.arch-internal-preview.css</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/resources/sass/.sass-cache/">http://dev.devvortex.htb/resources/sass/.sass-cache/</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/robots.txt">http://dev.devvortex.htb/robots.txt</a></td>
+<td>200</td>
+<td>764</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/secure/ConfigurePortalPages!default.jspa?view=popular">http://dev.devvortex.htb/secure/ConfigurePortalPages!default.jspa?view=popular</a></td>
+<td>404</td>
+<td>3660</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/templates/">http://dev.devvortex.htb/templates/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/templates">http://dev.devvortex.htb/templates</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/templates/">http://dev.devvortex.htb/templates/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/templates/index.html">http://dev.devvortex.htb/templates/index.html</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/templates/system/">http://dev.devvortex.htb/templates/system/</a></td>
+<td>200</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp">http://dev.devvortex.htb/tmp</a></td>
+<td>301</td>
+<td>178</td>
+<td>text/html</td>
+<td><a href="http://dev.devvortex.htb/tmp/">http://dev.devvortex.htb/tmp/</a></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/">http://dev.devvortex.htb/tmp/</a></td>
+<td>200</td>
+<td>31</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/2.php">http://dev.devvortex.htb/tmp/2.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/admin.php">http://dev.devvortex.htb/tmp/admin.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/cpn.php">http://dev.devvortex.htb/tmp/cpn.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/changeall.php">http://dev.devvortex.htb/tmp/changeall.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/cgi.pl">http://dev.devvortex.htb/tmp/cgi.pl</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/d.php">http://dev.devvortex.htb/tmp/d.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/d0maine.php">http://dev.devvortex.htb/tmp/d0maine.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/Cgishell.pl">http://dev.devvortex.htb/tmp/Cgishell.pl</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/domaine.php">http://dev.devvortex.htb/tmp/domaine.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/domaine.pl">http://dev.devvortex.htb/tmp/domaine.pl</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/dz.php">http://dev.devvortex.htb/tmp/dz.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/dz1.php">http://dev.devvortex.htb/tmp/dz1.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/madspotshell.php">http://dev.devvortex.htb/tmp/madspotshell.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/L3b.php">http://dev.devvortex.htb/tmp/L3b.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/index.php">http://dev.devvortex.htb/tmp/index.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/killer.php">http://dev.devvortex.htb/tmp/killer.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/priv8.php">http://dev.devvortex.htb/tmp/priv8.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/root.php">http://dev.devvortex.htb/tmp/root.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/sql.php">http://dev.devvortex.htb/tmp/sql.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/up.php">http://dev.devvortex.htb/tmp/up.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/Sym.php">http://dev.devvortex.htb/tmp/Sym.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/uploads.php">http://dev.devvortex.htb/tmp/uploads.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/upload.php">http://dev.devvortex.htb/tmp/upload.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/user.php">http://dev.devvortex.htb/tmp/user.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/xd.php">http://dev.devvortex.htb/tmp/xd.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/vaga.php">http://dev.devvortex.htb/tmp/vaga.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/tmp/whmcs.php">http://dev.devvortex.htb/tmp/whmcs.php</a></td>
+<td>403</td>
+<td>3653</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/twitter/.env">http://dev.devvortex.htb/twitter/.env</a></td>
+<td>403</td>
+<td>564</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://dev.devvortex.htb/web.config.txt">http://dev.devvortex.htb/web.config.txt</a></td>
+<td>200</td>
+<td>2974</td>
+<td>text/plain</td>
+<td></td>
+</tr>
+</table>
+<footer><p>
+            On a mission to uncover the secrets of the digital realm. 
+            The quieter we are, the louder we hear. 
+          </p></footer>
+</body>
+</html>
