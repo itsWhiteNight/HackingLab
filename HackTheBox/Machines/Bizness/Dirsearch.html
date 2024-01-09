@@ -1,0 +1,1491 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Whitenight Junior Pentester</title>
+<style>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #8447f0, #5e2ca5); /* Purple gradient background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          header {
+            background-color: #5e2ca5;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+          }
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+          }
+          th {
+            background-color: #5e2ca5;
+            color: #fff;
+          }
+          a {
+            color: #5e2ca5;
+            text-decoration: none;
+          }
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+          }
+        </style>
+</head>
+<body>
+<header><h1>🕷️ Whitenight - Phantom Troupe 🌙</h1></header><table>
+<tr>
+<th>URL</th>
+<th>Status</th>
+<th>Content Length</th>
+<th>Content Type</th>
+<th>Redirect</th>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cetc%5Cpasswd">https://bizness.htb/\..\..\..\..\..\..\..\..\..\etc\passwd</a></td>
+<td>400</td>
+<td>795</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/a%5c.aspx">https://bizness.htb/a%5c.aspx</a></td>
+<td>400</td>
+<td>795</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/accounting">https://bizness.htb/accounting</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/accounting/">https://bizness.htb/accounting/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/catalog">https://bizness.htb/catalog</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/catalog/">https://bizness.htb/catalog/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/common">https://bizness.htb/common</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/common/">https://bizness.htb/common/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/common/config/api.ini">https://bizness.htb/common/config/api.ini</a></td>
+<td>404</td>
+<td>780</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/common/">https://bizness.htb/common/</a></td>
+<td>404</td>
+<td>762</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/common/config/db.ini">https://bizness.htb/common/config/db.ini</a></td>
+<td>404</td>
+<td>779</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/content">https://bizness.htb/content</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/content/">https://bizness.htb/content/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/content/debug.log">https://bizness.htb/content/debug.log</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/content/control/main">https://bizness.htb/content/control/main</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/content/">https://bizness.htb/content/</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/content/control/main">https://bizness.htb/content/control/main</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/control/">https://bizness.htb/control/</a></td>
+<td>200</td>
+<td>34633</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/control">https://bizness.htb/control</a></td>
+<td>200</td>
+<td>34633</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/control/login">https://bizness.htb/control/login</a></td>
+<td>200</td>
+<td>11059</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/default.html">https://bizness.htb/default.html</a></td>
+<td>404</td>
+<td>763</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/default.jsp">https://bizness.htb/default.jsp</a></td>
+<td>404</td>
+<td>741</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/error/error.log">https://bizness.htb/error/error.log</a></td>
+<td>404</td>
+<td>770</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/error">https://bizness.htb/error</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/error/">https://bizness.htb/error/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/error/">https://bizness.htb/error/</a></td>
+<td>404</td>
+<td>761</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/example">https://bizness.htb/example</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/example/">https://bizness.htb/example/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/images/">https://bizness.htb/images/</a></td>
+<td>404</td>
+<td>762</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/images/c99.php">https://bizness.htb/images/c99.php</a></td>
+<td>404</td>
+<td>769</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/images/Sym.php">https://bizness.htb/images/Sym.php</a></td>
+<td>404</td>
+<td>769</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/images/README">https://bizness.htb/images/README</a></td>
+<td>404</td>
+<td>768</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/images">https://bizness.htb/images</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/images/">https://bizness.htb/images/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/index.jsp">https://bizness.htb/index.jsp</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://bizness.htb/control/main">https://bizness.htb/control/main</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF">https://bizness.htb/META-INF</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/app-config.xml">https://bizness.htb/META-INF/app-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/">https://bizness.htb/META-INF/</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/beans.xml">https://bizness.htb/META-INF/beans.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/CERT.SF">https://bizness.htb/META-INF/CERT.SF</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/application.xml">https://bizness.htb/META-INF/application.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/application-client.xml">https://bizness.htb/META-INF/application-client.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/context.xml">https://bizness.htb/META-INF/context.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/ejb-jar.xml">https://bizness.htb/META-INF/ejb-jar.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/eclipse.inf">https://bizness.htb/META-INF/eclipse.inf</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/ironjacamar.xml">https://bizness.htb/META-INF/ironjacamar.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/jboss-app.xml">https://bizness.htb/META-INF/jboss-app.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/jbosscmp-jdbc.xml">https://bizness.htb/META-INF/jbosscmp-jdbc.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/jboss-client.xml">https://bizness.htb/META-INF/jboss-client.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/jboss-ejb-client.xml">https://bizness.htb/META-INF/jboss-ejb-client.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/ra.xml">https://bizness.htb/META-INF/ra.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/spring/application-context.xml">https://bizness.htb/META-INF/spring/application-context.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/openwebbeans/openwebbeans.properties">https://bizness.htb/META-INF/openwebbeans/openwebbeans.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/persistence.xml">https://bizness.htb/META-INF/persistence.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/MANIFEST.MF">https://bizness.htb/META-INF/MANIFEST.MF</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/jboss-deployment-structure.xml">https://bizness.htb/META-INF/jboss-deployment-structure.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/SOFTWARE.SF">https://bizness.htb/META-INF/SOFTWARE.SF</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/jboss-ejb3.xml">https://bizness.htb/META-INF/jboss-ejb3.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/weblogic-application.xml">https://bizness.htb/META-INF/weblogic-application.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/jboss-webservices.xml">https://bizness.htb/META-INF/jboss-webservices.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/weblogic-ejb-jar.xml">https://bizness.htb/META-INF/weblogic-ejb-jar.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/META-INF/container.xml">https://bizness.htb/META-INF/container.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/solr/admin/file/?file=solrconfig.xml">https://bizness.htb/solr/admin/file/?file=solrconfig.xml</a></td>
+<td>200</td>
+<td>21</td>
+<td>application/json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/solr/admin/">https://bizness.htb/solr/admin/</a></td>
+<td>200</td>
+<td>21</td>
+<td>application/json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/solr/">https://bizness.htb/solr/</a></td>
+<td>302</td>
+<td>0</td>
+<td>unknown</td>
+<td><a href="https://bizness.htb/solr/control/checkLogin/">https://bizness.htb/solr/control/checkLogin/</a></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF">https://bizness.htb/WEB-INF</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/application-client.xml">https://bizness.htb/WEB-INF/application-client.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/cas-servlet.xml">https://bizness.htb/WEB-INF/cas-servlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/beans.xml">https://bizness.htb/WEB-INF/beans.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/app-config.xml">https://bizness.htb/WEB-INF/classes/app-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/applicationContext.xml">https://bizness.htb/WEB-INF/applicationContext.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/application.properties">https://bizness.htb/WEB-INF/classes/application.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/cas-theme-default.properties">https://bizness.htb/WEB-INF/classes/cas-theme-default.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/cas.properties">https://bizness.htb/WEB-INF/cas.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/application.yml">https://bizness.htb/WEB-INF/classes/application.yml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/countries.properties">https://bizness.htb/WEB-INF/classes/countries.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/">https://bizness.htb/WEB-INF/</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/db.properties">https://bizness.htb/WEB-INF/classes/db.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/commons-logging.properties">https://bizness.htb/WEB-INF/classes/commons-logging.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/fckeditor.properties">https://bizness.htb/WEB-INF/classes/fckeditor.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/default_views.properties">https://bizness.htb/WEB-INF/classes/default_views.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/demo.xml">https://bizness.htb/WEB-INF/classes/demo.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/languages.xml">https://bizness.htb/WEB-INF/classes/languages.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/application_config.xml">https://bizness.htb/WEB-INF/application_config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/applicationContext.xml">https://bizness.htb/WEB-INF/classes/applicationContext.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/config.properties">https://bizness.htb/WEB-INF/classes/config.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/faces-config.xml">https://bizness.htb/WEB-INF/classes/faces-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/logback.xml">https://bizness.htb/WEB-INF/classes/logback.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/hibernate.cfg.xml">https://bizness.htb/WEB-INF/classes/hibernate.cfg.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/log4j.xml">https://bizness.htb/WEB-INF/classes/log4j.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/log4j.properties">https://bizness.htb/WEB-INF/classes/log4j.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/META-INF/persistence.xml">https://bizness.htb/WEB-INF/classes/META-INF/persistence.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/messages.properties">https://bizness.htb/WEB-INF/classes/messages.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/default-theme.properties">https://bizness.htb/WEB-INF/classes/default-theme.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/META-INF/app-config.xml">https://bizness.htb/WEB-INF/classes/META-INF/app-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/protocol_views.properties">https://bizness.htb/WEB-INF/classes/protocol_views.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/resources/config.properties">https://bizness.htb/WEB-INF/classes/resources/config.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/struts.properties">https://bizness.htb/WEB-INF/classes/struts.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/mobile.xml">https://bizness.htb/WEB-INF/classes/mobile.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/struts.xml">https://bizness.htb/WEB-INF/classes/struts.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/services.properties">https://bizness.htb/WEB-INF/classes/services.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/persistence.xml">https://bizness.htb/WEB-INF/classes/persistence.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/theme.properties">https://bizness.htb/WEB-INF/classes/theme.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/validation.properties">https://bizness.htb/WEB-INF/classes/validation.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/struts-default.vm">https://bizness.htb/WEB-INF/classes/struts-default.vm</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/web.xml">https://bizness.htb/WEB-INF/classes/web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/config.properties">https://bizness.htb/WEB-INF/conf/config.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/classes/velocity.properties">https://bizness.htb/WEB-INF/classes/velocity.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/core.xml">https://bizness.htb/WEB-INF/conf/core.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/core_context.xml">https://bizness.htb/WEB-INF/conf/core_context.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/components.xml">https://bizness.htb/WEB-INF/components.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/daemons.properties">https://bizness.htb/WEB-INF/conf/daemons.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/editors.properties">https://bizness.htb/WEB-INF/conf/editors.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/db.properties">https://bizness.htb/WEB-INF/conf/db.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/caches.properties">https://bizness.htb/WEB-INF/conf/caches.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/jpa_context.xml">https://bizness.htb/WEB-INF/conf/jpa_context.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/jtidy.properties">https://bizness.htb/WEB-INF/conf/jtidy.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/webmaster.properties">https://bizness.htb/WEB-INF/conf/webmaster.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/page_navigator.xml">https://bizness.htb/WEB-INF/conf/page_navigator.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/mime.types">https://bizness.htb/WEB-INF/conf/mime.types</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/caches.dat">https://bizness.htb/WEB-INF/conf/caches.dat</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/wml.properties">https://bizness.htb/WEB-INF/conf/wml.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/metadata.xml">https://bizness.htb/WEB-INF/config/metadata.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config.xml">https://bizness.htb/WEB-INF/config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/search.properties">https://bizness.htb/WEB-INF/conf/search.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/conf/lutece.properties">https://bizness.htb/WEB-INF/conf/lutece.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/users.xml">https://bizness.htb/WEB-INF/config/users.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/web-core.xml">https://bizness.htb/WEB-INF/config/web-core.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/dashboard-statistics.xml">https://bizness.htb/WEB-INF/config/dashboard-statistics.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/webmvc-config.xml">https://bizness.htb/WEB-INF/config/webmvc-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/mua-endpoints.xml">https://bizness.htb/WEB-INF/config/mua-endpoints.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/security.xml">https://bizness.htb/WEB-INF/config/security.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/dispatcher-servlet.xml">https://bizness.htb/WEB-INF/dispatcher-servlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/soapConfig.xml">https://bizness.htb/WEB-INF/config/soapConfig.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/webflow-config.xml">https://bizness.htb/WEB-INF/config/webflow-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/ejb-jar.xml">https://bizness.htb/WEB-INF/ejb-jar.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/config/faces-config.xml">https://bizness.htb/WEB-INF/config/faces-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/faces-config.xml">https://bizness.htb/WEB-INF/faces-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/geronimo-web.xml">https://bizness.htb/WEB-INF/geronimo-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/glassfish-resources.xml">https://bizness.htb/WEB-INF/glassfish-resources.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/hibernate.cfg.xml">https://bizness.htb/WEB-INF/hibernate.cfg.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/ibm-web-bnd.xmi">https://bizness.htb/WEB-INF/ibm-web-bnd.xmi</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/deployerConfigContext.xml">https://bizness.htb/WEB-INF/deployerConfigContext.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/glassfish-web.xml">https://bizness.htb/WEB-INF/glassfish-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/ibm-web-ext.xmi">https://bizness.htb/WEB-INF/ibm-web-ext.xmi</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/ias-web.xml">https://bizness.htb/WEB-INF/ias-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jboss-ejb3.xml">https://bizness.htb/WEB-INF/jboss-ejb3.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jboss-web.xml">https://bizness.htb/WEB-INF/jboss-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jboss-webservices.xml">https://bizness.htb/WEB-INF/jboss-webservices.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/decorators.xml">https://bizness.htb/WEB-INF/decorators.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jax-ws-catalog.xml">https://bizness.htb/WEB-INF/jax-ws-catalog.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jboss-deployment-structure.xml">https://bizness.htb/WEB-INF/jboss-deployment-structure.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jboss-client.xml">https://bizness.htb/WEB-INF/jboss-client.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/liferay-look-and-feel.xml">https://bizness.htb/WEB-INF/liferay-look-and-feel.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jboss-ejb-client.xml">https://bizness.htb/WEB-INF/jboss-ejb-client.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jetty-env.xml">https://bizness.htb/WEB-INF/jetty-env.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jetty-web.xml">https://bizness.htb/WEB-INF/jetty-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/liferay-plugin-package.xml">https://bizness.htb/WEB-INF/liferay-plugin-package.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jrun-web.xml">https://bizness.htb/WEB-INF/jrun-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/local-jps.properties">https://bizness.htb/WEB-INF/local-jps.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/liferay-display.xml">https://bizness.htb/WEB-INF/liferay-display.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/logback.xml">https://bizness.htb/WEB-INF/logback.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/logs/log.log">https://bizness.htb/WEB-INF/logs/log.log</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/portlet.xml">https://bizness.htb/WEB-INF/portlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/liferay-portlet.xml">https://bizness.htb/WEB-INF/liferay-portlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/jonas-web.xml">https://bizness.htb/WEB-INF/jonas-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/local.xml">https://bizness.htb/WEB-INF/local.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/quartz-properties.xml">https://bizness.htb/WEB-INF/quartz-properties.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/resin-web.xml">https://bizness.htb/WEB-INF/resin-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/resources/config.properties">https://bizness.htb/WEB-INF/resources/config.properties</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/rexip-web.xml">https://bizness.htb/WEB-INF/rexip-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/restlet-servlet.xml">https://bizness.htb/WEB-INF/restlet-servlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/openx-config.xml">https://bizness.htb/WEB-INF/openx-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/sitemesh.xml">https://bizness.htb/WEB-INF/sitemesh.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/remoting-servlet.xml">https://bizness.htb/WEB-INF/remoting-servlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config/application-context.xml">https://bizness.htb/WEB-INF/spring-config/application-context.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config/authorization-config.xml">https://bizness.htb/WEB-INF/spring-config/authorization-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/portlet-custom.xml">https://bizness.htb/WEB-INF/portlet-custom.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config/management-config.xml">https://bizness.htb/WEB-INF/spring-config/management-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config.xml">https://bizness.htb/WEB-INF/spring-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config/presentation-config.xml">https://bizness.htb/WEB-INF/spring-config/presentation-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/liferay-layout-templates.xml">https://bizness.htb/WEB-INF/liferay-layout-templates.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config/services-config.xml">https://bizness.htb/WEB-INF/spring-config/services-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/service.xsd">https://bizness.htb/WEB-INF/service.xsd</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config/services-remote-config.xml">https://bizness.htb/WEB-INF/spring-config/services-remote-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-mvc.xml">https://bizness.htb/WEB-INF/spring-mvc.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-dispatcher-servlet.xml">https://bizness.htb/WEB-INF/spring-dispatcher-servlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-ws-servlet.xml">https://bizness.htb/WEB-INF/spring-ws-servlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/springweb-servlet.xml">https://bizness.htb/WEB-INF/springweb-servlet.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/struts-config-widgets.xml">https://bizness.htb/WEB-INF/struts-config-widgets.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-configuration/filters.xml">https://bizness.htb/WEB-INF/spring-configuration/filters.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/sun-jaxws.xml">https://bizness.htb/WEB-INF/sun-jaxws.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/tiles-defs.xml">https://bizness.htb/WEB-INF/tiles-defs.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-context.xml">https://bizness.htb/WEB-INF/spring-context.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring-config/messaging-config.xml">https://bizness.htb/WEB-INF/spring-config/messaging-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/spring/webmvc-config.xml">https://bizness.htb/WEB-INF/spring/webmvc-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/struts-config-ext.xml">https://bizness.htb/WEB-INF/struts-config-ext.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/validation.xml">https://bizness.htb/WEB-INF/validation.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/validator-rules.xml">https://bizness.htb/WEB-INF/validator-rules.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/sun-web.xml">https://bizness.htb/WEB-INF/sun-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/tjc-web.xml">https://bizness.htb/WEB-INF/tjc-web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/web-jetty.xml">https://bizness.htb/WEB-INF/web-jetty.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/trinidad-config.xml">https://bizness.htb/WEB-INF/trinidad-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/struts-config.xml">https://bizness.htb/WEB-INF/struts-config.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/web-borland.xml">https://bizness.htb/WEB-INF/web-borland.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/weblogic.xml">https://bizness.htb/WEB-INF/weblogic.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/web2.xml">https://bizness.htb/WEB-INF/web2.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/urlrewrite.xml">https://bizness.htb/WEB-INF/urlrewrite.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/web.xml.jsf">https://bizness.htb/WEB-INF/web.xml.jsf</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/workflow-properties.xml">https://bizness.htb/WEB-INF/workflow-properties.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bizness.htb/WEB-INF/web.xml">https://bizness.htb/WEB-INF/web.xml</a></td>
+<td>404</td>
+<td>682</td>
+<td>text/html</td>
+<td></td>
+</tr>
+</table>
+<footer><p>
+            On a mission to uncover the secrets of the digital realm. 
+            The quieter we are, the louder we hear. 
+          </p></footer>
+</body>
+</html>

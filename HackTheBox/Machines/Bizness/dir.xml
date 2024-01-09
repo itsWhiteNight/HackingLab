@@ -1,0 +1,1024 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://bizness.htb/ --format=xml -o dir.xml" time="Sun Jan  7 22:46:36 2024">
+	<target url="https://bizness.htb/\..\..\..\..\..\..\..\..\..\etc\passwd">
+		<status>400</status>
+		<contentLength>795</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/a%5c.aspx">
+		<status>400</status>
+		<contentLength>795</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/accounting">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/accounting/</redirect>
+	</target>
+	<target url="https://bizness.htb/catalog">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/catalog/</redirect>
+	</target>
+	<target url="https://bizness.htb/common">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/common/</redirect>
+	</target>
+	<target url="https://bizness.htb/common/config/api.ini">
+		<status>404</status>
+		<contentLength>780</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/common/">
+		<status>404</status>
+		<contentLength>762</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/common/config/db.ini">
+		<status>404</status>
+		<contentLength>779</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/content">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/content/</redirect>
+	</target>
+	<target url="https://bizness.htb/content/debug.log">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/content/control/main</redirect>
+	</target>
+	<target url="https://bizness.htb/content/">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/content/control/main</redirect>
+	</target>
+	<target url="https://bizness.htb/control/">
+		<status>200</status>
+		<contentLength>34633</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/control">
+		<status>200</status>
+		<contentLength>34633</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/control/login">
+		<status>200</status>
+		<contentLength>11059</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/default.html">
+		<status>404</status>
+		<contentLength>763</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/default.jsp">
+		<status>404</status>
+		<contentLength>741</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/error/error.log">
+		<status>404</status>
+		<contentLength>770</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/error">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/error/</redirect>
+	</target>
+	<target url="https://bizness.htb/error/">
+		<status>404</status>
+		<contentLength>761</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/example">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/example/</redirect>
+	</target>
+	<target url="https://bizness.htb/images/">
+		<status>404</status>
+		<contentLength>762</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/images/c99.php">
+		<status>404</status>
+		<contentLength>769</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/images/Sym.php">
+		<status>404</status>
+		<contentLength>769</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/images/README">
+		<status>404</status>
+		<contentLength>768</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/images">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/images/</redirect>
+	</target>
+	<target url="https://bizness.htb/index.jsp">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>https://bizness.htb/control/main</redirect>
+	</target>
+	<target url="https://bizness.htb/META-INF">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/app-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/beans.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/CERT.SF">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/application.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/application-client.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/context.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/ejb-jar.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/eclipse.inf">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/ironjacamar.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/jboss-app.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/jbosscmp-jdbc.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/jboss-client.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/jboss-ejb-client.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/ra.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/spring/application-context.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/openwebbeans/openwebbeans.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/persistence.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/MANIFEST.MF">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/jboss-deployment-structure.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/SOFTWARE.SF">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/jboss-ejb3.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/weblogic-application.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/jboss-webservices.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/weblogic-ejb-jar.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/META-INF/container.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/solr/admin/file/?file=solrconfig.xml">
+		<status>200</status>
+		<contentLength>21</contentLength>
+		<contentType>application/json</contentType>
+	</target>
+	<target url="https://bizness.htb/solr/admin/">
+		<status>200</status>
+		<contentLength>21</contentLength>
+		<contentType>application/json</contentType>
+	</target>
+	<target url="https://bizness.htb/solr/">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>https://bizness.htb/solr/control/checkLogin/</redirect>
+	</target>
+	<target url="https://bizness.htb/WEB-INF">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/application-client.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/cas-servlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/beans.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/app-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/applicationContext.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/application.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/cas-theme-default.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/cas.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/application.yml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/countries.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/db.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/commons-logging.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/fckeditor.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/default_views.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/demo.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/languages.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/application_config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/applicationContext.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/config.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/faces-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/logback.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/hibernate.cfg.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/log4j.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/log4j.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/META-INF/persistence.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/messages.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/default-theme.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/META-INF/app-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/protocol_views.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/resources/config.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/struts.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/mobile.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/struts.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/services.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/persistence.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/theme.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/validation.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/struts-default.vm">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/config.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/classes/velocity.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/core.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/core_context.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/components.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/daemons.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/editors.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/db.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/caches.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/jpa_context.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/jtidy.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/webmaster.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/page_navigator.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/mime.types">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/caches.dat">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/wml.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/metadata.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/search.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/conf/lutece.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/users.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/web-core.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/dashboard-statistics.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/webmvc-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/mua-endpoints.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/security.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/dispatcher-servlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/soapConfig.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/webflow-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/ejb-jar.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/config/faces-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/faces-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/geronimo-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/glassfish-resources.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/hibernate.cfg.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/ibm-web-bnd.xmi">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/deployerConfigContext.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/glassfish-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/ibm-web-ext.xmi">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/ias-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jboss-ejb3.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jboss-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jboss-webservices.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/decorators.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jax-ws-catalog.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jboss-deployment-structure.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jboss-client.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/liferay-look-and-feel.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jboss-ejb-client.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jetty-env.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jetty-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/liferay-plugin-package.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jrun-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/local-jps.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/liferay-display.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/logback.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/logs/log.log">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/portlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/liferay-portlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/jonas-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/local.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/quartz-properties.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/resin-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/resources/config.properties">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/rexip-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/restlet-servlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/openx-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/sitemesh.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/remoting-servlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config/application-context.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config/authorization-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/portlet-custom.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config/management-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config/presentation-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/liferay-layout-templates.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config/services-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/service.xsd">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config/services-remote-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-mvc.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-dispatcher-servlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-ws-servlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/springweb-servlet.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/struts-config-widgets.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-configuration/filters.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/sun-jaxws.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/tiles-defs.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-context.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring-config/messaging-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/spring/webmvc-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/struts-config-ext.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/validation.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/validator-rules.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/sun-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/tjc-web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/web-jetty.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/trinidad-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/struts-config.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/web-borland.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/weblogic.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/web2.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/urlrewrite.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/web.xml.jsf">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/workflow-properties.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://bizness.htb/WEB-INF/web.xml">
+		<status>404</status>
+		<contentLength>682</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+</dirsearchscan>
