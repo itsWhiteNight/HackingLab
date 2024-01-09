@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Jan  7 22:44:39 2024 as: nmap -sC -sV -p22,80,433,9001 -oX nmap.xml bizness.htb -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p22,80,433,9001 -oX nmap.xml bizness.htb" start="1704663879" startstr="Sun Jan  7 22:44:39 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="22,80,433,9001"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.252" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bizness.htb" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1704663879" endtime="1704663888"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.11.252" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bizness.htb" type="user"/>
+<hostname name="bizness.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.4p1 Debian 5+deb11u3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 3e:21:d5:dc:2e:61:eb:8f:a6:3b:24:2a:b7:1c:05:d3 (RSA)&#xa;  256 39:11:42:3f:0c:25:00:08:d7:2f:1b:51:e0:43:9d:85 (ECDSA)&#xa;  256 b0:6f:a0:0a:9e:df:b1:7a:49:78:86:b2:35:40:ec:95 (ED25519)"><table>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQC0B2izYdzgANpvBJW4Ym5zGRggYqa8smNlnRrVK6IuBtHzdlKgcFf+Gw0kSgJEouRe8eyVV9iAyD9HXM2L0N/17+rIZkSmdZPQi8chG/PyZ+H1FqcFB2LyxrynHCBLPTWyuN/tXkaVoDH/aZd1gn9QrbUjSVo9mfEEnUduO5Abf1mnBnkt3gLfBWKq1P1uBRZoAR3EYDiYCHbuYz30rhWR8SgE7CaNlwwZxDxYzJGFsKpKbR+t7ScsviVnbfEwPDWZVEmVEd0XYp1wb5usqWz2k7AMuzDpCyI8klc84aWVqllmLml443PDMIh1Ud2vUnze3FfYcBOo7DiJg7JkEWpcLa6iTModTaeA1tLSUJi3OYJoglW0xbx71di3141pDyROjnIpk/K45zR6CbdRSSqImPPXyo3UrkwFTPrSQbSZfeKzAKVDZxrVKq+rYtd+DWESp4nUdat0TXCgefpSkGfdGLxPZzFg0cQ/IF1cIyfzo1gicwVcLm4iRD9umBFaM2E=</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">3e21d5dc2e61eb8fa63b242ab71c05d3</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFMB/Pupk38CIbFpK4/RYPqDnnx8F2SGfhzlD32riRsRQwdf19KpqW9Cfpp2xDYZDhA3OeLV36bV5cdnl07bSsw=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">3911423f0c250008d72f1b51e0439d85</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIOjcxHOO/Vs6yPUw6ibE6gvOuakAnmR7gTk/yE2yJA/3</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">b06fa00a9edfb17a497886b23540ec95</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe></service><script id="http-server-header" output="nginx/1.18.0"><elem>nginx/1.18.0</elem>
+</script><script id="http-title" output="Did not follow redirect to https://bizness.htb/"><elem key="redirect_url">https://bizness.htb/</elem>
+</script></port>
+<port protocol="tcp" portid="433"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="nnsp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9001"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="tor-orport" method="table" conf="3"/></port>
+</ports>
+<times srtt="57972" rttvar="19662" to="136620"/>
+</host>
+<runstats><finished time="1704663888" timestr="Sun Jan  7 22:44:48 2024" summary="Nmap done at Sun Jan  7 22:44:48 2024; 1 IP address (1 host up) scanned in 9.42 seconds" elapsed="9.42" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
