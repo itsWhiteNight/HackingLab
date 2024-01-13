@@ -1,0 +1,333 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://cozyhosting.htb/admin --format=xml -o dir.xml --cookie=C8539CD963819374D157DA6DC15BD5BE" time="Tue Jan  9 14:54:46 2024">
+	<target url="http://cozyhosting.htb/admin/%2e%2e;/test">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/%2e%2e//google.com">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/..;/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/;/admin">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/;/login">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/;/json">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/;admin/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/;json/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/;login/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/\..\..\..\..\..\..\..\..\..\etc\passwd">
+		<status>400</status>
+		<contentLength>435</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/a%5c.aspx">
+		<status>400</status>
+		<contentLength>435</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/auditevents">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/beans">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/configprops">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/caches">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/dump">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/events">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/conditions">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/env">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/configurationMetadata">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/auditLog">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/exportRegisteredServices">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/flyway">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/features">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/health">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/healthcheck">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/heapdump">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/httptrace">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/liquibase">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/jolokia">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/loggers">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/logfile">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/loggingConfig">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/metrics">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/integrationgraph">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/info">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/mappings">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/releaseAttributes">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/prometheus">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/springWebflow">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/scheduledtasks">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/sessions">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/refresh">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/shutdown">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/registeredServices">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/resolveAttributes">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/sso">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/ssoSessions">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/status">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/statistics">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/threaddump">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/actuator/;/trace">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/admin/%3bindex/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/Admin;/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/admin;/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/axis//happyaxis.jsp">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/axis2//axis2-web/HappyAxis.jsp">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/axis2-web//HappyAxis.jsp">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/Citrix//AccessPlatform/auth/clientscripts/cookies.js">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/engine/classes/swfupload//swfupload_f9.swf">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/engine/classes/swfupload//swfupload.swf">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/examples/jsp/%252e%252e/%252e%252e/manager/html/">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/extjs/resources//charts.swf">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/html/js/misc/swfupload//swfupload.swf">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/jkstatus;">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://cozyhosting.htb/admin/login.wdm%2e">
+		<status>200</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+</dirsearchscan>
