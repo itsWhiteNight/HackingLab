@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://ideh-dabank.chals.io/ --format=xml -o dir.xml" time="Sun Jan 14 03:51:12 2024">
+	<target url="https://ideh-dabank.chals.io/console">
+		<status>200</status>
+		<contentLength>1563</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://ideh-dabank.chals.io/dashboard">
+		<status>404</status>
+		<contentLength>31</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://ideh-dabank.chals.io/login">
+		<status>200</status>
+		<contentLength>1563</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://ideh-dabank.chals.io/logout">
+		<status>302</status>
+		<contentLength>199</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>/login</redirect>
+	</target>
+	<target url="https://ideh-dabank.chals.io/register">
+		<status>200</status>
+		<contentLength>1490</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="https://ideh-dabank.chals.io/transfer">
+		<status>405</status>
+		<contentLength>153</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+</dirsearchscan>
