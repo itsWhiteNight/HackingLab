@@ -1,0 +1,376 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://chals-ideh.opialos.com:8001/ --format=xml -o dir.xml" time="Sun Jan 14 04:58:27 2024">
+	<target url="http://chals-ideh.opialos.com:8001/+CSCOT+/translation-table?type=mst&amp;textdomain=/%2bCSCOE%2b/portal_inc.lua&amp;default-language&amp;lang=../">
+		<status>404</status>
+		<contentLength>2269</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/+CSCOT+/oem-customization?app=AnyConnect&amp;type=oem&amp;platform=..&amp;resource-type=..&amp;name=%2bCSCOE%2b/portal_inc.lua">
+		<status>404</status>
+		<contentLength>2283</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/.settings/rules.json?auth=FIREBASE_SECRET">
+		<status>404</status>
+		<contentLength>2207</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/_vti_bin/shtml.exe?_vti_rpc">
+		<status>404</status>
+		<contentLength>2196</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/AdaptCMS/admin.php?view=/&amp;view=settings">
+		<status>404</status>
+		<contentLength>2206</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/AdaptCMS/admin.php?view=/&amp;view=stats">
+		<status>404</status>
+		<contentLength>2203</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/admin/portalcollect.php?f=http://xxx&amp;t=js">
+		<status>404</status>
+		<contentLength>2208</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/ADSearch.cc?methodToCall=search">
+		<status>404</status>
+		<contentLength>2206</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/analytics/saw.dll?getPreviewImage&amp;previewFilePath=/etc/passwd">
+		<status>404</status>
+		<contentLength>2235</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/application.wadl?detail=true">
+		<status>404</status>
+		<contentLength>2198</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/axis//happyaxis.jsp">
+		<status>308</status>
+		<contentLength>19</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/axis/happyaxis.jsp</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/axis2//axis2-web/HappyAxis.jsp">
+		<status>308</status>
+		<contentLength>30</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/axis2/axis2-web/HappyAxis.jsp</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/axis2-web//HappyAxis.jsp">
+		<status>308</status>
+		<contentLength>24</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/axis2-web/HappyAxis.jsp</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/bmc_help2u/servlet/helpServlet2u?textareaWrap=/bmc_help2u/WEB-INF/web.xml">
+		<status>404</status>
+		<contentLength>2227</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/bugs/verify.php?confirm_hash=&amp;id=1">
+		<status>404</status>
+		<contentLength>2209</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/cgi-bin/htimage.exe?2,2">
+		<status>404</status>
+		<contentLength>2191</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/cgi-bin/imagemap.exe?2,2">
+		<status>404</status>
+		<contentLength>2191</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/CgiStart?page=Single">
+		<status>404</status>
+		<contentLength>2198</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/Citrix//AccessPlatform/auth/clientscripts/cookies.js">
+		<status>308</status>
+		<contentLength>52</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/Citrix/AccessPlatform/auth/clientscripts/cookies.js</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/cp/Shares?user=&amp;protocol=webaccess&amp;v=2.3">
+		<status>404</status>
+		<contentLength>2225</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/CTCWebService/CTCWebServiceBean?wsdl">
+		<status>404</status>
+		<contentLength>2192</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/debug/pprof/goroutine?debug=1">
+		<status>404</status>
+		<contentLength>2194</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/docpicker/common_proxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&amp;RedirectTo=http://example.com">
+		<status>404</status>
+		<contentLength>2228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/eam/vib?id=/etc/issue">
+		<status>404</status>
+		<contentLength>2200</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/engine/classes/swfupload//swfupload.swf">
+		<status>308</status>
+		<contentLength>39</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/engine/classes/swfupload/swfupload.swf</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/engine/classes/swfupload//swfupload_f9.swf">
+		<status>308</status>
+		<contentLength>42</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/engine/classes/swfupload/swfupload_f9.swf</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/extjs/resources//charts.swf">
+		<status>308</status>
+		<contentLength>27</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/extjs/resources/charts.swf</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/faces/javax.faces.resource/web.xml?ln=..\\WEB-INF">
+		<status>404</status>
+		<contentLength>2203</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/faces/javax.faces.resource/web.xml?ln=../WEB-INF">
+		<status>404</status>
+		<contentLength>2200</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/favicon.ico">
+		<status>200</status>
+		<contentLength>15406</contentLength>
+		<contentType>image/x-icon</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/filter/jmol/js/jsmol/php/jsmol.php?call=getRawDataFromDatabase&amp;query=file">
+		<status>404</status>
+		<contentLength>2229</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/getFavicon?host=burpcollaborator.net">
+		<status>404</status>
+		<contentLength>2212</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/gotoURL.asp?url=google.com&amp;id=43569">
+		<status>404</status>
+		<contentLength>2214</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/html/js/misc/swfupload//swfupload.swf">
+		<status>308</status>
+		<contentLength>37</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>/html/js/misc/swfupload/swfupload.swf</redirect>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/install/index.php?upgrade/">
+		<status>404</status>
+		<contentLength>2196</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/jmx-console/HtmlAdaptor?action=inspectMBean&amp;name=jboss.system:type=ServerInfo">
+		<status>404</status>
+		<contentLength>2244</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/jolokia/list?maxObjects=100">
+		<status>404</status>
+		<contentLength>2201</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/mantisBT/verify.php?id=1&amp;confirm_hash=">
+		<status>404</status>
+		<contentLength>2209</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/mantis/verify.php?id=1&amp;confirm_hash=">
+		<status>404</status>
+		<contentLength>2209</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/MicroStrategy/servlet/taskProc?taskId=shortURL&amp;taskEnv=xml&amp;taskContentType=xml&amp;srcURL=https">
+		<status>404</status>
+		<contentLength>2259</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/msdac/root.exe?/c+dir">
+		<status>404</status>
+		<contentLength>2194</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/names.nsf/People?OpenView">
+		<status>404</status>
+		<contentLength>2196</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/open-flash-chart.swf?get-data=xss">
+		<status>404</status>
+		<contentLength>2199</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/p_/webdav/xmltools/minidom/xml/sax/saxutils/os/popen2?cmd=dir">
+		<status>404</status>
+		<contentLength>2194</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/page">
+		<status>404</status>
+		<contentLength>2183</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/PDC/ajaxreq.php?PARAM=127.0.0.1+">
+		<status>404</status>
+		<contentLength>2203</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/proxy.stream?origin=https://google.com">
+		<status>404</status>
+		<contentLength>2212</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/remote/fgt_lang?lang=/../../../../////////////////////////bin/sslvpnd">
+		<status>404</status>
+		<contentLength>2240</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession">
+		<status>404</status>
+		<contentLength>2240</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/resolute.php?img=config.php">
+		<status>404</status>
+		<contentLength>2201</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/scripts/iisadmin/ism.dll?http/dir">
+		<status>404</status>
+		<contentLength>2196</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/scripts/root.exe?/c+dir">
+		<status>404</status>
+		<contentLength>2194</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/secure/ConfigurePortalPages!default.jspa?view=popular">
+		<status>404</status>
+		<contentLength>2199</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/servlet/taskProc?taskId=shortURL&amp;taskEnv=xml&amp;taskContentType=xml&amp;srcURL=https">
+		<status>404</status>
+		<contentLength>2259</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvFeaThumb.php?cache=false&amp;cat=1&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvHover.php?cache=false&amp;cat=0&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvMainPGThumb.php?cache=false&amp;cat=1&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvMainFea.php?cache=false&amp;cat=1&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvSecondaryRight.php?cache=false&amp;cat=1&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvSideFea.php?cache=false&amp;cat=1&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvSinglePhoto.php?cache=false&amp;cat=1&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/show_image_NpAdvSubFea.php?cache=false&amp;cat=1&amp;filename=">
+		<status>404</status>
+		<contentLength>2222</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/status?full=true">
+		<status>404</status>
+		<contentLength>2196</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/sugarcrm/index.php?module=Accounts&amp;action=ShowDuplicates">
+		<status>404</status>
+		<contentLength>2228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/sugarcrm/index.php?module=Contacts&amp;action=ShowDuplicates">
+		<status>404</status>
+		<contentLength>2228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/verify.php?id=1&amp;confirm_hash=">
+		<status>404</status>
+		<contentLength>2209</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/wavemaker/studioService.download?method=getContent&amp;inUrl=file///etc/passwd">
+		<status>404</status>
+		<contentLength>2232</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/wp-content/plugins/backwpup/app/options-view_log-iframe.php?wpabs=">
+		<status>404</status>
+		<contentLength>2193</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/wps/cmis_proxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&amp;RedirectTo=http://example.com">
+		<status>404</status>
+		<contentLength>2228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/wps/common_proxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&amp;RedirectTo=http://example.com">
+		<status>404</status>
+		<contentLength>2228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/wps/myproxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&amp;RedirectTo=http://example.com">
+		<status>404</status>
+		<contentLength>2228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/wps/proxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&amp;RedirectTo=http://example.com">
+		<status>404</status>
+		<contentLength>2228</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://chals-ideh.opialos.com:8001/zabbix.php?action=dashboard.view&amp;dashboardid=1">
+		<status>404</status>
+		<contentLength>2226</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+</dirsearchscan>
