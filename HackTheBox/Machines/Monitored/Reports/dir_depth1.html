@@ -1,0 +1,441 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Whitenight Junior Pentester</title>
+<style>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #8447f0, #5e2ca5); /* Purple gradient background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          header {
+            background-color: #5e2ca5;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+          }
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+          }
+          th {
+            background-color: #5e2ca5;
+            color: #fff;
+          }
+          a {
+            color: #5e2ca5;
+            text-decoration: none;
+          }
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+          }
+        </style>
+</head>
+<body>
+<header><h1>🕷️ Whitenight - Phantom Troupe 🌙</h1></header><table>
+<tr>
+<th>URL</th>
+<th>Status</th>
+<th>Content Length</th>
+<th>Content Type</th>
+<th>Redirect</th>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.ht_wsr.txt">https://10.10.11.248/nagiosxi/.ht_wsr.txt</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccess.bak1">https://10.10.11.248/nagiosxi/.htaccess.bak1</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccess.orig">https://10.10.11.248/nagiosxi/.htaccess.orig</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccess.sample">https://10.10.11.248/nagiosxi/.htaccess.sample</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccess.save">https://10.10.11.248/nagiosxi/.htaccess.save</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccess_extra">https://10.10.11.248/nagiosxi/.htaccess_extra</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccess_orig">https://10.10.11.248/nagiosxi/.htaccess_orig</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccessBAK">https://10.10.11.248/nagiosxi/.htaccessBAK</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccess_sc">https://10.10.11.248/nagiosxi/.htaccess_sc</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccessOLD">https://10.10.11.248/nagiosxi/.htaccessOLD</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htaccessOLD2">https://10.10.11.248/nagiosxi/.htaccessOLD2</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htm">https://10.10.11.248/nagiosxi/.htm</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.html">https://10.10.11.248/nagiosxi/.html</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htpasswd_test">https://10.10.11.248/nagiosxi/.htpasswd_test</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.htpasswds">https://10.10.11.248/nagiosxi/.htpasswds</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.httr-oauth">https://10.10.11.248/nagiosxi/.httr-oauth</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/.php">https://10.10.11.248/nagiosxi/.php</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/about">https://10.10.11.248/nagiosxi/about</a></td>
+<td>301</td>
+<td>323</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/about/">https://10.10.11.248/nagiosxi/about/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/account">https://10.10.11.248/nagiosxi/account</a></td>
+<td>301</td>
+<td>325</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/account/">https://10.10.11.248/nagiosxi/account/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/account/">https://10.10.11.248/nagiosxi/account/</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/account/index.php%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/account/index.php%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/admin">https://10.10.11.248/nagiosxi/admin</a></td>
+<td>301</td>
+<td>323</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/admin/">https://10.10.11.248/nagiosxi/admin/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/admin/">https://10.10.11.248/nagiosxi/admin/</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/admin/index.php%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/admin/index.php%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/admin/index.php">https://10.10.11.248/nagiosxi/admin/index.php</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/admin/index.php%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/admin/index.php%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/api/">https://10.10.11.248/nagiosxi/api/</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/api">https://10.10.11.248/nagiosxi/api</a></td>
+<td>301</td>
+<td>321</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/api/">https://10.10.11.248/nagiosxi/api/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/api/v1">https://10.10.11.248/nagiosxi/api/v1</a></td>
+<td>301</td>
+<td>324</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/api/v1/">https://10.10.11.248/nagiosxi/api/v1/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/api/v1/swagger.yaml">https://10.10.11.248/nagiosxi/api/v1/swagger.yaml</a></td>
+<td>200</td>
+<td>32</td>
+<td>application/json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/api/v1/">https://10.10.11.248/nagiosxi/api/v1/</a></td>
+<td>200</td>
+<td>32</td>
+<td>application/json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/api/v1/swagger.json">https://10.10.11.248/nagiosxi/api/v1/swagger.json</a></td>
+<td>200</td>
+<td>32</td>
+<td>application/json</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/backend/">https://10.10.11.248/nagiosxi/backend/</a></td>
+<td>200</td>
+<td>104</td>
+<td>text/xml</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/config">https://10.10.11.248/nagiosxi/config</a></td>
+<td>301</td>
+<td>324</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/config/">https://10.10.11.248/nagiosxi/config/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/config.inc.php">https://10.10.11.248/nagiosxi/config.inc.php</a></td>
+<td>200</td>
+<td>0</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/config/">https://10.10.11.248/nagiosxi/config/</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/config/index.php%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/config/index.php%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/db">https://10.10.11.248/nagiosxi/db</a></td>
+<td>301</td>
+<td>320</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/db/">https://10.10.11.248/nagiosxi/db/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/db/">https://10.10.11.248/nagiosxi/db/</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/help">https://10.10.11.248/nagiosxi/help</a></td>
+<td>301</td>
+<td>322</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/help/">https://10.10.11.248/nagiosxi/help/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/help/">https://10.10.11.248/nagiosxi/help/</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/help/index.php%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/help/index.php%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/images/">https://10.10.11.248/nagiosxi/images/</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/images">https://10.10.11.248/nagiosxi/images</a></td>
+<td>301</td>
+<td>324</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/images/">https://10.10.11.248/nagiosxi/images/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/includes/">https://10.10.11.248/nagiosxi/includes/</a></td>
+<td>403</td>
+<td>278</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/includes">https://10.10.11.248/nagiosxi/includes</a></td>
+<td>301</td>
+<td>326</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/includes/">https://10.10.11.248/nagiosxi/includes/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/index.php">https://10.10.11.248/nagiosxi/index.php</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/index.php%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/index.php%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/index.php/login/">https://10.10.11.248/nagiosxi/index.php/login/</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/index.php/login/%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/index.php/login/%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/install.php">https://10.10.11.248/nagiosxi/install.php</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/">https://10.10.11.248/nagiosxi/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/install.php?profile=default">https://10.10.11.248/nagiosxi/install.php?profile=default</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/">https://10.10.11.248/nagiosxi/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/login.php">https://10.10.11.248/nagiosxi/login.php</a></td>
+<td>200</td>
+<td>6104</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/mobile">https://10.10.11.248/nagiosxi/mobile</a></td>
+<td>301</td>
+<td>324</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/mobile/">https://10.10.11.248/nagiosxi/mobile/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/reports">https://10.10.11.248/nagiosxi/reports</a></td>
+<td>301</td>
+<td>325</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/reports/">https://10.10.11.248/nagiosxi/reports/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/tools">https://10.10.11.248/nagiosxi/tools</a></td>
+<td>301</td>
+<td>323</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/tools/">https://10.10.11.248/nagiosxi/tools/</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/tools/">https://10.10.11.248/nagiosxi/tools/</a></td>
+<td>302</td>
+<td>27</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/tools/index.php%3f&amp;noauth=1">https://10.10.11.248/nagiosxi/login.php?redirect=/nagiosxi/tools/index.php%3f&amp;noauth=1</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/upgrade.php">https://10.10.11.248/nagiosxi/upgrade.php</a></td>
+<td>302</td>
+<td>0</td>
+<td>text/html</td>
+<td><a href="index.php">index.php</a></td>
+</tr>
+<tr>
+<td><a href="https://10.10.11.248/nagiosxi/views">https://10.10.11.248/nagiosxi/views</a></td>
+<td>301</td>
+<td>323</td>
+<td>text/html</td>
+<td><a href="https://10.10.11.248/nagiosxi/views/">https://10.10.11.248/nagiosxi/views/</a></td>
+</tr>
+</table>
+<footer><p>
+            On a mission to uncover the secrets of the digital realm. 
+            The quieter we are, the louder we hear. 
+          </p></footer>
+</body>
+</html>
