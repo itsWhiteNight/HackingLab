@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u 159.65.20.166:30707/ --format=xml -o dir.xml" time="Thu Jan 18 20:23:08 2024">
+	<target url="http://159.65.20.166:30707/.DS_Store">
+		<status>200</status>
+		<contentLength>6148</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+	<target url="http://159.65.20.166:30707/assets">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://159.65.20.166/assets/</redirect>
+	</target>
+	<target url="http://159.65.20.166:30707/assets/">
+		<status>403</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://159.65.20.166:30707/controllers/">
+		<status>403</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://159.65.20.166:30707/static">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://159.65.20.166/static/</redirect>
+	</target>
+	<target url="http://159.65.20.166:30707/views">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://159.65.20.166/views/</redirect>
+	</target>
+</dirsearchscan>
