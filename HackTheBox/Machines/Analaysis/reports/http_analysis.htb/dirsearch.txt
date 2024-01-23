@@ -1,0 +1,11 @@
+# Dirsearch started Mon Jan 22 01:55:05 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py --subdirs= -u http://analysis.htb
+
+403   312B   http://analysis.htb/%2e%2e//google.com
+301   158B   http://analysis.htb/js    -> REDIRECTS TO: http://analysis.htb/js/
+403   312B   http://analysis.htb/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+403   312B   http://analysis.htb/\..\..\..\..\..\..\..\..\..\etc\passwd
+403   312B   http://analysis.htb/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+301   159B   http://analysis.htb/css    -> REDIRECTS TO: http://analysis.htb/css/
+403     1KB  http://analysis.htb/images/
+301   162B   http://analysis.htb/images    -> REDIRECTS TO: http://analysis.htb/images/
+403     1KB  http://analysis.htb/js/
