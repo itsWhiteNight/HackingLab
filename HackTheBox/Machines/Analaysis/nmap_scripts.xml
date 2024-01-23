@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Jan 22 22:54:58 2024 as: nmap -sC -sV -p53,80,88,135,139,389,445,464,593,636,3268,3269,3306 -oX Desktop/HackingLab/HackTheBox/Machines/Analaysis/nmap_scripts.xml -vvv -T2 10.10.11.250 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p53,80,88,135,139,389,445,464,593,636,3268,3269,3306 -oX Desktop/HackingLab/HackTheBox/Machines/Analaysis/nmap_scripts.xml -vvv -T2 10.10.11.250" start="1705960498" startstr="Mon Jan 22 22:54:58 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="13" services="53,80,88,135,139,389,445,464,593,636,3268-3269,3306"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1705960498"/>
+<taskend task="NSE" time="1705960498"/>
+<taskbegin task="NSE" time="1705960498"/>
+<taskend task="NSE" time="1705960498"/>
+<taskbegin task="NSE" time="1705960498"/>
+<taskend task="NSE" time="1705960498"/>
+<taskbegin task="Ping Scan" time="1705960498"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.250" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1705960499" extrainfo="1 total hosts"/>
+<taskbegin task="Connect Scan" time="1705960499"/>
+<taskend task="Connect Scan" time="1705960504" extrainfo="13 total ports"/>
+<taskbegin task="Service scan" time="1705960504"/>
+<taskprogress task="Service scan" time="1705960651" percent="7.69" remaining="1764" etc="1705962415"/>
+<taskprogress task="Service scan" time="1705960684" percent="46.15" remaining="210" etc="1705960894"/>
+<taskend task="Service scan" time="1705960720" extrainfo="13 services on 1 host"/>
+<taskbegin task="NSE" time="1705960720"/>
+<taskprogress task="NSE" time="1705960751" percent="99.67" remaining="1" etc="1705960751"/>
+<taskend task="NSE" time="1705960754"/>
+<taskbegin task="NSE" time="1705960754"/>
+<taskend task="NSE" time="1705960767"/>
+<taskbegin task="NSE" time="1705960767"/>
+<taskend task="NSE" time="1705960767"/>
+<host starttime="1705960499" endtime="1705960767"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.11.250" addrtype="ipv4"/>
+<hostnames>
+<hostname name="analysis.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 357C439FB7A4491072C7EB34E33F3990"/><script id="http-server-header" output="&#xa;  Microsoft-HTTPAPI/2.0&#xa;  Microsoft-IIS/10.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+<elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."><elem key="title"></elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2024-01-22 21:57:48Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: analysis.htb0., Site: Default-First-Site-Name" hostname="DC-ANALYSIS" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: analysis.htb0., Site: Default-First-Site-Name" hostname="DC-ANALYSIS" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2024-01-22T21:58:48&#xa;  start_date: N/A"><elem key="date">2024-01-22T21:58:48</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 7365/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 44263/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 9653/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 58425/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled and required"><table key="3:1:1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="clock-skew" output="3s"><elem key="median">3</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="mean">3</elem>
+</script></hostscript><times srtt="86721" rttvar="37224" to="400000"/>
+</host>
+<taskbegin task="NSE" time="1705960767"/>
+<taskend task="NSE" time="1705960767"/>
+<taskbegin task="NSE" time="1705960767"/>
+<taskend task="NSE" time="1705960767"/>
+<taskbegin task="NSE" time="1705960767"/>
+<taskend task="NSE" time="1705960767"/>
+<runstats><finished time="1705960767" timestr="Mon Jan 22 22:59:27 2024" summary="Nmap done at Mon Jan 22 22:59:27 2024; 1 IP address (1 host up) scanned in 268.75 seconds" elapsed="268.75" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

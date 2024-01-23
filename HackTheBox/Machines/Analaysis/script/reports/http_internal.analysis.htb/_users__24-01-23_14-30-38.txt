@@ -1,0 +1,5 @@
+# Dirsearch started Tue Jan 23 14:30:55 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://internal.analysis.htb/users/ -t 100
+
+403   312B   http://internal.analysis.htb/users/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+403   312B   http://internal.analysis.htb/users/\..\..\..\..\..\..\..\..\..\etc\passwd
+403   312B   http://internal.analysis.htb/users/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd

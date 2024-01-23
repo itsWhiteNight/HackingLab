@@ -1,0 +1,10 @@
+2024/01/22 23:56:34 >  Using KDC(s):
+2024/01/22 23:56:34 >  	analysis.htb:88
+2024/01/22 23:56:40 >  [+] VALID USERNAME:	 jdoe@analysis.htb
+2024/01/22 23:56:48 >  [+] VALID USERNAME:	 ajohnson@analysis.htb
+2024/01/22 23:57:05 >  [+] VALID USERNAME:	 cwilliams@analysis.htb
+2024/01/22 23:57:13 >  [+] VALID USERNAME:	 wsmith@analysis.htb
+2024/01/22 23:57:35 >  [+] VALID USERNAME:	 jangel@analysis.htb
+2024/01/22 23:58:53 >  [+] VALID USERNAME:	 technician@analysis.htb
+2024/01/23 00:01:03 >  [+] VALID USERNAME:	 JDoe@analysis.htb
+2024/01/23 00:01:08 >  [+] VALID USERNAME:	 AJohnson@analysis.htb

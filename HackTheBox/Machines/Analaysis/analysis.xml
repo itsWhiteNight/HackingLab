@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u analysis.htb --format=xml -o analysis.xml" time="Sun Jan 21 17:32:10 2024">
+	<target url="http://analysis.htb/%2e%2e//google.com">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://analysis.htb/js">
+		<status>301</status>
+		<contentLength>158</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://analysis.htb/js/</redirect>
+	</target>
+	<target url="http://analysis.htb/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://analysis.htb/\..\..\..\..\..\..\..\..\..\etc\passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://analysis.htb/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd">
+		<status>403</status>
+		<contentLength>312</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://analysis.htb/css">
+		<status>301</status>
+		<contentLength>159</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://analysis.htb/css/</redirect>
+	</target>
+	<target url="http://analysis.htb/images">
+		<status>301</status>
+		<contentLength>162</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://analysis.htb/images/</redirect>
+	</target>
+	<target url="http://analysis.htb/images/">
+		<status>403</status>
+		<contentLength>1268</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://analysis.htb/js/">
+		<status>403</status>
+		<contentLength>1268</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+</dirsearchscan>
