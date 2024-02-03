@@ -1,0 +1,3 @@
+# Dirsearch started Sat Jan 27 14:12:12 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.8.0.2/ -w /usr/share/wordlists/Seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt
+
+301   305B   http://10.8.0.2/joomla    -> REDIRECTS TO: http://10.8.0.2/joomla/

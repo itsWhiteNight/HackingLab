@@ -1,0 +1,24 @@
+# Dirsearch started Sat Jan 27 14:36:18 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.8.0.2/
+
+403   273B   http://10.8.0.2/.ht_wsr.txt
+403   273B   http://10.8.0.2/.htaccess.bak1
+403   273B   http://10.8.0.2/.htaccess.orig
+403   273B   http://10.8.0.2/.htaccess.sample
+403   273B   http://10.8.0.2/.htaccess.save
+403   273B   http://10.8.0.2/.htaccessOLD
+403   273B   http://10.8.0.2/.htaccess_extra
+403   273B   http://10.8.0.2/.htaccess_sc
+403   273B   http://10.8.0.2/.htaccess_orig
+403   273B   http://10.8.0.2/.htaccessBAK
+403   273B   http://10.8.0.2/.htaccessOLD2
+403   273B   http://10.8.0.2/.html
+403   273B   http://10.8.0.2/.htm
+403   273B   http://10.8.0.2/.htpasswd_test
+403   273B   http://10.8.0.2/.htpasswds
+403   273B   http://10.8.0.2/.httr-oauth
+403   273B   http://10.8.0.2/.php
+301   305B   http://10.8.0.2/joomla    -> REDIRECTS TO: http://10.8.0.2/joomla/
+301   319B   http://10.8.0.2/joomla/administrator    -> REDIRECTS TO: http://10.8.0.2/joomla/administrator/
+200     2KB  http://10.8.0.2/joomla/
+403   273B   http://10.8.0.2/server-status
+403   273B   http://10.8.0.2/server-status/

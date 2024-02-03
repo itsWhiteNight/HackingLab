@@ -1,0 +1,11 @@
+# Dirsearch started Sat Jan 27 13:12:13 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.8.0.2:8080/ -w /usr/share/wordlists/Seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 100
+
+405   103B   http://10.8.0.2:8080/login
+500    73B   http://10.8.0.2:8080/error
+400   435B   http://10.8.0.2:8080/http%3A%2F%2Fwww
+400   435B   http://10.8.0.2:8080/http%3A%2F%2Fyoutube
+400   435B   http://10.8.0.2:8080/http%3A%2F%2Fblogs
+400   435B   http://10.8.0.2:8080/http%3A%2F%2Fblog
+400   435B   http://10.8.0.2:8080/**http%3A%2F%2Fwww
+400   435B   http://10.8.0.2:8080/External%5CX-News
+400   435B   http://10.8.0.2:8080/http%3A%2F%2Fcommunity
