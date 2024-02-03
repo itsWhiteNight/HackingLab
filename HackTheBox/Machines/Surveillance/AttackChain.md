@@ -8,13 +8,18 @@ This markdown file contains my notes and findings from the Surveillance box on H
 
 - Conduct an NMAP scan to identify open ports and services.
 - Identify an open HTTP port and check if a webpage is viewable in a web browser.
+![root flag](Figures/nmaps.png.png)
 
 ## Web Application Enumeration
 
 - Resolve webpage issues by adding the IP and DNS name to `/etc/hosts`.
-- Perform directory busting using GoBuster.
+- Perform directory busting using dirsearch ,ffuf
+![root flag](Figures/dirsearchs.png)
+![root flag](Figures/dirsearchs2.png)
+![root flag](Figures/ffuf.png)
 - Discover an admin login running Craft CMS by examining the source code of `surveillance.htb/index.php`.
-
+![root flag](Figures/admin_pannel.png)
+![root flag](Figures/admin_pannel_enum.png)
 ## Exploiting Craft CMS
 
 - Identify the version of Craft CMS by viewing the source code.

@@ -1,0 +1,46 @@
+/api/index.php/v1/banners
+# /api/index.php/v1/banners/{banner_id}
+/api/index.php/v1/banners/clients
+# /api/index.php/v1/banners/clients/{client_id}
+/api/index.php/v1/banners/categories
+# /api/index.php/v1/banners/categories/{category_id}
+# /api/index.php/v1/banners/contenthistory/{banner_id}
+/api/index.php/v1/config/application?public=true
+# /api/index.php/v1/config/{component_name}
+/api/index.php/v1/contact
+# /api/index.php/v1/contact/{contact_id}
+/api/index.php/v1/fields/contact/contact
+# /api/index.php/v1/fields/contact/contact/{field_id}
+/api/index.php/v1/fields/groups/contact/contact
+# /api/index.php/v1/fields/groups/contact/contact/{group_id}
+/api/index.php/v1/content/articles
+# /api/index.php/v1/content/articles/{article_id}
+/api/index.php/v1/languages
+/api/index.php/v1/languages/content
+# /api/index.php/v1/v1/languages/content/{language_id}
+# /api/index.php/v1/languages/overrides/{app}/{lang_code}
+# /api/index.php/v1/languages/overrides/{app}/{lang_code}/{constant_id}
+# /api/index.php/v1/menus/{app}
+# /api/index.php/v1/menus/{app}/{menu_id}
+# /api/index.php/v1/menus/{app}/items/types
+# /api/index.php/v1/menus/{app}/items
+# /api/index.php/v1/menus/{app}/items/{menu_item_id}
+/api/index.php/v1/messages
+# /api/index.php/v1/messages/{message_id}
+# /api/index.php/v1/modules/types/{app}
+# /api/index.php/v1/modules/{app}
+# /api/index.php/v1/modules/{app}/{module_id}
+/api/index.php/v1/newsfeeds/feeds
+# /api/index.php/v1/newsfeeds/feeds/{feed_id}
+/api/index.php/v1/privacy/requests
+# /api/index.php/v1/privacy/requests/{request_id}
+# /api/index.php/v1/privacy/request/export/{request_id}
+/api/index.php/v1/privacy/consents
+# /api/index.php/v1/privacy/consents/{consent_id}
+/api/index.php/v1/redirect
+# /api/index.php/v1/redirect/{redirect_id}
+/api/index.php/v1/tags
+# /api/index.php/v1/tags/{tag_id}
+# /api/index.php/v1/templates/styles/{app}/{template_style_id}
+/api/index.php/v1/users?public=true
+# /api/index.php/v1/users/{user_id}
