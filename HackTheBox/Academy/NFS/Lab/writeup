@@ -1,0 +1,36 @@
+Nmap :
+
+	ftp , ssh , rpcbind , nfs 
+	
+	nfs-showmount :
+	/var/nfs 10.0.0.0/8
+	/mnt/nfsshare 10.0.0.0/8
+	
+┌──(kali㉿kali)-[~]
+└─$ showmount -e 10.129.225.28                                                          
+Export list for 10.129.225.28:
+/var/nfs      10.0.0.0/8
+/mnt/nfsshare 10.0.0.0/8
+
+
+
+
+mkdir target_nfs
+sudo mount -t nfs ip:/ ./target_nfs -o nolock
+
+──(kali㉿kali)-[~/…/Academy/NFS/Lab/target_nfs]
+└─$ tree
+.
+├── mnt
+│   └── nfsshare
+│       └── flag.txt
+└── var
+    └── nfs
+        └── flag.txt
+
+
+HTB{8o7435zhtuih7fztdrzuhdhkfjcn7ghi4357ndcthzuc7rtfghu34}
+
+HTB{hjglmvtkjhlkfuhgi734zthrie7rjmdze}
+
+sudo umount target_nfs
