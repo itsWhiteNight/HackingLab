@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Feb 27 22:35:55 2024 as: nmap -sS -p- -oX nmap.xml -&#45;disable-arp-ping -n -PE 10.10.11.4 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -oX nmap.xml -&#45;disable-arp-ping -n -PE 10.10.11.4" start="1709069755" startstr="Tue Feb 27 22:35:55 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="SYN Stealth Scan" time="1709070115" percent="15.97" remaining="1895" etc="1709072009"/>
+<taskprogress task="SYN Stealth Scan" time="1709070116" percent="15.97" remaining="1900" etc="1709072016"/>
+<taskprogress task="SYN Stealth Scan" time="1709070116" percent="15.97" remaining="1900" etc="1709072016"/>
