@@ -1,3 +1,4 @@
+
 (23:03:01) prefs: Reading /root/.purple/prefs.xml
 (23:03:01) prefs: Reading /etc/purple/prefs.xml
 (23:03:01) prefs: Finished reading /etc/purple/prefs.xml
