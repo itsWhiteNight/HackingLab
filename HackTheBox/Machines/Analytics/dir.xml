@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://analytical.htb/ --wordlists=/usr/share/wordlists/Seclists/Discovery/Web-Content/directory-list-2.3-small.txt --format=xml -o dir.xml" time="Thu Feb 29 17:52:06 2024">
+	<target url="http://analytical.htb/images">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://analytical.htb/images/</redirect>
+	</target>
+	<target url="http://analytical.htb/css">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://analytical.htb/css/</redirect>
+	</target>
+	<target url="http://analytical.htb/js">
+		<status>301</status>
+		<contentLength>178</contentLength>
+		<contentType>text/html</contentType>
+		<redirect>http://analytical.htb/js/</redirect>
+	</target>
+</dirsearchscan>
