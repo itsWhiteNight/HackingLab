@@ -1,0 +1,539 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Whitenight Junior Pentester</title>
+<style>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #8447f0, #5e2ca5); /* Purple gradient background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          header {
+            background-color: #5e2ca5;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+          }
+          h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+          }
+          table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+          }
+          th {
+            background-color: #5e2ca5;
+            color: #fff;
+          }
+          a {
+            color: #5e2ca5;
+            text-decoration: none;
+          }
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+          }
+        </style>
+</head>
+<body>
+<header><h1>🕷️ Whitenight - Phantom Troupe 🌙</h1></header><table>
+<tr>
+<th>URL</th>
+<th>Status</th>
+<th>Content Length</th>
+<th>Content Type</th>
+<th>Redirect</th>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/%2e%2e;/test">http://cozyhosting.htb/admin/%2e%2e;/test</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/%2e%2e//google.com">http://cozyhosting.htb/admin/%2e%2e//google.com</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/..;/">http://cozyhosting.htb/admin/..;/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/;/admin">http://cozyhosting.htb/admin/;/admin</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/;/login">http://cozyhosting.htb/admin/;/login</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/;/json">http://cozyhosting.htb/admin/;/json</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/;admin/">http://cozyhosting.htb/admin/;admin/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/;json/">http://cozyhosting.htb/admin/;json/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/;login/">http://cozyhosting.htb/admin/;login/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cetc%5Cpasswd">http://cozyhosting.htb/admin/\..\..\..\..\..\..\..\..\..\etc\passwd</a></td>
+<td>400</td>
+<td>435</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/a%5c.aspx">http://cozyhosting.htb/admin/a%5c.aspx</a></td>
+<td>400</td>
+<td>435</td>
+<td>text/html</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/auditevents">http://cozyhosting.htb/admin/actuator/;/auditevents</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/beans">http://cozyhosting.htb/admin/actuator/;/beans</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/configprops">http://cozyhosting.htb/admin/actuator/;/configprops</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/caches">http://cozyhosting.htb/admin/actuator/;/caches</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/dump">http://cozyhosting.htb/admin/actuator/;/dump</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/events">http://cozyhosting.htb/admin/actuator/;/events</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/conditions">http://cozyhosting.htb/admin/actuator/;/conditions</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/env">http://cozyhosting.htb/admin/actuator/;/env</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/configurationMetadata">http://cozyhosting.htb/admin/actuator/;/configurationMetadata</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/auditLog">http://cozyhosting.htb/admin/actuator/;/auditLog</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/exportRegisteredServices">http://cozyhosting.htb/admin/actuator/;/exportRegisteredServices</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/flyway">http://cozyhosting.htb/admin/actuator/;/flyway</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/features">http://cozyhosting.htb/admin/actuator/;/features</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/health">http://cozyhosting.htb/admin/actuator/;/health</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/healthcheck">http://cozyhosting.htb/admin/actuator/;/healthcheck</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/heapdump">http://cozyhosting.htb/admin/actuator/;/heapdump</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/httptrace">http://cozyhosting.htb/admin/actuator/;/httptrace</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/liquibase">http://cozyhosting.htb/admin/actuator/;/liquibase</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/jolokia">http://cozyhosting.htb/admin/actuator/;/jolokia</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/loggers">http://cozyhosting.htb/admin/actuator/;/loggers</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/logfile">http://cozyhosting.htb/admin/actuator/;/logfile</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/loggingConfig">http://cozyhosting.htb/admin/actuator/;/loggingConfig</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/metrics">http://cozyhosting.htb/admin/actuator/;/metrics</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/integrationgraph">http://cozyhosting.htb/admin/actuator/;/integrationgraph</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/info">http://cozyhosting.htb/admin/actuator/;/info</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/mappings">http://cozyhosting.htb/admin/actuator/;/mappings</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/releaseAttributes">http://cozyhosting.htb/admin/actuator/;/releaseAttributes</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/prometheus">http://cozyhosting.htb/admin/actuator/;/prometheus</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/springWebflow">http://cozyhosting.htb/admin/actuator/;/springWebflow</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/scheduledtasks">http://cozyhosting.htb/admin/actuator/;/scheduledtasks</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/sessions">http://cozyhosting.htb/admin/actuator/;/sessions</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/refresh">http://cozyhosting.htb/admin/actuator/;/refresh</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/shutdown">http://cozyhosting.htb/admin/actuator/;/shutdown</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/registeredServices">http://cozyhosting.htb/admin/actuator/;/registeredServices</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/resolveAttributes">http://cozyhosting.htb/admin/actuator/;/resolveAttributes</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/sso">http://cozyhosting.htb/admin/actuator/;/sso</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/ssoSessions">http://cozyhosting.htb/admin/actuator/;/ssoSessions</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/status">http://cozyhosting.htb/admin/actuator/;/status</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/statistics">http://cozyhosting.htb/admin/actuator/;/statistics</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/threaddump">http://cozyhosting.htb/admin/actuator/;/threaddump</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/actuator/;/trace">http://cozyhosting.htb/admin/actuator/;/trace</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/admin/%3bindex/">http://cozyhosting.htb/admin/admin/%3bindex/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/Admin;/">http://cozyhosting.htb/admin/Admin;/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/admin;/">http://cozyhosting.htb/admin/admin;/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/axis//happyaxis.jsp">http://cozyhosting.htb/admin/axis//happyaxis.jsp</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/axis2//axis2-web/HappyAxis.jsp">http://cozyhosting.htb/admin/axis2//axis2-web/HappyAxis.jsp</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/axis2-web//HappyAxis.jsp">http://cozyhosting.htb/admin/axis2-web//HappyAxis.jsp</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/Citrix//AccessPlatform/auth/clientscripts/cookies.js">http://cozyhosting.htb/admin/Citrix//AccessPlatform/auth/clientscripts/cookies.js</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/engine/classes/swfupload//swfupload_f9.swf">http://cozyhosting.htb/admin/engine/classes/swfupload//swfupload_f9.swf</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/engine/classes/swfupload//swfupload.swf">http://cozyhosting.htb/admin/engine/classes/swfupload//swfupload.swf</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/examples/jsp/%252e%252e/%252e%252e/manager/html/">http://cozyhosting.htb/admin/examples/jsp/%252e%252e/%252e%252e/manager/html/</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/extjs/resources//charts.swf">http://cozyhosting.htb/admin/extjs/resources//charts.swf</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/html/js/misc/swfupload//swfupload.swf">http://cozyhosting.htb/admin/html/js/misc/swfupload//swfupload.swf</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/jkstatus;">http://cozyhosting.htb/admin/jkstatus;</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cozyhosting.htb/admin/login.wdm%2e">http://cozyhosting.htb/admin/login.wdm%2e</a></td>
+<td>200</td>
+<td>0</td>
+<td>unknown</td>
+<td></td>
+</tr>
+</table>
+<footer><p>
+            On a mission to uncover the secrets of the digital realm. 
+            The quieter we are, the louder we hear. 
+          </p></footer>
+</body>
+</html>
