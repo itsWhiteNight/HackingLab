@@ -1,4 +1,9 @@
-## Explosion Machine . Tier 1 
+## Explosion Machine 
+
+		Programming
+		RDP
+		Reconnaissance
+		Weak Credentials
 
 ### Tasks
 
