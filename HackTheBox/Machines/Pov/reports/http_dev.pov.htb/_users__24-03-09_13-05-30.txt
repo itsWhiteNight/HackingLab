@@ -1,0 +1,35 @@
+# Dirsearch started Sat Mar  9 13:06:09 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://dev.pov.htb/users/
+
+302   162B   http://dev.pov.htb/users/%2e%2e//google.com    -> REDIRECTS TO: http://dev.pov.htb/portfolio/google.com
+302   154B   http://dev.pov.htb/users/%3f/    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/?/
+403   312B   http://dev.pov.htb/users/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+302   157B   http://dev.pov.htb/users/.asmx    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/.asmx
+302   157B   http://dev.pov.htb/users/.ashx    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/.ashx
+403   312B   http://dev.pov.htb/users/\..\..\..\..\..\..\..\..\..\etc\passwd
+302   161B   http://dev.pov.htb/users/admin%20/    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/admin%20/
+302   158B   http://dev.pov.htb/users/admin.    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/admin.
+302   159B   http://dev.pov.htb/users/asset..    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/asset..
+403   312B   http://dev.pov.htb/users/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+302   231B   http://dev.pov.htb/users/docpicker/internal_proxy/https/127.0.0.1:9043/ibm/console    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/docpicker/internal_proxy/https/127.0.0.1:9043/ibm/console
+302   162B   http://dev.pov.htb/users/index.php.    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/index.php.
+302   176B   http://dev.pov.htb/users/javax.faces.resource.../    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/javax.faces.resource.../
+302   268B   http://dev.pov.htb/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/compilerDirectivesAdd/!/etc!/passwd    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/compilerDirectivesAdd/!/etc!/passwd
+302   235B   http://dev.pov.htb/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/help/*    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/help/*
+302   209B   http://dev.pov.htb/users/jolokia/exec/java.lang:type=Memory/gc    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/java.lang:type=Memory/gc
+302   263B   http://dev.pov.htb/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/jfrStart/filename=!/tmp!/foo    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/jfrStart/filename=!/tmp!/foo
+302   242B   http://dev.pov.htb/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/disable    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/disable
+302   261B   http://dev.pov.htb/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/jvmtiAgentLoad/!/etc!/passwd    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/jvmtiAgentLoad/!/etc!/passwd
+302   260B   http://dev.pov.htb/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/output=!/tmp!/pwned    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/output=!/tmp!/pwned
+302   245B   http://dev.pov.htb/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmSystemProperties    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmSystemProperties
+302   217B   http://dev.pov.htb/users/jolokia/read/java.lang:type=*/HeapMemoryUsage    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/read/java.lang:type=*/HeapMemoryUsage
+302   210B   http://dev.pov.htb/users/jolokia/search/*:j2eeType=J2EEServer,*    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/search/*:j2eeType=J2EEServer,*
+302   229B   http://dev.pov.htb/users/jolokia/read/java.lang:type=Memory/HeapMemoryUsage/used    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/read/java.lang:type=Memory/HeapMemoryUsage/used
+302   222B   http://dev.pov.htb/users/jolokia/write/java.lang:type=Memory/Verbose/true    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/jolokia/write/java.lang:type=Memory/Verbose/true
+302   162B   http://dev.pov.htb/users/login.wdm%2e    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/login.wdm.
+302   164B   http://dev.pov.htb/users/rating_over.    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/rating_over.
+302   164B   http://dev.pov.htb/users/service.asmx    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/service.asmx
+302   160B   http://dev.pov.htb/users/static..    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/static..
+302   161B   http://dev.pov.htb/users/Trace.axd    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/Trace.axd
+302   191B   http://dev.pov.htb/users/umbraco/webservices/codeEditorSave.asmx    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/umbraco/webservices/codeEditorSave.asmx
+302   161B   http://dev.pov.htb/users/WEB-INF./    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/WEB-INF./
+302   167B   http://dev.pov.htb/users/WebResource.axd?d=LER8t9aS    -> REDIRECTS TO: /default.aspx?aspxerrorpath=/users/WebResource.axd

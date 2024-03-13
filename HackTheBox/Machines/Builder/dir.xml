@@ -1,0 +1,570 @@
+<?xml version="1.0" ?>
+<dirsearchscan args="/usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.11.10:8080/ --format=xml -o dir.xml" time="Thu Mar  7 22:11:58 2024">
+	<target url="http://10.10.11.10:8080/404">
+		<status>200</status>
+		<contentLength>2627</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/;/json">
+		<status>400</status>
+		<contentLength>555</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/;/admin">
+		<status>400</status>
+		<contentLength>556</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/;json/">
+		<status>400</status>
+		<contentLength>555</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/;/login">
+		<status>400</status>
+		<contentLength>556</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/;admin/">
+		<status>400</status>
+		<contentLength>556</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/;login/">
+		<status>400</status>
+		<contentLength>556</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/about">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/about/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/auditevents">
+		<status>400</status>
+		<contentLength>571</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/auditLog">
+		<status>400</status>
+		<contentLength>568</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/caches">
+		<status>400</status>
+		<contentLength>566</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/conditions">
+		<status>400</status>
+		<contentLength>570</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/beans">
+		<status>400</status>
+		<contentLength>565</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/configprops">
+		<status>400</status>
+		<contentLength>571</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/env">
+		<status>400</status>
+		<contentLength>563</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/exportRegisteredServices">
+		<status>400</status>
+		<contentLength>584</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/jolokia">
+		<status>400</status>
+		<contentLength>567</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/heapdump">
+		<status>400</status>
+		<contentLength>568</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/healthcheck">
+		<status>400</status>
+		<contentLength>571</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/info">
+		<status>400</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/flyway">
+		<status>400</status>
+		<contentLength>566</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/liquibase">
+		<status>400</status>
+		<contentLength>569</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/dump">
+		<status>400</status>
+		<contentLength>564</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/configurationMetadata">
+		<status>400</status>
+		<contentLength>581</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/integrationgraph">
+		<status>400</status>
+		<contentLength>576</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/features">
+		<status>400</status>
+		<contentLength>568</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/health">
+		<status>400</status>
+		<contentLength>566</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/events">
+		<status>400</status>
+		<contentLength>566</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/loggers">
+		<status>400</status>
+		<contentLength>567</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/metrics">
+		<status>400</status>
+		<contentLength>567</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/logfile">
+		<status>400</status>
+		<contentLength>567</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/prometheus">
+		<status>400</status>
+		<contentLength>570</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/refresh">
+		<status>400</status>
+		<contentLength>567</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/releaseAttributes">
+		<status>400</status>
+		<contentLength>577</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/httptrace">
+		<status>400</status>
+		<contentLength>569</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/loggingConfig">
+		<status>400</status>
+		<contentLength>573</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/registeredServices">
+		<status>400</status>
+		<contentLength>578</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/resolveAttributes">
+		<status>400</status>
+		<contentLength>577</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/scheduledtasks">
+		<status>400</status>
+		<contentLength>574</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/mappings">
+		<status>400</status>
+		<contentLength>568</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/sessions">
+		<status>400</status>
+		<contentLength>568</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/shutdown">
+		<status>400</status>
+		<contentLength>568</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/springWebflow">
+		<status>400</status>
+		<contentLength>573</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/sso">
+		<status>400</status>
+		<contentLength>563</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/statistics">
+		<status>400</status>
+		<contentLength>570</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/ssoSessions">
+		<status>400</status>
+		<contentLength>571</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/trace">
+		<status>400</status>
+		<contentLength>565</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/status">
+		<status>400</status>
+		<contentLength>566</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/actuator/;/threaddump">
+		<status>400</status>
+		<contentLength>570</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/adjuncts/3a890183/">
+		<status>404</status>
+		<contentLength>2657</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/Admin;/">
+		<status>400</status>
+		<contentLength>556</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/admin;/">
+		<status>400</status>
+		<contentLength>556</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/api">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/api/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/api/">
+		<status>200</status>
+		<contentLength>5210</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/assets">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/assets/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/assets/">
+		<status>404</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/assets/fckeditor">
+		<status>404</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/assets/file">
+		<status>404</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/assets/js/fckeditor">
+		<status>404</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/assets/npm-debug.log">
+		<status>404</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/assets/pubspec.yaml">
+		<status>404</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/asynchPeople/">
+		<status>200</status>
+		<contentLength>6059</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/cloud">
+		<status>403</status>
+		<contentLength>599</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/cloud/">
+		<status>403</status>
+		<contentLength>605</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/cli/">
+		<status>200</status>
+		<contentLength>7294</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/config.xml">
+		<status>200</status>
+		<contentLength>237</contentLength>
+		<contentType>application/xml</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/configure">
+		<status>403</status>
+		<contentLength>628</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/console/j_security_check">
+		<status>303</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/loginError</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/credentials">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/credentials/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/credentials/">
+		<status>200</status>
+		<contentLength>135568</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/error">
+		<status>400</status>
+		<contentLength>2520</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/favicon.ico">
+		<status>200</status>
+		<contentLength>17542</contentLength>
+		<contentType>image/x-icon</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/j_security_check">
+		<status>303</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/loginError</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/jkstatus;">
+		<status>400</status>
+		<contentLength>558</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log">
+		<status>403</status>
+		<contentLength>595</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/">
+		<status>403</status>
+		<contentLength>601</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/access_log">
+		<status>403</status>
+		<contentLength>621</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/access.log">
+		<status>403</status>
+		<contentLength>621</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/error.log">
+		<status>403</status>
+		<contentLength>619</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/errors.log">
+		<status>403</status>
+		<contentLength>621</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/error_log">
+		<status>403</status>
+		<contentLength>619</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/authorizenet.log">
+		<status>403</status>
+		<contentLength>633</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/log.log">
+		<status>403</status>
+		<contentLength>615</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/exception.log">
+		<status>403</status>
+		<contentLength>627</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/production.log">
+		<status>403</status>
+		<contentLength>629</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/log.txt">
+		<status>403</status>
+		<contentLength>615</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/development.log">
+		<status>403</status>
+		<contentLength>631</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/test.log">
+		<status>403</status>
+		<contentLength>617</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/payment_paypal_express.log">
+		<status>403</status>
+		<contentLength>653</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/librepag.log">
+		<status>403</status>
+		<contentLength>625</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/payment.log">
+		<status>403</status>
+		<contentLength>623</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/payment_authorizenet.log">
+		<status>403</status>
+		<contentLength>649</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/server.log">
+		<status>403</status>
+		<contentLength>621</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/www-error.log">
+		<status>403</status>
+		<contentLength>627</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/log/old">
+		<status>403</status>
+		<contentLength>607</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/login">
+		<status>200</status>
+		<contentLength>898</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/logout">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/logout/">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/main">
+		<status>500</status>
+		<contentLength>2646</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/manage">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/manage/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/manage/">
+		<status>403</status>
+		<contentLength>628</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/people">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/people/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/properties">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/properties/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/restart">
+		<status>403</status>
+		<contentLength>603</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/robots.txt">
+		<status>200</status>
+		<contentLength>90</contentLength>
+		<contentType>text/plain</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/script/">
+		<status>403</status>
+		<contentLength>607</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/script/jqueryplugins/dataTables/extras/TableTools/media/swf/ZeroClipboard.swf">
+		<status>403</status>
+		<contentLength>771</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/script">
+		<status>403</status>
+		<contentLength>601</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/search">
+		<status>302</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+		<redirect>http://10.10.11.10:8080/search/</redirect>
+	</target>
+	<target url="http://10.10.11.10:8080/secured">
+		<status>401</status>
+		<contentLength>0</contentLength>
+		<contentType>unknown</contentType>
+	</target>
+	<target url="http://10.10.11.10:8080/signup">
+		<status>404</status>
+		<contentLength>5035</contentLength>
+		<contentType>text/html</contentType>
+	</target>
+</dirsearchscan>
