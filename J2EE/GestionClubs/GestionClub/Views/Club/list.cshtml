@@ -1,0 +1,52 @@
+﻿@model List<Models.Club.ClubVM>
+
+<h2>Liste des Clubs</h2>
+<h4>
+    Nombre de clubs : @ViewBag.nombreClub</h4>
+
+<a asp-controller="Club" asp-action="Create" class="btn btn-primary btn-sm">Ajouter un club</a>
+<a asp-controller="Membre" asp-action="Create"  class="btn btn-primary btn-sm">Ajouter un membre</a>
+<a asp-controller="Activite" asp-action="Create" class="btn btn-primary btn-sm">Ajouter une activité</a>
+
+
+<div class="row mt-3">
+    <div class="col-md-12">
+
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>nom</th>
+                    <th>Descriprtion</th>
+                    <th>Date de creation</th>
+
+
+
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var club in Model)
+                {
+
+                    <tr>
+
+                        <td>@club.Nom</td>
+                        <td>@club.Description</td>
+                        <td>@club.DateCreation.ToString("dd/MM/yyyy")</td>
+
+                        <td>
+
+                            <a asp-controller="Club" asp-action="Edit" asp-route-id="@club.Id" class="btn btn-success btn-sm">Editer</a>
+                            <a asp-controller="Club" asp-action="Delete" asp-route-id="@club.Id" class="btn btn-danger btn-sm">Supprimer</a>
+                            <a asp-controller="Membre" asp-action="list" asp-route-id="@club.Id" class="btn btn-dark btn-sm">Membres</a>
+                            <a asp-controller="Activite" asp-action="list" asp-route-id="@club.Id" class="btn btn-primary btn-sm">Activités</a>
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

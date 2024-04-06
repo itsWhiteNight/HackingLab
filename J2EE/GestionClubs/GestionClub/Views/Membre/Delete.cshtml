@@ -1,0 +1,20 @@
+﻿@model List<Models.Membres.MembreVM>
+
+@{
+    ViewData["Title"] = "Supprimer un membre";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-controller="Membre" asp-action="Delete" method="post" class="mt-3">
+    <div class="form-group">
+        <label for="membre">Choisissez le membre à supprimer :</label>
+        <select id="membre" name="id" class="form-control" onchange="this.form.submit()">
+            <option value="">-- Sélectionnez un membre --</option>
+            @foreach (var membre in ViewBag.IdMembre)
+            {
+                <option value="@membre.Id">@membre.Nom @membre.Prenom</option>
+            }
+        </select>
+    </div>
+</form>

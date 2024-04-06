@@ -1,0 +1,31 @@
+﻿@model Models.Activites.ActiviteVM
+
+@{
+    ViewData["Title"] = "Créer une activité";
+}
+
+<div class="container mt-3">
+    <h2>@ViewData["Title"]</h2>
+
+    <form asp-controller="Activite" asp-action="Create" method="post">
+        <div class="form-group">
+            <label for="Nom">Nom :</label>
+            <input asp-for="@Model.Nom" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="Description">Description :</label>
+            <input asp-for="@Model.Description" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="IdClub">Club :</label>
+            <select asp-for="IdClub" class="form-control"
+                    asp-items="@(new SelectList(ViewBag.IdClub, "Id", "Nom"))">
+                <option value="">-- Sélectionnez un club --</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+    </form>
+</div>
