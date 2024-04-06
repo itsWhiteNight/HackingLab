@@ -1,0 +1,22 @@
+﻿@model List<Models.Activites.ActiviteVM>
+
+@{
+    ViewData["Title"] = "Supprimer une activité";
+}
+
+<div class="container mt-3">
+    <h2>@ViewData["Title"]</h2>
+
+    <form asp-controller="Activite" asp-action="Delete" method="post">
+        <div class="form-group">
+            <label for="activite">Choisissez l'activité à supprimer :</label>
+            <select id="activite" name="id" class="form-control" onchange="this.form.submit()">
+                <option value="">-- Sélectionnez une activité --</option>
+                @foreach (var activite in ViewBag.IdActivite)
+                {
+                    <option value="@activite.Id">@activite.Nom</option>
+                }
+            </select>
+        </div>
+    </form>
+</div>

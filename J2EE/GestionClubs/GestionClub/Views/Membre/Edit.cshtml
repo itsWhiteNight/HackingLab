@@ -1,0 +1,36 @@
+﻿@model Models.Membres.MembreVM
+
+<h1>@ViewData["Titre"]</h1>
+
+
+<form asp-controller="Membre" asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    
+    <input type="hidden" asp-for="@Model.Id" />
+
+    
+
+    <div class="mb-3">
+        <label class="form-label">Annee :</label>
+        <input asp-for="@Model.Annee" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Filiere</label>
+        <input asp-for="@Model.Filiere" class="form-control" id="exampleFormControlTextarea1" rows="3">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Groupe</label>
+        <input asp-for="@Model.Groupe" class="form-control" id="exampleFormControlTextarea1" rows="3">
+    </div>
+    <div class="form-group">
+        <label for="IdClub">Club :</label>
+        <select asp-for="IdClub" class="form-control" asp-items="@(new SelectList(ViewBag.IdClub, "Id", "Nom"))">
+            <option value="">-- Sélectionnez un club --</option>
+        </select>
+    </div>
+
+    
+    <input type="submit"  />
+</form>

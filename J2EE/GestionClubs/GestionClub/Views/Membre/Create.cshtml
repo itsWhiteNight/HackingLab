@@ -1,0 +1,42 @@
+﻿@model Models.Membres.MembreVM
+
+<div class="container">
+    <h2 class="mt-3">@ViewData["Titre"]</h2>
+
+    <form asp-controller="Membre" asp-action="Create" method="post" class="mt-3">
+        <div class="form-group">
+            <label for="Nom">Nom :</label>
+            <input asp-for="@Model.Nom" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="Prenom">Prenom :</label>
+            <input asp-for="@Model.Prenom" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="Annee">Annee :</label>
+            <input asp-for="@Model.Annee" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="Filiere">Filiere :</label>
+            <input asp-for="@Model.Filiere" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="Groupe">Groupe :</label>
+            <input asp-for="@Model.Groupe" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="IdClub">Club :</label>
+            <select asp-for="IdClub" class="form-control"
+                    asp-items="@(new SelectList(ViewBag.IdClub, "Id", "Nom"))">
+                <option value="">-- Sélectionnez un club --</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+    </form>
+</div>
