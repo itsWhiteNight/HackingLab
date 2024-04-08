@@ -1,0 +1,15 @@
+EGOTISTICAL-BANK,DC
+Users,DC
+Computers,DC
+Domain
+System,DC
+LostAndFound,DC
+Infrastructure,DC
+ForeignSecurityPrincipals,DC
+Program
+NTDS
+Managed
+Keys,DC
+TPM
+Builtin,DC
+Hugo
