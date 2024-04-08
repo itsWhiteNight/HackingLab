@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sun Mar 24 23:11:21 2024 as: nmap -sS -p- -oX nmap_all.xml 10.10.10.175 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -oX nmap_all.xml 10.10.10.175" start="1711321881" startstr="Sun Mar 24 23:11:21 2024" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="SYN Stealth Scan" time="1711321947" percent="20.68" remaining="254" etc="1711322200"/>
+<taskprogress task="SYN Stealth Scan" time="1711321947" percent="20.83" remaining="251" etc="1711322198"/>
+<taskprogress task="SYN Stealth Scan" time="1711321947" percent="20.93" remaining="250" etc="1711322196"/>
+<taskprogress task="SYN Stealth Scan" time="1711321947" percent="21.08" remaining="248" etc="1711322194"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.33" remaining="248" etc="1711322195"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.42" remaining="246" etc="1711322194"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.48" remaining="245" etc="1711322193"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.50" remaining="245" etc="1711322193"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.54" remaining="245" etc="1711322192"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.57" remaining="244" etc="1711322192"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.58" remaining="244" etc="1711322191"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.65" remaining="243" etc="1711322191"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.66" remaining="243" etc="1711322190"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.73" remaining="242" etc="1711322189"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.74" remaining="242" etc="1711322189"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.81" remaining="241" etc="1711322188"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.82" remaining="240" etc="1711322188"/>
+<taskprogress task="SYN Stealth Scan" time="1711321948" percent="21.91" remaining="239" etc="1711322187"/>
+<taskprogress task="SYN Stealth Scan" time="1711321949" percent="22.07" remaining="241" etc="1711322189"/>
+<taskprogress task="SYN Stealth Scan" time="1711321968" percent="31.04" remaining="194" etc="1711322161"/>
+<taskprogress task="SYN Stealth Scan" time="1711321968" percent="31.12" remaining="193" etc="1711322161"/>
+<taskprogress task="SYN Stealth Scan" time="1711321968" percent="31.16" remaining="193" etc="1711322160"/>
+<taskprogress task="SYN Stealth Scan" time="1711321968" percent="31.21" remaining="192" etc="1711322160"/>
+<taskprogress task="SYN Stealth Scan" time="1711321968" percent="31.25" remaining="192" etc="1711322159"/>
+<taskprogress task="SYN Stealth Scan" time="1711321984" percent="38.08" remaining="168" etc="1711322151"/>
+<taskprogress task="SYN Stealth Scan" time="1711321984" percent="38.18" remaining="167" etc="1711322151"/>
+<taskprogress task="SYN Stealth Scan" time="1711321984" percent="38.28" remaining="167" etc="1711322150"/>
+<taskprogress task="SYN Stealth Scan" time="1711321984" percent="38.41" remaining="166" etc="1711322149"/>
+<taskprogress task="SYN Stealth Scan" time="1711321984" percent="38.54" remaining="165" etc="1711322148"/>
+<taskprogress task="SYN Stealth Scan" time="1711322085" percent="85.85" remaining="34" etc="1711322119"/>
+<taskprogress task="SYN Stealth Scan" time="1711322085" percent="86.00" remaining="34" etc="1711322118"/>
+<taskprogress task="SYN Stealth Scan" time="1711322085" percent="86.13" remaining="33" etc="1711322118"/>
+<host starttime="1711321881" endtime="1711322104"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.175" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.175" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65516">
+<extrareasons reason="no-response" count="65516" proto="tcp" ports="1-52,54-79,81-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-3268,3270-5984,5986-9388,9390-49666,49668-49672,49676-49716,49718-49735,49737-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldapssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="globalcatLDAPssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="wsman" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="adws" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49673"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49674"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49675"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49717"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49736"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+</ports>
+<times srtt="59130" rttvar="10326" to="100434"/>
+</host>
+<runstats><finished time="1711322104" timestr="Sun Mar 24 23:15:04 2024" summary="Nmap done at Sun Mar 24 23:15:04 2024; 1 IP address (1 host up) scanned in 223.30 seconds" elapsed="223.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

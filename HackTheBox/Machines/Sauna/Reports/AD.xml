@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sun Mar 24 23:39:27 2024 as: nmap -sVC -p88,135,139,389,445,464,593,636,3268,3269 -oX AD.xml -vvv 10.10.10.175 -->
+<nmaprun scanner="nmap" args="nmap -sVC -p88,135,139,389,445,464,593,636,3268,3269 -oX AD.xml -vvv 10.10.10.175" start="1711323567" startstr="Sun Mar 24 23:39:27 2024" version="7.94" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="10" services="88,135,139,389,445,464,593,636,3268-3269"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1711323567"/>
+<taskend task="NSE" time="1711323567"/>
+<taskbegin task="NSE" time="1711323567"/>
+<taskend task="NSE" time="1711323567"/>
+<taskbegin task="NSE" time="1711323567"/>
+<taskend task="NSE" time="1711323567"/>
+<taskbegin task="Ping Scan" time="1711323567"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1711323568" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1711323568"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1711323572"/>
+<taskbegin task="Connect Scan" time="1711323572"/>
+<taskend task="Connect Scan" time="1711323572" extrainfo="10 total ports"/>
+<taskbegin task="Service scan" time="1711323572"/>
+<taskend task="Service scan" time="1711323586" extrainfo="10 services on 1 host"/>
+<taskbegin task="NSE" time="1711323586"/>
+<taskprogress task="NSE" time="1711323617" percent="99.93" remaining="1" etc="1711323617"/>
+<taskend task="NSE" time="1711323626"/>
+<taskbegin task="NSE" time="1711323626"/>
+<taskend task="NSE" time="1711323632"/>
+<taskbegin task="NSE" time="1711323632"/>
+<taskend task="NSE" time="1711323632"/>
+<host starttime="1711323572" endtime="1711323632"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.175" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.175" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2024-03-25 06:39:40Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: EGOTISTICAL-BANK.LOCAL0., Site: Default-First-Site-Name" hostname="SAUNA" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: EGOTISTICAL-BANK.LOCAL0., Site: Default-First-Site-Name" hostname="SAUNA" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled and required"><table key="3:1:1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2024-03-25T06:39:49&#xa;  start_date: N/A"><elem key="date">2024-03-25T06:39:49</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="7h00m01s"><elem key="median">25201</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="mean">25201</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 35558/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 55927/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 57297/udp): CLEAN (Timeout)&#xa;  Check 4 (port 12629/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/></hostscript><times srtt="88453" rttvar="24314" to="185709"/>
+</host>
+<taskbegin task="NSE" time="1711323632"/>
+<taskend task="NSE" time="1711323632"/>
+<taskbegin task="NSE" time="1711323632"/>
+<taskend task="NSE" time="1711323632"/>
+<taskbegin task="NSE" time="1711323632"/>
+<taskend task="NSE" time="1711323632"/>
+<runstats><finished time="1711323632" timestr="Sun Mar 24 23:40:32 2024" summary="Nmap done at Sun Mar 24 23:40:32 2024; 1 IP address (1 host up) scanned in 65.11 seconds" elapsed="65.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
