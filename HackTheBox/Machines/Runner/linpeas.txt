@@ -1,0 +1,1169 @@
+linpeas v2.2.7 by carlospolop
+
+Linux Privesc Checklist: https://book.hacktricks.xyz/linux-unix/linux-privilege-escalation-checklist
+ LEYEND:
+  RED/YELLOW: 99% a PE vector
+  RED: You must take a look at it
+  LightCyan: Users with console
+  Blue: Users without console & mounted devs
+  Green: Common things (users, groups, SUID/SGID, mounts, .sh scripts, cronjobs) 
+  LightMangenta: Your username
+
+
+====================================( Basic information )=====================================
+OS: Linux version 5.15.0-102-generic (buildd@lcy02-amd64-080) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #112-Ubuntu SMP Tue Mar 5 16:50:32 UTC 2024
+User & Groups: uid=1001(john) gid=1001(john) groups=1001(john)
+Hostname: runner
+Writable folder: /dev/shm
+[+] /usr/bin/ping is available for network discovery (You can use linpeas to discover hosts, learn more with -h)
+[+] /usr/bin/nc is available for network discover & port scanning (You can use linpeas to discover hosts/port scanning, learn more with -h)
+
+
+====================================( System Information )====================================
+[+] Operative system
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#kernel-exploits
+Linux version 5.15.0-102-generic (buildd@lcy02-amd64-080) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #112-Ubuntu SMP Tue Mar 5 16:50:32 UTC 2024
+Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04.4 LTS
+Release:	22.04
+Codename:	jammy
+
+[+] Sudo version
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#sudo-version
+Sudo version 1.9.9
+
+[+] PATH
+[i] Any writable folder in original PATH? (a new completed path will be exported)
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+New path exported: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+[+] Date
+Sat Apr 20 21:26:28 UTC 2024
+
+[+] System stats
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           392M  1.3M  390M   1% /run
+/dev/sda2       9.8G  8.1G  1.7G  84% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           392M     0  392M   0% /run/user/1001
+               total        used        free      shared  buff/cache   available
+Mem:         4005832     1914032      123444        1216     1968356     1792408
+Swap:        1048572        5120     1043452
+
+[+] Environment
+[i] Any private information inside environment variables?
+LESSOPEN=| /usr/bin/lesspipe %s
+HISTFILESIZE=0
+USER=john
+SSH_CLIENT=10.10.14.14 41186 22
+LC_TIME=C.UTF-8
+XDG_SESSION_TYPE=tty
+SHLVL=1
+MOTD_SHOWN=pam
+HOME=/home/john
+SSH_TTY=/dev/pts/1
+LC_MONETARY=C.UTF-8
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+LOGNAME=john
+_=./linpeas.sh
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+XDG_SESSION_ID=32
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+LC_ADDRESS=C.UTF-8
+XDG_RUNTIME_DIR=/run/user/1001
+LANG=C.UTF-8
+LC_TELEPHONE=C.UTF-8
+HISTSIZE=0
+SHELL=/bin/bash
+LC_NAME=C.UTF-8
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_MEASUREMENT=C.UTF-8
+LC_IDENTIFICATION=C.UTF-8
+SSH_CONNECTION=10.10.14.14 41186 10.10.11.13 22
+LC_NUMERIC=C.UTF-8
+LC_PAPER=C.UTF-8
+HISTFILE=/dev/null
+
+[+] Looking for Signature verification failed in dmseg
+ Not Found
+
+[+] selinux enabled? .......... sestatus Not Found
+[+] Printer? .......... lpstat Not Found
+[+] Is this a container? .......... No
+[+] Is ASLR enabled? .......... Yes
+
+=========================================( Devices )==========================================
+[+] Any sd* disk in /dev? (limit 20)
+sda
+sda1
+sda2
+sda3
+
+[+] Unmounted file-system?
+[i] Check if you can mount umounted devices
+/dev/sda2 / ext4 defaults 0 1
+/dev/sda3 none swap sw 0 0
+proc /proc proc remount,rw,hidepid=2,noexec,nosuid,nodev 0 0
+
+
+====================================( Available Software )====================================
+[+] Useful software?
+/usr/bin/nc
+/usr/bin/netcat
+/usr/bin/wget
+/usr/bin/curl
+/usr/bin/ping
+/usr/bin/base64
+/usr/bin/python3
+/usr/bin/perl
+/usr/bin/sudo
+
+[+] Installed compilers?
+Compilers Not Found
+
+
+================================( Processes, Cron & Services )================================
+[+] Cleaned processes
+[i] Check weird & unexpected proceses run by root: https://book.hacktricks.xyz/linux-unix/privilege-escalation#processes
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+john        4429  0.0  0.2  17092  8936 ?        Ss   20:56   0:00 /lib/systemd/systemd --user
+john        4514  0.0  0.1   8788  5656 pts/0    Ss+  20:56   0:00 -bash
+john       18328  0.0  0.1   9200  5736 pts/1    Ss   21:16   0:00 -bash
+john       18558  0.0  0.1   8656  5348 pts/2    Ss+  21:23   0:00 -bash
+john       18684  1.0  0.0   3024  1996 pts/1    S+   21:26   0:00 /bin/sh ./linpeas.sh
+john       18869  0.0  0.0  10464  3312 pts/1    R+   21:26   0:00 ps aux
+
+[+] Binary processes permissions
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#processes
+   0 lrwxrwxrwx 1 root root    4 Mar 23  2022 /bin/sh -> dash
+1.8M -rwxr-xr-x 1 root root 1.8M Nov 21 20:57 /lib/systemd/systemd
+
+[+] Cron jobs
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#scheduled-jobs
+-rw-r--r-- 1 root root 1136 Mar 23  2022 /etc/crontab
+
+/etc/cron.d:
+total 16
+drwxr-xr-x   2 root root 4096 Apr  4 10:24 .
+drwxr-xr-x 101 root root 4096 Apr 15 09:35 ..
+-rw-r--r--   1 root root  102 Mar 23  2022 .placeholder
+-rw-r--r--   1 root root  201 Jan  8  2022 e2scrub_all
+
+/etc/cron.daily:
+total 32
+drwxr-xr-x   2 root root 4096 Apr  4 10:24 .
+drwxr-xr-x 101 root root 4096 Apr 15 09:35 ..
+-rw-r--r--   1 root root  102 Mar 23  2022 .placeholder
+-rwxr-xr-x   1 root root  376 Nov 11  2019 apport
+-rwxr-xr-x   1 root root 1478 Apr  8  2022 apt-compat
+-rwxr-xr-x   1 root root  123 Dec  5  2021 dpkg
+-rwxr-xr-x   1 root root  377 May 25  2022 logrotate
+-rwxr-xr-x   1 root root 1330 Mar 17  2022 man-db
+
+/etc/cron.hourly:
+total 12
+drwxr-xr-x   2 root root 4096 Apr  4 10:24 .
+drwxr-xr-x 101 root root 4096 Apr 15 09:35 ..
+-rw-r--r--   1 root root  102 Mar 23  2022 .placeholder
+
+/etc/cron.monthly:
+total 12
+drwxr-xr-x   2 root root 4096 Apr  4 10:24 .
+drwxr-xr-x 101 root root 4096 Apr 15 09:35 ..
+-rw-r--r--   1 root root  102 Mar 23  2022 .placeholder
+
+/etc/cron.weekly:
+total 16
+drwxr-xr-x   2 root root 4096 Apr  4 10:24 .
+drwxr-xr-x 101 root root 4096 Apr 15 09:35 ..
+-rw-r--r--   1 root root  102 Mar 23  2022 .placeholder
+-rwxr-xr-x   1 root root 1020 Mar 17  2022 man-db
+
+SHELL=/bin/sh
+
+
+[+] Services
+[i] Search for outdated versions
+ [ + ]  apparmor
+ [ + ]  apport
+ [ + ]  auditd
+ [ - ]  console-setup.sh
+ [ + ]  cron
+ [ - ]  cryptdisks
+ [ - ]  cryptdisks-early
+ [ + ]  dbus
+ [ + ]  docker
+ [ - ]  grub-common
+ [ - ]  hwclock.sh
+ [ + ]  irqbalance
+ [ - ]  iscsid
+ [ - ]  keyboard-setup.sh
+ [ + ]  kmod
+ [ - ]  lvm2
+ [ - ]  lvm2-lvmpolld
+ [ + ]  networking
+ [ + ]  nginx
+ [ - ]  open-iscsi
+ [ + ]  open-vm-tools
+ [ + ]  plymouth
+ [ + ]  plymouth-log
+ [ + ]  procps
+ [ - ]  rsync
+ [ - ]  screen-cleanup
+ [ + ]  ssh
+ [ + ]  udev
+ [ - ]  uuidd
+
+
+===================================( Network Information )====================================
+[+] Hostname, hosts and DNS
+runner
+127.0.0.1 localhost
+127.0.1.1 runner runner.htb teamcity.runner.htb portainer-administration.runner.htb
+
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search .
+
+[+] Content of /etc/inetd.conf
+/etc/inetd.conf Not Found
+
+[+] Networks and neighbours
+# symbolic names for networks, see networks(5) for more information
+link-local 169.254.0.0
+br-21746deff6ac: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.18.0.1  netmask 255.255.0.0  broadcast 172.18.255.255
+        ether 02:42:a9:03:81:e7  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+docker0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+        inet6 fe80::42:f1ff:fed7:92a7  prefixlen 64  scopeid 0x20<link>
+        ether 02:42:f1:d7:92:a7  txqueuelen 0  (Ethernet)
+        RX packets 128048  bytes 69230377 (69.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 157295  bytes 18154555 (18.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.10.11.13  netmask 255.255.254.0  broadcast 10.10.11.255
+        inet6 dead:beef::250:56ff:feb9:79c  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::250:56ff:feb9:79c  prefixlen 64  scopeid 0x20<link>
+        ether 00:50:56:b9:07:9c  txqueuelen 1000  (Ethernet)
+        RX packets 874713  bytes 142588011 (142.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 885232  bytes 366639105 (366.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 280023  bytes 85306144 (85.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 280023  bytes 85306144 (85.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+veth3d17765: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::b4d2:c3ff:fed5:4459  prefixlen 64  scopeid 0x20<link>
+        ether b6:d2:c3:d5:44:59  txqueuelen 0  (Ethernet)
+        RX packets 128048  bytes 71023049 (71.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 157308  bytes 18155549 (18.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+172.17.0.2 dev docker0 lladdr 02:42:ac:11:00:02 REACHABLE
+10.10.10.2 dev eth0 lladdr 00:50:56:b9:6a:21 REACHABLE
+fe80::250:56ff:feb9:6a21 dev eth0 lladdr 00:50:56:b9:6a:21 router STALE
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         10.10.10.2      0.0.0.0         UG    0      0        0 eth0
+10.10.10.0      0.0.0.0         255.255.254.0   U     0      0        0 eth0
+172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 docker0
+172.18.0.0      0.0.0.0         255.255.0.0     U     0      0        0 br-21746deff6ac
+
+[+] Iptables rules
+iptables rules Not Found
+
+[+] Active Ports
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#internal-open-ports
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:8111          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:9443          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:5005          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:9000          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59052       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58598       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:55960         TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:36054       TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58836       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:60518         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58776       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:38306         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59000       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58806       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58772       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58870       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:33948         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:51232         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:35522       TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58682       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58848       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58718       ESTABLISHED -                   
+tcp        0      0 172.17.0.1:40594        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:22          10.10.14.11:54396       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58884       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58656       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58924       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59022       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:55964         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59040       ESTABLISHED -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:38288       TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58624       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58740       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58604       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:60968         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59096       ESTABLISHED -                   
+tcp        0      0 172.17.0.1:40956        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58644       ESTABLISHED -                   
+tcp        0      0 172.17.0.1:45596        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.16.13:39592       ESTABLISHED -                   
+tcp        0   5276 10.10.11.13:22          10.10.14.14:41186       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58866       ESTABLISHED -                   
+tcp        0      0 172.17.0.1:40586        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:22          10.10.14.11:56850       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59078       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:45902         TIME_WAIT   -                   
+tcp        0      0 172.17.0.1:42092        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:48516       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:38342         TIME_WAIT   -                   
+tcp        0      0 172.17.0.1:40910        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58868       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:55956         TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:33956         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58860       ESTABLISHED -                   
+tcp        0      0 172.17.0.1:55216        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0      0 172.17.0.1:40612        172.17.0.2:8111         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58630       ESTABLISHED -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:48514       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:60516         TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:45894         TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.14.15:53182       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59076       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:33950         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:38300       TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58972       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58672       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58794       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58696       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58934       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58752       ESTABLISHED -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:36058       TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58912       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:55944         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58988       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58748       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:45878         TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:33952         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59058       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58620       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:45916         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:37374       TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59008       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58712       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58820       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:55936         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58898       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58760       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59084       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58960       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59064       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58730       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:60978         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0      0 10.10.11.13:80          10.10.14.11:57878       TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58946       ESTABLISHED -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:59026       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:45926         TIME_WAIT   -                   
+tcp        0    356 10.10.11.13:80          10.10.14.11:58780       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:38346         127.0.0.1:8111          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8111          127.0.0.1:38326         TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:38320         127.0.0.1:8111          TIME_WAIT   -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      -                   
+tcp6       0      0 :::80                   :::*                    LISTEN      -                   
+tcp6       0      0 :::8000                 :::*                    LISTEN      -                   
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -                   
+udp        0      0 10.10.11.13:33027       8.8.8.8:53              ESTABLISHED -                   
+udp        0      0 127.0.0.1:43766         127.0.0.53:53           ESTABLISHED -                   
+udp        0      0 10.10.11.13:50526       8.8.8.8:53              ESTABLISHED -                   
+
+[+] Can I sniff with tcpdump?
+No
+
+
+^====================================( Users Information )=====================================
+[+] My user
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#groups
+uid=1001(john) gid=1001(john) groups=1001(john)
+
+[+] Do I have PGP keys?
+
+[+] Clipboard or highlighted text?
+xsel and xclip Not Found
+
+[+] Testing 'sudo -l' without password & /etc/sudoers
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
+^^^^^^^^^
+[+] Checking /etc/doas.conf
+/etc/doas.conf Not Found
+
+[+] Checking Pkexec policy
+
+[Configuration]
+AdminIdentities=unix-user:0
+[Configuration]
+AdminIdentities=unix-group:sudo;unix-group:admin
+
+[+] Don forget to test 'su' as any other user with shell: without password and with their names as password (I can't do it...)
+[+] Do not forget to execute 'sudo -l' without password or with valid password (if you know it)!!
+
+[+] Superusers
+root:x:0:0:root:/root:/bin/bash
+
+[+] Users with console
+john:x:1001:1001:,,,:/home/john:/bin/bash
+matthew:x:1000:1000:,,,:/home/matthew:/bin/bash
+root:x:0:0:root:/root:/bin/bash
+
+[+] Login information
+ 21:26:32 up 47 min,  3 users,  load average: 0.30, 0.34, 0.47
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+reboot   system boot  5.15.0-102-gener Sat Apr 20 20:39   still running
+root     pts/0        10.10.14.52      Mon Apr 15 09:34 - down   (00:11)
+reboot   system boot  5.15.0-101-gener Mon Apr 15 09:32 - 09:45  (00:12)
+root     pts/0        10.10.14.23      Thu Apr  4 12:57 - down   (00:06)
+reboot   system boot  5.15.0-101-gener Thu Apr  4 12:57 - 13:04  (00:07)
+root     pts/0        10.10.14.52      Thu Apr  4 10:55 - down   (00:08)
+reboot   system boot  5.15.0-101-gener Thu Apr  4 10:55 - 11:04  (00:09)
+reboot   system boot  5.15.0-101-gener Thu Apr  4 10:08 - 10:08  (00:00)
+
+wtmp begins Thu Apr  4 10:08:34 2024
+
+[+] All users
+_apt
+_laurel
+backup
+bin
+daemon
+fwupd-refresh
+games
+gnats
+irc
+john
+landscape
+list
+lp
+lxd
+mail
+man
+matthew
+messagebus
+news
+nobody
+pollinate
+proxy
+root
+sshd
+sync
+sys
+syslog
+systemd-network
+systemd-resolve
+systemd-timesync
+tcpdump
+tss
+usbmux
+uucp
+uuidd
+www-data
+
+[+] Password policy
+PASS_MAX_DAYS	99999
+PASS_MIN_DAYS	0
+PASS_WARN_AGE	7
+ENCRYPT_METHOD SHA512
+
+
+===================================( Software Information )===================================
+[+] MySQL version
+mysql Not Found
+
+[+] MySQL connection using default root/root ........... No
+[+] MySQL connection using root/toor ................... No
+[+] MySQL connection using root/NOPASS ................. No
+[+] Looking for mysql credentials and exec
+ Not Found
+
+[+] PostgreSQL version and pgadmin credentials
+ Not Found
+
+[+] PostgreSQL connection to template0 using postgres/NOPASS ........ No
+[+] PostgreSQL connection to template1 using postgres/NOPASS ........ No
+[+] PostgreSQL connection to template0 using pgsql/NOPASS ........... No
+[+] PostgreSQL connection to template1 using pgsql/NOPASS ........... No
+
+[+] Apache server info
+ Not Found
+
+[+] Looking for PHPCookies
+ Not Found
+
+[+] Looking for Wordpress wp-config.php files
+wp-config.php Not Found
+
+[+] Looking for Tomcat users file
+tomcat-users.xml Not Found
+
+[+] Mongo information
+ Not Found
+
+[+] Looking for supervisord configuration file
+supervisord.conf Not Found
+
+[+] Looking for cesi configuration file
+cesi.conf Not Found
+
+[+] Looking for Rsyncd config file
+/usr/share/doc/rsync/examples/rsyncd.conf
+[ftp]
+	comment = public archive
+	path = /var/www/pub
+	use chroot = yes
+	lock file = /var/lock/rsyncd
+	read only = yes
+	list = yes
+	uid = nobody
+	gid = nogroup
+	strict modes = yes
+	ignore errors = no
+	ignore nonreadable = yes
+	transfer logging = no
+	timeout = 600
+	refuse options = checksum dry-run
+	dont compress = *.gz *.tgz *.zip *.z *.rpm *.deb *.iso *.bz2 *.tbz
+
+[+] Looking for Hostapd config file
+hostapd.conf Not Found
+
+[+] Looking for wifi conns file
+ Not Found
+
+[+] Looking for Anaconda-ks config files
+anaconda-ks.cfg Not Found
+
+[+] Looking for .vnc directories and their passwd files
+.vnc Not Found
+
+[+] Looking for ldap directories and their hashes
+/etc/ldap
+The password hash is from the {SSHA} to 'structural'
+
+[+] Looking for .ovpn files and credentials
+.ovpn Not Found
+
+[+] Looking for ssl/ssh files
+/home/john/.ssh/authorized_keys
+/home/john/.ssh/id_rsa
+/home/john/.ssh/id_rsa.pub
+PermitRootLogin yes
+UsePAM yes
+grep: /home/john/linpeas.sh
+/home/john/.ssh/id_rsa: No such file or directory
+  --> Some certificates were found:
+/usr/lib/python3/dist-packages/twisted/internet/test/fake_CAs/chain.pem
+/etc/pki/fwupd-metadata/LVFS-CA.pem
+/etc/pki/fwupd/LVFS-CA.pem
+/etc/pollinate/entropy.ubuntu.com.pem
+/var/lib/fwupd/pki/client.pem
+
+
+Looking inside /etc/ssh/ssh_config for interesting info
+Include /etc/ssh/ssh_config.d/*.conf
+Host *
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+
+[+] Looking for unexpected auth lines in /etc/pam.d/sshd
+No
+
+[+] Looking for Cloud credentials (AWS, Azure, GC)
+
+[+] NFS exports?
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation/nfs-no_root_squash-misconfiguration-pe
+/etc/exports Not Found
+
+[+] Looking for kerberos conf files and tickets
+[i] https://book.hacktricks.xyz/pentesting/pentesting-kerberos-88#pass-the-ticket-ptt
+krb5.conf Not Found
+tickets kerberos Not Found
+klist Not Found
+
+[+] Looking for Kibana yaml
+kibana.yml Not Found
+
+[+] Looking for logstash files
+ Not Found
+
+[+] Looking for elasticsearch files
+ Not Found
+
+[+] Looking for Vault-ssh files
+vault-ssh-helper.hcl Not Found
+
+[+] Looking for AD cached hahses
+cached hashes Not Found
+
+[+] Looking for screen sessions
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#open-shell-sessions
+No Sockets found in /run/screen/S-john.
+
+[+] Looking for tmux sessions
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#open-shell-sessions
+tmux Not Found
+
+[+] Looking for Couchdb directory
+
+[+] Looking for redis.conf
+
+[+] Looking for dovecot files
+dovecot credentials Not Found
+
+[+] Looking for mosquitto.conf
+
+
+====================================( Interesting Files )=====================================
+[+] SUID
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
+/usr/bin/newgrp		--->	HP-UX_10.20
+/usr/bin/gpasswd
+/usr/bin/su
+/usr/bin/umount		--->	BSD/Linux[1996-08-13]
+/usr/bin/chsh
+/usr/bin/fusermount3
+/usr/bin/sudo		--->	/sudo$
+/usr/bin/passwd		--->	Apple_Mac_OSX/Solaris/SPARC_8/9/Sun_Solaris_2.5.1_PAM
+/usr/bin/mount		--->	Apple_Mac_OSX(Lion)_Kernel_xnu-1699.32.7_except_xnu-1699.24.8
+/usr/bin/chfn		--->	SuSE_9.3/10
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/libexec/polkit-agent-helper-1
+
+[+] SGID
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
+/usr/bin/ssh-agent
+/usr/bin/expiry
+/usr/bin/crontab
+/usr/bin/chage
+/usr/lib/x86_64-linux-gnu/utempter/utempter
+/usr/sbin/unix_chkpwd
+/usr/sbin/pam_extrausers_chkpwd
+
+[+] Capabilities
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#capabilities
+/usr/bin/mtr-packet cap_net_raw=ep
+/usr/bin/ping cap_net_raw=ep
+/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-ptp-helper cap_net_bind_service,cap_net_admin=ep
+
+[+] .sh files in path
+/usr/bin/rescan-scsi-bus.sh
+/usr/bin/gettext.sh
+/usr/bin/dockerd-rootless.sh
+/usr/bin/dockerd-rootless-setuptool.sh
+
+[+] Files (scripts) in /etc/profile.d/
+total 28
+drwxr-xr-x   2 root root 4096 Apr  4 10:24 .
+drwxr-xr-x 101 root root 4096 Apr 15 09:35 ..
+-rw-r--r--   1 root root   96 Oct 15  2021 01-locale-fix.sh
+-rw-r--r--   1 root root 1557 Feb 17  2020 Z97-byobu.sh
+-rw-r--r--   1 root root  726 Nov 15  2021 bash_completion.sh
+-rw-r--r--   1 root root 1107 Mar 23  2022 gawk.csh
+-rw-r--r--   1 root root  757 Mar 23  2022 gawk.sh
+
+[+] Hashes inside passwd file? ........... No
+[+] Can I read shadow files? ........... No
+[+] Can I read root folder? ........... No
+
+[+] Looking for root files in home dirs (limit 20)
+/home
+/home/john/.bash_history
+/home/john/user.txt
+
+[+] Looking for root files in folders owned by me
+lrwxrwxrwx 1 root root 9 Feb 28 20:04 /home/john/.bash_history -> /dev/null
+-rw-r----- 1 root john 33 Apr 20 20:39 /home/john/user.txt
+-r--r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.events
+-r--r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.events
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/io.pressure
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.events.local
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.swap.current
+-rw-r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.swap.max
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.swap.events
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.max.descendants
+-r--r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cpu.stat
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.pressure
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.current
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/pids.current
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.stat
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/pids.events
+-rw-r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.low
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cpu.pressure
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.type
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.stat
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.swap.high
+-r--r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.numa_stat
+--w------- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.kill
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.freeze
+-rw-r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.min
+-r--r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.controllers
+-rw-r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.oom.group
+-rw-r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.max
+-rw-r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/memory.high
+-rw-r--r-- 1 root root 0 Apr 20 20:56 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/pids.max
+-rw-r--r-- 1 root root 0 Apr 20 21:00 /sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/cgroup.max.depth
+
+[+] Readable files belonging to root and readable by me but not world readable
+-rw-r----- 1 root john 33 Apr 20 20:39 /home/john/user.txt
+
+[+] Files inside /home/john (limit 20)
+total 168
+drwxr-x--- 5 john john   4096 Apr 20 21:26 .
+drwxr-xr-x 4 root root   4096 Apr  4 10:24 ..
+lrwxrwxrwx 1 root root      9 Feb 28 20:04 .bash_history -> /dev/null
+-rw-r--r-- 1 john john    220 Feb 28 18:51 .bash_logout
+-rw-r--r-- 1 john john   3771 Feb 28 18:51 .bashrc
+drwx------ 2 john john   4096 Apr  4 10:24 .cache
+drwx------ 2 john john   4096 Apr 20 21:26 .gnupg
+-rw-r--r-- 1 john john    807 Feb 28 18:51 .profile
+drwx------ 2 john john   4096 Apr  4 10:24 .ssh
+-rw-rw-r-- 1 john john 134167 Mar 22 03:33 linpeas.sh
+-rw-r----- 1 root john     33 Apr 20 20:39 user.txt
+
+[+] Files inside others home (limit 20)
+
+[+] Looking for installed mail applications
+
+[+] Mails (limit 50)
+
+[+] Backup files?
+-rw-r--r-- 1 root root 61 Apr  4 09:40 /var/lib/systemd/deb-systemd-helper-enabled/dpkg-db-backup.timer.dsh-also
+-rw-r--r-- 1 root root 0 Feb 17  2023 /var/lib/systemd/deb-systemd-helper-enabled/timers.target.wants/dpkg-db-backup.timer
+-rw-r--r-- 1 root root 2403 Feb 17  2023 /etc/apt/sources.list.curtin.old
+
+[+] Looking for tables inside readable .db/.sqlite files (limit 100)
+ -> Extracting tables from /var/lib/PackageKit/transactions.db (limit 20)
+
+ -> Extracting tables from /var/lib/fwupd/pending.db (limit 20)
+
+ -> Extracting tables from /var/lib/command-not-found/commands.db (limit 20)
+
+
+[+] Web files?(output limit)
+/var/www/:
+total 12K
+drwxr-xr-x  3 root root 4.0K Feb 28 10:07 .
+drwxr-xr-x 13 root root 4.0K Feb 28 10:07 ..
+drwxr-xr-x  3 root root 4.0K Apr  3 14:41 html
+
+/var/www/html:
+total 32K
+drwxr-xr-x 3 root root 4.0K Apr  3 14:41 .
+drwxr-xr-x 3 root root 4.0K Feb 28 10:07 ..
+
+[+] *_history, .sudo_as_admin_successful, profile, bashrc, httpd.conf, .plan, .htpasswd, .git-credentials, .gitconfig, .rhosts, hosts.equiv, Dockerfile, docker-compose.yml
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#read-sensitive-data
+-rw-r--r-- 1 root root 2319 Jan  6  2022 /etc/bash.bashrc
+-rw-r--r-- 1 root root 807 Jan  6  2022 /etc/skel/.profile
+-rw-r--r-- 1 root root 3771 Jan  6  2022 /etc/skel/.bashrc
+-rw-r--r-- 1 john john 807 Feb 28 18:51 /home/john/.profile
+-rw-r--r-- 1 john john 3771 Feb 28 18:51 /home/john/.bashrc
+-rw-r--r-- 1 root root 3106 Jan  2 13:39 /usr/share/base-files/dot.bashrc
+-rw-r--r-- 1 root root 2778 Sep 15  2018 /usr/share/doc/adduser/examples/adduser.local.conf.examples/bash.bashrc
+-rw-r--r-- 1 root root 802 Sep 15  2018 /usr/share/doc/adduser/examples/adduser.local.conf.examples/skel/dot.bashrc
+-rw-r--r-- 1 root root 2978 Feb 17  2020 /usr/share/byobu/profiles/bashrc
+
+[+] All hidden files (not in /sys/ or the ones listed in the previous check) (limit 70)
+      789      0 -rw-r--r--   1 root     root            0 Apr 20 20:39 /run/network/.ifstate.lock
+    61963      4 -rw-r--r--   1 root     root          220 Jan  6  2022 /etc/skel/.bash_logout
+    61268      0 -rw-------   1 root     root            0 Feb 17  2023 /etc/.pwd.lock
+     2163      4 -rw-r--r--   1 john     john          220 Feb 28 18:51 /home/john/.bash_logout
+    39662      0 -rw-r--r--   1 landscape landscape        0 Feb 17  2023 /var/lib/landscape/.cleanup.user
+    91962     84 -rw-r--r--   1 root      root         85198 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/kernel/.asm-offsets.s.cmd
+    91917      4 -rw-r--r--   1 root      root           239 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/asm/.syscalls_32.h.cmd
+    91920      4 -rw-r--r--   1 root      root           271 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/asm/.unistd_32_ia32.h.cmd
+    91918      4 -rw-r--r--   1 root      root           244 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/asm/.syscalls_64.h.cmd
+    91919      4 -rw-r--r--   1 root      root           247 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/asm/.syscalls_x32.h.cmd
+    91922      4 -rw-r--r--   1 root      root           357 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/asm/.xen-hypercalls.h.cmd
+    91921      4 -rw-r--r--   1 root      root           267 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/asm/.unistd_64_x32.h.cmd
+    91941      4 -rw-r--r--   1 root      root           257 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/uapi/asm/.unistd_32.h.cmd
+    91942      4 -rw-r--r--   1 root      root           262 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/uapi/asm/.unistd_64.h.cmd
+    91943      4 -rw-r--r--   1 root      root           291 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/include/generated/uapi/asm/.unistd_x32.h.cmd
+    91968      4 -rw-r--r--   1 root      root           737 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/tools/.relocs_common.o.cmd
+    91965      4 -rw-r--r--   1 root      root           148 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/tools/.relocs.cmd
+    91967      4 -rw-r--r--   1 root      root           758 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/tools/.relocs_64.o.cmd
+    91966      4 -rw-r--r--   1 root      root           758 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/arch/x86/tools/.relocs_32.o.cmd
+   100811     16 -rw-r--r--   1 root      root         15336 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/kernel/.bounds.s.cmd
+   100885      4 -rw-r--r--   1 root      root          2741 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/selinux/mdp/.mdp.cmd
+   100883      4 -rw-r--r--   1 root      root          1459 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/selinux/genheaders/.genheaders.cmd
+   100870      4 -rw-r--r--   1 root      root           131 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.modpost.cmd
+   100867      4 -rw-r--r--   1 root      root          3558 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.empty.o.cmd
+   100868      4 -rw-r--r--   1 root      root           705 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.file2alias.o.cmd
+   100866      4 -rw-r--r--   1 root      root           104 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.elfconfig.h.cmd
+   100869      4 -rw-r--r--   1 root      root           499 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.mk_elfconfig.cmd
+   100865      8 -rw-r--r--   1 root      root          7878 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.devicetable-offsets.s.cmd
+   100872      4 -rw-r--r--   1 root      root           580 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.sumversion.o.cmd
+   100871      4 -rw-r--r--   1 root      root           924 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/mod/.modpost.o.cmd
+   100816      4 -rw-r--r--   1 root      root           485 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/.insert-sys-cert.cmd
+   100821      4 -rw-r--r--   1 root      root           585 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/basic/.fixdep.cmd
+   100815      4 -rw-r--r--   1 root      root           463 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/.extract-cert.cmd
+   100819      4 -rw-r--r--   1 root      root           674 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/.sorttable.cmd
+   100813      4 -rw-r--r--   1 root      root           636 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/.asn1_compiler.cmd
+   100817      4 -rw-r--r--   1 root      root           415 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/.kallsyms.cmd
+   100814      4 -rw-r--r--   1 root      root           385 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/.bin2c.cmd
+   100829      4 -rw-r--r--   1 root      root           217 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/genksyms/.parse.tab.c.cmd
+   100828      4 -rw-r--r--   1 root      root           667 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/genksyms/.lex.lex.o.cmd
+   100825      4 -rw-r--r--   1 root      root           155 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/genksyms/.genksyms.cmd
+   100830      4 -rw-r--r--   1 root      root           622 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/genksyms/.parse.tab.o.cmd
+   100826      4 -rw-r--r--   1 root      root           593 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/genksyms/.genksyms.o.cmd
+   100827      4 -rw-r--r--   1 root      root           127 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/genksyms/.lex.lex.c.cmd
+   100846      4 -rw-r--r--   1 root      root           825 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.menu.o.cmd
+   100848      4 -rw-r--r--   1 root      root           903 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.parser.tab.o.cmd
+   100847      4 -rw-r--r--   1 root      root           177 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.parser.tab.h.cmd
+   100844      4 -rw-r--r--   1 root      root           130 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.lexer.lex.c.cmd
+   100851      4 -rw-r--r--   1 root      root           761 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.util.o.cmd
+   100845      4 -rw-r--r--   1 root      root           829 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.lexer.lex.o.cmd
+   100849      4 -rw-r--r--   1 root      root           821 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.preprocess.o.cmd
+   100842      4 -rw-r--r--   1 root      root           838 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.confdata.o.cmd
+   100843      4 -rw-r--r--   1 root      root           761 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.expr.o.cmd
+   100841      4 -rw-r--r--   1 root      root           761 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.conf.o.cmd
+   100850      4 -rw-r--r--   1 root      root           781 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.symbol.o.cmd
+   100840      4 -rw-r--r--   1 root      root           291 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/kconfig/.conf.cmd
+   100818      4 -rw-r--r--   1 root      root           433 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/scripts/.sign-file.cmd
+    91906    256 -rw-r--r--   1 root      root        261981 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/.config
+    91908      4 -rw-r--r--   1 root      root          1130 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/.missing-syscalls.d
+   100890      4 -rw-r--r--   1 root      root          3542 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/.ctype.o.cmd
+   100895      8 -rw-r--r--   1 root      root          4203 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/.rbtree.o.cmd
+   100934      8 -rw-r--r--   1 root      root          6623 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.ringbuf.o.d
+   100919     12 -rw-r--r--   1 root      root         10703 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.libbpf.o.cmd
+   100925      8 -rw-r--r--   1 root      root          7768 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.linker.o.cmd
+   100935      4 -rw-r--r--   1 root      root          3277 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.str_error.o.cmd
+   100909      8 -rw-r--r--   1 root      root          5561 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.bpf_prog_linfo.o.d
+   100915      8 -rw-r--r--   1 root      root          6494 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.gen_loader.o.d
+   100933      8 -rw-r--r--   1 root      root          8141 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.ringbuf.o.cmd
+   100911      8 -rw-r--r--   1 root      root          7881 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.btf.o.d
+   100918      4 -rw-r--r--   1 root      root          3205 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.libbpf-in.o.cmd
+   100928      8 -rw-r--r--   1 root      root          7510 Mar  5 15:22 /usr/src/linux-headers-5.15.0-102-generic/tools/bpf/resolve_btfids/libbpf/staticobjs/.netlink.o.d
+
+[+] Readable files inside /tmp, /var/tmp, /var/backups(limit 100)
+-rwxrwxr-x 1 john john 134167 Mar 22 03:33 /tmp/linpeas.sh
+-rw-r--r-- 1 root root 3763 Mar 27 17:05 /var/backups/apt.extended_states.3.gz
+-rw-r--r-- 1 root root 3756 Mar 27 17:06 /var/backups/apt.extended_states.2.gz
+-rw-r--r-- 1 root root 3768 Feb 28 10:07 /var/backups/apt.extended_states.4.gz
+-rw-r--r-- 1 root root 33868 Apr 15 09:44 /var/backups/apt.extended_states.0
+-rw-r--r-- 1 root root 3647 Feb 28 04:31 /var/backups/apt.extended_states.5.gz
+-rw-r--r-- 1 root root 3760 Apr 15 09:35 /var/backups/apt.extended_states.1.gz
+-rw-r--r-- 1 root root 3496 Feb 28 03:54 /var/backups/apt.extended_states.6.gz
+
+[+] Interesting writable Files
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#writable-files
+/dev/mqueue
+/dev/mqueue/linpeas.txt
+/dev/shm
+/run/lock
+/run/screen
+/run/screen/S-john
+/run/user/1001
+/run/user/1001/gnupg
+/run/user/1001/systemd
+/run/user/1001/systemd/inaccessible
+/run/user/1001/systemd/inaccessible/dir
+/run/user/1001/systemd/inaccessible/reg
+/run/user/1001/systemd/units
+/sys/kernel/security/apparmor/.access
+/sys/kernel/security/apparmor/.load
+/sys/kernel/security/apparmor/.remove
+/sys/kernel/security/apparmor/.replace
+/tmp
+/tmp/.ICE-unix
+/tmp/.Test-unix
+/tmp/.X11-unix
+/tmp/.XIM-unix
+/tmp/.font-unix
+/tmp/linpeas.sh
+/tmp/tmux-1001
+/var/crash
+/var/tmp
+/tmp/linpeas.sh
+/dev/mqueue/linpeas.txt
+
+[+] Searching passwords in config PHP files
+
+[+] Finding IPs inside logs (limit 100)
+ 462847 /var/log/nginx/access.log:10.10.14.11
+ 197967 /var/log/nginx/access.log:10.10.14.29
+  43848 /var/log/nginx/access.log:10.10.16.6
+  24397 /var/log/nginx/access.log:10.10.14.15
+   9865 /var/log/nginx/access.log:10.10.14.13
+   2520 /var/log/nginx/error.log:127.0.0.1
+   2520 /var/log/nginx/error.log:10.10.14.15
+    903 /var/log/nginx/access.log:10.10.16.13
+    782 /var/log/nginx/access.log:10.10.14.14
+    550 /var/log/nginx/access.log:120.0.0.0
+    379 /var/log/nginx/access.log:121.0.0.0
+    186 /var/log/nginx/access.log:109.0.0.0
+    138 /var/log/nginx/access.log:114.0.0.0
+    134 /var/log/nginx/access.log:119.0.0.0
+    123 /var/log/nginx/access.log:107.0.0.0
+    119 /var/log/nginx/access.log:108.0.0.0
+    110 /var/log/nginx/access.log:118.0.0.0
+    101 /var/log/nginx/access.log:117.0.0.0
+     94 /var/log/nginx/access.log:112.0.0.0
+     90 /var/log/nginx/access.log:116.0.0.0
+     88 /var/log/nginx/access.log:115.0.0.0
+     83 /var/log/nginx/access.log:105.0.0.0
+     79 /var/log/nginx/access.log:110.0.0.0
+     65 /var/log/nginx/access.log:113.0.0.0
+     55 /var/log/nginx/access.log:111.0.0.0
+     50 /var/log/nginx/access.log:106.0.0.0
+     40 /var/log/nginx/access.log:103.0.0.0
+     36 /var/log/nginx/access.log:122.0.0.0
+     32 /var/log/nginx/access.log:123.0.0.0
+     29 /var/log/nginx/access.log:104.0.0.0
+     22 /var/log/nginx/access.log:10.4.3.1
+     20 /var/log/nginx/access.log:2.0.0.14
+     20 /var/log/nginx/access.log:1.8.1.14
+     19 /var/log/nginx/access.log:102.0.0.0
+     18 /var/log/dpkg.log:5.15.0.102
+     17 /var/log/nginx/access.log:1.9.1.2
+     15 /var/log/nginx/access.log:127.0.0.1
+     14 /var/log/nginx/access.log:9.0.0.122
+     14 /var/log/nginx/access.log:2.0.0.7
+     14 /var/log/nginx/access.log:17.2.4.11
+     14 /var/log/nginx/access.log:11.3.10.1
+     14 /var/log/nginx/access.log:1.9.2.4
+     14 /var/log/nginx/access.log:1.9.0.2
+     14 /var/log/nginx/access.log:1.9.0.16
+     14 /var/log/nginx/access.log:1.8.1.6
+     13 /var/log/nginx/access.log:121.0.0.8
+     13 /var/log/nginx/access.log:1.9.0.3
+     13 /var/log/nginx/access.log:1.8.1.4
+     12 /var/log/nginx/access.log:1.5.0.10
+     12 /var/log/dpkg.log:5.15.0.101
+     11 /var/log/nginx/access.log:3.24.223.21
+     11 /var/log/nginx/access.log:121.0.0.9
+     11 /var/log/nginx/access.log:101.0.0.0
+     10 /var/log/nginx/access.log:2.0.0.18
+     10 /var/log/nginx/access.log:2.0.0.16
+     10 /var/log/nginx/access.log:121.0.0.3
+     10 /var/log/nginx/access.log:1.9.0.4
+     10 /var/log/nginx/access.log:1.9.0.1
+      9 /var/log/nginx/access.log:4.0.222.5
+      9 /var/log/nginx/access.log:121.0.0.5
+      8 /var/log/nginx/access.log:169.254.169.254
+      8 /var/log/nginx/access.log:121.0.0.6
+      8 /var/log/nginx/access.log:121.0.0.4
+      8 /var/log/nginx/access.log:120.0.100.0
+      8 /var/log/nginx/access.log:120.0.0.8
+      8 /var/log/nginx/access.log:1.9.7.20
+      8 /var/log/nginx/access.log:1.9.1.5
+      7 /var/log/nginx/access.log:2.0.0.4
+      7 /var/log/nginx/access.log:2.0.0.11
+      7 /var/log/nginx/access.log:1.9.6.20
+      7 /var/log/nginx/access.log:1.9.0.7
+      7 /var/log/nginx/access.log:1.8.1.11
+      7 /var/log/nginx/access.log:1.8.0.1
+      7 /var/log/nginx/access.log:1.5.0.1
+      6 /var/log/nginx/access.log:2.0.0.6
+      6 /var/log/nginx/access.log:1.8.0.10
+      6 /var/log/dpkg.log:0.22.04.2
+      6 /var/log/dpkg.log:0.22.04.1
+      5 /var/log/nginx/access.log:1.9.5.20
+      5 /var/log/nginx/access.log:1.9.2.13
+      5 /var/log/nginx/access.log:1.9.0.12
+      5 /var/log/nginx/access.log:1.8.1.16
+      5 /var/log/nginx/access.log:1.1.0.11
+      4 /var/log/nginx/access.log:12.1.3.30
+      4 /var/log/nginx/access.log:1.9.1.1
+      4 /var/log/nginx/access.log:1.1.1.1
+      3 /var/log/nginx/access.log:177.0.0.1
+      3 /var/log/nginx/access.log:10.10.11.13
+      3 /var/log/apt/history.log:5.15.0.102
+      3 /var/log/apt/history.log:5.15.0.101
+      2 /var/log/wtmp:10.10.14.52
+      2 /var/log/wtmp:10.10.14.11
+      2 /var/log/nginx/access.log:1.9.0.6
+      2 /var/log/nginx/access.log:1.8.1.13
+      1 /var/log/wtmp:10.10.14.23
+      1 /var/log/wtmp:10.10.14.14
+      1 /var/log/nginx/error.log:10.10.14.13
+      1 /var/log/nginx/access.log:8.8.8.8
+      1 /var/log/nginx/access.log:8.8.4.4
+      1 /var/log/nginx/access.log:49.36.112.218
+
+[+] Finding passwords inside logs (limit 100)
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:41:29 +0000] "GET /assets/img/passwordkey HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:41:29 +0000] "GET /assets/img/passwordkey.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:41:29 +0000] "GET /assets/img/passwordkey.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:41:29 +0000] "GET /assets/img/passwordkey.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:41:29 +0000] "GET /assets/img/passwordkey.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:41:29 +0000] "GET /assets/img/passwordkey.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:41:29 +0000] "GET /assets/img/passwordkey.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:12 +0000] "GET /assets/img/EmailForgottenPassword HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:12 +0000] "GET /assets/img/EmailForgottenPassword.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:12 +0000] "GET /assets/img/EmailForgottenPassword.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:12 +0000] "GET /assets/img/EmailForgottenPassword.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:27 +0000] "GET /assets/img/password_txt HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:27 +0000] "GET /assets/img/password_txt.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:27 +0000] "GET /assets/img/password_txt.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:27 +0000] "GET /assets/img/password_txt.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:27 +0000] "GET /assets/img/password_txt.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:27 +0000] "GET /assets/img/password_txt.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:44:27 +0000] "GET /assets/img/password_txt.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:08 +0000] "GET /assets/img/securepassword HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:08 +0000] "GET /assets/img/securepassword.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:08 +0000] "GET /assets/img/securepassword.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:08 +0000] "GET /assets/img/securepassword.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:08 +0000] "GET /assets/img/securepassword.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:08 +0000] "GET /assets/img/securepassword.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:08 +0000] "GET /assets/img/securepassword.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:30 +0000] "GET /assets/img/File_Passwd HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:30 +0000] "GET /assets/img/File_Passwd.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:30 +0000] "GET /assets/img/File_Passwd.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:30 +0000] "GET /assets/img/File_Passwd.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:30 +0000] "GET /assets/img/File_Passwd.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:30 +0000] "GET /assets/img/File_Passwd.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:30 +0000] "GET /assets/img/File_Passwd.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:40 +0000] "GET /assets/img/Text_Password HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:40 +0000] "GET /assets/img/Text_Password.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:40 +0000] "GET /assets/img/Text_Password.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:40 +0000] "GET /assets/img/Text_Password.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:40 +0000] "GET /assets/img/Text_Password.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:40 +0000] "GET /assets/img/Text_Password.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:40 +0000] "GET /assets/img/Text_Password.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:42 +0000] "GET /assets/img/File_SMBPasswd HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:42 +0000] "GET /assets/img/File_SMBPasswd.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:42 +0000] "GET /assets/img/File_SMBPasswd.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:42 +0000] "GET /assets/img/File_SMBPasswd.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:42 +0000] "GET /assets/img/File_SMBPasswd.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:42 +0000] "GET /assets/img/File_SMBPasswd.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:42 +0000] "GET /assets/img/File_SMBPasswd.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:46 +0000] "GET /assets/img/recover_password HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:46 +0000] "GET /assets/img/recover_password.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:46 +0000] "GET /assets/img/recover_password.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:46 +0000] "GET /assets/img/recover_password.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:46 +0000] "GET /assets/img/recover_password.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:46 +0000] "GET /assets/img/recover_password.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:45:46 +0000] "GET /assets/img/recover_password.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd2 HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd2.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd2.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd2.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd2.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd2.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:05 +0000] "GET /assets/img/macfspwd2.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:16 +0000] "GET /assets/img/password-management HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:16 +0000] "GET /assets/img/password-management.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:16 +0000] "GET /assets/img/password-management.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:16 +0000] "GET /assets/img/password-management.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:16 +0000] "GET /assets/img/password-management.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:16 +0000] "GET /assets/img/password-management.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:47:16 +0000] "GET /assets/img/password-management.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:39 +0000] "GET /assets/img/littlesecrets-password HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:39 +0000] "GET /assets/img/littlesecrets-password.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:39 +0000] "GET /assets/img/littlesecrets-password.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:39 +0000] "GET /assets/img/littlesecrets-password.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:46 +0000] "GET /assets/img/retrieve_password HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:46 +0000] "GET /assets/img/retrieve_password.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:46 +0000] "GET /assets/img/retrieve_password.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:46 +0000] "GET /assets/img/retrieve_password.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:46 +0000] "GET /assets/img/retrieve_password.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:46 +0000] "GET /assets/img/retrieve_password.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:48:46 +0000] "GET /assets/img/retrieve_password.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:08 +0000] "GET /assets/img/reset_password HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:08 +0000] "GET /assets/img/reset_password.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:08 +0000] "GET /assets/img/reset_password.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:08 +0000] "GET /assets/img/reset_password.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:08 +0000] "GET /assets/img/reset_password.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:08 +0000] "GET /assets/img/reset_password.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:08 +0000] "GET /assets/img/reset_password.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:25 +0000] "GET /assets/img/SendPassword HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:25 +0000] "GET /assets/img/SendPassword.bak HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:25 +0000] "GET /assets/img/SendPassword.html HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:25 +0000] "GET /assets/img/SendPassword.php HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:25 +0000] "GET /assets/img/SendPassword.pl HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:25 +0000] "GET /assets/img/SendPassword.rb HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:49:25 +0000] "GET /assets/img/SendPassword.sh HTTP/1.1" 302 154 "-" "gobuster/3.6"
+/var/log/nginx/access.log:10.10.14.11 - - [20/Apr/2024:20:51:32 +0000] "GET /assets/img/pam_passwdqc HTTP/1.1" 302 154 "-" "gobuster/3.6"
+
+[+] Finding emails inside logs (limit 100)
+      1 /var/log/nginx/access.log:123@interactsh.com
+      1 /var/log/nginx/access.log:24%7B%28%23_memberAccess%5B%22allowStaticMethodAccess%22%5D%3Dtrue%2C%23a%3D@java.lang
+      2 /var/log/nginx/access.log:27test@test.com
+      1 /var/log/nginx/access.log:2fNfdERuoNGBqJ3hKR0qlREURCU@interact.sh
+      1 /var/log/nginx/access.log:3D%23foo%2C@org.apache.commons.io
+      1 /var/log/nginx/access.log:404@2x.png
+      2 /var/log/nginx/access.log:5C@evil.com
+      1 /var/log/nginx/access.log:_https@evil.com
+      2 /var/log/nginx/access.log:archive@2x.png
+      2 /var/log/nginx/access.log:autodiscover.json%3F@test.com
+      1 /var/log/nginx/access.log:evil.com%5C@evil.com
+      2 /var/log/nginx/access.log:evil.com@evil.com
+      1 /var/log/nginx/access.log:example@mail.com
+      2 /var/log/nginx/access.log:icon@2x.png
+      3 /var/log/nginx/access.log:openArchive@2x.png
+      2 /var/log/nginx/access.log:page-file@2x.png
+      2 /var/log/nginx/access.log:page-foldericon@2x.png
+      2 /var/log/nginx/access.log:page-openfoldericon@2x.png
+      1 /var/log/nginx/access.log:passwd%27%29.getInputStream%28%29%2C%23b%3Dnew%20java.io.InputStreamReader%28%23a%29%2C%23c%3Dnew%20%20java.io.BufferedReader%28%23b%29%2C%23d%3Dnew%20char%5B51020%5D%2C%23c.read%28%23d%29%2C%23sbtest%3D@org.apache
+      1 /var/log/nginx/access.log:root@coi2nn21ana2u4f3r9jgg1py6c4yro5uj.oast.me
+      1 /var/log/nginx/access.log:root@coi2nn21ana2u4f3r9jgm5ip4tuznwdaz.oast.me
+      1 /var/log/nginx/access.log:site%252F@interactsh.com
+      2 /var/log/nginx/access.log:teamcity-sprite@2x.png
+      1 /var/log/nginx/access.log:test@gmail.com
+      1 /var/log/nginx/access.log:test@test.com
+
+[+] Finding *password* or *credential* files in home
+
+[+] Finding 'pwd' or 'passw' string inside /home, /var/www, /etc, /root and list possible web(/var/www) and config(/etc) passwords
+/home/john/linpeas.sh
+/var/www/html/assets/js/jquery-3.5.1.min.js
+/etc/apparmor.d/abstractions/authentication:  # databases containing passwords, PAM configuration files, PAM libraries
+/etc/debconf.conf:Accept-Type: password
+/etc/debconf.conf:Filename: /var/cache/debconf/passwords.dat
+/etc/debconf.conf:Name: passwords
+/etc/debconf.conf:Reject-Type: password
+/etc/debconf.conf:Stack: config, passwords
+
