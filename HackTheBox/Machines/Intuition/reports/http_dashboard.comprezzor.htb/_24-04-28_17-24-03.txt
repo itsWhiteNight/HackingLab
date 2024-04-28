@@ -1,0 +1,3 @@
+# Dirsearch started Sun Apr 28 17:29:17 2024 as: /usr/local/bin/dirsearch -u http://dashboard.comprezzor.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -t 100
+
+405   153B   http://dashboard.comprezzor.htb/resolve
