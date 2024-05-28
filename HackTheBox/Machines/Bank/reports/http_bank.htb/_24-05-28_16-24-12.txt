@@ -1,0 +1,32 @@
+# Dirsearch started Tue May 28 16:25:20 2024 as: /usr/bin/dirsearch -u http://bank.htb
+
+403   286B   http://bank.htb/.ht_wsr.txt
+403   289B   http://bank.htb/.htaccess.bak1
+403   291B   http://bank.htb/.htaccess.sample
+403   289B   http://bank.htb/.htaccess.orig
+403   289B   http://bank.htb/.htaccess.save
+403   290B   http://bank.htb/.htaccess_extra
+403   289B   http://bank.htb/.htaccess_orig
+403   287B   http://bank.htb/.htaccessBAK
+403   287B   http://bank.htb/.htaccess_sc
+403   287B   http://bank.htb/.htaccessOLD
+403   288B   http://bank.htb/.htaccessOLD2
+403   279B   http://bank.htb/.htm
+403   280B   http://bank.htb/.html
+403   289B   http://bank.htb/.htpasswd_test
+403   285B   http://bank.htb/.htpasswds
+403   286B   http://bank.htb/.httr-oauth
+403   279B   http://bank.htb/.php
+403   280B   http://bank.htb/.php3
+301   304B   http://bank.htb/assets    -> REDIRECTS TO: http://bank.htb/assets/
+200   480B   http://bank.htb/assets/
+301   301B   http://bank.htb/inc    -> REDIRECTS TO: http://bank.htb/inc/
+200   508B   http://bank.htb/inc/
+200   688B   http://bank.htb/login.php
+302     0B   http://bank.htb/logout.php    -> REDIRECTS TO: index.php
+403   284B   http://bank.htb/php5.fcgi
+403   288B   http://bank.htb/server-status
+403   289B   http://bank.htb/server-status/
+302     3KB  http://bank.htb/support.php    -> REDIRECTS TO: login.php
+403   283B   http://bank.htb/uploads/
+301   305B   http://bank.htb/uploads    -> REDIRECTS TO: http://bank.htb/uploads/

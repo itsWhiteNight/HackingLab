@@ -1,0 +1,23 @@
+# Dirsearch started Tue May 28 15:56:25 2024 as: /usr/bin/dirsearch -u http://10.10.10.29/
+
+403   289B   http://10.10.10.29/.ht_wsr.txt
+403   292B   http://10.10.10.29/.htaccess.bak1
+403   294B   http://10.10.10.29/.htaccess.sample
+403   292B   http://10.10.10.29/.htaccess.orig
+403   292B   http://10.10.10.29/.htaccess.save
+403   292B   http://10.10.10.29/.htaccess_orig
+403   290B   http://10.10.10.29/.htaccessBAK
+403   290B   http://10.10.10.29/.htaccess_sc
+403   291B   http://10.10.10.29/.htaccessOLD2
+403   293B   http://10.10.10.29/.htaccess_extra
+403   282B   http://10.10.10.29/.htm
+403   290B   http://10.10.10.29/.htaccessOLD
+403   283B   http://10.10.10.29/.html
+403   288B   http://10.10.10.29/.htpasswds
+403   292B   http://10.10.10.29/.htpasswd_test
+403   289B   http://10.10.10.29/.httr-oauth
+403   282B   http://10.10.10.29/.php
+403   283B   http://10.10.10.29/.php3
+403   287B   http://10.10.10.29/php5.fcgi
+403   292B   http://10.10.10.29/server-status/
+403   291B   http://10.10.10.29/server-status
