@@ -1,3 +1,0 @@
-# Dirsearch started Sat Mar  9 12:52:12 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://dev.pov.htb/portfolio --wordlist=/usr/share/wordlists/Seclists/Discovery/Web-Content/SVNDigger/cat/Language/aspx.txt
-
-200     5KB  http://dev.pov.htb/portfolio/Contact.aspx

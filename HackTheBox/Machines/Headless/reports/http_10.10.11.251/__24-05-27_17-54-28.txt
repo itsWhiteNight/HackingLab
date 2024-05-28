@@ -1,0 +1,38 @@
+# Dirsearch started Mon May 27 17:55:46 2024 as: /usr/bin/dirsearch -u http://10.10.11.251/
+
+301   146B   http://10.10.11.251/js    -> REDIRECTS TO: http://10.10.11.251/js/
+403   312B   http://10.10.11.251/%2e%2e//google.com
+403   312B   http://10.10.11.251/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+404     2KB  http://10.10.11.251/.ashx
+404     2KB  http://10.10.11.251/.asmx
+403   312B   http://10.10.11.251/\..\..\..\..\..\..\..\..\..\etc\passwd
+404     2KB  http://10.10.11.251/admin%20/
+404     2KB  http://10.10.11.251/admin.
+404     2KB  http://10.10.11.251/asset..
+403   312B   http://10.10.11.251/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+301   147B   http://10.10.11.251/css    -> REDIRECTS TO: http://10.10.11.251/css/
+400     3KB  http://10.10.11.251/docpicker/internal_proxy/https/127.0.0.1:9043/ibm/console
+301   147B   http://10.10.11.251/img    -> REDIRECTS TO: http://10.10.11.251/img/
+404     2KB  http://10.10.11.251/index.php.
+404     2KB  http://10.10.11.251/javax.faces.resource.../
+400     3KB  http://10.10.11.251/jolokia/exec/com.sun.management:type=DiagnosticCommand/help/*
+400     3KB  http://10.10.11.251/jolokia/exec/com.sun.management:type=DiagnosticCommand/jfrStart/filename=!/tmp!/foo
+400     3KB  http://10.10.11.251/jolokia/exec/com.sun.management:type=DiagnosticCommand/jvmtiAgentLoad/!/etc!/passwd
+400     3KB  http://10.10.11.251/jolokia/exec/com.sun.management:type=DiagnosticCommand/compilerDirectivesAdd/!/etc!/passwd
+400     3KB  http://10.10.11.251/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/disable
+400     3KB  http://10.10.11.251/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/output=!/tmp!/pwned
+400     3KB  http://10.10.11.251/jolokia/exec/java.lang:type=Memory/gc
+400     3KB  http://10.10.11.251/jolokia/search/*:j2eeType=J2EEServer,*
+400     3KB  http://10.10.11.251/jolokia/write/java.lang:type=Memory/Verbose/true
+400     3KB  http://10.10.11.251/jolokia/read/java.lang:type=*/HeapMemoryUsage
+400     3KB  http://10.10.11.251/jolokia/exec/com.sun.management:type=DiagnosticCommand/vmSystemProperties
+403     1KB  http://10.10.11.251/js/
+400     3KB  http://10.10.11.251/jolokia/read/java.lang:type=Memory/HeapMemoryUsage/used
+404     2KB  http://10.10.11.251/login.wdm%2e
+404     2KB  http://10.10.11.251/rating_over.
+404     2KB  http://10.10.11.251/service.asmx
+404     2KB  http://10.10.11.251/static..
+403     2KB  http://10.10.11.251/Trace.axd
+404     2KB  http://10.10.11.251/umbraco/webservices/codeEditorSave.asmx
+404     2KB  http://10.10.11.251/WEB-INF./
+404     2KB  http://10.10.11.251/WebResource.axd?d=LER8t9aS
