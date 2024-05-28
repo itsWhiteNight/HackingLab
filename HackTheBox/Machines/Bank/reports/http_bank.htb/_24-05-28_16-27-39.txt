@@ -1,0 +1,5 @@
+# Dirsearch started Tue May 28 16:27:48 2024 as: /usr/bin/dirsearch -u http://bank.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-big.txt
+
+301   305B   http://bank.htb/uploads    -> REDIRECTS TO: http://bank.htb/uploads/
+301   304B   http://bank.htb/assets    -> REDIRECTS TO: http://bank.htb/assets/
+301   301B   http://bank.htb/inc    -> REDIRECTS TO: http://bank.htb/inc/
