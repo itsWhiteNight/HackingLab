@@ -1,0 +1,23 @@
+# Dirsearch started Thu May 30 15:50:11 2024 as: /usr/bin/dirsearch -u http://internal.openadmin.htb/ -t 100
+
+403   287B   http://internal.openadmin.htb/.ht_wsr.txt
+403   287B   http://internal.openadmin.htb/.htaccess.bak1
+403   287B   http://internal.openadmin.htb/.htaccess.sample
+403   287B   http://internal.openadmin.htb/.htaccess.save
+403   287B   http://internal.openadmin.htb/.htaccess.orig
+403   287B   http://internal.openadmin.htb/.htaccess_orig
+403   287B   http://internal.openadmin.htb/.htaccess_extra
+403   287B   http://internal.openadmin.htb/.htaccess_sc
+403   287B   http://internal.openadmin.htb/.htaccessBAK
+403   287B   http://internal.openadmin.htb/.htaccessOLD
+403   287B   http://internal.openadmin.htb/.htaccessOLD2
+403   287B   http://internal.openadmin.htb/.html
+403   287B   http://internal.openadmin.htb/.htm
+403   287B   http://internal.openadmin.htb/.htpasswd_test
+403   287B   http://internal.openadmin.htb/.htpasswds
+403   287B   http://internal.openadmin.htb/.httr-oauth
+403   287B   http://internal.openadmin.htb/.php
+301   332B   http://internal.openadmin.htb/music    -> REDIRECTS TO: http://internal.openadmin.htb/music/
+301   330B   http://internal.openadmin.htb/ona    -> REDIRECTS TO: http://internal.openadmin.htb/ona/
+403   287B   http://internal.openadmin.htb/server-status
+403   287B   http://internal.openadmin.htb/server-status/
