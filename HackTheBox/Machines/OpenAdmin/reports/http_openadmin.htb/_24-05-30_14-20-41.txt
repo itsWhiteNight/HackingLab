@@ -1,0 +1,23 @@
+# Dirsearch started Thu May 30 14:21:25 2024 as: /usr/bin/dirsearch -u http://openadmin.htb
+
+403   278B   http://openadmin.htb/.ht_wsr.txt
+403   278B   http://openadmin.htb/.htaccess.bak1
+403   278B   http://openadmin.htb/.htaccess.orig
+403   278B   http://openadmin.htb/.htaccess.sample
+403   278B   http://openadmin.htb/.htaccess.save
+403   278B   http://openadmin.htb/.htaccessBAK
+403   278B   http://openadmin.htb/.htaccess_orig
+403   278B   http://openadmin.htb/.htaccess_extra
+403   278B   http://openadmin.htb/.htaccessOLD
+403   278B   http://openadmin.htb/.htaccessOLD2
+403   278B   http://openadmin.htb/.htaccess_sc
+403   278B   http://openadmin.htb/.htm
+403   278B   http://openadmin.htb/.html
+403   278B   http://openadmin.htb/.htpasswd_test
+403   278B   http://openadmin.htb/.htpasswds
+403   278B   http://openadmin.htb/.httr-oauth
+403   278B   http://openadmin.htb/.php
+301   314B   http://openadmin.htb/music    -> REDIRECTS TO: http://openadmin.htb/music/
+301   312B   http://openadmin.htb/ona    -> REDIRECTS TO: http://openadmin.htb/ona/
+403   278B   http://openadmin.htb/server-status
+403   278B   http://openadmin.htb/server-status/

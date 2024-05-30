@@ -1,0 +1,25 @@
+# Dirsearch started Thu May 30 14:23:56 2024 as: /usr/bin/dirsearch -u http://openadmin.htb/music
+
+301   317B   http://openadmin.htb/music/js    -> REDIRECTS TO: http://openadmin.htb/music/js/
+403   278B   http://openadmin.htb/music/.ht_wsr.txt
+403   278B   http://openadmin.htb/music/.htaccess.bak1
+403   278B   http://openadmin.htb/music/.htaccess.orig
+403   278B   http://openadmin.htb/music/.htaccess.save
+403   278B   http://openadmin.htb/music/.htaccess_extra
+403   278B   http://openadmin.htb/music/.htaccess_orig
+403   278B   http://openadmin.htb/music/.htaccess.sample
+403   278B   http://openadmin.htb/music/.htaccessOLD2
+403   278B   http://openadmin.htb/music/.htaccess_sc
+403   278B   http://openadmin.htb/music/.htm
+403   278B   http://openadmin.htb/music/.htaccessBAK
+403   278B   http://openadmin.htb/music/.htaccessOLD
+403   278B   http://openadmin.htb/music/.htpasswd_test
+403   278B   http://openadmin.htb/music/.html
+403   278B   http://openadmin.htb/music/.httr-oauth
+403   278B   http://openadmin.htb/music/.htpasswds
+403   278B   http://openadmin.htb/music/.php
+200     2KB  http://openadmin.htb/music/contact.html
+301   318B   http://openadmin.htb/music/css    -> REDIRECTS TO: http://openadmin.htb/music/css/
+301   318B   http://openadmin.htb/music/img    -> REDIRECTS TO: http://openadmin.htb/music/img/
+200   690B   http://openadmin.htb/music/js/
+200   436B   http://openadmin.htb/music/main.html
