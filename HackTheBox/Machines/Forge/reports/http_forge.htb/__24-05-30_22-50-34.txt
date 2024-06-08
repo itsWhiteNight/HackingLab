@@ -1,0 +1,10 @@
+# Dirsearch started Thu May 30 22:51:29 2024 as: /usr/bin/dirsearch -u http://forge.htb/
+
+403   274B   http://forge.htb/server-status
+403   274B   http://forge.htb/server-status/
+301   307B   http://forge.htb/static    -> REDIRECTS TO: http://forge.htb/static/
+404   271B   http://forge.htb/static/dump.sql
+404   271B   http://forge.htb/static/api/swagger.json
+404   271B   http://forge.htb/static/api/swagger.yaml
+200   929B   http://forge.htb/upload
+301   224B   http://forge.htb/uploads    -> REDIRECTS TO: http://forge.htb/uploads/

@@ -1,0 +1,6 @@
+# Dirsearch started Mon Jun  3 18:14:45 2024 as: /usr/bin/dirsearch -u http://freelancer.htb/accounts/login -x 503
+
+400   157B   http://freelancer.htb/accounts/login/\..\..\..\..\..\..\..\..\..\etc\passwd
+400   157B   http://freelancer.htb/accounts/login/index.php::$DATA
+400   157B   http://freelancer.htb/accounts/login/Trace.axd::$DATA
+400   157B   http://freelancer.htb/accounts/login/web.config::$DATA
