@@ -1,0 +1,22 @@
+# extended LDIF
+#
+# LDAPv3
+# base <> with scope baseObject
+# filter: (objectClass=)
+# requesting: namingContexts 
+#
+
+#
+dn:
+namingContexts: DC=freelancer,DC=htb
+namingContexts: CN=Configuration,DC=freelancer,DC=htb
+namingContexts: CN=Schema,CN=Configuration,DC=freelancer,DC=htb
+namingContexts: DC=DomainDnsZones,DC=freelancer,DC=htb
+namingContexts: DC=ForestDnsZones,DC=freelancer,DC=htb
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
