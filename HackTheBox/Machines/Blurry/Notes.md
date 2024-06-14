@@ -21,6 +21,8 @@ PORT   STATE SERVICE
 - [2] : clearml-init 
   >>    configuration on clearml 
   >>	initialized clearml and had to add to dns api and file .
+  >>	clearml-server ? clearml-task 
+		``ìnitialization
 		seems like app.blurry.htb doesnt work , I think I have to put localhost instead of api for the web server config 
 		
 		clearml-init
@@ -53,7 +55,13 @@ PORT   STATE SERVICE
 
 		New configuration stored in /home/parrot/clearml.conf
 		ClearML setup completed successfully.
-
+		```
+		
+  >> App credentials :
+		```app.blurry.htb
+ 		8TL83TDO2YXCQ4789DE4 	Jun 11 2024 15:42 	blurry 	
+		43JQWWALPYM4QTJG5T6D 	Feb 17 2024 17:54 	149328d8025b
+		```
 - [3] :  
   >>	
 
