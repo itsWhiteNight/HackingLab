@@ -1,0 +1,4 @@
+# Dirsearch started Sat Jun 15 20:20:28 2024 as: /usr/bin/dirsearch -u http://editorial.htb/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt
+
+200     3KB  http://editorial.htb/about
+200     7KB  http://editorial.htb/upload
