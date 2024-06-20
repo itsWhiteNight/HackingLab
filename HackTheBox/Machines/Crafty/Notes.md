@@ -7,10 +7,9 @@
 
 ## Recon 
 
-PORT      STATE SERVICE
-80/tcp    open  http
-PORT      STATE SERVICE   VERSION
-25565/tcp open  minecraft Minecraft 1.16.5 (Protocol: 127, Message: Crafty Server, Users: 2/100)
+- [1] PORT      STATE SERVICE
+- [+] 80/tcp    open  http
+- [+] 25565/tcp open  minecraft Minecraft 1.16.5 (Protocol: 127, Message: Crafty Server, Users: 2/100)
 
 
 - [+]	Minecraft 1.16.5 vulnerable to log4j 
