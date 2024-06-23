@@ -1,0 +1,5 @@
+# Dirsearch started Sun Jun 23 02:12:33 2024 as: /usr/bin/dirsearch -u http://10.10.11.21/ -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -t 100
+
+301   149B   http://10.10.11.21/assets    -> REDIRECTS TO: http://10.10.11.21/assets/
+301   146B   http://10.10.11.21/css    -> REDIRECTS TO: http://10.10.11.21/css/
+301   145B   http://10.10.11.21/js    -> REDIRECTS TO: http://10.10.11.21/js/
