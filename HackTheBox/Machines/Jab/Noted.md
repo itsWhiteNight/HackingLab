@@ -77,7 +77,7 @@ jmontgomery:Midnight_121 ## user in pidgin showwed a pentest room showing tgs
 
 svc_openfire:!@#$%^&*(1qazxsw 
 
-smbclient -L  //10.10.11.4/ -U svc_openfire%!@#$%^&*(1qazxsw
+smbclient -L  //10.10.11.4/ -U svc_openfire !@#$%^&*(1qazxsw
 
 smbclient -L  //10.10.11.4/ -U jmontgomery%Midnight_121
 smbclient //10.10.11.4/SYSLOG -U jmontgomery%Midnight_121
