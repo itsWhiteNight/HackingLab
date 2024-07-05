@@ -148,3 +148,8 @@ Cause :
 ## footprinting
 
 
+dnsenum --dnsserver 10.129.10.89 --enum -p 0 -s 0 -o sub.txt -f /usr/share/wordlists/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt dev.inlanefreight.htb
+
+
+
+
