@@ -1,0 +1,31 @@
+# Dirsearch started Sat Jul  6 20:30:15 2024 as: /usr/bin/dirsearch -u permx.htb
+
+301   303B   http://permx.htb/js    -> REDIRECTS TO: http://permx.htb/js/
+403   274B   http://permx.htb/.ht_wsr.txt
+403   274B   http://permx.htb/.htaccess.bak1
+403   274B   http://permx.htb/.htaccess.sample
+403   274B   http://permx.htb/.htaccessOLD
+403   274B   http://permx.htb/.htaccessOLD2
+403   274B   http://permx.htb/.htaccess_extra
+403   274B   http://permx.htb/.htaccess.save
+403   274B   http://permx.htb/.htaccess_sc
+403   274B   http://permx.htb/.htaccess.orig
+403   274B   http://permx.htb/.htm
+403   274B   http://permx.htb/.htaccessBAK
+403   274B   http://permx.htb/.httr-oauth
+403   274B   http://permx.htb/.htaccess_orig
+403   274B   http://permx.htb/.html
+403   274B   http://permx.htb/.htpasswds
+403   274B   http://permx.htb/.htpasswd_test
+403   274B   http://permx.htb/.php
+200     3KB  http://permx.htb/404.html
+200     4KB  http://permx.htb/about.html
+200     3KB  http://permx.htb/contact.html
+301   304B   http://permx.htb/css    -> REDIRECTS TO: http://permx.htb/css/
+301   304B   http://permx.htb/img    -> REDIRECTS TO: http://permx.htb/img/
+200   448B   http://permx.htb/js/
+301   304B   http://permx.htb/lib    -> REDIRECTS TO: http://permx.htb/lib/
+200   491B   http://permx.htb/lib/
+200   649B   http://permx.htb/LICENSE.txt
+403   274B   http://permx.htb/server-status
+403   274B   http://permx.htb/server-status/

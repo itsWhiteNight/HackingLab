@@ -1,0 +1,6 @@
+# Dirsearch started Sat Jul  6 20:35:44 2024 as: /usr/bin/dirsearch -u permx.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -t 100
+
+301   304B   http://permx.htb/css    -> REDIRECTS TO: http://permx.htb/css/
+301   304B   http://permx.htb/lib    -> REDIRECTS TO: http://permx.htb/lib/
+301   304B   http://permx.htb/img    -> REDIRECTS TO: http://permx.htb/img/
+301   303B   http://permx.htb/js    -> REDIRECTS TO: http://permx.htb/js/

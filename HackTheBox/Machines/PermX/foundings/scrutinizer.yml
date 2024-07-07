@@ -1,0 +1,89 @@
+build:
+    nodes:
+        analysis:
+            project_setup:
+                override: true
+            tests:
+                override:
+                    - php-scrutinizer-run
+    tests:
+        override:
+            command: "php -v"
+    dependencies:
+        override:
+            - "php -v"
+    resources:
+        cpus: 1
+    environment:
+        php:
+            version: 7.2
+            ini:
+                memory_limit: "-1"
+
+
+checks:
+    php: true
+
+filter:
+    excluded_paths:
+        - 'cli-config.php'
+        - 'app/cache/*'
+        - 'app/logs/*'
+        - 'app/config/*'
+        - 'app/SymfonyRequirements.php'
+        - 'documentation/*'
+        - 'app/Migrations/*'
+        - 'app/Resources/*'
+        - 'main/admin/db.php'
+        - 'main/admin/ldap_synchro.php'
+        - 'main/auth/cas/lib/*'
+        - 'main/auth/shibboleth/*'
+        - 'main/auth/openid/*'
+        - 'main/chat/emoji_strategy.php'
+        - 'main/default_course_document'
+        - 'main/document/Wami.swf'
+        - 'main/fonts/*'
+        - 'main/inc/ajax/Wami.swf'
+        - 'main/inc/lib/browser/*'
+        - 'main/inc/lib/freemindflashbrowser/*'
+        - 'main/inc/lib/internationalization_database/*'
+        - 'main/inc/lib/javascript/*'
+        - 'main/inc/lib/kses-0.2.2/*'
+        - 'main/inc/lib/mimetex/*'
+        - 'main/inc/lib/nanogong/*'
+        - 'main/inc/lib/nusoap/*'
+        - 'main/inc/lib/opengraph/*'
+        - 'main/inc/lib/ppt2png/*'
+        - 'main/inc/lib/phpseclib'
+        - 'main/inc/lib/pear/*'
+        - 'main/inc/lib/phpmailer/*'
+        - 'main/inc/lib/phpseclib/*'
+        - 'main/inc/lib/svg-edit/*'
+        - 'main/inc/lib/swfobject/*'
+        - 'main/inc/lib/mediaplayer/*'
+        - 'main/inc/lib/mxgraph/*'
+        - 'main/inc/lib/wami-recorder/*'
+        - 'main/inc/lib/xajax/*'
+        - 'main/lp/packaging/*'
+        - 'main/template/*'
+        - 'main/img/*'
+        - 'main/lang/*'
+        - 'plugin/buycourses/resources/js/*'
+        - 'plugin/buycourses/src/Culqi/*'
+        - 'plugin/buycourses/src/Requests/*'
+        - 'plugin/buycourses/src/paypalfunctions.php'
+        - 'plugin/buycourses/src/Requests.php'
+        - 'plugin/vchamilo/cli/*'
+        - 'plugin/kannelsms/vendor/*'
+        - 'plugin/clockworksms/vendor/*'
+        - 'plugin/pens/lib/*'
+        - 'plugin/tour/intro.js'
+        - 'plugin/bbb/lib/bbb_api.php'
+        - 'plugin/ims_lti/OAuthSimple.php'
+        - 'plugin/sepe/src/wsse/*'
+        - 'plugin/test2pdf/class/*'
+        - 'plugin/jcapture/lib/*'
+        - 'plugin/jcapture/src/*'
+        - 'tests/*'
+        - 'vendor/*'
+        - 'web/*'

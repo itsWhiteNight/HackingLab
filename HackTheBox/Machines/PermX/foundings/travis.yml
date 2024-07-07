@@ -1,0 +1,118 @@
+dist: trusty
+sudo: required
+language: php
+
+addons:
+    apt:
+        packages:
+        - apache2
+        - postfix
+        - libapache2-mod-fastcgi
+        - libappindicator1
+        - fonts-liberation
+
+services:
+    - mysql
+
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+
+env:
+  global:
+    - VHOST_URL=localhost
+    - CHAMILO_VERSION=1.11.x
+
+before_install:
+  #- sudo apt-get update
+  #- sudo apt-get install apache2 libapache2-mod-fastcgi
+  # Fix travis error https://github.com/travis-ci/travis-ci/issues/8607
+  - sudo rm -vf /etc/apt/sources.list.d/*riak*
+  # Get Chrome
+  #- wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+  #- sudo apt-get update
+  #- sudo apt-get install google-chrome-stable
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  # Get Chrome driver
+  - wget https://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip && unzip chromedriver_linux64.zip
+  - sudo mv chromedriver /usr/bin
+  - sudo chmod +x /usr/bin/chromedriver
+  # Setup display for Selenium
+  - sh -e /etc/init.d/xvfb start
+  - export DISPLAY=:99.0
+  - sleep 3
+  # Get Selenium
+  - wget http://selenium-release.storage.googleapis.com/3.1/selenium-server-standalone-3.1.0.jar
+  # Check java
+  - java -version
+  - sudo apt-get install oracle-java8-installer
+  - java -version
+  - java -jar selenium-server-standalone-3.1.0.jar -log selenium.log  > /dev/null &
+  - nohup bash -c "webdriver-manager start 2>&1 &"
+  - sleep 10
+
+  # Apache & php-fpm configuration
+  - bash tests/travis/setup-php-fpm.sh
+  - bash tests/travis/setup-apache.sh
+
+  - mysqld --version
+  - apache2 -v
+  - php -v
+  - php -m
+  - php -ini | grep memory_limit
+  - sudo cat /etc/hosts
+
+  # Install Chash, a database, and then install Chamilo
+  - git clone https://github.com/chamilo/chash
+  - cd chash
+  - git checkout 0.2.x
+  - composer install
+  - php -d phar.readonly=0 createPhar.php
+  - chmod +x chash.phar
+  - sudo mv chash.phar /usr/local/bin/chash
+  # Download chamilo
+  - php -d date.timezone="Europe/Paris" chash.php chash:chamilo_install $CHAMILO_VERSION $TRAVIS_BUILD_DIR --download-package --no-interaction --only-download-package
+  - cd $TRAVIS_BUILD_DIR
+  - pwd
+  # Install vendors
+  - travis_wait 30 composer install
+  # Install chamilo
+  - php -d date.timezone="Europe/Paris" $TRAVIS_BUILD_DIR/chash/chash.php chash:chamilo_install $CHAMILO_VERSION $TRAVIS_BUILD_DIR --no-interaction --sitename="Chamilo" --site_url="http://$VHOST_URL/" --institution="Chamilo" --institution_url="https://chamilo.org" --encrypt_method="sha1" --firstname="John" --lastname="Doe" --language="english" --driver="pdo_mysql" --host="localhost" --port="3306" --dbname="chamilo" --dbuser="root" --permissions_for_new_directories="0777" --permissions_for_new_files="0666" --linux-user="www-data" --linux-group="www-data" --username="admin" --password="admin" --email="admin@example.com" --phone="555-5555"
+  - sudo chmod -R 777 app/cache app/logs app/courses app/upload web
+  # Check chamilo status
+  - php -d date.timezone="Europe/Paris" $TRAVIS_BUILD_DIR/chash/chash.php chash:chamilo_status
+  - ls -la
+  # Permissions
+  - sudo chown -R www-data:www-data $TRAVIS_BUILD_DIR
+  - sudo chown -R 775 $TRAVIS_BUILD_DIR
+  - bash tests/travis/post_installation.sh
+  - sudo chmod +x /home/travis/build
+  - sudo service apache2 restart
+  # Check the result of index.php and check if main.js is build in travis
+  - curl $VHOST_URL
+  - ls -la web/build
+
+script:
+#  - whereis google-chrome-stable
+#  - google-chrome-stable --version
+#  - whereis chromedriver
+#  - chromedriver --version
+  - cd tests/behat
+  - pwd
+  - travis_wait 45 ../../vendor/behat/behat/bin/behat -vv
+  # - sudo cat /var/log/apache2/$VHOST_URL-access.log
+
+after_failure:
+  - sudo apache2ctl -M
+  - sudo cat /var/log/apache2/error.log
+
+# configure notifications (email, IRC, campfire etc)
+notifications:
+  # IRC notifications - disabled for creating a lot of noise on the channel
+  irc: "irc.freenode.org#chamilodev"
+  slack:
+      secure: qVu1BH+UBset9e+v5Qm4UNgAPUdZyEsI+BsVbhBoNZ3h/Qfq/0gb/+EAbffEf5BWTBIMJwVo3f8y6+sszMPgyBSriu8BoGqtQ8OZelLnw0/yTDRnNzbZQhbc+Sszqr1X+Dzz4xjLdW5LsqoIhPQTwoMemh/hT+Vz8O/rp9tVWts=

@@ -1,0 +1,63 @@
+# Dirsearch started Sat Jul  6 20:57:35 2024 as: /usr/bin/dirsearch -u lms.permx.htb
+
+200    46B   http://lms.permx.htb/.bowerrc
+200     2KB  http://lms.permx.htb/.codeclimate.yml
+403   278B   http://lms.permx.htb/.ht_wsr.txt
+403   278B   http://lms.permx.htb/.htaccess.sample
+403   278B   http://lms.permx.htb/.htaccess.orig
+403   278B   http://lms.permx.htb/.htaccess.save
+403   278B   http://lms.permx.htb/.htaccess.bak1
+403   278B   http://lms.permx.htb/.htaccess_extra
+403   278B   http://lms.permx.htb/.htaccess_orig
+403   278B   http://lms.permx.htb/.htaccess_sc
+403   278B   http://lms.permx.htb/.htaccessBAK
+403   278B   http://lms.permx.htb/.htaccessOLD
+403   278B   http://lms.permx.htb/.htaccessOLD2
+403   278B   http://lms.permx.htb/.html
+403   278B   http://lms.permx.htb/.htm
+403   278B   http://lms.permx.htb/.htpasswds
+403   278B   http://lms.permx.htb/.htpasswd_test
+403   278B   http://lms.permx.htb/.httr-oauth
+403   278B   http://lms.permx.htb/.php
+200     3KB  http://lms.permx.htb/.scrutinizer.yml
+200     4KB  http://lms.permx.htb/.travis.yml
+301   312B   http://lms.permx.htb/app    -> REDIRECTS TO: http://lms.permx.htb/app/
+200   719B   http://lms.permx.htb/app/
+200   574B   http://lms.permx.htb/app/cache/
+200   407B   http://lms.permx.htb/app/logs/
+200   101KB  http://lms.permx.htb/app/bootstrap.php.cache
+200   455B   http://lms.permx.htb/bin/
+301   312B   http://lms.permx.htb/bin    -> REDIRECTS TO: http://lms.permx.htb/bin/
+200     1KB  http://lms.permx.htb/bower.json
+200     7KB  http://lms.permx.htb/composer.json
+200   587KB  http://lms.permx.htb/composer.lock
+200     5KB  http://lms.permx.htb/CONTRIBUTING.md
+301   322B   http://lms.permx.htb/documentation    -> REDIRECTS TO: http://lms.permx.htb/documentation/
+200     1KB  http://lms.permx.htb/documentation/
+200     2KB  http://lms.permx.htb/favicon.ico
+200     4KB  http://lms.permx.htb/index.php
+200     4KB  http://lms.permx.htb/index.php/login/
+200   842B   http://lms.permx.htb/license.txt
+200    34KB  http://lms.permx.htb/LICENSE
+301   313B   http://lms.permx.htb/main    -> REDIRECTS TO: http://lms.permx.htb/main/
+200    97B   http://lms.permx.htb/main/
+200     8KB  http://lms.permx.htb/README.md
+200   403B   http://lms.permx.htb/robots.txt
+403   278B   http://lms.permx.htb/server-status
+403   278B   http://lms.permx.htb/server-status/
+301   312B   http://lms.permx.htb/src    -> REDIRECTS TO: http://lms.permx.htb/src/
+200   444B   http://lms.permx.htb/src/
+302     0B   http://lms.permx.htb/user.php    -> REDIRECTS TO: whoisonline.php
+200     0B   http://lms.permx.htb/vendor/composer/autoload_files.php
+200     0B   http://lms.permx.htb/vendor/composer/autoload_psr4.php
+200     0B   http://lms.permx.htb/vendor/autoload.php
+200     0B   http://lms.permx.htb/vendor/composer/autoload_namespaces.php
+200     0B   http://lms.permx.htb/vendor/composer/ClassLoader.php
+200     1KB  http://lms.permx.htb/vendor/
+200     0B   http://lms.permx.htb/vendor/composer/autoload_classmap.php
+200     1KB  http://lms.permx.htb/vendor/composer/LICENSE
+200     0B   http://lms.permx.htb/vendor/composer/autoload_static.php
+200     0B   http://lms.permx.htb/vendor/composer/autoload_real.php
+200   531KB  http://lms.permx.htb/vendor/composer/installed.json
+200     6KB  http://lms.permx.htb/web.config
+200   481B   http://lms.permx.htb/web/
