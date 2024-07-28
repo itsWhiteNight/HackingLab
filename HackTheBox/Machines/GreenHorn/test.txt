@@ -1,0 +1,18 @@
+Hello junior,
+
+We have recently installed OpenVAS on our server to actively monitor and identify potential security
+vulnerabilities. Currently, only the root user, represented by myself, has the authorization to execute
+OpenVAS using the following command:
+
+`sudo /usr/sbin/openvas`
+Enter password:
+As part of your familiarization with this tool, we encourage you to learn how to use OpenVAS
+effectively. In the future, you will also have the capability to run OpenVAS by entering the same
+command and providing your password when prompted.
+
+Feel free to reach out if you have any questions or need further assistance.
+
+Have a great week,
+Mr. Green
+
+

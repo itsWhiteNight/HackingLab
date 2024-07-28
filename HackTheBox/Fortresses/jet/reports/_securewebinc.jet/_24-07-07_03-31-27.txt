@@ -1,0 +1,18 @@
+# Dirsearch started Sun Jul  7 03:31:31 2024 as: /usr/bin/dirsearch -u securewebinc.jet
+
+403   580B   http://securewebinc.jet/.ht_wsr.txt
+403   580B   http://securewebinc.jet/.htaccess.orig
+403   580B   http://securewebinc.jet/.htaccess.bak1
+403   580B   http://securewebinc.jet/.htaccess_orig
+403   580B   http://securewebinc.jet/.htaccessBAK
+403   580B   http://securewebinc.jet/.htaccess.save
+403   580B   http://securewebinc.jet/.htaccessOLD2
+403   580B   http://securewebinc.jet/.htaccess_extra
+403   580B   http://securewebinc.jet/.htaccessOLD
+403   580B   http://securewebinc.jet/.htm
+403   580B   http://securewebinc.jet/.htaccess.sample
+403   580B   http://securewebinc.jet/.htaccess_sc
+403   580B   http://securewebinc.jet/.html
+403   580B   http://securewebinc.jet/.htpasswd_test
+403   580B   http://securewebinc.jet/.httr-oauth
+403   580B   http://securewebinc.jet/.htpasswds

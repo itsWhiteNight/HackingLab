@@ -1,0 +1,57 @@
+┌─[parrot@parrot]─[~]
+└──╼  ~/Documents/
+┌─[parrot@parrot]─[~/Documents]
+└──╼ 
+cacert.der  VBox_GAs_7.0.12
+┌─[parrot@parrot]─[~/Documents]
+└──╼  VBox_GAs_7.0.12/
+┌─[parrot@parrot]─[~/Documents/VBox_GAs_7.0.12]
+└──╼  -la
+total 42164
+drwxrwxrwx 1 parrot parrot      514 Jul 23 23:49 .
+drwxr-xr-x 1 parrot parrot       50 Jul 23 23:50 ..
+-rw-r--r-- 1 parrot parrot     1048 Jul 26  2023 AUTORUN.INF
+-rw-r--r-- 1 parrot parrot     6848 Oct 12  2023 autorun.sh
+drwxr-xr-x 1 parrot parrot      298 Oct 12  2023 cert
+drwxr-xr-x 1 parrot parrot      198 Oct 12  2023 NT3x
+drwxr-xr-x 1 parrot parrot      436 Oct 12  2023 OS2
+-rw-r--r-- 1 parrot parrot     5096 Oct 12  2023 runasroot.sh
+-rw-r--r-- 1 parrot parrot      592 Oct 12  2023 TRANS.TBL
+-rw-r--r-- 1 parrot parrot  2203724 Oct 12  2023 VBoxDarwinAdditions.pkg
+-rw-r--r-- 1 parrot parrot     4224 Oct 12  2023 VBoxDarwinAdditionsUninstall.tool
+-rw-r--r-- 1 parrot parrot  6306248 Oct 12  2023 VBoxLinuxAdditions.run
+-rw-r--r-- 1 parrot parrot  9405440 Oct 12  2023 VBoxSolarisAdditions.pkg
+-rw-r--r-- 1 parrot parrot 15729536 Oct 12  2023 VBoxWindowsAdditions-amd64.exe
+-rw-r--r-- 1 parrot parrot   242272 Oct 12  2023 VBoxWindowsAdditions.exe
+-rw-r--r-- 1 parrot parrot  9232920 Oct 12  2023 VBoxWindowsAdditions-x86.exe
+-rw-r--r-- 1 parrot parrot      261 Jul 26  2023 windows11-bypass.reg
+┌─[parrot@parrot]─[~/Documents/VBox_GAs_7.0.12]
+└──╼  +x VBoxLinuxAdditions.run
+┌─[parrot@parrot]─[~/Documents/VBox_GAs_7.0.12]
+└──╼  sh ./VBoxLinuxAdditions.run
+[sudo] password for parrot: 
+Verifying archive integrity...  100%   MD5 checksums are OK. All good.
+Uncompressing VirtualBox 7.0.12 Guest Additions for Linux  100%  
+VirtualBox Guest Additions installer
+Removing installed version 7.0.12 of VirtualBox Guest Additions...
+Copying additional installer modules ...
+Installing additional modules ...
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Setting up modules
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: or
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+VirtualBox Guest Additions: Building the modules for kernel 6.9.7-amd64.
+
+VirtualBox Guest Additions: Look at /var/log/vboxadd-setup.log to find out what 
+went wrong
+VirtualBox Guest Additions: Running kernel modules will not be replaced until 
+the system is restarted or 'rcvboxadd reload' triggered
+VirtualBox Guest Additions: reloading kernel modules and services
+VirtualBox Guest Additions: cannot reload kernel modules: one or more module(s) 
+is still in use
+VirtualBox Guest Additions: kernel modules and services were not reloaded
+The log file /var/log/vboxadd-setup.log may contain further information

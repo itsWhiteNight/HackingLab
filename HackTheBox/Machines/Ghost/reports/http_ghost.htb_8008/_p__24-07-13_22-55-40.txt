@@ -1,0 +1,8 @@
+# Dirsearch started Sat Jul 13 22:58:18 2024 as: /usr/bin/dirsearch -u http://ghost.htb:8008/p/
+
+301     0B   http://ghost.htb:8008/p/%2e%2e//google.com    -> REDIRECTS TO: /p/%2e%2e/google.com/
+301     0B   http://ghost.htb:8008/p/Citrix//AccessPlatform/auth/clientscripts/cookies.js    -> REDIRECTS TO: /p/Citrix/AccessPlatform/auth/clientscripts/cookies.js/
+301     0B   http://ghost.htb:8008/p/engine/classes/swfupload//swfupload.swf    -> REDIRECTS TO: /p/engine/classes/swfupload/swfupload.swf/
+301     0B   http://ghost.htb:8008/p/engine/classes/swfupload//swfupload_f9.swf    -> REDIRECTS TO: /p/engine/classes/swfupload/swfupload_f9.swf/
+301     0B   http://ghost.htb:8008/p/extjs/resources//charts.swf    -> REDIRECTS TO: /p/extjs/resources/charts.swf/
+301     0B   http://ghost.htb:8008/p/html/js/misc/swfupload//swfupload.swf    -> REDIRECTS TO: /p/html/js/misc/swfupload/swfupload.swf/

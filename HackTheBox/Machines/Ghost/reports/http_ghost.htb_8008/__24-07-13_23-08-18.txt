@@ -1,0 +1,4 @@
+# Dirsearch started Sat Jul 13 23:08:48 2024 as: /usr/bin/dirsearch -u http://ghost.htb:8008/ --crawl 3 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -t 20
+
+301   179B   http://ghost.htb:8008/assets    -> REDIRECTS TO: /assets/
+404     1KB  http://ghost.htb:8008/assets/

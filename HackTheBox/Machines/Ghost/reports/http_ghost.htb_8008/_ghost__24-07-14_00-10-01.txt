@@ -1,0 +1,427 @@
+# Dirsearch started Sun Jul 14 00:12:28 2024 as: /usr/bin/dirsearch -u http://ghost.htb:8008/ghost/
+
+301     0B   http://ghost.htb:8008/ghost/%2e%2e//google.com    -> REDIRECTS TO: /ghost/%2e%2e/google.com/
+302    35B   http://ghost.htb:8008/ghost/%3f/    -> REDIRECTS TO: /ghost/#/%3f/
+302    35B   http://ghost.htb:8008/ghost/..;/    -> REDIRECTS TO: /ghost/#/..;/
+302    38B   http://ghost.htb:8008/ghost/.admin/    -> REDIRECTS TO: /ghost/#/.admin/
+302    40B   http://ghost.htb:8008/ghost/.ansible/    -> REDIRECTS TO: /ghost/#/.ansible/
+302    46B   http://ghost.htb:8008/ghost/.apt_generated/    -> REDIRECTS TO: /ghost/#/.apt_generated/
+302    36B   http://ghost.htb:8008/ghost/.aws/    -> REDIRECTS TO: /ghost/#/.aws/
+302    38B   http://ghost.htb:8008/ghost/.build/    -> REDIRECTS TO: /ghost/#/.build/
+302    42B   http://ghost.htb:8008/ghost/.buildpath/    -> REDIRECTS TO: /ghost/#/.buildpath/
+302    35B   http://ghost.htb:8008/ghost/.c9/    -> REDIRECTS TO: /ghost/#/.c9/
+302    36B   http://ghost.htb:8008/ghost/.bzr/    -> REDIRECTS TO: /ghost/#/.bzr/
+302    39B   http://ghost.htb:8008/ghost/.bundle/    -> REDIRECTS TO: /ghost/#/.bundle/
+302    44B   http://ghost.htb:8008/ghost/.c9revisions/    -> REDIRECTS TO: /ghost/#/.c9revisions/
+302    46B   http://ghost.htb:8008/ghost/.cabal-sandbox/    -> REDIRECTS TO: /ghost/#/.cabal-sandbox/
+302    38B   http://ghost.htb:8008/ghost/.cache/    -> REDIRECTS TO: /ghost/#/.cache/
+302    43B   http://ghost.htb:8008/ghost/.capistrano/    -> REDIRECTS TO: /ghost/#/.capistrano/
+302    51B   http://ghost.htb:8008/ghost/.capistrano/metrics/    -> REDIRECTS TO: /ghost/#/.capistrano/metrics/
+302    36B   http://ghost.htb:8008/ghost/.cfg/    -> REDIRECTS TO: /ghost/#/.cfg/
+302    41B   http://ghost.htb:8008/ghost/.circleci/    -> REDIRECTS TO: /ghost/#/.circleci/
+302    39B   http://ghost.htb:8008/ghost/.clcbio/    -> REDIRECTS TO: /ghost/#/.clcbio/
+302    43B   http://ghost.htb:8008/ghost/.components/    -> REDIRECTS TO: /ghost/#/.components/
+302    38B   http://ghost.htb:8008/ghost/.conda/    -> REDIRECTS TO: /ghost/#/.conda/
+302    39B   http://ghost.htb:8008/ghost/.config/    -> REDIRECTS TO: /ghost/#/.config/
+302    41B   http://ghost.htb:8008/ghost/.controls/    -> REDIRECTS TO: /ghost/#/.controls/
+302    40B   http://ghost.htb:8008/ghost/.consulo/    -> REDIRECTS TO: /ghost/#/.consulo/
+302    46B   http://ghost.htb:8008/ghost/.configuration/    -> REDIRECTS TO: /ghost/#/.configuration/
+302    38B   http://ghost.htb:8008/ghost/.cpanm/    -> REDIRECTS TO: /ghost/#/.cpanm/
+302    37B   http://ghost.htb:8008/ghost/.cpan/    -> REDIRECTS TO: /ghost/#/.cpan/
+302    43B   http://ghost.htb:8008/ghost/.coq-native/    -> REDIRECTS TO: /ghost/#/.coq-native/
+302    53B   http://ghost.htb:8008/ghost/.cpanel/caches/config/    -> REDIRECTS TO: /ghost/#/.cpanel/caches/config/
+302    39B   http://ghost.htb:8008/ghost/.cpanel/    -> REDIRECTS TO: /ghost/#/.cpanel/
+302    40B   http://ghost.htb:8008/ghost/.cpcache/    -> REDIRECTS TO: /ghost/#/.cpcache/
+302    35B   http://ghost.htb:8008/ghost/.cr/    -> REDIRECTS TO: /ghost/#/.cr/
+302    37B   http://ghost.htb:8008/ghost/.data/    -> REDIRECTS TO: /ghost/#/.data/
+302    42B   http://ghost.htb:8008/ghost/.dart_tool/    -> REDIRECTS TO: /ghost/#/.dart_tool/
+302    37B   http://ghost.htb:8008/ghost/.dbus/    -> REDIRECTS TO: /ghost/#/.dbus/
+302    36B   http://ghost.htb:8008/ghost/.dev/    -> REDIRECTS TO: /ghost/#/.dev/
+302    39B   http://ghost.htb:8008/ghost/.docker/    -> REDIRECTS TO: /ghost/#/.docker/
+302    37B   http://ghost.htb:8008/ghost/.docs/    -> REDIRECTS TO: /ghost/#/.docs/
+302    37B   http://ghost.htb:8008/ghost/.eggs/    -> REDIRECTS TO: /ghost/#/.eggs/
+302    40B   http://ghost.htb:8008/ghost/.dropbox/    -> REDIRECTS TO: /ghost/#/.dropbox/
+302    49B   http://ghost.htb:8008/ghost/.elasticbeanstalk/    -> REDIRECTS TO: /ghost/#/.elasticbeanstalk/
+302    41B   http://ghost.htb:8008/ghost/.dynamodb/    -> REDIRECTS TO: /ghost/#/.dynamodb/
+302    42B   http://ghost.htb:8008/ghost/.elixir_ls/    -> REDIRECTS TO: /ghost/#/.elixir_ls/
+302    39B   http://ghost.htb:8008/ghost/.emails/    -> REDIRECTS TO: /ghost/#/.emails/
+302    46B   http://ghost.htb:8008/ghost/.ensime_lucene/    -> REDIRECTS TO: /ghost/#/.ensime_lucene/
+302    45B   http://ghost.htb:8008/ghost/.ensime_cache/    -> REDIRECTS TO: /ghost/#/.ensime_cache/
+302    53B   http://ghost.htb:8008/ghost/.externaltoolbuilders/    -> REDIRECTS TO: /ghost/#/.externaltoolbuilders/
+302    41B   http://ghost.htb:8008/ghost/.external/    -> REDIRECTS TO: /ghost/#/.external/
+302    37B   http://ghost.htb:8008/ghost/.fake/    -> REDIRECTS TO: /ghost/#/.fake/
+302    42B   http://ghost.htb:8008/ghost/.filezilla/    -> REDIRECTS TO: /ghost/#/.filezilla/
+302    43B   http://ghost.htb:8008/ghost/.fontconfig/    -> REDIRECTS TO: /ghost/#/.fontconfig/
+302    36B   http://ghost.htb:8008/ghost/.fop/    -> REDIRECTS TO: /ghost/#/.fop/
+302    40B   http://ghost.htb:8008/ghost/.fusebox/    -> REDIRECTS TO: /ghost/#/.fusebox/
+302    41B   http://ghost.htb:8008/ghost/.gfclient/    -> REDIRECTS TO: /ghost/#/.gfclient/
+302    44B   http://ghost.htb:8008/ghost/.git-rewrite/    -> REDIRECTS TO: /ghost/#/.git-rewrite/
+302    45B   http://ghost.htb:8008/ghost/.git/branches/    -> REDIRECTS TO: /ghost/#/.git/branches/
+302    36B   http://ghost.htb:8008/ghost/.git/    -> REDIRECTS TO: /ghost/#/.git/
+302    42B   http://ghost.htb:8008/ghost/.git/hooks/    -> REDIRECTS TO: /ghost/#/.git/hooks/
+302    41B   http://ghost.htb:8008/ghost/.git/info/    -> REDIRECTS TO: /ghost/#/.git/info/
+302    41B   http://ghost.htb:8008/ghost/.git/logs/    -> REDIRECTS TO: /ghost/#/.git/logs/
+302    44B   http://ghost.htb:8008/ghost/.git/objects/    -> REDIRECTS TO: /ghost/#/.git/objects/
+302    37B   http://ghost.htb:8008/ghost/.git2/    -> REDIRECTS TO: /ghost/#/.git2/
+302    41B   http://ghost.htb:8008/ghost/.git/refs/    -> REDIRECTS TO: /ghost/#/.git/refs/
+302    39B   http://ghost.htb:8008/ghost/.github/    -> REDIRECTS TO: /ghost/#/.github/
+302    42B   http://ghost.htb:8008/ghost/.gitignore/    -> REDIRECTS TO: /ghost/#/.gitignore/
+302    38B   http://ghost.htb:8008/ghost/.gnome/    -> REDIRECTS TO: /ghost/#/.gnome/
+302    39B   http://ghost.htb:8008/ghost/.gphoto/    -> REDIRECTS TO: /ghost/#/.gphoto/
+302    38B   http://ghost.htb:8008/ghost/.gnupg/    -> REDIRECTS TO: /ghost/#/.gnupg/
+302    40B   http://ghost.htb:8008/ghost/.gwt-tmp/    -> REDIRECTS TO: /ghost/#/.gwt-tmp/
+302    36B   http://ghost.htb:8008/ghost/.gwt/    -> REDIRECTS TO: /ghost/#/.gwt/
+302    38B   http://ghost.htb:8008/ghost/.grunt/    -> REDIRECTS TO: /ghost/#/.grunt/
+302    39B   http://ghost.htb:8008/ghost/.gradle/    -> REDIRECTS TO: /ghost/#/.gradle/
+302    35B   http://ghost.htb:8008/ghost/.hg/    -> REDIRECTS TO: /ghost/#/.hg/
+302    46B   http://ghost.htb:8008/ghost/.hg/store/data/    -> REDIRECTS TO: /ghost/#/.hg/store/data/
+302    41B   http://ghost.htb:8008/ghost/.htaccess/    -> REDIRECTS TO: /ghost/#/.htaccess/
+302    41B   http://ghost.htb:8008/ghost/.htpasswd/    -> REDIRECTS TO: /ghost/#/.htpasswd/
+302    43B   http://ghost.htb:8008/ghost/.hypothesis/    -> REDIRECTS TO: /ghost/#/.hypothesis/
+302    37B   http://ghost.htb:8008/ghost/.idea/    -> REDIRECTS TO: /ghost/#/.idea/
+302    47B   http://ghost.htb:8008/ghost/.idea/libraries/    -> REDIRECTS TO: /ghost/#/.idea/libraries/
+302    40B   http://ghost.htb:8008/ghost/.ignored/    -> REDIRECTS TO: /ghost/#/.ignored/
+302    45B   http://ghost.htb:8008/ghost/.idea_modules/    -> REDIRECTS TO: /ghost/#/.idea_modules/
+302    38B   http://ghost.htb:8008/ghost/.idea0/    -> REDIRECTS TO: /ghost/#/.idea0/
+302    39B   http://ghost.htb:8008/ghost/.import/    -> REDIRECTS TO: /ghost/#/.import/
+302    39B   http://ghost.htb:8008/ghost/.ionide/    -> REDIRECTS TO: /ghost/#/.ionide/
+302    40B   http://ghost.htb:8008/ghost/.install/    -> REDIRECTS TO: /ghost/#/.install/
+302    37B   http://ghost.htb:8008/ghost/.inst/    -> REDIRECTS TO: /ghost/#/.inst/
+302    47B   http://ghost.htb:8008/ghost/.interproscan-5/    -> REDIRECTS TO: /ghost/#/.interproscan-5/
+302    37B   http://ghost.htb:8008/ghost/.java/    -> REDIRECTS TO: /ghost/#/.java/
+302    45B   http://ghost.htb:8008/ghost/.jekyll-cache/    -> REDIRECTS TO: /ghost/#/.jekyll-cache/
+302    40B   http://ghost.htb:8008/ghost/.kitchen/    -> REDIRECTS TO: /ghost/#/.kitchen/
+302    38B   http://ghost.htb:8008/ghost/.kdev4/    -> REDIRECTS TO: /ghost/#/.kdev4/
+302    44B   http://ghost.htb:8008/ghost/.komodotools/    -> REDIRECTS TO: /ghost/#/.komodotools/
+302    40B   http://ghost.htb:8008/ghost/.lgt_tmp/    -> REDIRECTS TO: /ghost/#/.lgt_tmp/
+302    45B   http://ghost.htb:8008/ghost/.lein-plugins/    -> REDIRECTS TO: /ghost/#/.lein-plugins/
+302    37B   http://ghost.htb:8008/ghost/.libs/    -> REDIRECTS TO: /ghost/#/.libs/
+302    43B   http://ghost.htb:8008/ghost/.localcache/    -> REDIRECTS TO: /ghost/#/.localcache/
+302    38B   http://ghost.htb:8008/ghost/.local/    -> REDIRECTS TO: /ghost/#/.local/
+302    45B   http://ghost.htb:8008/ghost/.localhistory/    -> REDIRECTS TO: /ghost/#/.localhistory/
+302    42B   http://ghost.htb:8008/ghost/.localeapp/    -> REDIRECTS TO: /ghost/#/.localeapp/
+302    36B   http://ghost.htb:8008/ghost/.lib/    -> REDIRECTS TO: /ghost/#/.lib/
+302    34B   http://ghost.htb:8008/ghost/.m/    -> REDIRECTS TO: /ghost/#/.m/
+302    51B   http://ghost.htb:8008/ghost/.magentointel-cache/    -> REDIRECTS TO: /ghost/#/.magentointel-cache/
+302    44B   http://ghost.htb:8008/ghost/.masterpages/    -> REDIRECTS TO: /ghost/#/.masterpages/
+302    35B   http://ghost.htb:8008/ghost/.mc/    -> REDIRECTS TO: /ghost/#/.mc/
+302    39B   http://ghost.htb:8008/ghost/.meteor/    -> REDIRECTS TO: /ghost/#/.meteor/
+302    39B   http://ghost.htb:8008/ghost/.modgit/    -> REDIRECTS TO: /ghost/#/.modgit/
+302    39B   http://ghost.htb:8008/ghost/.modman/    -> REDIRECTS TO: /ghost/#/.modman/
+302    41B   http://ghost.htb:8008/ghost/.mfractor/    -> REDIRECTS TO: /ghost/#/.mfractor/
+302    41B   http://ghost.htb:8008/ghost/.metadata/    -> REDIRECTS TO: /ghost/#/.metadata/
+302    37B   http://ghost.htb:8008/ghost/.mono/    -> REDIRECTS TO: /ghost/#/.mono/
+302    40B   http://ghost.htb:8008/ghost/.mozilla/    -> REDIRECTS TO: /ghost/#/.mozilla/
+302    40B   http://ghost.htb:8008/ghost/.mtj.tmp/    -> REDIRECTS TO: /ghost/#/.mtj.tmp/
+302    42B   http://ghost.htb:8008/ghost/.nb-gradle/    -> REDIRECTS TO: /ghost/#/.nb-gradle/
+302    43B   http://ghost.htb:8008/ghost/.navigation/    -> REDIRECTS TO: /ghost/#/.navigation/
+302    42B   http://ghost.htb:8008/ghost/.nbproject/    -> REDIRECTS TO: /ghost/#/.nbproject/
+302    43B   http://ghost.htb:8008/ghost/.mypy_cache/    -> REDIRECTS TO: /ghost/#/.mypy_cache/
+302    36B   http://ghost.htb:8008/ghost/.nox/    -> REDIRECTS TO: /ghost/#/.nox/
+302    36B   http://ghost.htb:8008/ghost/.npm/    -> REDIRECTS TO: /ghost/#/.npm/
+302    38B   http://ghost.htb:8008/ghost/.nuget/    -> REDIRECTS TO: /ghost/#/.nuget/
+302    35B   http://ghost.htb:8008/ghost/.nv/    -> REDIRECTS TO: /ghost/#/.nv/
+302    36B   http://ghost.htb:8008/ghost/.nvm/    -> REDIRECTS TO: /ghost/#/.nvm/
+302    42B   http://ghost.htb:8008/ghost/.oh-my-zsh/    -> REDIRECTS TO: /ghost/#/.oh-my-zsh/
+302    49B   http://ghost.htb:8008/ghost/.oracle_jre_usage/    -> REDIRECTS TO: /ghost/#/.oracle_jre_usage/
+302    37B   http://ghost.htb:8008/ghost/.otto/    -> REDIRECTS TO: /ghost/#/.otto/
+302    36B   http://ghost.htb:8008/ghost/.pac/    -> REDIRECTS TO: /ghost/#/.pac/
+302    38B   http://ghost.htb:8008/ghost/.paket/    -> REDIRECTS TO: /ghost/#/.paket/
+302    41B   http://ghost.htb:8008/ghost/.parallel/    -> REDIRECTS TO: /ghost/#/.parallel/
+302    40B   http://ghost.htb:8008/ghost/.patches/    -> REDIRECTS TO: /ghost/#/.patches/
+302    41B   http://ghost.htb:8008/ghost/.perlbrew/    -> REDIRECTS TO: /ghost/#/.perlbrew/
+302    36B   http://ghost.htb:8008/ghost/.pki/    -> REDIRECTS TO: /ghost/#/.pki/
+302    36B   http://ghost.htb:8008/ghost/.pm2/    -> REDIRECTS TO: /ghost/#/.pm2/
+302    40B   http://ghost.htb:8008/ghost/.preview/    -> REDIRECTS TO: /ghost/#/.preview/
+302    40B   http://ghost.htb:8008/ghost/.project/    -> REDIRECTS TO: /ghost/#/.project/
+302    37B   http://ghost.htb:8008/ghost/.pyre/    -> REDIRECTS TO: /ghost/#/.pyre/
+302    36B   http://ghost.htb:8008/ghost/.pub/    -> REDIRECTS TO: /ghost/#/.pub/
+302    45B   http://ghost.htb:8008/ghost/.pytest_cache/    -> REDIRECTS TO: /ghost/#/.pytest_cache/
+302    39B   http://ghost.htb:8008/ghost/.puppet/    -> REDIRECTS TO: /ghost/#/.puppet/
+302    41B   http://ghost.htb:8008/ghost/.qqestore/    -> REDIRECTS TO: /ghost/#/.qqestore/
+302    45B   http://ghost.htb:8008/ghost/.recommenders/    -> REDIRECTS TO: /ghost/#/.recommenders/
+302    38B   http://ghost.htb:8008/ghost/.rpmdb/    -> REDIRECTS TO: /ghost/#/.rpmdb/
+302    42B   http://ghost.htb:8008/ghost/.rocketeer/    -> REDIRECTS TO: /ghost/#/.rocketeer/
+302    43B   http://ghost.htb:8008/ghost/.rpt2_cache/    -> REDIRECTS TO: /ghost/#/.rpt2_cache/
+302    44B   http://ghost.htb:8008/ghost/.rsync_cache/    -> REDIRECTS TO: /ghost/#/.rsync_cache/
+302    47B   http://ghost.htb:8008/ghost/.rts2_cache_umd/    -> REDIRECTS TO: /ghost/#/.rts2_cache_umd/
+302    46B   http://ghost.htb:8008/ghost/.rts2_cache_es/    -> REDIRECTS TO: /ghost/#/.rts2_cache_es/
+302    47B   http://ghost.htb:8008/ghost/.rts2_cache_cjs/    -> REDIRECTS TO: /ghost/#/.rts2_cache_cjs/
+302    43B   http://ghost.htb:8008/ghost/.sass-cache/    -> REDIRECTS TO: /ghost/#/.sass-cache/
+302    41B   http://ghost.htb:8008/ghost/.settings/    -> REDIRECTS TO: /ghost/#/.settings/
+302    43B   http://ghost.htb:8008/ghost/.serverless/    -> REDIRECTS TO: /ghost/#/.serverless/
+302    36B   http://ghost.htb:8008/ghost/.ssh/    -> REDIRECTS TO: /ghost/#/.ssh/
+302    41B   http://ghost.htb:8008/ghost/.st_cache/    -> REDIRECTS TO: /ghost/#/.st_cache/
+302    37B   http://ghost.htb:8008/ghost/.stat/    -> REDIRECTS TO: /ghost/#/.stat/
+302    43B   http://ghost.htb:8008/ghost/.stack-work/    -> REDIRECTS TO: /ghost/#/.stack-work/
+302    49B   http://ghost.htb:8008/ghost/.sucuriquarantine/    -> REDIRECTS TO: /ghost/#/.sucuriquarantine/
+302    36B   http://ghost.htb:8008/ghost/.svn/    -> REDIRECTS TO: /ghost/#/.svn/
+302    46B   http://ghost.htb:8008/ghost/.svn/text-base/    -> REDIRECTS TO: /ghost/#/.svn/text-base/
+302    39B   http://ghost.htb:8008/ghost/.system/    -> REDIRECTS TO: /ghost/#/.system/
+302    37B   http://ghost.htb:8008/ghost/.temp/    -> REDIRECTS TO: /ghost/#/.temp/
+302    42B   http://ghost.htb:8008/ghost/.terraform/    -> REDIRECTS TO: /ghost/#/.terraform/
+302    38B   http://ghost.htb:8008/ghost/.tconn/    -> REDIRECTS TO: /ghost/#/.tconn/
+302    42B   http://ghost.htb:8008/ghost/.templates/    -> REDIRECTS TO: /ghost/#/.templates/
+302    45B   http://ghost.htb:8008/ghost/.tmp_versions/    -> REDIRECTS TO: /ghost/#/.tmp_versions/
+302    44B   http://ghost.htb:8008/ghost/.thunderbird/    -> REDIRECTS TO: /ghost/#/.thunderbird/
+302    36B   http://ghost.htb:8008/ghost/.tmp/    -> REDIRECTS TO: /ghost/#/.tmp/
+302    36B   http://ghost.htb:8008/ghost/.tox/    -> REDIRECTS TO: /ghost/#/.tox/
+302    38B   http://ghost.htb:8008/ghost/.trash/    -> REDIRECTS TO: /ghost/#/.trash/
+302    39B   http://ghost.htb:8008/ghost/.travis/    -> REDIRECTS TO: /ghost/#/.travis/
+302    35B   http://ghost.htb:8008/ghost/.tx/    -> REDIRECTS TO: /ghost/#/.tx/
+302    40B   http://ghost.htb:8008/ghost/.vagrant/    -> REDIRECTS TO: /ghost/#/.vagrant/
+302    39B   http://ghost.htb:8008/ghost/.vmware/    -> REDIRECTS TO: /ghost/#/.vmware/
+302    36B   http://ghost.htb:8008/ghost/.vim/    -> REDIRECTS TO: /ghost/#/.vim/
+302    45B   http://ghost.htb:8008/ghost/.vgextensions/    -> REDIRECTS TO: /ghost/#/.vgextensions/
+302    35B   http://ghost.htb:8008/ghost/.vs/    -> REDIRECTS TO: /ghost/#/.vs/
+302    36B   http://ghost.htb:8008/ghost/.w3m/    -> REDIRECTS TO: /ghost/#/.w3m/
+302    39B   http://ghost.htb:8008/ghost/.vscode/    -> REDIRECTS TO: /ghost/#/.vscode/
+200   277B   http://ghost.htb:8008/ghost/.well-known/jwks.json
+302    42B   http://ghost.htb:8008/ghost/.workspace/    -> REDIRECTS TO: /ghost/#/.workspace/
+302    44B   http://ghost.htb:8008/ghost/.x-formation/    -> REDIRECTS TO: /ghost/#/.x-formation/
+302    39B   http://ghost.htb:8008/ghost/.yardoc/    -> REDIRECTS TO: /ghost/#/.yardoc/
+302    36B   http://ghost.htb:8008/ghost/.zfs/    -> REDIRECTS TO: /ghost/#/.zfs/
+302    38B   http://ghost.htb:8008/ghost/0admin/    -> REDIRECTS TO: /ghost/#/0admin/
+302    40B   http://ghost.htb:8008/ghost/0manager/    -> REDIRECTS TO: /ghost/#/0manager/
+302    34B   http://ghost.htb:8008/ghost/1c/    -> REDIRECTS TO: /ghost/#/1c/
+302    43B   http://ghost.htb:8008/ghost/2phpmyadmin/    -> REDIRECTS TO: /ghost/#/2phpmyadmin/
+302    38B   http://ghost.htb:8008/ghost/;admin/    -> REDIRECTS TO: /ghost/#/;admin/
+302    41B   http://ghost.htb:8008/ghost/__history/    -> REDIRECTS TO: /ghost/#/__history/
+302    38B   http://ghost.htb:8008/ghost/;login/    -> REDIRECTS TO: /ghost/#/;login/
+302    37B   http://ghost.htb:8008/ghost/;json/    -> REDIRECTS TO: /ghost/#/;json/
+302    39B   http://ghost.htb:8008/ghost/__cache/    -> REDIRECTS TO: /ghost/#/__cache/
+302    42B   http://ghost.htb:8008/ghost/__recovery/    -> REDIRECTS TO: /ghost/#/__recovery/
+302    38B   http://ghost.htb:8008/ghost/_admin/    -> REDIRECTS TO: /ghost/#/_admin/
+302    40B   http://ghost.htb:8008/ghost/_awstats/    -> REDIRECTS TO: /ghost/#/_awstats/
+302    38B   http://ghost.htb:8008/ghost/_cache/    -> REDIRECTS TO: /ghost/#/_cache/
+302    38B   http://ghost.htb:8008/ghost/_build/    -> REDIRECTS TO: /ghost/#/_build/
+302    40B   http://ghost.htb:8008/ghost/_borders/    -> REDIRECTS TO: /ghost/#/_borders/
+302    37B   http://ghost.htb:8008/ghost/_data/    -> REDIRECTS TO: /ghost/#/_data/
+302    37B   http://ghost.htb:8008/ghost/_eumm/    -> REDIRECTS TO: /ghost/#/_eumm/
+302    40B   http://ghost.htb:8008/ghost/_fpclass/    -> REDIRECTS TO: /ghost/#/_fpclass/
+302    40B   http://ghost.htb:8008/ghost/_funcion/    -> REDIRECTS TO: /ghost/#/_funcion/
+302    42B   http://ghost.htb:8008/ghost/_funciones/    -> REDIRECTS TO: /ghost/#/_funciones/
+302    37B   http://ghost.htb:8008/ghost/_h5ai/    -> REDIRECTS TO: /ghost/#/_h5ai/
+302    41B   http://ghost.htb:8008/ghost/_function/    -> REDIRECTS TO: /ghost/#/_function/
+302    42B   http://ghost.htb:8008/ghost/_functions/    -> REDIRECTS TO: /ghost/#/_functions/
+302    36B   http://ghost.htb:8008/ghost/_inc/    -> REDIRECTS TO: /ghost/#/_inc/
+302    40B   http://ghost.htb:8008/ghost/_include/    -> REDIRECTS TO: /ghost/#/_include/
+302    41B   http://ghost.htb:8008/ghost/_includes/    -> REDIRECTS TO: /ghost/#/_includes/
+302    36B   http://ghost.htb:8008/ghost/_log/    -> REDIRECTS TO: /ghost/#/_log/
+302    37B   http://ghost.htb:8008/ghost/_logs/    -> REDIRECTS TO: /ghost/#/_logs/
+302    40B   http://ghost.htb:8008/ghost/_layouts/    -> REDIRECTS TO: /ghost/#/_layouts/
+302    38B   http://ghost.htb:8008/ghost/_notes/    -> REDIRECTS TO: /ghost/#/_notes/
+302    37B   http://ghost.htb:8008/ghost/_novo/    -> REDIRECTS TO: /ghost/#/_novo/
+302    40B   http://ghost.htb:8008/ghost/_mem_bin/    -> REDIRECTS TO: /ghost/#/_mem_bin/
+302    43B   http://ghost.htb:8008/ghost/_phpmyadmin/    -> REDIRECTS TO: /ghost/#/_phpmyadmin/
+302    37B   http://ghost.htb:8008/ghost/_site/    -> REDIRECTS TO: /ghost/#/_site/
+302    40B   http://ghost.htb:8008/ghost/_private/    -> REDIRECTS TO: /ghost/#/_private/
+302    41B   http://ghost.htb:8008/ghost/_privados/    -> REDIRECTS TO: /ghost/#/_privados/
+302    40B   http://ghost.htb:8008/ghost/_privado/    -> REDIRECTS TO: /ghost/#/_privado/
+302    38B   http://ghost.htb:8008/ghost/_priv8/    -> REDIRECTS TO: /ghost/#/_priv8/
+302    37B   http://ghost.htb:8008/ghost/_temp/    -> REDIRECTS TO: /ghost/#/_temp/
+302    39B   http://ghost.htb:8008/ghost/_thumbs/    -> REDIRECTS TO: /ghost/#/_thumbs/
+302    40B   http://ghost.htb:8008/ghost/_vti_adm/    -> REDIRECTS TO: /ghost/#/_vti_adm/
+302    39B   http://ghost.htb:8008/ghost/_themes/    -> REDIRECTS TO: /ghost/#/_themes/
+302    40B   http://ghost.htb:8008/ghost/_vti_aut/    -> REDIRECTS TO: /ghost/#/_vti_aut/
+302    40B   http://ghost.htb:8008/ghost/_vti_bin/    -> REDIRECTS TO: /ghost/#/_vti_bin/
+302    40B   http://ghost.htb:8008/ghost/_vti_cnf/    -> REDIRECTS TO: /ghost/#/_vti_cnf/
+302    40B   http://ghost.htb:8008/ghost/_vti_log/    -> REDIRECTS TO: /ghost/#/_vti_log/
+302    40B   http://ghost.htb:8008/ghost/_vti_pvt/    -> REDIRECTS TO: /ghost/#/_vti_pvt/
+302    40B   http://ghost.htb:8008/ghost/_vti_txt/    -> REDIRECTS TO: /ghost/#/_vti_txt/
+302    42B   http://ghost.htb:8008/ghost/_webalizer/    -> REDIRECTS TO: /ghost/#/_webalizer/
+302    43B   http://ghost.htb:8008/ghost/_wpeprivate/    -> REDIRECTS TO: /ghost/#/_wpeprivate/
+302    38B   http://ghost.htb:8008/ghost/aadmin/    -> REDIRECTS TO: /ghost/#/aadmin/
+302    39B   http://ghost.htb:8008/ghost/ab/docs/    -> REDIRECTS TO: /ghost/#/ab/docs/
+302    39B   http://ghost.htb:8008/ghost/_yardoc/    -> REDIRECTS TO: /ghost/#/_yardoc/
+302    34B   http://ghost.htb:8008/ghost/ab/    -> REDIRECTS TO: /ghost/#/ab/
+302    35B   http://ghost.htb:8008/ghost/abs/    -> REDIRECTS TO: /ghost/#/abs/
+302    38B   http://ghost.htb:8008/ghost/access/    -> REDIRECTS TO: /ghost/#/access/
+302    42B   http://ghost.htb:8008/ghost/access-log/    -> REDIRECTS TO: /ghost/#/access-log/
+302    43B   http://ghost.htb:8008/ghost/access_logs/    -> REDIRECTS TO: /ghost/#/access_logs/
+302    41B   http://ghost.htb:8008/ghost/accesslog/    -> REDIRECTS TO: /ghost/#/accesslog/
+302    39B   http://ghost.htb:8008/ghost/account/    -> REDIRECTS TO: /ghost/#/account/
+302    40B   http://ghost.htb:8008/ghost/accounts/    -> REDIRECTS TO: /ghost/#/accounts/
+302    42B   http://ghost.htb:8008/ghost/acct_login/    -> REDIRECTS TO: /ghost/#/acct_login/
+302    40B   http://ghost.htb:8008/ghost/activemq/    -> REDIRECTS TO: /ghost/#/activemq/
+302    53B   http://ghost.htb:8008/ghost/activitysessions/docs/    -> REDIRECTS TO: /ghost/#/activitysessions/docs/
+302    41B   http://ghost.htb:8008/ghost/actuators/    -> REDIRECTS TO: /ghost/#/actuators/
+302    39B   http://ghost.htb:8008/ghost/adm-bin/    -> REDIRECTS TO: /ghost/#/adm-bin/
+302    49B   http://ghost.htb:8008/ghost/adjuncts/3a890183/    -> REDIRECTS TO: /ghost/#/adjuncts/3a890183/
+302    35B   http://ghost.htb:8008/ghost/adm/    -> REDIRECTS TO: /ghost/#/adm/
+302    53B   http://ghost.htb:8008/ghost/admin-dev/autoupgrade/    -> REDIRECTS TO: /ghost/#/admin-dev/autoupgrade/
+302    45B   http://ghost.htb:8008/ghost/admin-console/    -> REDIRECTS TO: /ghost/#/admin-console/
+302    46B   http://ghost.htb:8008/ghost/admin-database/    -> REDIRECTS TO: /ghost/#/admin-database/
+302    49B   http://ghost.htb:8008/ghost/admin-dev/backups/    -> REDIRECTS TO: /ghost/#/admin-dev/backups/
+302    48B   http://ghost.htb:8008/ghost/admin-dev/export/    -> REDIRECTS TO: /ghost/#/admin-dev/export/
+302    40B   http://ghost.htb:8008/ghost/admin%20/    -> REDIRECTS TO: /ghost/#/admin%20/
+302    41B   http://ghost.htb:8008/ghost/admin-dev/    -> REDIRECTS TO: /ghost/#/admin-dev/
+302    48B   http://ghost.htb:8008/ghost/admin-dev/import/    -> REDIRECTS TO: /ghost/#/admin-dev/import/
+302    42B   http://ghost.htb:8008/ghost/admin-serv/    -> REDIRECTS TO: /ghost/#/admin-serv/
+302    46B   http://ghost.htb:8008/ghost/admin/%3bindex/    -> REDIRECTS TO: /ghost/#/admin/%3bindex/
+302    37B   http://ghost.htb:8008/ghost/admin/    -> REDIRECTS TO: /ghost/#/admin/
+302    44B   http://ghost.htb:8008/ghost/admin/backup/    -> REDIRECTS TO: /ghost/#/admin/backup/
+302    45B   http://ghost.htb:8008/ghost/admin/backups/    -> REDIRECTS TO: /ghost/#/admin/backups/
+302    40B   http://ghost.htb:8008/ghost/admin/db/    -> REDIRECTS TO: /ghost/#/admin/db/
+302    44B   http://ghost.htb:8008/ghost/admin/dumper/    -> REDIRECTS TO: /ghost/#/admin/dumper/
+302    49B   http://ghost.htb:8008/ghost/admin/js/tiny_mce/    -> REDIRECTS TO: /ghost/#/admin/js/tiny_mce/
+302    48B   http://ghost.htb:8008/ghost/admin/js/tinymce/    -> REDIRECTS TO: /ghost/#/admin/js/tinymce/
+302    42B   http://ghost.htb:8008/ghost/admin/logs/    -> REDIRECTS TO: /ghost/#/admin/logs/
+302    48B   http://ghost.htb:8008/ghost/admin/phpmyadmin/    -> REDIRECTS TO: /ghost/#/admin/phpmyadmin/
+302    41B   http://ghost.htb:8008/ghost/admin/pma/    -> REDIRECTS TO: /ghost/#/admin/pma/
+302    43B   http://ghost.htb:8008/ghost/admin/mysql/    -> REDIRECTS TO: /ghost/#/admin/mysql/
+302    46B   http://ghost.htb:8008/ghost/admin/sqladmin/    -> REDIRECTS TO: /ghost/#/admin/sqladmin/
+302    41B   http://ghost.htb:8008/ghost/admin/web/    -> REDIRECTS TO: /ghost/#/admin/web/
+302    46B   http://ghost.htb:8008/ghost/admin/sysadmin/    -> REDIRECTS TO: /ghost/#/admin/sysadmin/
+302    42B   http://ghost.htb:8008/ghost/admin2.old/    -> REDIRECTS TO: /ghost/#/admin2.old/
+302    41B   http://ghost.htb:8008/ghost/admin/sxd/    -> REDIRECTS TO: /ghost/#/admin/sxd/
+302    38B   http://ghost.htb:8008/ghost/admin2/    -> REDIRECTS TO: /ghost/#/admin2/
+302    38B   http://ghost.htb:8008/ghost/admin1/    -> REDIRECTS TO: /ghost/#/admin1/
+302    41B   http://ghost.htb:8008/ghost/admin2007/    -> REDIRECTS TO: /ghost/#/admin2007/
+302    41B   http://ghost.htb:8008/ghost/admin2008/    -> REDIRECTS TO: /ghost/#/admin2008/
+302    41B   http://ghost.htb:8008/ghost/admin2011/    -> REDIRECTS TO: /ghost/#/admin2011/
+302    41B   http://ghost.htb:8008/ghost/admin2012/    -> REDIRECTS TO: /ghost/#/admin2012/
+302    41B   http://ghost.htb:8008/ghost/admin2010/    -> REDIRECTS TO: /ghost/#/admin2010/
+302    41B   http://ghost.htb:8008/ghost/admin2013/    -> REDIRECTS TO: /ghost/#/admin2013/
+302    41B   http://ghost.htb:8008/ghost/admin2009/    -> REDIRECTS TO: /ghost/#/admin2009/
+302    38B   http://ghost.htb:8008/ghost/admin3/    -> REDIRECTS TO: /ghost/#/admin3/
+302    41B   http://ghost.htb:8008/ghost/admin2006/    -> REDIRECTS TO: /ghost/#/admin2006/
+302    44B   http://ghost.htb:8008/ghost/admin4_colon/    -> REDIRECTS TO: /ghost/#/admin4_colon/
+302    38B   http://ghost.htb:8008/ghost/admin4/    -> REDIRECTS TO: /ghost/#/admin4/
+302    38B   http://ghost.htb:8008/ghost/admin;/    -> REDIRECTS TO: /ghost/#/admin;/
+302    46B   http://ghost.htb:8008/ghost/admin4_account/    -> REDIRECTS TO: /ghost/#/admin4_account/
+302    38B   http://ghost.htb:8008/ghost/admin_/    -> REDIRECTS TO: /ghost/#/admin_/
+302    38B   http://ghost.htb:8008/ghost/admin5/    -> REDIRECTS TO: /ghost/#/admin5/
+302    42B   http://ghost.htb:8008/ghost/admin_area/    -> REDIRECTS TO: /ghost/#/admin_area/
+302    43B   http://ghost.htb:8008/ghost/admin_login/    -> REDIRECTS TO: /ghost/#/admin_login/
+302    43B   http://ghost.htb:8008/ghost/admin_logon/    -> REDIRECTS TO: /ghost/#/admin_logon/
+302    43B   http://ghost.htb:8008/ghost/admin_tools/    -> REDIRECTS TO: /ghost/#/admin_tools/
+302    41B   http://ghost.htb:8008/ghost/adminarea/    -> REDIRECTS TO: /ghost/#/adminarea/
+302    44B   http://ghost.htb:8008/ghost/admincontrol/    -> REDIRECTS TO: /ghost/#/admincontrol/
+302    53B   http://ghost.htb:8008/ghost/admincp/js/kindeditor/    -> REDIRECTS TO: /ghost/#/admincp/js/kindeditor/
+302    39B   http://ghost.htb:8008/ghost/admincp/    -> REDIRECTS TO: /ghost/#/admincp/
+302    46B   http://ghost.htb:8008/ghost/admincp/upload/    -> REDIRECTS TO: /ghost/#/admincp/upload/
+302    39B   http://ghost.htb:8008/ghost/adminer/    -> REDIRECTS TO: /ghost/#/adminer/
+302    42B   http://ghost.htb:8008/ghost/administr8/    -> REDIRECTS TO: /ghost/#/administr8/
+302    42B   http://ghost.htb:8008/ghost/administer/    -> REDIRECTS TO: /ghost/#/administer/
+302    46B   http://ghost.htb:8008/ghost/administracion/    -> REDIRECTS TO: /ghost/#/administracion/
+302    45B   http://ghost.htb:8008/ghost/administrador/    -> REDIRECTS TO: /ghost/#/administrador/
+302    46B   http://ghost.htb:8008/ghost/administrateur/    -> REDIRECTS TO: /ghost/#/administrateur/
+302    45B   http://ghost.htb:8008/ghost/administratie/    -> REDIRECTS TO: /ghost/#/administratie/
+302    51B   http://ghost.htb:8008/ghost/administrator-login/    -> REDIRECTS TO: /ghost/#/administrator-login/
+302    46B   http://ghost.htb:8008/ghost/administrative/    -> REDIRECTS TO: /ghost/#/administrative/
+302    46B   http://ghost.htb:8008/ghost/administration/    -> REDIRECTS TO: /ghost/#/administration/
+302    45B   http://ghost.htb:8008/ghost/administrator/    -> REDIRECTS TO: /ghost/#/administrator/
+302    51B   http://ghost.htb:8008/ghost/administrator/cache/    -> REDIRECTS TO: /ghost/#/administrator/cache/
+302    54B   http://ghost.htb:8008/ghost/administrator/includes/    -> REDIRECTS TO: /ghost/#/administrator/includes/
+302    51B   http://ghost.htb:8008/ghost/administrator/admin/    -> REDIRECTS TO: /ghost/#/administrator/admin/
+302    48B   http://ghost.htb:8008/ghost/administrator/db/    -> REDIRECTS TO: /ghost/#/administrator/db/
+302    50B   http://ghost.htb:8008/ghost/administrator/logs/    -> REDIRECTS TO: /ghost/#/administrator/logs/
+302    56B   http://ghost.htb:8008/ghost/administrator/phpmyadmin/    -> REDIRECTS TO: /ghost/#/administrator/phpmyadmin/
+302    49B   http://ghost.htb:8008/ghost/administrator/pma/    -> REDIRECTS TO: /ghost/#/administrator/pma/
+302    53B   http://ghost.htb:8008/ghost/administratoraccounts/    -> REDIRECTS TO: /ghost/#/administratoraccounts/
+302    49B   http://ghost.htb:8008/ghost/administrator/web/    -> REDIRECTS TO: /ghost/#/administrator/web/
+302    50B   http://ghost.htb:8008/ghost/administratorlogin/    -> REDIRECTS TO: /ghost/#/administratorlogin/
+302    46B   http://ghost.htb:8008/ghost/administrators/    -> REDIRECTS TO: /ghost/#/administrators/
+302    41B   http://ghost.htb:8008/ghost/adminitem/    -> REDIRECTS TO: /ghost/#/adminitem/
+302    45B   http://ghost.htb:8008/ghost/administrivia/    -> REDIRECTS TO: /ghost/#/administrivia/
+302    42B   http://ghost.htb:8008/ghost/adminitems/    -> REDIRECTS TO: /ghost/#/adminitems/
+302    42B   http://ghost.htb:8008/ghost/adminlogin/    -> REDIRECTS TO: /ghost/#/adminlogin/
+302    42B   http://ghost.htb:8008/ghost/adminlogon/    -> REDIRECTS TO: /ghost/#/adminlogon/
+302    43B   http://ghost.htb:8008/ghost/adminmember/    -> REDIRECTS TO: /ghost/#/adminmember/
+302    42B   http://ghost.htb:8008/ghost/adminpanel/    -> REDIRECTS TO: /ghost/#/adminpanel/
+302    40B   http://ghost.htb:8008/ghost/adminpro/    -> REDIRECTS TO: /ghost/#/adminpro/
+302    38B   http://ghost.htb:8008/ghost/admins/    -> REDIRECTS TO: /ghost/#/admins/
+302    45B   http://ghost.htb:8008/ghost/admins/backup/    -> REDIRECTS TO: /ghost/#/admins/backup/
+302    41B   http://ghost.htb:8008/ghost/adminsite/    -> REDIRECTS TO: /ghost/#/adminsite/
+302    38B   http://ghost.htb:8008/ghost/admpar/    -> REDIRECTS TO: /ghost/#/admpar/
+302    41B   http://ghost.htb:8008/ghost/adsamples/    -> REDIRECTS TO: /ghost/#/adsamples/
+302    45B   http://ghost.htb:8008/ghost/admrev/_files/    -> REDIRECTS TO: /ghost/#/admrev/_files/
+302    38B   http://ghost.htb:8008/ghost/admrev/    -> REDIRECTS TO: /ghost/#/admrev/
+302    39B   http://ghost.htb:8008/ghost/aims/ps/    -> REDIRECTS TO: /ghost/#/aims/ps/
+302    35B   http://ghost.htb:8008/ghost/all/    -> REDIRECTS TO: /ghost/#/all/
+404   204B   http://ghost.htb:8008/ghost/api
+302    35B   http://ghost.htb:8008/ghost/apc/    -> REDIRECTS TO: /ghost/#/apc/
+302    39B   http://ghost.htb:8008/ghost/ansible/    -> REDIRECTS TO: /ghost/#/ansible/
+302    39B   http://ghost.htb:8008/ghost/answers/    -> REDIRECTS TO: /ghost/#/answers/
+404   204B   http://ghost.htb:8008/ghost/api/
+302    38B   http://ghost.htb:8008/ghost/apache/    -> REDIRECTS TO: /ghost/#/apache/
+404   204B   http://ghost.htb:8008/ghost/api/batch
+404   204B   http://ghost.htb:8008/ghost/api/index.html
+404   204B   http://ghost.htb:8008/ghost/api/login.json
+404   204B   http://ghost.htb:8008/ghost/api/__swagger__/
+404   204B   http://ghost.htb:8008/ghost/api/apidocs/swagger.json
+404   204B   http://ghost.htb:8008/ghost/api/application.wadl
+404   204B   http://ghost.htb:8008/ghost/api/jsonws/invoke
+404   204B   http://ghost.htb:8008/ghost/api/jsonws
+404   204B   http://ghost.htb:8008/ghost/api/api-docs
+404   204B   http://ghost.htb:8008/ghost/api/config
+404   204B   http://ghost.htb:8008/ghost/api/docs
+404   204B   http://ghost.htb:8008/ghost/api/2/explore/
+404   204B   http://ghost.htb:8008/ghost/api/cask/graphql
+404   204B   http://ghost.htb:8008/ghost/api/2/issue/createmeta
+404   204B   http://ghost.htb:8008/ghost/api/error_log
+404   204B   http://ghost.htb:8008/ghost/api/package_search/v4/documentation
+404   204B   http://ghost.htb:8008/ghost/api/_swagger_/
+404   204B   http://ghost.htb:8008/ghost/api/apidocs
+404   204B   http://ghost.htb:8008/ghost/api/api
+404   204B   http://ghost.htb:8008/ghost/api/swagger/swagger
+404   204B   http://ghost.htb:8008/ghost/api/swagger/index.html
+404   204B   http://ghost.htb:8008/ghost/api/swagger-ui.html
+404   204B   http://ghost.htb:8008/ghost/api/snapshots
+404   204B   http://ghost.htb:8008/ghost/api/spec/swagger.json
+404   204B   http://ghost.htb:8008/ghost/api/profile
+404   204B   http://ghost.htb:8008/ghost/api/proxy
+404   204B   http://ghost.htb:8008/ghost/api/swagger.yaml
+404   204B   http://ghost.htb:8008/ghost/api/swagger.json
+404   204B   http://ghost.htb:8008/ghost/api/swagger
+404   204B   http://ghost.htb:8008/ghost/api/swagger.yml
+404   204B   http://ghost.htb:8008/ghost/api/docs/
+404   204B   http://ghost.htb:8008/ghost/api/swagger/static/index.html
+404   204B   http://ghost.htb:8008/ghost/api/v2/helpdesk/discover
+404   204B   http://ghost.htb:8008/ghost/api/swagger/ui/index
+404   204B   http://ghost.htb:8008/ghost/api/v1/swagger.json
+404   204B   http://ghost.htb:8008/ghost/api/v2
+404   204B   http://ghost.htb:8008/ghost/api/v1/
+404   204B   http://ghost.htb:8008/ghost/api/timelion/run
+404   204B   http://ghost.htb:8008/ghost/api/v1
+404   204B   http://ghost.htb:8008/ghost/api/v2/
+404   204B   http://ghost.htb:8008/ghost/api/v1/swagger.yaml
+404   204B   http://ghost.htb:8008/ghost/api/v2/swagger.json
+404   204B   http://ghost.htb:8008/ghost/api/v3
+404   204B   http://ghost.htb:8008/ghost/api/v2/swagger.yaml
+404   204B   http://ghost.htb:8008/ghost/api/vendor/phpunit/phpunit/phpunit
+404   204B   http://ghost.htb:8008/ghost/api/v4
+404   204B   http://ghost.htb:8008/ghost/api/version
+404   204B   http://ghost.htb:8008/ghost/api/whoami
+302    39B   http://ghost.htb:8008/ghost/app/tmp/    -> REDIRECTS TO: /ghost/#/app/tmp/
+302    43B   http://ghost.htb:8008/ghost/application/    -> REDIRECTS TO: /ghost/#/application/
+302    49B   http://ghost.htb:8008/ghost/application/cache/    -> REDIRECTS TO: /ghost/#/application/cache/
+302    36B   http://ghost.htb:8008/ghost/apps/    -> REDIRECTS TO: /ghost/#/apps/
+302    48B   http://ghost.htb:8008/ghost/apps/__pycache__/    -> REDIRECTS TO: /ghost/#/apps/__pycache__/
+302    51B   http://ghost.htb:8008/ghost/appengine-generated/    -> REDIRECTS TO: /ghost/#/appengine-generated/
+302    39B   http://ghost.htb:8008/ghost/archi~1/    -> REDIRECTS TO: /ghost/#/archi~1/
+302    39B   http://ghost.htb:8008/ghost/article/    -> REDIRECTS TO: /ghost/#/article/
+302    41B   http://ghost.htb:8008/ghost/artifacts/    -> REDIRECTS TO: /ghost/#/artifacts/
+302    35B   http://ghost.htb:8008/ghost/asp/    -> REDIRECTS TO: /ghost/#/asp/
+302    45B   http://ghost.htb:8008/ghost/aspnet_client/    -> REDIRECTS TO: /ghost/#/aspnet_client/
+302    43B   http://ghost.htb:8008/ghost/artifactory/    -> REDIRECTS TO: /ghost/#/artifactory/
+302    44B   http://ghost.htb:8008/ghost/aspnet_files/    -> REDIRECTS TO: /ghost/#/aspnet_files/
+404   136B   http://ghost.htb:8008/ghost/assets/pubspec.yaml
+301   191B   http://ghost.htb:8008/ghost/assets    -> REDIRECTS TO: /ghost/assets/
+302    40B   http://ghost.htb:8008/ghost/asterisk/    -> REDIRECTS TO: /ghost/#/asterisk/
+302    43B   http://ghost.htb:8008/ghost/asynchbeans/    -> REDIRECTS TO: /ghost/#/asynchbeans/
+302    48B   http://ghost.htb:8008/ghost/application/logs/    -> REDIRECTS TO: /ghost/#/application/logs/
+404   136B   http://ghost.htb:8008/ghost/assets/npm-debug.log
+404   136B   http://ghost.htb:8008/ghost/assets/
+404   136B   http://ghost.htb:8008/ghost/assets/fckeditor
+302    36B   http://ghost.htb:8008/ghost/auth/    -> REDIRECTS TO: /ghost/#/auth/
+302    41B   http://ghost.htb:8008/ghost/authadmin/    -> REDIRECTS TO: /ghost/#/authadmin/
+302    44B   http://ghost.htb:8008/ghost/autodiscover/    -> REDIRECTS TO: /ghost/#/autodiscover/
+302    36B   http://ghost.htb:8008/ghost/auto/    -> REDIRECTS TO: /ghost/#/auto/
+302    42B   http://ghost.htb:8008/ghost/autoupdate/    -> REDIRECTS TO: /ghost/#/autoupdate/
+302    35B   http://ghost.htb:8008/ghost/aws/    -> REDIRECTS TO: /ghost/#/aws/
+302    39B   http://ghost.htb:8008/ghost/awstats/    -> REDIRECTS TO: /ghost/#/awstats/
+301     0B   http://ghost.htb:8008/ghost/axis//happyaxis.jsp    -> REDIRECTS TO: /ghost/axis/happyaxis.jsp/
+302    49B   http://ghost.htb:8008/ghost/axis2/axis2-admin/    -> REDIRECTS TO: /ghost/#/axis2/axis2-admin/
+302    42B   http://ghost.htb:8008/ghost/azureadmin/    -> REDIRECTS TO: /ghost/#/azureadmin/

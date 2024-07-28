@@ -1,0 +1,11 @@
+# Dirsearch started Sat Jun 29 22:07:25 2024 as: /usr/bin/dirsearch -u http://api.blazorized.htb/
+
+403   312B   http://api.blazorized.htb/%2e%2e//google.com
+403   312B   http://api.blazorized.htb/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+403   312B   http://api.blazorized.htb/\..\..\..\..\..\..\..\..\..\etc\passwd
+401     0B   http://api.blazorized.htb/categories
+403   312B   http://api.blazorized.htb/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+401     0B   http://api.blazorized.htb/posts
+302     0B   http://api.blazorized.htb/swagger    -> REDIRECTS TO: /swagger/index.html
+200     3KB  http://api.blazorized.htb/swagger/index.html
+200     7KB  http://api.blazorized.htb/swagger/v1/swagger.json

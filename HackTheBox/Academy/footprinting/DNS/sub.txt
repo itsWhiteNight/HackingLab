@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<magictree class="MtBranchObject"><testdata class="MtBranchObject"><host>196.32.219.25<hostname>emsi.ma</hostname></host><fqdn>emsi.ma.</fqdn><host>196.32.219.19<hostname>ilyas.genious.net</hostname></host><fqdn>ilyas.genious.net.</fqdn><host>196.32.219.20<hostname>ismael.genious.net</hostname></host><fqdn>ismael.genious.net.</fqdn><host>196.32.219.25<hostname>emsi.ma</hostname></host><fqdn>emsi.ma.</fqdn>

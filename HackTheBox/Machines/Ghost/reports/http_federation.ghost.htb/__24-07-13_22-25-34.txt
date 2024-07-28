@@ -1,0 +1,7 @@
+# Dirsearch started Sat Jul 13 22:26:56 2024 as: /usr/bin/dirsearch -u http://federation.ghost.htb/
+
+403   312B   http://federation.ghost.htb/%2e%2e//google.com
+403   312B   http://federation.ghost.htb/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+403   312B   http://federation.ghost.htb/\..\..\..\..\..\..\..\..\..\etc\passwd
+503   326B   http://federation.ghost.htb/adfs/services/trust/2005/windowstransport
+403   312B   http://federation.ghost.htb/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd

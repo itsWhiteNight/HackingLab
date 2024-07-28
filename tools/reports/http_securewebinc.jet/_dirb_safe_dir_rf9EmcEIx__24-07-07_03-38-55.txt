@@ -1,0 +1,18 @@
+# Dirsearch started Sun Jul  7 03:38:58 2024 as: /usr/bin/dirsearch -u http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/
+
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.ht_wsr.txt
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccess.bak1
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccess.orig
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccess_orig
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccess.sample
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccess_extra
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccess.save
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccessOLD
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccess_sc
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccessBAK
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htaccessOLD2
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htpasswd_test
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htpasswds
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.htm
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.html
+403   580B   http://securewebinc.jet/dirb_safe_dir_rf9EmcEIx/.httr-oauth

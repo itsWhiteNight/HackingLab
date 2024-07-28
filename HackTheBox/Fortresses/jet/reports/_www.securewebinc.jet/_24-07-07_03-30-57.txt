@@ -1,0 +1,23 @@
+# Dirsearch started Sun Jul  7 03:32:02 2024 as: /usr/bin/dirsearch -u www.securewebinc.jet
+
+301   194B   http://www.securewebinc.jet/js    -> REDIRECTS TO: http://www.securewebinc.jet/js/
+403   580B   http://www.securewebinc.jet/.ht_wsr.txt
+403   580B   http://www.securewebinc.jet/.htaccess.bak1
+403   580B   http://www.securewebinc.jet/.htaccess.orig
+403   580B   http://www.securewebinc.jet/.htaccess.save
+403   580B   http://www.securewebinc.jet/.htaccess.sample
+403   580B   http://www.securewebinc.jet/.htaccess_sc
+403   580B   http://www.securewebinc.jet/.htaccess_orig
+403   580B   http://www.securewebinc.jet/.htaccess_extra
+403   580B   http://www.securewebinc.jet/.htaccessBAK
+403   580B   http://www.securewebinc.jet/.htaccessOLD
+403   580B   http://www.securewebinc.jet/.htm
+403   580B   http://www.securewebinc.jet/.html
+403   580B   http://www.securewebinc.jet/.htpasswd_test
+403   580B   http://www.securewebinc.jet/.httr-oauth
+403   580B   http://www.securewebinc.jet/.htaccessOLD2
+403   580B   http://www.securewebinc.jet/.htpasswds
+301   194B   http://www.securewebinc.jet/css    -> REDIRECTS TO: http://www.securewebinc.jet/css/
+301   194B   http://www.securewebinc.jet/img    -> REDIRECTS TO: http://www.securewebinc.jet/img/
+403   580B   http://www.securewebinc.jet/js/
+403   580B   http://www.securewebinc.jet/vendor/

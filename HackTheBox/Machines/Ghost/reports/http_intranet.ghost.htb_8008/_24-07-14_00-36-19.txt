@@ -1,0 +1,16 @@
+# Dirsearch started Sun Jul 14 00:50:20 2024 as: /usr/bin/dirsearch -u http://intranet.ghost.htb:8008
+
+404     6KB  http://intranet.ghost.htb:8008/404
+308    38B   http://intranet.ghost.htb:8008/\..\..\..\..\..\..\..\..\..\etc\passwd    -> REDIRECTS TO: /../../../../../../../../../etc/passwd
+308    19B   http://intranet.ghost.htb:8008/axis//happyaxis.jsp    -> REDIRECTS TO: /axis/happyaxis.jsp
+308    30B   http://intranet.ghost.htb:8008/axis2//axis2-web/HappyAxis.jsp    -> REDIRECTS TO: /axis2/axis2-web/HappyAxis.jsp
+308    24B   http://intranet.ghost.htb:8008/axis2-web//HappyAxis.jsp    -> REDIRECTS TO: /axis2-web/HappyAxis.jsp
+308    52B   http://intranet.ghost.htb:8008/Citrix//AccessPlatform/auth/clientscripts/cookies.js    -> REDIRECTS TO: /Citrix/AccessPlatform/auth/clientscripts/cookies.js
+308    42B   http://intranet.ghost.htb:8008/engine/classes/swfupload//swfupload_f9.swf    -> REDIRECTS TO: /engine/classes/swfupload/swfupload_f9.swf
+308    39B   http://intranet.ghost.htb:8008/engine/classes/swfupload//swfupload.swf    -> REDIRECTS TO: /engine/classes/swfupload/swfupload.swf
+308    27B   http://intranet.ghost.htb:8008/extjs/resources//charts.swf    -> REDIRECTS TO: /extjs/resources/charts.swf
+307     5KB  http://intranet.ghost.htb:8008/forum    -> REDIRECTS TO: /login
+308    37B   http://intranet.ghost.htb:8008/html/js/misc/swfupload//swfupload.swf    -> REDIRECTS TO: /html/js/misc/swfupload/swfupload.swf
+200     6KB  http://intranet.ghost.htb:8008/login
+307     0B   http://intranet.ghost.htb:8008/logout    -> REDIRECTS TO: /login
+307     5KB  http://intranet.ghost.htb:8008/news    -> REDIRECTS TO: /login

