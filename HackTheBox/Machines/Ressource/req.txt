@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2024.2.1.5" exportTime="Sun Aug 04 03:45:24 BST 2024">
+  <item>
+    <time>Thu Jan 01 01:00:00 GMT 1970</time>
+    <url><![CDATA[http://itrc.ssg.htb/api/register.php]]></url>
+    <host ip="10.129.104.142">itrc.ssg.htb</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/api/register.php]]></path>
+    <extension>php</extension>
+    <request base64="true"><![CDATA[UE9TVCAvYXBpL3JlZ2lzdGVyLnBocCBIVFRQLzEuMQ0KSG9zdDogaXRyYy5zc2cuaHRiDQpDb250ZW50LUxlbmd0aDogNDYNCkNhY2hlLUNvbnRyb2w6IG1heC1hZ2U9MA0KVXBncmFkZS1JbnNlY3VyZS1SZXF1ZXN0czogMQ0KT3JpZ2luOiBodHRwOi8vaXRyYy5zc2cuaHRiDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFgxMTsgTGludXggeDg2XzY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTI2LjAuMC4wIFNhZmFyaS81MzcuMzYNCkFjY2VwdDogdGV4dC9odG1sLGFwcGxpY2F0aW9uL3hodG1sK3htbCxhcHBsaWNhdGlvbi94bWw7cT0wLjksaW1hZ2UvYXZpZixpbWFnZS93ZWJwLGltYWdlL2FwbmcsKi8qO3E9MC44LGFwcGxpY2F0aW9uL3NpZ25lZC1leGNoYW5nZTt2PWIzO3E9MC43DQpSZWZlcmVyOiBodHRwOi8vaXRyYy5zc2cuaHRiL2luZGV4LnBocD9wYWdlPXJlZ2lzdGVyDQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXAsIGRlZmxhdGUsIGJyDQpBY2NlcHQtTGFuZ3VhZ2U6IGVuLVVTLGVuO3E9MC45DQpDb29raWU6IFBIUFNFU1NJRD1hM2Q1Mjk5ZDY0ZTBkNTJiNTdlYzM1NTg3NjVjZDRkZQ0KZG50OiAxDQpzZWMtZ3BjOiAxDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp1c2VyPXRlc3QmcGFzcz10ZXN0JnBhc3MyPXRlc3Q=]]></request>
+    <status></status>
+    <responselength></responselength>
+    <mimetype></mimetype>
+    <response base64="true"></response>
+    <comment></comment>
+  </item>
+</items>

@@ -1,0 +1,33 @@
+# Dirsearch started Sat Aug  3 23:19:31 2024 as: /usr/bin/dirsearch -u http://itrc.ssg.htb/
+
+403   277B   http://itrc.ssg.htb/.ht_wsr.txt
+403   277B   http://itrc.ssg.htb/.htaccess.bak1
+403   277B   http://itrc.ssg.htb/.htaccess.orig
+403   277B   http://itrc.ssg.htb/.htaccess.sample
+403   277B   http://itrc.ssg.htb/.htaccess_extra
+403   277B   http://itrc.ssg.htb/.htaccessOLD2
+403   277B   http://itrc.ssg.htb/.htaccessBAK
+403   277B   http://itrc.ssg.htb/.htaccess_sc
+403   277B   http://itrc.ssg.htb/.htaccess.save
+403   277B   http://itrc.ssg.htb/.htaccess_orig
+403   277B   http://itrc.ssg.htb/.html
+403   277B   http://itrc.ssg.htb/.htaccessOLD
+403   277B   http://itrc.ssg.htb/.htm
+403   277B   http://itrc.ssg.htb/.htpasswds
+403   277B   http://itrc.ssg.htb/.htpasswd_test
+403   277B   http://itrc.ssg.htb/.httr-oauth
+200    46B   http://itrc.ssg.htb/admin.php
+301   310B   http://itrc.ssg.htb/api    -> REDIRECTS TO: http://itrc.ssg.htb/api/
+403   277B   http://itrc.ssg.htb/api/
+301   313B   http://itrc.ssg.htb/assets    -> REDIRECTS TO: http://itrc.ssg.htb/assets/
+403   277B   http://itrc.ssg.htb/assets/
+200    46B   http://itrc.ssg.htb/dashboard.php
+200     0B   http://itrc.ssg.htb/db.php
+200   507B   http://itrc.ssg.htb/home.php
+200   241B   http://itrc.ssg.htb/login.php
+302     0B   http://itrc.ssg.htb/logout.php    -> REDIRECTS TO: index.php
+200   263B   http://itrc.ssg.htb/register.php
+403   277B   http://itrc.ssg.htb/server-status/
+403   277B   http://itrc.ssg.htb/server-status
+403   277B   http://itrc.ssg.htb/uploads/
+301   314B   http://itrc.ssg.htb/uploads    -> REDIRECTS TO: http://itrc.ssg.htb/uploads/

@@ -1,0 +1,5 @@
+# Dirsearch started Sun Aug  4 00:11:11 2024 as: /usr/bin/dirsearch -u http://itrc.ssg.htb/ -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -t 50
+
+301   314B   http://itrc.ssg.htb/uploads    -> REDIRECTS TO: http://itrc.ssg.htb/uploads/
+301   313B   http://itrc.ssg.htb/assets    -> REDIRECTS TO: http://itrc.ssg.htb/assets/
+301   310B   http://itrc.ssg.htb/api    -> REDIRECTS TO: http://itrc.ssg.htb/api/
