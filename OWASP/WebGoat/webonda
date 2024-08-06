@@ -1,0 +1,122 @@
+#!/bin/bash
+
+# Define colors
+LIGHT_PURPLE='\033[0;31m'
+RED='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[0;34m'
+RESET='\033[0m'
+
+# Define the container ID
+CONTAINER_ID="bb99e6ef42dc"
+
+# Function to print the header
+print_header() {
+    clear
+    echo -e "${BLUE}"
+    echo " ██████╗ ███╗   ██╗██████╗  █████╗ "
+    echo "██║   ██ ████╗  ██║██╔══██╗██╔══██╗"
+    echo "██║   ██║██╔██╗ ██║██║  ██║███████║"
+    echo "██║   ██║██║╚██╗██║██║  ██║██╔══██║"
+    echo "╚██████╔╝██║ ╚████║██████╔╝██║  ██║"
+    echo " ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝"
+    echo -e "${YELLOW}"
+    echo "██╗    ██╗███████╗██████╗   ██████╗  ██████═╗ █████╗ ████████╗"
+    echo "██║    ██║██╔════╝██╔══██╗ ██╔════╝ ██║   ██║██╔══██╗╚══██╔══╝"
+    echo "██║ █╗ ██║█████╗  ██████╔╝ ██║  ███╗██║   ██║███████║   ██║   "
+    echo "██║███╗██║██╔══╝  ██╔══██╗ ██║   ██║██║   ██║██╔══██║   ██║   "
+    echo "╚███╔███╔╝███████╗██████╔╝ ╚██████╔╝╚██████╔╝██║  ██║   ██║   "
+    echo " ╚══╝╚══╝ ╚══════╝╚═════╝   ╚═════╝  ╚═════╝ ╚═╝  ╚═╝   ╚═╝   "
+    echo -e "${RESET}"
+    sleep 2
+    echo -e "${BLUE}$(printf '%*s' $(tput cols) | tr ' ' '-')${RESET}"
+}
+
+print_spawning_bash() {
+    echo -e "${LIGHT_PURPLE}"
+    echo "███████╗██████╗  █████╗ ██╗    ██╗███╗   ██╗██╗███╗   ██╗ ██████╗ "
+    echo "██╔════╝██╔══██╗██╔══██╗██║    ██║████╗  ██║██║████╗  ██║██╔════╝ "
+    echo "███████ ██████╔╝███████║██║ █╗ ██║██╔██╗ ██║██║██╔██╗ ██║██║  ███╗"
+    echo "     ██ ██╔═══╝ ██╔══██║██║███╗██║██║╚██╗██║██║██║╚██╗██║██║   ██║"
+    echo "███████ ██║     ██║  ██║╚███╔███╔╝██║ ╚████║██║██║ ╚████║╚██████╔╝"
+    echo "╚═════╝ ╚═╝     ╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝ "
+    echo "                          /bin/bash                               "
+    echo -e "${RESET}"
+    sleep 2
+}
+
+start_docker() {
+    if docker start $CONTAINER_ID | grep "Error"; then
+        echo "Error, check port 8080"
+        sleep 5
+        exit 1
+    fi
+}
+
+print_container_messages() {
+    echo -e "${YELLOW}Container $CONTAINER_ID found.${RESET}"
+    echo -e "${LIGHT_PURPLE}"
+    echo " ╔█████═██═███═══█████═█████═█═███████═╗"
+    echo " ║█    Starting the container...       ║"
+    echo " ╚██═███═███═██═══█████ █████═█═███═███╝"
+    echo -e "${RESET}"
+    check_docker_service
+    check_container_id
+    start_docker
+
+    echo -e "${BLUE}"
+    echo " ╔█████═██═███═══█████═█████═█═███████═╗"
+    echo " ║█     Attaching to the container...  ║"
+    echo " ╚██═███═███═██═══█████ █████═█═███═███╝"
+    echo -e "${RESET}"
+    sleep 1
+    clear
+}
+
+check_docker_service() {
+    echo -e "Checking if docker service is up.${RESET}"
+    sleep 1
+    if service docker status | grep -q "inactive"; then
+        echo -e "Service Not up. Spawning Docker ${RESET}"
+        service docker start
+    fi
+    if service docker status | grep -q "active"; then
+        echo -e "${LIGHT_PURPLE}"
+        echo -e "Docker Up"
+    fi
+    sleep 1
+}
+
+check_container_id() {
+    echo -e "Checking docker Container ID.${RESET}"
+    sleep 1
+    if ! docker ps -a --format '{{.ID}}' | grep -q "^$CONTAINER_ID$"; then
+        clear
+        echo -e "${RED}"
+        sysvbanner "Error!"
+        echo -e "Container $CONTAINER_ID not found.${RESET}"
+        echo -e "${YELLOW}Exiting script.${RESET}"
+        exit 1
+    fi
+    sleep 1
+}
+
+# Main script execution
+
+# Print the header
+print_header
+
+# Print container messages
+print_container_messages
+
+# Start the container and attach to it
+print_spawning_bash
+docker exec -it $CONTAINER_ID /bin/bash
+
+# Print a footer
+clear
+echo -e "${LIGHT_PURPLE}"
+sysvbanner "E X I T"
+echo -e "${RESET}"
+docker stop $CONTAINER_ID > /dev/null
+
