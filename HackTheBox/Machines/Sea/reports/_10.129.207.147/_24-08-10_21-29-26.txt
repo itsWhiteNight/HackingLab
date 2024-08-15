@@ -1,0 +1,3 @@
+# Dirsearch started Sat Aug 10 21:29:33 2024 as: /usr/bin/dirsearch -u 10.129.207.147
+
+403   199B   http://10.129.207.147/%3f/

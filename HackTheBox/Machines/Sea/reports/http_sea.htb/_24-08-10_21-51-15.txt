@@ -1,0 +1,24 @@
+# Dirsearch started Sat Aug 10 22:00:35 2024 as: /usr/bin/dirsearch -u http://sea.htb
+
+403   199B   http://sea.htb/%3f/
+403   199B   http://sea.htb/.ht_wsr.txt
+403   199B   http://sea.htb/.htaccess.bak1
+403   199B   http://sea.htb/.htaccess.save
+403   199B   http://sea.htb/.htaccess.orig
+403   199B   http://sea.htb/.htaccessBAK
+403   199B   http://sea.htb/.htaccess_orig
+403   199B   http://sea.htb/.htaccessOLD2
+403   199B   http://sea.htb/.htaccessOLD
+403   199B   http://sea.htb/.htaccess_extra
+403   199B   http://sea.htb/.htaccess_sc
+403   199B   http://sea.htb/.htaccess.sample
+403   199B   http://sea.htb/.httr-oauth
+403   199B   http://sea.htb/.htpasswd_test
+403   199B   http://sea.htb/.htpasswds
+403   199B   http://sea.htb/.htm
+403   199B   http://sea.htb/.html
+403   199B   http://sea.htb/.php
+200     1KB  http://sea.htb/404
+403   199B   http://sea.htb/admin%20/
+500     0B   http://sea.htb/administratoraccounts/
+500     0B   http://sea.htb/AppServer

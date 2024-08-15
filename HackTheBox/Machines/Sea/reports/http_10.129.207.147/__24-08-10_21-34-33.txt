@@ -1,0 +1,20 @@
+# Dirsearch started Sat Aug 10 21:35:34 2024 as: /usr/bin/dirsearch -u http://10.129.207.147/
+
+403   199B   http://10.129.207.147/%3f/
+403   199B   http://10.129.207.147/.htaccess.bak1
+403   199B   http://10.129.207.147/.htaccess.sample
+403   199B   http://10.129.207.147/.ht_wsr.txt
+403   199B   http://10.129.207.147/.htaccess.save
+403   199B   http://10.129.207.147/.htaccess_orig
+403   199B   http://10.129.207.147/.htaccess.orig
+403   199B   http://10.129.207.147/.htaccessOLD
+403   199B   http://10.129.207.147/.htaccessBAK
+403   199B   http://10.129.207.147/.html
+403   199B   http://10.129.207.147/.htaccess_extra
+403   199B   http://10.129.207.147/.htaccessOLD2
+403   199B   http://10.129.207.147/.htaccess_sc
+403   199B   http://10.129.207.147/.htm
+403   199B   http://10.129.207.147/.htpasswds
+403   199B   http://10.129.207.147/.htpasswd_test
+403   199B   http://10.129.207.147/.httr-oauth
+403   199B   http://10.129.207.147/.php
