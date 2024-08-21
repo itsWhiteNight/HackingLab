@@ -6,10 +6,10 @@
    
 ## Recon
 
-|PORT|     |STATE| |SERVICE|
-|22/tcp|   |open|  |ssh|
-|80/tcp|  |open|  |http|
-|3000/tcp| |open|  |ppp|
+| PORT     | STATE | | SERVICE |
+| 22/tcp |   | open|  | ssh |
+| 80/tcp |  | open|  | http |
+| 3000/tcp | | open|  | ppp |
 
 >> We can Post a pdf or whatever if we modify the name of the file as .pdf 
 
